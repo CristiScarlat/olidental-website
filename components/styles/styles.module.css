@@ -1,0 +1,136 @@
+.footer {
+  width: 100%;
+  /* background: linear-gradient( to bottom, rgb(0 62 116) 0, rgb(0 118 160) 100% ) !important; */
+  padding: 0.7rem;
+  text-align: center;
+  color: #808080b5;
+}
+
+.caruselItemContainer {
+  position: relative;
+}
+
+.caruselItemLegend {
+  position: absolute;
+  top: 122px;
+  left: 74px;
+  font-weight: 800;
+  color: #afc5dd;
+  letter-spacing: 3px;
+}
+
+.carouselLegendContent {
+  position: absolute;
+  text-align: start;
+  padding: 1rem;
+  /* color: #1ea598; */
+  color: whitesmoke;
+  max-width: 26rem;
+}
+
+.carouselLegendContent > h1 {
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.carouselLegendContent a {
+  color: white;
+  text-decoration: none;
+}
+
+.carousel.carousel-slider .control-arrow {
+  border-radius: 10px;
+}
+
+.specialistsCardsRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 320px);
+  grid-gap: 1rem;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.navbar-transparent {
+  z-index: 99999;
+  background: linear-gradient(to bottom, #3a539b 0, rgb(0 16 62 / 82%) 100%) !important;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.header-custom-link {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  padding: 12px !important;
+}
+
+.header-custom-link:hover {
+  color: #4caf50;
+}
+
+.custom-icon-contact {
+  font-size: 18px;
+  font-weight: bold;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.custom-icon-contact :first-child {
+  margin: 0px auto;
+  border-radius: 5px;
+  height: 100px;
+  width: 3rem;
+  display: block;
+  background: #3a539b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-icon-contact svg {
+  fill: whitesmoke;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .custom-icon-contact-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 2rem;
+  }
+
+  .custom-icon-contact {
+    flex-direction: row;
+    width: 100%;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .custom-icon-contact :first-child {    
+    height: 1.5rem;
+    width: 1.5rem!important;
+    margin: 0;
+    border-radius: 0;
+    display: block;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .custom-icon-contact svg {
+    fill: #3a539b;
+  }
+}

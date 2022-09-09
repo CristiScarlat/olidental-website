@@ -1,0 +1,31 @@
+@import "./accordion.css";
+/* @import "./bootstrap.css"; */
+/* @import "./cubeportfolio.min.css"; */
+@import "./theme-colors/dark-blue.css";
+@import "./demo.css";
+@import "./dropmenu.css";
+@import "./extralayers.css";
+@import "./jquery.fancybox.css";
+@import "./jquery.mmenu.all.css";
+@import "./loader.css";
+@import "./medical-guide.css";
+@import "./owl.carousel.css";
+@import "./piechart-style.css";
+@import "./settings.css";
+@import "./sticky-header.css";
+@import "./style.css";
+@import "./tabs.css";
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+

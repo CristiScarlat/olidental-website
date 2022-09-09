@@ -1,0 +1,25 @@
+{
+  "name": "olidental-gray-template",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.1",
+    "next": "12.2.5",
+    "react": "18.2.0",
+    "react-bootstrap": "^2.5.0",
+    "react-dom": "18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^4.4.0",
+    "react-responsive-carousel": "^3.2.23"
+  },
+  "devDependencies": {
+    "eslint": "8.23.0",
+    "eslint-config-next": "12.2.5"
+  }
+}
