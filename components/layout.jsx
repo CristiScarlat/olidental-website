@@ -36,7 +36,7 @@ const Layout = ({ children }) => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Oana Bolog-Bleich</title>
+        <title>Olidental Clinic Timișoara - Servicii stomatologice premium în Timișoara</title>
         <link rel="canonical" href="https://www.oanabologbleich.com/" />
 
         {/*HTML Meta Tags*/}
