@@ -18,21 +18,21 @@ const MakeAppointments = () => {
 
                                 <span className="input input--kohana">
                                     <input className="input__field input__field--kohana" type="text" id="input-29" name="input-29" />
-                                    <label className="input__label input__label--kohana" for="input-29">
+                                    <label className="input__label input__label--kohana" htmlFor="input-29">
                                         <i className="icon-user6 icon icon--kohana"></i>
                                         <span className="input__label-content input__label-content--kohana">Your Name</span>
                                     </label>
                                 </span>
                                 <span className="input input--kohana">
                                     <input className="input__field input__field--kohana" type="text" id="input-30" name="input-30" />
-                                    <label className="input__label input__label--kohana" for="input-30">
+                                    <label className="input__label input__label--kohana" htmlFor="input-30">
                                         <i className="icon-dollar icon icon--kohana"></i>
                                         <span className="input__label-content input__label-content--kohana">Email Address</span>
                                     </label>
                                 </span>
                                 <span className="input input--kohana last">
                                     <input className="input__field input__field--kohana" type="text" id="input-31" name="input-31" />
-                                    <label className="input__label input__label--kohana" for="input-31">
+                                    <label className="input__label input__label--kohana" htmlFor="input-31">
                                         <i className="icon-phone5 icon icon--kohana"></i>
                                         <span className="input__label-content input__label-content--kohana">Phone Number</span>
                                     </label>
@@ -44,7 +44,7 @@ const MakeAppointments = () => {
 
                                 <span className="input input--kohana message">
                                     <input className="input__field input__field--kohana" type="text" id="textarea" name="textarea" />
-                                    <label className="input__label input__label--kohana" for="textarea">
+                                    <label className="input__label input__label--kohana" htmlFor="textarea">
                                         <i className="icon-new-message icon icon--kohana"></i>
                                         <span className="input__label-content input__label-content--kohana">Message</span>
                                     </label>
