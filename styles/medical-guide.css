@@ -77,15 +77,7 @@ h6 .small,
 -------------------------------------------------------------------*/
 
 
-body{
-	background:#eeeded;
-	font-family: 'Source Sans Pro', sans-serif;
-	color:#444444;
-}
-*{
-	margin:0px;
-	padding:0px;
-}
+
 
 h1{
 	font-weight: 900;
