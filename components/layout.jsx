@@ -37,7 +37,7 @@ const Layout = ({ children }) => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Olidental Clinic Timișoara - Servicii stomatologice premium în Timișoara</title>
-        <link rel="canonical" href="https://www.oanabologbleich.com/" />
+        <link rel="canonical" href="https://www.olidental.ro/" />
 
         {/*HTML Meta Tags*/}
         <meta
@@ -45,32 +45,32 @@ const Layout = ({ children }) => {
           content="Personal website of Phd artist Oana Blog-Bleich displaying Oil on canvas and mixed technics art items."
         />
         {/*Facebook Meta Tags*/}
-        <meta property="og:url" content="https://www.oanabologbleich.com" />
+        <meta property="og:url" content="https://www.olidental.ro" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Oil on canvas" />
+        <meta property="og:title" content="dental clinic" />
         <meta
           property="og:description"
-          content="Personal website of Phd artist Oana Blog-Bleich displaying Oil on canvas and mixed technics art items."
+          content="Echipa noastră de medici experți este pregătită să răspundă celor mai dificile provocări de la pacienții noștri."
         />
         <meta
           property="og:image"
-          content='/albums/ilustrations/02.jpg'
+          content='/Photo-431.jpg'
         />
         {/*Twitter Meta Tags*/}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="oanabologbleich.com" />
+        <meta property="twitter:domain" content="olidental.ro" />
         <meta
           property="twitter:url"
-          content="https://www.oanabologbleich.com"
+          content="https://www.olidental.ro"
         />
         <meta name="twitter:title" content="Oil on canvas" />
         <meta
           name="twitter:description"
-          content="Personal website of Phd artist Oana Blog-Bleich displaying Oil on canvas and mixed technics art items."
+          content="Echipa noastră de medici experți este pregătită să răspundă celor mai dificile provocări de la pacienții noștri."
         />
         <meta
           name="twitter:image"
-          content='/albums/ilustrations/02.jpg'
+          content='/Photo-431.jpg'
         />
       </Helmet>
       <TopBar />

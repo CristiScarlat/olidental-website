@@ -52,7 +52,8 @@
 
 .navbar-transparent {
   z-index: 99999;
-  background: linear-gradient(to bottom, #3a539b 0, rgb(0 16 62 / 82%) 100%) !important;
+  background: #eeeded !important;
+  background: linear-gradient(270deg, #9e9d9d 10%, rgb(7 15 2) 100%);
   transition: transform 0.5s ease, opacity 0.5s ease;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -62,14 +63,14 @@
 }
 
 .header-custom-link {
-  color: #fff;
+  color: #4caf50;
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
   padding: 12px !important;
 }
 
 .header-custom-link:hover {
-  color: #4caf50;
+  color: #004a02;
 }
 
 .custom-icon-contact {
@@ -89,7 +90,7 @@
   height: 100px;
   width: 3rem;
   display: block;
-  background: #3a539b;
+  /* background: #3a539b; */
   display: flex;
   align-items: center;
   justify-content: center;

@@ -207,7 +207,7 @@ const Header = () => {
     //   </div>
     // </header>
     <header>
-      <Navbar collapseOnSelect expand="lg" variant="dark" className={styles["navbar-transparent"]}>
+      <Navbar collapseOnSelect expand="lg" variant="light" className={styles["navbar-transparent"]}>
         <Container fluid className="ps-3 pe-3">
           <Navbar.Brand className="mt-2 mb-2"><Logo/></Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />

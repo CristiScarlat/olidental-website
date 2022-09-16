@@ -78,7 +78,7 @@ h6 .small,
 
 
 body{
-	background:#fff;
+	background:#eeeded;
 	font-family: 'Source Sans Pro', sans-serif;
 	color:#444444;
 }
@@ -158,7 +158,7 @@ img:hover {transition: background-color 0.5s ease; }
 /*..... TOP BAR ......*/
 
 /* .top-bar{ background:#525866;} */
-.top-bar{background: #3a539b;}
+.top-bar{background: linear-gradient(90deg, #d4d4d4 10%, rgb(0 0 0 / 86%) 100%); background: #d4d4d4 !important;}
 .top-bar span{ font-weight:400;	font-size:16px;	font-family: 'Raleway', sans-serif; color:#fff;   margin: 14px 0 0 0;  float: left;}
 .top-bar .get-touch{ float:right;}
 .top-bar .get-touch ul{ float:left;}
@@ -167,7 +167,7 @@ img:hover {transition: background-color 0.5s ease; }
 .top-bar .get-touch li i.icon-mail {  float: left;  font-size: 20px;  margin: 1px 7px 0 0;}
 .top-bar .get-touch li:last-child{ border-right: none; }
 .top-bar .social-icons li:last-child{}
-.top-bar .get-touch li a{   color: #fff;  padding: 13px 14px;  float: left;}
+.top-bar .get-touch li a{   color: #4caf50;  padding: 13px 14px;  float: left;}
 .top-bar .get-touch li i{ font-size:18px;}
 .top-bar .get-touch .social-icons { float:left;}
 .top-bar .get-touch .social-icons li a{ padding:13px 10px;}
@@ -223,6 +223,8 @@ img:hover {transition: background-color 0.5s ease; }
     gap: 2rem;
     justify-content: center;
     align-items: center;
+    min-height: 30rem;
+	border-radius: 5px;
 }
 .services-one .service-sec .icon{ width:96px; height:96px; border-radius: 7px; text-align:center;}
 .services-one .service-sec .icon i{color: #fff;  font-size: 48px;  text-shadow: 0 5px 0 rgba(0, 0, 0, 0.15);  margin: 22px 0 0 0;  display: block;}
