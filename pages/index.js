@@ -7,9 +7,9 @@ export default function Home() {
   return (
     <>
         <CustomCarousel showThumbs={false} />
-        <Services />
-        <Specialists />
-        <Location />
+        <div id="services"><Services /></div>
+        <div id="team"><Specialists /></div>
+        <div id="contact"><Location /></div>
     </>
   )
 }

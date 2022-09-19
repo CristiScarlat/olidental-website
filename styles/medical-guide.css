@@ -159,7 +159,7 @@ img:hover {transition: background-color 0.5s ease; }
 .top-bar .get-touch li i.icon-mail {  float: left;  font-size: 20px;  margin: 1px 7px 0 0;}
 .top-bar .get-touch li:last-child{ border-right: none; }
 .top-bar .social-icons li:last-child{}
-.top-bar .get-touch li a{   color: #4caf50;  padding: 13px 14px;  float: left;}
+.top-bar .get-touch li a{   color: #778187;  padding: 13px 14px;  float: left;}
 .top-bar .get-touch li i{ font-size:18px;}
 .top-bar .get-touch .social-icons { float:left;}
 .top-bar .get-touch .social-icons li a{ padding:13px 10px;}

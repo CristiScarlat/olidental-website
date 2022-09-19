@@ -1,55 +1,66 @@
 export const teamCards = {
     ro: [
       {
-        title: "DR. OLIMPIU L. KARANCSI",
+        title: "Dr. Olimpiu L. Karancsi",
         body: "Medic primar protetică dentară,\
         Medic specialist chirurgie dento-alveolară,\
         Atestat în implantologie orală,\
         Șef de lucrări –  Restaurări protetice pe implante, UMF “Victor Babeș” Timișoara.",
-        img: "/images/team/Dr.-Olimpiu-L.-Karancsi.jpg",
+        img: "/images/team/Dr.-Olimpiu-L.-Karancsi-new.jpg",
       },
       {
-        title: "DR. PAULA DERBAN",
+        title: "Dr. Paula Derban",
         body: "Medic primar protetică dentară,\
         Atestat implantologie orală,\
         Asistent universitar Restaurări protetice pe implante UMF “Victor Babeș” Timișoara.",
-        img: "/images/team/dr.-Paula-Derban-medic.jpg",
+        img: "/images/team/dr.-Paula-Derban-medic-new.jpg",
       },
       {
         title: "Dr. Anda Nicola",
         body: "Medic dentist pedodonție (stomatologie pediatrică)",
-        img: "/images/team/dr.-Anda-Nicola-medic.jpg",
+        img: "/images/team/dr.-Anda-Nicola-medic-new.jpg",
       },
       {
         title: "Dr. Diana Rada Bârsan",
         body: "Medic specialist ortodont.",
-        img: "/images/team/Diana-Barsan.jpg",
+        img: "/images/team/Diana-Barsan-new.jpg",
       },
       {
         title: "Dr. Alina-Florentina Anechitei",
         body: "Medic rezident stomatologie generală",
-        img: "/images/team/dr.-Alina-Anechitei-medic.jpg",
+        img: "/images/team/dr.-Alina-Anechitei-medic-new.jpg",
       },
       {
         title: "Dr. Ana Tunaru ",
         body: "Medic stomatolog endodontie",
-        img: "/images/team/Tunaru-Ana.jpg",
+        img: "/images/team/Tunaru-Ana-new.jpg",
       },
       {
-        title: "Adela Daogaru",
+        title: "Adela Dăogaru",
         body: "Asistent Medical Generalist / Stomatologie",
-        img: "/images/team/Adela-Daogaru-asistenta.jpg",
+        img: "/images/team/Adela-Daogaru-asistenta-new.jpg",
       },
       {
         title: "Andreea Chifa",
-        body: "Asistent medical generalist ",
-        img: "/images/team/Chifa-Andreea.jpg",
+        body: "Asistent medical generalist",
+        img: "/images/team/Chifa-Andreea-new.jpg",
+      },
+      {
+        title: "Shiha Iustina",
+        body: "Asistent medical generalist",
+        img: "/images/team/Shiha-Iustina.jpg",
       },
       {
         title: "Cătălina Mădălina",
         body: "Inginer, PR",
-        img: "/images/team/Madalina-Catalina-receptie-pacienti.jpg",
+        img: "/images/team/Madalina-Catalina-pr-new.jpg",
       },
+      {
+        title: "Spîrlea Adriana",
+        body: "Asistent Manager",
+        img: "/images/team/Spîrlea-Adriana.jpg",
+      },
+      
     ],
     en: [
       {
