@@ -1,15 +1,28 @@
-@import "./medical-guide.css";
+@import './medical-guide.css';
 
 html,
-body{
-	background:#eeeded;
-	font-family: 'Source Sans Pro', sans-serif;
-	color:#444444;
+body {
+  background: #eeeded;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #444444;
 }
-*{
-	margin:0px;
-	padding:0px;
+* {
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
 
+.read-more-button {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border-color: #6ba743;
+  color: #444444;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+}
 
+.read-more-button.transparent {
+	background-color: rgba(0, 0, 0, 0.427);
+	color: #6ba743;
+}

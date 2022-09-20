@@ -26,6 +26,7 @@ const Specialists = () => {
                     {obj.body.split(',').map(specializare => (
                       <p key={specializare} style={{color: '#fff'}}>{specializare}</p>
                     ))}
+                    <button className="read-more-button m-2 transparent">Află mai mult</button>
                   </div>
                 </div>
               </div>

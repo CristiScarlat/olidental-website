@@ -149,8 +149,8 @@ img:hover {transition: background-color 0.5s ease; }
 
 /*..... TOP BAR ......*/
 
-/* .top-bar{ background:#525866;} */
-.top-bar{background: linear-gradient(90deg, #d4d4d4 10%, rgb(0 0 0 / 86%) 100%); background: #d4d4d4 !important;}
+.top-bar{ background-color:#768186 !important;}
+/* .top-bar{background: linear-gradient(90deg, #d4d4d4 10%, rgb(0 0 0 / 86%) 100%); background: #d4d4d4 !important;} */
 .top-bar span{ font-weight:400;	font-size:16px;	font-family: 'Raleway', sans-serif; color:#fff;   margin: 14px 0 0 0;  float: left;}
 .top-bar .get-touch{ float:right;}
 .top-bar .get-touch ul{ float:left;}
@@ -159,7 +159,7 @@ img:hover {transition: background-color 0.5s ease; }
 .top-bar .get-touch li i.icon-mail {  float: left;  font-size: 20px;  margin: 1px 7px 0 0;}
 .top-bar .get-touch li:last-child{ border-right: none; }
 .top-bar .social-icons li:last-child{}
-.top-bar .get-touch li a{   color: #778187;  padding: 13px 14px;  float: left;}
+.top-bar .get-touch li>a{ color: #eeeded;  padding: 13px 14px;  float: left;}
 .top-bar .get-touch li i{ font-size:18px;}
 .top-bar .get-touch .social-icons { float:left;}
 .top-bar .get-touch .social-icons li a{ padding:13px 10px;}
@@ -206,7 +206,7 @@ img:hover {transition: background-color 0.5s ease; }
 /*..... SERVICES ONE ......*/
 
 .content{ margin:0 0 0 0;}
-.services-one{padding: 90px 0 35px 0;}
+.services-one{padding: 1rem 0 3rem 0;}
 .services-one .service-sec{
 	display: flex;
     padding: 1rem;
@@ -220,7 +220,7 @@ img:hover {transition: background-color 0.5s ease; }
 }
 .services-one .service-sec .icon{ width:96px; height:96px; border-radius: 7px; text-align:center;}
 .services-one .service-sec .icon i{color: #fff;  font-size: 48px;  text-shadow: 0 5px 0 rgba(0, 0, 0, 0.15);  margin: 22px 0 0 0;  display: block;}
-.services-one .service-sec .detail{float: right;  width: 78%; margin:-5px 0 0 0;}
+.services-one .service-sec .detail{float: right;  width: 78%; margin:-5px 0 0 0;max-height: 15rem;}
 
 /*..... SERVICES TWO ......*/
 .services-two{padding: 90px 0 55px 0;}
