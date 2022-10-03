@@ -26,3 +26,27 @@ body {
 	background-color: rgba(0, 0, 0, 0.427);
 	color: #6ba743;
 }
+
+.services-container {
+  background-color: #778187;
+}
+
+.services-container p{
+  /* background: transparent; */
+  font-weight: 500;
+  color: white;
+}
+
+.services-container h3,h4{
+  font-weight: 600;
+}
+
+.service-procedure-item {
+  max-width: 60rem;
+  margin: 1rem auto;
+}
+
+.service-procedure-item img {
+  width: 60px;
+  float: left;
+}

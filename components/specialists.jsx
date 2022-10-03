@@ -1,5 +1,6 @@
 import styles from './styles/styles.module.css';
 import { teamCards } from '../utils/uiConstants';
+import Image from 'next/image';
 
 const Specialists = () => {
 

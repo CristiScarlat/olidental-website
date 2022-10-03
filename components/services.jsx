@@ -1,4 +1,13 @@
+import { useRouter } from "next/router";
+
 const Services = () => {
+
+  const router = useRouter();
+
+  const handleRedirect = (id) => {
+    router.push(`/service/${id}`)
+  }
+
   return (
     <div className="services-one">
       <div className="container">
@@ -14,7 +23,7 @@ const Services = () => {
                 <p>Un zâmbet impecabil, cu aspect natural, armonizat cu trăsăturile feței pacientului se poate obține prin proceduri cosmetice specifice: albirea dinților, fațete si coroane dentare, implanturi și tratamente ortodontice. </p>
               </div>
             </div>
-            <button className="read-more-button">Află mai mult</button>
+            <button className="read-more-button" onClick={() => handleRedirect(0)}>Află mai mult</button>
           </div>
 
           <div className="col-md-4 text-center">
@@ -28,7 +37,7 @@ const Services = () => {
                 <p>Implantologia orală reprezintă, de obicei, soluția ideală pentru înlocuirea dinților lipsă în cazul în care pacientul este un candidat valabil pentru implanturi dentare – lipsa dinților ducând la instabilitatea dinților existenți…</p>
               </div>
             </div>
-            <button className="read-more-button">Află mai mult</button>
+            <button className="read-more-button" onClick={() => handleRedirect(1)}>Află mai mult</button>
           </div>
 
           <div className="col-md-4 text-center">
@@ -42,7 +51,7 @@ const Services = () => {
                 <p>Cazurile de reabilitare orală complexă sunt o provocare pentru echipa Olidental Clinic. În funcție de nevoile pacientului, reabilitările orale complexe presupun un cumul de tratamente stomatologice menite să redea frumusețea …</p>
               </div>
             </div>
-            <button className="read-more-button">Află mai mult</button>
+            <button className="read-more-button" onClick={() => handleRedirect(2)}>Află mai mult</button>
           </div>
         </div>
       </div>

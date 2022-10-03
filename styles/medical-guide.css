@@ -149,7 +149,7 @@ img:hover {transition: background-color 0.5s ease; }
 
 /*..... TOP BAR ......*/
 
-.top-bar{ background-color:#768186 !important;}
+.top-bar{ background-color:#6cab44 !important;}
 /* .top-bar{background: linear-gradient(90deg, #d4d4d4 10%, rgb(0 0 0 / 86%) 100%); background: #d4d4d4 !important;} */
 .top-bar span{ font-weight:400;	font-size:16px;	font-family: 'Raleway', sans-serif; color:#fff;   margin: 14px 0 0 0;  float: left;}
 .top-bar .get-touch{ float:right;}
