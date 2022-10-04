@@ -145,11 +145,55 @@ export const teamCards = {
     {
       id: 1,
       title: "Implantologie orală",
-      description: "Implantologia orală reprezintă, de obicei, soluția ideală pentru înlocuirea dinților lipsă în cazul în care pacientul este un candidat valabil pentru implanturi dentare – lipsa dinților ducând la instabilitatea dinților existenți…"
+      logo: "/images/logos/implant.png.webp",
+      description: "Implantologia orală reprezintă, de obicei, soluția ideală pentru înlocuirea dinților lipsă în cazul în care pacientul este un candidat valabil pentru implanturi dentare – lipsa dinților ducând la instabilitatea dinților existenți, la degradarea sănătății osoase și gingivale și chiar la îmbătrânirea prematură.\
+      Implantul constituie un tratament minim invaziv, care presupune introducerea rădăcinii artificiale în osul mandibular sau maxilar, fără a afecta dinții din vecinătate. De reținut că este nevoie uneori de adiții sau augmentări de țesut moale sau dur. Intervenția are o durată mică și este nedureroasă, iar vindecarea este una rapidă.\
+      Implanturile imită dinții naturali atât în ceea ce privește aspectul, cât și funcționalitatea, redând astfel sănătatea zâmbetului.\
+      Implanturile dentare au o stabilitate superioară și prezintă nenumărate beneficii pe termen lung. În plus, cel mai mare avantaj al implanturilor dentare este că pot fi realizate într-o singură vizită la cabinet, pacientul putând să își reia în cel mai scurt timp posibil activitățile obișnuite.\
+      Olidental Clinic oferă certificate de autenticitate, garantând astfel calitatea superioară a implantului dentar și oferind o garanție de 10 ani.",
+      procedures: [
+        {
+          title: "Inserare de implanturi și adiții de os",
+          logo: "/images/logos/implant.png.webp",
+          description: "Implanturile dentare constituie soluția ideală pentru înlocuirea dinților lipsă, dacă pacientul este un candidat valabil. Inserarea implanturilor dentare și a adițiilor de os se realizează în cadrul unor intervenții chirurgicale, după analiza ofertei osoase.\
+          În cazul în care cantitatea osoasă este insuficientă se decide asupra efectuării unor adiții de os. Implanturile dentare utilizate în cadrul Olidental Clinic sunt durabile, sigure și eficiente.\
+          După inserarea implantului, are loc procesul de osteointegrare, cu o durată diferită în funcție de particularitățile fiecarui caz (2-6 luni).\
+          Următoarea etapă o constituie atașarea componentelor protetice si realizarea unor restaurări provizorii sau finale în funcție de situație. Restaurările finale pot fi sub formă de coroană unidentară sau punte între mai multe implanturi."
+        },
+        {
+          title: "Restaurări protetice pe implanturi",
+          logo: "/images/logos/restaurari.png.webp",
+          description: "Prin restaurările protetice pe implanturi se redă integritatea arcadelor dentare și reprezintă o soluție ideală în cazul pierderii dinților, care functionează pe termen lung.\
+          Dacă pacientul este validat pentru intervenție, se realizează inserarea de implanturi dentare, urmată de fixarea restaurărilor. Acestea pot fi de mai multe tipuri, fixe, sau mobilizabile, fixate prin cimentare sau cu ajutorul unor șuruburi de fixare la implantruri."
+        }
+      ]
     },
     {
       id: 2,
       title: "Reabilitări orale complexe",
-      description: "Cazurile de reabilitare orală complexă sunt o provocare pentru echipa Olidental Clinic. În funcție de nevoile pacientului, reabilitările orale complexe presupun un cumul de tratamente stomatologice menite să redea frumusețea …"
+      logo: "/images/logos/protetica.png.webp",
+      description: "Cazurile de reabilitare orală complexă sunt o provocare pentru echipa Olidental Clinic. În funcție de nevoile pacientului, reabilitările orale complexe presupun un cumul de tratamente stomatologice menite să redea frumusețea zâmbetului și sănătatea orală.",
+      procedures: [
+        {
+          title: "Protetică dentară și implantologică",
+          logo: "/images/logos/protetica.png.webp",
+          description: "Integritatea arcadelor dentare se poate restabili prin restaurări protetice, dentare și implantologice, precum proteze fixe sau mobile, fațete dentare, coroane dentare, incrustații, punți dentare și lucrări complexe protetice pe implanturi.\
+          Pacienții își recapătă încrederea în sine, sănătatea orală și adesea sănătatea generală, pe lângă capacitatea de a consuma alimente fără prea multe restricții și pe lângă posibilitatea de a zâmbi fără autocenzură. "
+        },
+        {
+          title: "Tratamente parodontale",
+          logo: "/images/logos/tratament.png.webp",
+          description: "Boala parodonatală este una dintre cele mai raspandite afecțiuni la nivel global, constituind una dintre principalele cauze ale pierderii premature a dinților.\
+          În principiu, se manifestă prin inflamarea și înroșirea țesuturilor moi care înconjoară dintele, iar în timp, apar probleme precum sângerarea gingiilor, retracția gingivală, dureri și sensibilitate dentară,  mobilitatea dinților pe arcadă, culminând cu pierderea acestora.\
+          La Olidental Clinic, detectăm afecțiunile gingivale și pierderile osoase și stabilim un tratament corespunzător. Recomandăm, de asemenea, efectuarea unui control de rutină periodic în vederea identificării eventualelor probleme parodontale și păstrării sănătății orale"
+        },
+        {
+          title: "Reabilitarea funcțională a rapoartelor interdentare și interarcadice",
+          logo: "/images/logos/reabilitari-1.png.webp",
+          description: "Un zâmbet frumos trebuie să fie și unul sănătos, de aceea nu este suficient ca dinții să arate bine – aceștia trebuie să se integreze optim și să ofere confort pacientului.\
+          Funcționalitatea este dată de integritatea dinților, de armonia relațiilor dintre cele două arcade dentare, de contactele echilibrate dintre dinți în masticație.\
+          Toate acestea trebuie avute în vedere când se realizează o reabilitare orală și se pune în aplicare planul protetic, pentru că rezultatul final să fie atât estetic cât și funcțional, iar rezultatele să se păstreze cât mai mult timp."
+        }
+      ]
     }
   ]
