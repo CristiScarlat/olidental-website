@@ -14,16 +14,16 @@ const TeamMemberDetails = ({ data }) => {
                 {data?.services?.length > 0 && <>
                 <strong>Specializari:</strong>
                 <ul className="mt-2">
-                    {data.specializations.map(specialization => (
-                        <li>{specialization}</li>
+                    {data.specializations.map((specialization, index) => (
+                        <li key={specialization+index}>{specialization}</li>
                     ))}
                 </ul>
                 </>}
                 {data?.services?.length > 0 && <>
                     <strong>Servicii:</strong>
                     <ul>
-                        {data.services.map(service => (
-                            <li>{service}</li>
+                        {data.services.map((service, index) => (
+                            <li key={service+index}>{service}</li>
                         ))}
                     </ul>
                 </>}

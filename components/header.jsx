@@ -20,7 +20,7 @@ const Header = () => {
                             <Link href="/"><a className={`${styles["header-custom-link"]} text-uppercase ${router.pathname === '/' ? 'active' : ''}`} aria-current="page">Acasă</a></Link>
                         </li>
                         <li className="nav-item me-4 li-link">
-                            <a href="/service" className={`${styles["header-custom-link"]}  text-uppercase ${router.pathname === '/services' ? 'active' : ''}`}>Servicii</a>
+                        <Link href="/service"><a className={`${styles["header-custom-link"]}  text-uppercase ${router.pathname === '/services' ? 'active' : ''}`}>Servicii</a></Link>
                         </li>
                         <li className="nav-item me-4 li-link">
                             <Link href="/team"><a className={`${styles["header-custom-link"]}  text-uppercase ${router.pathname === '/about' ? 'active' : ''}`}>Echipa</a></Link>
