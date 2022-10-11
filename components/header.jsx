@@ -20,10 +20,10 @@ const Header = () => {
                             <Link href="/"><a className={`${styles["header-custom-link"]} text-uppercase ${router.pathname === '/' ? 'active' : ''}`} aria-current="page">Acasă</a></Link>
                         </li>
                         <li className="nav-item me-4 li-link">
-                            <a href="#services" className={`${styles["header-custom-link"]}  text-uppercase ${router.pathname === '/services' ? 'active' : ''}`}>Servicii</a>
+                            <a href="/service" className={`${styles["header-custom-link"]}  text-uppercase ${router.pathname === '/services' ? 'active' : ''}`}>Servicii</a>
                         </li>
                         <li className="nav-item me-4 li-link">
-                            <Link href="#team"><a className={`${styles["header-custom-link"]}  text-uppercase ${router.pathname === '/about' ? 'active' : ''}`}>Echipa</a></Link>
+                            <Link href="/team"><a className={`${styles["header-custom-link"]}  text-uppercase ${router.pathname === '/about' ? 'active' : ''}`}>Echipa</a></Link>
                         </li>
                         <li className="nav-item me-4 li-link">
                             <Link href="#contact"><a className={`${styles["header-custom-link"]}  text-uppercase ${router.pathname === '/contact' ? 'active' : ''}`}>Contact</a></Link>

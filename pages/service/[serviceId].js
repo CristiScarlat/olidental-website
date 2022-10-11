@@ -5,6 +5,8 @@ const Service = () => {
     const router = useRouter();
     const { serviceId } = router.query;
     return (
+        <>
+        <hr/>
         <div className="services-container text-center p-4">
             <img src={services[serviceId]?.logo || ''} alt="..." style={{ width: "120px" }} />
             <h3>{services[serviceId]?.title || ''}</h3>
@@ -22,6 +24,7 @@ const Service = () => {
                 ))}
             </div>
         </div>
+        </>
     )
 }
 

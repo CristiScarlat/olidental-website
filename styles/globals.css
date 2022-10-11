@@ -27,27 +27,39 @@ body {
   color: #6ba743;
 }
 
-.services-container {
-  background-color: #778187;
+.read-more-button.read-more-button-fixed {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
 }
 
-.services-container p {
+.services-container {
+  /* background-color: #778187; */
+  color: #eeeded;
+}
+
+.services-container > p {
   /* background: transparent; */
   font-weight: 500;
-  color: white;
+  color: #778187;
 }
 
 .services-container h3,
 h4 {
   font-weight: 600;
+  color: #778187;
+  margin: 1rem 0;
 }
 
 .service-procedure-item {
-  max-width: 60rem;
+  max-width: 70rem;
   margin: 1rem auto;
   border: 1px solid #6a7175;
   padding: 1rem;
   border-radius: 10px;
+  background-color: #778187;
+  min-height: 15rem;
 }
 
 .service-procedure-item img {
@@ -57,7 +69,28 @@ h4 {
   margin-bottom: 1rem;
 }
 
-.service-procedure-item>p{
+.service-procedure-item > p {
   text-align: left;
   text-align: start;
+  color: #eeeded;
+  font-weight: 400;
+}
+
+.service-procedure-item > h4 {
+  color: #eeeded;
+}
+
+.team-member-container {
+  background-color: #778187;
+  padding: 1rem;
+  border-radius: 10px;
+  color: #eeeded;
+}
+
+.team-member-container p {
+  font-weight: 400;
+}
+
+.team-member-container img {
+  border-radius: 10px;
 }
