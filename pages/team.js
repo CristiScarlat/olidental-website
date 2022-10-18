@@ -7,7 +7,7 @@ const TeamMemberDetails = ({ data }) => {
     return (
         <div className="team-member-container row m-3" style={{ maxWidth: 2000 }}>
             <div className="col-md-3">
-                <Image src={data.img} width={320} height={480} />
+                <Image src={data.img} width={320} height={480} placeholder="blur" blurDataURL="/images/blur.jpg"/>
             </div>
             <div className="col-md-9">
                 <div dangerouslySetInnerHTML={{ __html: data.body }}></div>
