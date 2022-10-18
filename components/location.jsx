@@ -31,16 +31,14 @@ const Location = () => {
         </div>
       </div>
       <div className="ps-5 pe-5 w-100">
-        <iframe
-          width="100%"
-          height="400"
-          id="gmap_canvas"
-          src="https://maps.google.com/maps?q=Strada%20%C8%98tefan%20cel%20Mare%2053&t=&z=17&ie=UTF8&iwloc=&output=embed"
-          frameBorder="0"
-          scrolling="no"
-          marginHeight="0"
-          marginWidth="0"
-        ></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2783.9932384952626!2d21.2523657!3d45.7512815!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4745679c71dd9307%3A0xa38a47dc4d8638f8!2sOlidental%20Clinic!5e0!3m2!1sen!2sro!4v1666078254839!5m2!1sen!2sro" 
+      width="100%" 
+      height="450" 
+      style={{border: 0}}
+      allowFullscreen="" 
+      loading="lazy" 
+      referrerPolicy="no-referrer-when-downgrade">
+      </iframe>
       </div>
     </div>
   );

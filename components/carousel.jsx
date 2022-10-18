@@ -100,15 +100,15 @@ const CustomCarousel = ({ showThumbs = true }) => {
       swipeScrollTolerance={50}
     >
       <div>
-        <img src="images/Photo-431.jpg" alt="..." height={748} style={{ objectFit: 'cover' }} />
+        <img src="images/carousel-1.jpg" alt="..." height={748} style={{ objectFit: 'cover' }} />
         <CarouselLegendContent index={0} />
       </div>
       <div>
-        <img src="images/Photo-360.jpg" height={748} style={{ objectFit: 'cover' }} />
+        <img src="images/carousel-2.jpg" height={748} style={{ objectFit: 'cover' }} />
         <CarouselLegendContent index={1} />
       </div>
       <div>
-        <img src="images/Photo-588.jpg" height={748} style={{ objectFit: 'cover' }} />
+        <img src="images/carousel-3.jpg" height={748} style={{ objectFit: 'cover' }} />
         <CarouselLegendContent index={2} />
       </div>
     </Carousel>

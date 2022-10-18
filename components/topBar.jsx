@@ -18,17 +18,17 @@ const TopBar = () => {
                 </a>
               </li>
               <li>
-                <a href="#." className="fb">
+                <a href="https://www.facebook.com/OlidentalClinic/" className="fb">
                   <ImFacebook />{' '}
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#." className="tw">
                   <ImTwitter />{' '}
                 </a>
-              </li>
+              </li> */}
               <li>
-                <a href="#." className="gp">
+                <a href="https://www.instagram.com/olidental.clinic/" className="gp">
                   <ImInstagram />{' '}
                 </a>
               </li>
