@@ -5,13 +5,14 @@ import { teamCards } from "../utils/uiConstants";
 
 const TeamMemberDetails = ({ data }) => {
     return (
-        <div className="team-member-container row m-3" style={{ maxWidth: 2000 }}>
+        <div className="team-member-container row mb-3 m-auto" style={{ maxWidth: 1500 }}>
             <div className="col-md-3">
                 <Image src={data.img} width={320} height={480} placeholder="blur" blurDataURL="/images/blur.jpg"/>
             </div>
             <div className="col-md-9">
-                <div dangerouslySetInnerHTML={{ __html: data.body }}></div>
-                {data?.services?.length > 0 && <>
+                <h4 className="text-white">{data.title}</h4>
+                <div className="mb-3" dangerouslySetInnerHTML={{ __html: data.body }}></div>
+                {data?.specializations?.length > 0 && <>
                 <strong>Specializari:</strong>
                 <ul className="mt-2">
                     {data.specializations.map((specialization, index) => (
@@ -47,7 +48,7 @@ const Team = () => {
         <>
             {teamCards.length > 0 && teamCards?.map(teamMember => (
                 <div key={teamMember.title} ref={ref => { teamMemberContainerRef.current[teamMember?.title] = ref }}>
-                    <hr />
+                    {/* <hr /> */}
                     <TeamMemberDetails data={teamMember}/>
                 </div>
             ))}

@@ -1,7 +1,9 @@
 export const teamCards = [
   {
-    title: "Dr. Olimpiu L. Karancsi",
-    body: "<p><strong>Dr. Olimpiu Ladislau Karancsi</strong>, fondatorul Olidental Clinic, consideră că este important să păstrezi o armonie între funcționalitate și estetică, între dorințele fiecărui pacient, viziune, fizionomie și (ceea ce permite ) ….&nbsp; Cei 18 ani de experiență în implantologie, protetică dentară și chirurgie dento-alveolară i-au format o viziune de perfecționism și devotament față de cei care îi trec pragul cabinetului: pacienți mai încrezători, cu zâmbete sănătoase și frumoase pentru pacienții de orice vârstă. Cazurile extrem de dificile duse la un sfârșit exemplar i-au construit o reputație de doctor excepțional. Perseverența, echilibrul și abordarea onestă conturează <em>relația cu pacienții săi</em>.&nbsp;&nbsp;</p>",
+    title: "Dr. Olimpiu Ladislau Karancsi",
+    body: `<p><span  style="margin-left: 2rem;"></span>Dl. Dr. Karancsi a infiintat familia Olidental Clinic din dorinta de a-si exprima viziunea perfectionista, combinata cu functionalitatea si estetica.</p>
+    <p><span  style="margin-left: 2rem;"></span>Dr. Karancsi este un medic devotat vocatiei sale si mereu pregatit de noi provocari.</p>
+    <p><span  style="margin-left: 2rem;"></span>Rezolvarea cazurilor dificile este punctul lui forte, sustinand ca “Nu exista probleme, ci doar solutii!”.</p>`,
     specializations: [
       "Medic primar protetică dentară",
       "Medic specialist chirurgie dento-alveolară ",
@@ -20,11 +22,13 @@ export const teamCards = [
   },
   {
     title: "Dr. Paula Derban",
-    body: "<p>În cei 15 ani de experiență de practică stomatologică, <strong>Dr. Paula Derban</strong> a dezvoltat o profundă atenție la detalii și la nevoile, simțămintele și dorințele fiecărui pacient în parte. Fire optimistă, păstrează un echilibru între seriozitate și bună dispoziție. Și-a impus standarde ridicate ale muncii, crezând în importanța abordării holistice a fiecărui pacient în parte.&nbsp;</p>",
+    body: `<p><span  style="margin-left: 2rem;"></span>Dr. Derban, are o experienta in domeniul stomatologic de 17 ani.</p>
+    <p><span  style="margin-left: 2rem;"></span>Timp in care si-a dezvoltat abilitatea de a-si contopi viziunea creativa cu dorintele si nevoile clinice ale pacientului, astfel incat rezultatele sa fie de exceptie.<p>
+    <p><span  style="margin-left: 2rem;"></span>Profunda atentie la detalii si simtul umorului ale Dnei Dr. Derban, ii determina pe pacienti sa se simta parte din familia Olidental Clinic.</p> 
+    <p><span  style="margin-left: 2rem;"></span>Dna. Dr. este o fire optimistă si păstrează un echilibru între seriozitate și bună dispoziție.</p>`,
     specializations: [
       "Medic primar protetică dentară",
       "Atestat implantologie orală",
-      'Asistent universitar Restaurări protetice pe implante UMF “Victor Babeș” Timișoara"'
     ],
     services: [
       'Protetică dentară',
@@ -36,69 +40,87 @@ export const teamCards = [
   },
   {
     title: "Dr. Anda Nicola",
-    body: "<p><strong>Dr. Anda Nicola</strong>, medic dentist cu experiență de 17 ani, se ocupă în mod exclusiv de stomatologia pediatrică de 7 ani. Pasiunea pentru această ramură a fost susținută de numeroase cursuri de specializare și simpozioane dedicate la care a participat. Faptul că este, la rândul ei, mamă a ajutat să creeze legături frumoase și de încredere cu micii pacienți și cu părinții lor. Empatia, abordarea caldă și înțelegerea mecanismelor psihologice îi determină pe copiii care îi trec pragul să o îndrăgească și să revină fără frică în cabinet. </p>",
+    body: `<p><span  style="margin-left: 2rem;"></span>Dr. Anda, este medic dentist cu experiență de 19 ani.
+    Dna. Dr.,  se ocupă în mod exclusiv de stomatologia pediatrică de 9 ani.</p>
+    <p><span  style="margin-left: 2rem;"></span>Pasiunea pentru această ramură a fost susținută de numeroase cursuri de specializare și simpozioane dedicate la care a participat.</p>
+    <p><span  style="margin-left: 2rem;"></span>Faptul că este la rândul ei mamă, a ajutat-o să creeze legături frumoase și de încredere cu micii pacienți și cu părinții lor.<p/> 
+    <p><span  style="margin-left: 2rem;"></span>Empatia, abordarea caldă și înțelegerea mecanismelor psihologice, îi determină pe copiii care îi trec pragul să o îndrăgească și să revină fără frică în cabinet.</p> `,
     specializations: [
       "Medic dentist pedodonție (stomatologie pediatrică)",
     ],
     services: [
-      'Pedodonție',
+      'Tratamente pedododontice',
     ],
     img: "/images/team/dr.-Anda-Nicola-medic-new.jpg",
   },
   {
     title: "Dr. Diana Rada Bârsan",
-    body: "<p><strong>Dr. Diana Rada Bârsan</strong> este medic specialist ortodont. De 10 ani se ocupă în mod exclusiv de tratamentele ortodontice. <br/>O fire comunicativă, atentă la nevoile fiecărui pacient, indiferent de vârstă. Îi îndrumă să aleagă cea mai potrivită variantă de tratament.</p>",
-    specializations: ["Medic specialist ortodont."],
-    services: [],
+    body: `<p><span  style="margin-left: 2rem;"></span>Dna. Dr. Bârsan, este un medic indragit de catre toti pacientii, de la mic la mare.</p>
+    <p><span  style="margin-left: 2rem;"></span>Dr. Diana, are o experienta de 12 ani in domeniul stomatologic. Fiind medic specialist ortodont, se ocupă în mod exclusiv de tratamentele ortodontice si aduce “ordine si disciplina” in zambetul tuturor.</p>
+
+    <p><span  style="margin-left: 2rem;"></span>O fire comunicativă, atentă la nevoile fiecărui pacient, obisnuieste sa va indrume spre alegerea celei mai potrivite variante de tratament.</p>`,
+    specializations: ["Medic dentist ortodont"],
+    services: ['Tratamente ortodontice'],
     img: "/images/team/Diana-Barsan-new.jpg",
   },
   {
     title: "Dr. Alina-Florentina Anechitei",
-    body: "<p><strong>Dr. Alina-Florentina Anechitei</strong>, medic rezident stomatologie generală, aduce un plus de empatie în cadrul clinicii. Calmă și emanând siguranță de sine, se dedică bunăstării și confortului pacientului.&nbsp;</p>",
-    specializations: ["Medic rezident stomatologie generală"],
-    services: [],
+    body: `<p><span  style="margin-left: 2rem;"></span>Dr. Anechitei este medic stomatolog cu o experienta de 2 ani.</p>
+    <p><span  style="margin-left: 2rem;"></span>Dna. Dr., emana o energie debordanta si este un medic devotat vocatiei, astfel incat reusete sa stabileasca o conexiune imediata cu pacientii, empatizand cu nevoile lor.</p>
+    <p></span>Atenta si la cele mai mici detalii, reuseste sa fie in ascensiune vocationala; participand la congrese cu scopul de a-si perfectiona serviciile stomatologice oferite.</p>`,
+    specializations: ["Medicina stomatologie generala"],
+    services: ['Tratamente stomatologice/terapie'],
     img: "/images/team/dr.-Alina-Anechitei-medic-new.jpg",
   },
   {
     title: "Dr. Ana Tunaru ",
-    body: "<p><strong>Dr. Ana Tunaru</strong> este absolventă a Facultății de Medicină Dentară din Timișoara.<br>Cu o experiență de 3 ani în domeniu, Dr. Ana și-a descoperit pasiunea pentru endodonție, în prezent urmând programul de Rezidențiat, ramura – Endodonție. Fiind o fire meticuloasă, continuă să învețe, astfel încât participă la numeroase cursuri și workshop-uri cu scopul de a-și defini profesionalismul de care dă dovadă.</p>",
-    specializations: ["Medic stomatolog endodontie"],
-    services: [],
+    body: `<p><span  style="margin-left: 2rem;"></span>Dr. Tunaru, este absolventă a Facultății de Medicină Dentară din Timișoara.</p>
+    <p><span  style="margin-left: 2rem;"></span>Cu o experiență de aproximativ 5 ani în domeniu, Dr. Ana și-a descoperit pasiunea pentru endodonție, asa ca a ales sa termine aceasta specializare.</p>
+    <p><span  style="margin-left: 2rem;"></span>Fiind o fire meticuloasă, continuă să învețe, astfel încât participă la numeroase cursuri și workshop-uri cu scopul de a-și defini profesionalismul de care dă dovadă.</p>`,
+    specializations: ["Medicina stomatologie generala", "Endodontie"],
+    services: ["Tratamente endodontice"],
     img: "/images/team/Tunaru-Ana-new.jpg",
   },
   {
-    title: "Adela Dăogaru",
-    body: "<p><strong>Adela Daogaru</strong>, Asistent Medical Generalist / Stomatologie, este apreciată de pacienți și de echipă pentru empatie, conștiinciozitate și seriozitate. Are o experiență de 3 ani în domeniu.</p>",
+    title: "Asistent Medical Adela Daogaru",
+    body: `<p><span  style="margin-left: 2rem;"></span>Adela, este Asistent medical si este o persoana serioasa, constiincioasa, perseverenta, ambitioasa si foarte dedicata meseriei.</p>
+    <p><span  style="margin-left: 2rem;"></span>Cu o experienta de 5 ani in domeniul stomatologiei, a reusit performante impresionante, muncind, invatand si dedicandu-si timpul exclusiv perfectionarii. Avand numeroase responsabilitati, reuseste sa gestioneze lucrurile chiar si in situatii dificile.</p>
+    <p><span  style="margin-left: 2rem;"></span>Pacientii si echipa o apreciaza foarte mult pentru calitatile sale atat profesionale cat si umane.</p>`,
     specializations: ["Asistent Medical Generalist / Stomatologie"],
     services: [],
     img: "/images/team/Adela-Daogaru-asistenta-new.jpg",
   },
   {
-    title: "Andreea Chifa",
-    body: "<p><strong>Andreea Chifa</strong> este asistent medical generalist cu o experiență de 2 ani în domeniul stomatologic.&nbsp; <br/>În acești 2 ani de experiență, Andreea și-a dezvoltat abilitatea de a empatiza atât cu pacienții adulți, cât și cu cei mici. Blândețea și receptivitatea față de nevoile pacienților sunt calitățile pentru care este îndrăgită de cei care ne trec pragul.</p>",
+    title: "Asistent Medical Andreea Chifa",
+    body: `<p><span  style="margin-left: 2rem;"></span>Andreea, este asistent medical generalist cu o experiență de 4 ani în domeniul stomatologic.</p> 
+    <p><span  style="margin-left: 2rem;"></span>În acești 4 ani de experiență, Andreea și-a dezvoltat abilitatea de a empatiza atât cu pacienții adulți, cât și cu cei mici.</p>
+    <p><span  style="margin-left: 2rem;"></span>Blândețea și receptivitatea față de nevoile pacienților sunt calitățile pentru care este îndrăgită de catre toti pacientii.</p>`,
     specializations: ["Asistent medical generalist"],
     services: [],
     img: "/images/team/Chifa-Andreea-new.jpg",
   },
   {
-    title: "Shiha Iustina",
-    body: "<p><strong>Shiha IustinaAsistent</strong>  medical generalist</p>",
+    title: "Asistent Medical Shiha Iustina",
+    body: `<p><span  style="margin-left: 2rem;"></span>Iustina, este asistent medical generalist, cu o experienta in domeniu de 9 ani.</p>
+    <p><span  style="margin-left: 2rem;"></span>Avand experienta atat in cabinetele din Romania, cat si in alte tari, Iustina ofera un plus de energie si empatie in clinica noastra. Este indragita de pacienti pentru carisma si profesionalism.</p>`,
     specializations: ["Asistent medical generalist"],
     services: [],
     img: "/images/team/Shiha-Iustina.jpg",
   },
   {
-    title: "Cătălina Mădălina",
-    body: "<p><strong>Cătălina Mădălina</strong>, inginer în economie și management (agricol), și-a descoperit înclinația spre domeniul relațiilor publice acum câțiva ani. Iubește oamenii, dorind să ajute și să facă fiecare experiență a pacienților în cadrul Olidental Clinic cât mai agreabilă. Cu o experiență în domeniul PR de 5 ani, Cătălina este o persoană optimistă, amabilă și mereu cu zâmbetul pe buze (chiar și pe sub mască). Calmul și carisma ei o fac perfectă pentru rolul ei la noi în clinică.&nbsp;</p>",
-    specializations: ["Engineer", "Public relations"],
-    services: ["Public relations"],
+    title: "Catalina Madalina – Manager",
+    body: `<p><span  style="margin-left: 2rem;"></span>Catalina, are o experienta de 7 ani in domeniul relatiilor publice. A absolvit facultatea de Management si a terminat Masterul in Administrarea Afacerilor.</p>`,
+    specializations: [],
+    services: [],
     img: "/images/team/Madalina-Catalina-pr-new.jpg",
   },
   {
     title: "Spîrlea Adriana",
-    body: "<p><strong>Spîrlea Adriana</strong>, Asistent Manager</p>",
-    specializations: ["Asistent Manager"],
-    services: ["Asistent Manager"],
+    body: `<p><span  style="margin-left: 2rem;"></span>Adriana, a absolvit facutlatea de Relatii Publice si Comunicare. Fiind Specialist PR, devine persoana responsabila de prima impresie pe care si-o construiesc pacientii, deoarece este primul contact dintre pacient si clinica.</p>
+    <p><span  style="margin-left: 2rem;"></span>Pasiunea de a ajuta si de a le oferi oamenilor sprijin, o face sa devina cel mai indragit personaj de catre pacientii si echipa Olidental.</p> 
+    <p><span  style="margin-left: 2rem;"></span>In cei 10 ani de experienta , a dobandit excelente abilitati de comunicare si empatie, reusind astfel sa fie orientata in exclusivitate catre pacienti si nevoile lor.</p>`,
+    specializations: [],
+    services: [],
     img: "/images/team/Spîrlea-Adriana.jpg",
   }
 ];
