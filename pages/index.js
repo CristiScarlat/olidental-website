@@ -3,7 +3,7 @@ import Specialists from '../components/specialists';
 import Services from '../components/services';
 import Location from '../components/location';
 
-export default function Home() {
+const Home = () => {
   return (
     <>
         <CustomCarousel showThumbs={false} />
@@ -13,3 +13,5 @@ export default function Home() {
     </>
   )
 }
+
+export default Home;

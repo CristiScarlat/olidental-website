@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./header";
 import Footer from "./footer";
-import { Helmet } from "react-helmet";
+import Head from "next/head";
 //import CookieConsent from "react-cookie-consent";
 import TopBar from "./topBar";
 
@@ -34,7 +34,7 @@ const Layout = ({ children }) => {
   
   return (
     <>
-      <Helmet>
+      <Head>
         <meta charSet="utf-8" />
         <title>Olidental Clinic Timișoara - Servicii stomatologice premium în Timișoara</title>
         <link rel="canonical" href="https://www.olidental.ro/" />
@@ -42,7 +42,8 @@ const Layout = ({ children }) => {
         {/*HTML Meta Tags*/}
         <meta
           name="description"
-          content="Personal website of Phd artist Oana Blog-Bleich displaying Oil on canvas and mixed technics art items."
+          content="Echipa noastră de medici experți este pregătită să răspundă celor mai dificile provocări de la pacienții noștri."
+
         />
         {/*Facebook Meta Tags*/}
         <meta property="og:url" content="https://www.olidental.ro" />
@@ -72,7 +73,7 @@ const Layout = ({ children }) => {
           name="twitter:image"
           content='/Photo-431.jpg'
         />
-      </Helmet>
+      </Head>
       <TopBar />
       <Header />
       <main  className="content">{children}</main>

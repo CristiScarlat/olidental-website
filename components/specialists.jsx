@@ -23,7 +23,8 @@ const Specialists = () => {
             <div key={obj.title + index} className="post item" style={{maxWidth: '20rem'}}>
               <div className="gallery-sec">
                 <div className="image-hover img-layer-slide-left-right">
-                <Image src={obj.img} width={320} height={480} placeholder="blur" blurDataURL="/images/blur.jpg" objectFit/>
+                {/* <Image src={obj.img} width={320} height={480} placeholder="blur" blurDataURL="/images/blur.jpg" objectFit/> */}
+                <img src={obj.img} width={320} height={480} />
                   <div className="layer d-flex flex-column justify-content-center p-4">
                     {obj.specializations?.map(specializare => (
                       <p key={specializare} style={{color: '#fff'}} className="m-3">{specializare}</p>
