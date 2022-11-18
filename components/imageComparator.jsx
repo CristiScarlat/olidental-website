@@ -14,7 +14,7 @@ const ImageComparator = ({ images, maxWidth = 400 }) => {
   const imageRef = useRef();
 
   useEffect(() => {
-    setDeviderHeight(imageRef.current?.clientHeight || 0);
+    setDeviderHeight(imageRef.current.clientHeight);
     setDeviderXPos(imageRef.current.clientWidth/2)
     console.dir(imageRef.current)
   }, []);
@@ -31,7 +31,7 @@ const ImageComparator = ({ images, maxWidth = 400 }) => {
     }
   };
 
-  console.log(deviderGrab)
+  console.log(deviderHeight)
 
   return (
     <div style={{ maxWidth }} className={styles.imageComparatoContainer} onMouseMove={handleDeviderMove} onTouchMove={handleDeviderMove}>
