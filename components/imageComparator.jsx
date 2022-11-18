@@ -1,5 +1,4 @@
-import { useEffect } from 'react';
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import styles from './styles/styles.module.css';
 
 const ImageComparator = ({ images, maxWidth = 400 }) => {
@@ -14,9 +13,8 @@ const ImageComparator = ({ images, maxWidth = 400 }) => {
   const imageRef = useRef();
 
   useEffect(() => {
-    setDeviderHeight(imageRef.current.clientHeight);
-    setDeviderXPos(imageRef.current.clientWidth/2)
-    console.dir(imageRef.current)
+    setDeviderHeight(imageRef.current.clientHeight || 200);
+    setDeviderXPos(imageRef.current.clientWidth/2);
   }, []);
 
   const handleDeviderMove = (e) => {
@@ -24,14 +22,11 @@ const ImageComparator = ({ images, maxWidth = 400 }) => {
     if(e.clientX)cursorXPos = e.clientX;
     else if(e.touches)cursorXPos = e.touches[0].pageX;
     if (deviderGrab && cursorXPos - imageRef.current.x >= 2 && cursorXPos - imageRef.current.x <= maxWidth - 3) {
-      console.log(cursorXPos - imageRef.current.x, ((cursorXPos - imageRef.current.x) * 100) / 400);
       const xPosProc = ((cursorXPos - imageRef.current.x) * 100) / imageRef.current.clientWidth;
       setDeviderXPos(cursorXPos - imageRef.current.x);
       setImgClip(([`${100-xPosProc}% 0, 100% 0, 100% 100%, ${100-xPosProc}% 100%'`, `${xPosProc}% 0, 100% 0, 100% 100%, ${xPosProc}% 100%`]))
     }
   };
-
-  console.log(deviderHeight)
 
   return (
     <div style={{ maxWidth }} className={styles.imageComparatoContainer} onMouseMove={handleDeviderMove} onTouchMove={handleDeviderMove}>
