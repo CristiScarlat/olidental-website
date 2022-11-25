@@ -4,7 +4,7 @@ import { beforeAfter } from "../utils/uiConstants";
 const Results = () => {
     return (
         <>
-        <hr/>
+        <hr className="m-0 mb-3"/>
         <div style={{maxWidth: '70rem', margin: 'auto'}}>
             {beforeAfter.map((obj, index) => (
                 <div className="row custom-gray-row mb-3 m-auto align-items-center" style={{minHeight: 300}} key={"before-after" + index}>
@@ -23,7 +23,6 @@ const Results = () => {
                     </div>
                 </div>
             ))}
-
         </div>
         </>
     )
