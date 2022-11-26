@@ -13,4 +13,4 @@ jobs:
           source-file: "_static"
           destination-path: "/"
           site-name: olidental
-          netlify-token: ${{ secrets.NETLIFY_TOKEN }}
+          netlify-token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
