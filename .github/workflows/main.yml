@@ -1,0 +1,13 @@
+- name: Upload to Netlify
+  # You may pin to the exact commit or the version.
+  # uses: MrFlynn/upload-to-netlify-action@64481cebaca554c1bf27f9e02931286b6fd5b517
+  uses: MrFlynn/upload-to-netlify-action@v2
+  with:
+    # File in the repository to upload.
+    source-file: _static
+    # Target path on the Netlify site to upload the file.
+    destination-path: /
+    # Name of the site to upload the file to.
+    site-name: olidental
+    # Token used for API access to your Netlify account.
+    netlify-token: ZzDTL5UOsqp2Ro3eQPuc2jefsCaeRUHKGCf2BsLaefQ
