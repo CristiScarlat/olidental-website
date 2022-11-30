@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import Spinner from './spinner';
+import { BsHandIndexThumb } from 'react-icons/bs';
 import styles from './styles/styles.module.css';
 
 const ImageComparator = ({ images, maxWidth = 400 }) => {
@@ -22,12 +23,19 @@ const ImageComparator = ({ images, maxWidth = 400 }) => {
   }, []);
 
   const handleDeviderMove = (e) => {
-    let cursorXPos = null;
-    if (e.clientX) cursorXPos = e.clientX;
-    else if (e.touches) cursorXPos = e.touches[0].pageX;
-    if (deviderGrab && cursorXPos - imageRef.current.x >= 2 && cursorXPos - imageRef.current.x <= maxWidth - 3) {
-      const xPosProc = ((cursorXPos - imageRef.current.x) * 100) / imageRef.current.clientWidth;
-      setDeviderXPos(cursorXPos - imageRef.current.x);
+    if (deviderGrab && e.clientX - imageRef.current.x >= 2 && e.clientX - imageRef.current.x <= maxWidth - 3) {
+      const xPosProc = ((e.clientX - imageRef.current.x) * 100) / imageRef.current.clientWidth;
+      setDeviderXPos(e.clientX - imageRef.current.x);
+      setImgClip([`${100 - xPosProc}% 0, 100% 0, 100% 100%, ${100 - xPosProc}% 100%'`, `${xPosProc}% 0, 100% 0, 100% 100%, ${xPosProc}% 100%`]);
+    }
+  };
+
+  const handleDeviderMoveOnTouch = (e) => {
+    const cursorXPos = e.touches[0].clientX - imageRef.current.x/2;
+    const imageWidth = imageRef.current.clientWidth; 
+    if (deviderGrab && cursorXPos >= 2 && cursorXPos <= imageWidth - 3) {
+      const xPosProc = (cursorXPos * 100)/ imageRef.current.clientWidth;
+      setDeviderXPos(cursorXPos);
       setImgClip([`${100 - xPosProc}% 0, 100% 0, 100% 100%, ${100 - xPosProc}% 100%'`, `${xPosProc}% 0, 100% 0, 100% 100%, ${xPosProc}% 100%`]);
     }
   };
@@ -46,7 +54,7 @@ const ImageComparator = ({ images, maxWidth = 400 }) => {
         style={{ maxWidth, maxHeight: 225, visibility: imgLoaded ? 'visible' : 'hidden', margin: 'auto' }}
         className={styles.imageComparatoContainer}
         onMouseMove={handleDeviderMove}
-        onTouchMove={handleDeviderMove}
+        onTouchMove={handleDeviderMoveOnTouch}
         onMouseUp={() => {
           if (deviderGrab) setDeviderGrab(false);
         }}
@@ -71,7 +79,8 @@ const ImageComparator = ({ images, maxWidth = 400 }) => {
             onTouchStart={() => setDeviderGrab(true)}
             onTouchEnd={() => setDeviderGrab(false)}
           >
-            <div>&#x21d5;</div>
+            {/* <div>&#x21d5;</div> */}
+            <BsHandIndexThumb />
           </div>
         </div>
       </div>
@@ -86,7 +95,7 @@ const ImageComparator = ({ images, maxWidth = 400 }) => {
           backgroundColor: '#6cab44'
         }}
       >
-        <Spinner variant="light"/>
+        <Spinner variant="light" />
       </div>
     </>
   );
