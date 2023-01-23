@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { useRouter } from 'next/router';
 import { useEffect, useRef } from "react";
 import { teamCards } from "../utils/uiConstants";
@@ -7,7 +6,7 @@ const TeamMemberDetails = ({ data }) => {
     return (
         <div className="team-member-container row mb-3 m-auto" style={{ maxWidth: 1500 }}>
             <div className="col-md-3">
-                <Image src={data.img} width={320} height={480} placeholder="blur" blurDataURL="/images/blur.jpg"/>
+                <img src={data.img} width={320} height={480} placeholder="blur"/>
             </div>
             <div className="col-md-9">
                 <h4 className="text-white">{data.title}</h4>

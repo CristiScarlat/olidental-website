@@ -1,7 +1,6 @@
 import styles from './styles/styles.module.css';
 import { teamCards } from '../utils/uiConstants';
 import { useRouter } from 'next/router';
-import Image from 'next/image';
 
 const Specialists = () => {
   const router = useRouter();
