@@ -1,9 +1,7 @@
 name: 'Deploy To Netlify'
-
 on:
   release:
     types: [published]
-
 jobs:
   deploy:
     name: 'Deploy'
