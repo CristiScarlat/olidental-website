@@ -9,6 +9,8 @@ jobs:
     runs-on: ubuntu-latest  
     steps:
     - name: build app
-      run: yarn build && yarn export
+      run:
+          cd spacebar/spacebar
+          yarn build && yarn export
 
   
