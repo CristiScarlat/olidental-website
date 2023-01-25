@@ -1,1 +1,16 @@
+on:
+  push:
+    branches:
+    - main
 
+jobs:
+  build-deploy:
+    name: Build and deploy the 56k.cloud website
+    runs-on: ubuntu-latest
+
+steps:
+  name: install netlify
+  run: npm i -g netlify
+  name: build and export statics
+  run: next build && next export
+  
