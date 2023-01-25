@@ -5,7 +5,7 @@ on:
 
 jobs:
   build-deploy:
-    name: Build and deploy the 56k.cloud website
+    name: 
     runs-on: ubuntu-latest
 
 steps:
