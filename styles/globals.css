@@ -36,13 +36,22 @@ body {
 
 .services-container {
   /* background-color: #778187; */
-  color: #eeeded;
+  /* color: #eeeded; */
 }
 
-.services-container > p {
-  /* background: transparent; */
+.services-container-description {
   font-weight: 500;
   color: #778187;
+  text-align: start;
+}
+
+.services-container-description p {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.services-container-description li {
+  list-style: initial;
 }
 
 .services-container h3,
@@ -53,27 +62,34 @@ h4 {
 }
 
 .service-procedure-item {
-  max-width: 70rem;
-  margin: 1rem auto;
-  border: 1px solid #6a7175;
-  padding: 1rem;
+  width: 20rem;
+  text-align: center;
   border-radius: 10px;
   background-color: #778187;
-  min-height: 15rem;
+  min-height: 7rem;
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 0 2rem;
 }
 
 .service-procedure-item img {
   width: 60px;
-  float: left;
+  /* float: left;
   margin-right: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1rem; */
 }
 
 .service-procedure-item > p {
-  text-align: left;
-  text-align: start;
+  text-align: center;
   color: #eeeded;
   font-weight: 400;
+  max-height: 10rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .service-procedure-item > h4 {
@@ -107,4 +123,18 @@ h4 {
   min-height: 2rem;
   border: 1px solid #eeeded;
   border-radius: 5px;
+}
+
+.bg-gray {
+  background-color: #d4d4d4 !important;
+}
+
+.carousel-wrapper {
+  padding: 1.2rem;
+}
+
+@media only screen and (max-width: 1024px){
+  .carousel-wrapper {
+    padding: 0;
+  }
 }

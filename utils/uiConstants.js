@@ -19,6 +19,7 @@ export const teamCards = [
       "Chirurgie orală"
     ],
     img: "/images/team/Dr.-Olimpiu-L.-Karancsi-new.jpg",
+    thumbnail: "/images/team/thumbnail_Dr.-Olimpiu-L.-Karancsi-new.jpg"
   },
   {
     title: "Dr. Paula Derban",
@@ -37,6 +38,7 @@ export const teamCards = [
       'Stomatologie generală'
     ],
     img: "/images/team/dr.-Paula-Derban-medic-new.jpg",
+    thumbnail: "/images/team/thumbnail_dr.-Paula-Derban-medic-new.jpg"
   },
   {
     title: "Dr. Anda Nicola",
@@ -52,6 +54,7 @@ export const teamCards = [
       'Tratamente pedododontice',
     ],
     img: "/images/team/dr.-Anda-Nicola-medic-new.jpg",
+    thumbnail: "/images/team/thumbnail_dr.-Anda-Nicola-medic-new.jpg"
   },
   {
     title: "Dr. Diana Rada Bârsan",
@@ -62,6 +65,7 @@ export const teamCards = [
     specializations: ["Medic dentist ortodont"],
     services: ['Tratamente ortodontice'],
     img: "/images/team/Diana-Barsan-new.jpg",
+    thumbnail: "/images/team/thumbnail_Diana-Barsan-new.jpg"
   },
   {
     title: "Dr. Alina-Florentina Anechitei",
@@ -71,6 +75,7 @@ export const teamCards = [
     specializations: ["Medicina stomatologie generala"],
     services: ['Tratamente stomatologice/terapie'],
     img: "/images/team/dr.-Alina-Anechitei-medic-new.jpg",
+    thumbnail: "/images/team/thumbnail_dr.-Alina-Anechitei-medic-new.jpg"
   },
   {
     title: "Dr. Ana Tunaru ",
@@ -80,6 +85,7 @@ export const teamCards = [
     specializations: ["Medicina stomatologie generala", "Endodontie"],
     services: ["Tratamente endodontice"],
     img: "/images/team/Tunaru-Ana-new.jpg",
+    thumbnail: "/images/team/thumbnail_Tunaru-Ana-new.jpg"
   },
   {
     title: "Asistent Medical Adela Daogaru",
@@ -89,6 +95,7 @@ export const teamCards = [
     specializations: ["Asistent Medical Generalist / Stomatologie"],
     services: [],
     img: "/images/team/Adela-Daogaru-asistenta-new.jpg",
+    thumbnail: "/images/team/thumbnail_Adela-Daogaru-asistenta-new.jpg"
   },
   {
     title: "Asistent Medical Andreea Chifa",
@@ -98,6 +105,7 @@ export const teamCards = [
     specializations: ["Asistent medical generalist"],
     services: [],
     img: "/images/team/Chifa-Andreea-new.jpg",
+    thumbnail: "/images/team/thumbnail_Chifa-Andreea-new.jpg"
   },
   {
     title: "Asistent Medical Shiha Iustina",
@@ -106,6 +114,7 @@ export const teamCards = [
     specializations: ["Asistent medical generalist"],
     services: [],
     img: "/images/team/Shiha-Iustina.jpg",
+    thumbnail: "/images/team/thumbnail_Shiha-Iustina.jpg"
   },
   {
     title: "Catalina Madalina – Manager",
@@ -113,6 +122,7 @@ export const teamCards = [
     specializations: [],
     services: [],
     img: "/images/team/Madalina-Catalina-pr-new.jpg",
+    thumbnail: "/images/team/thumbnail_Madalina-Catalina-pr-new.jpg"
   },
   {
     title: "Spîrlea Adriana",
@@ -122,6 +132,7 @@ export const teamCards = [
     specializations: [],
     services: [],
     img: "/images/team/Spîrlea-Adriana.jpg",
+    thumbnail: "/images/team/thumbnail_Spîrlea-Adriana.jpg"
   }
 ];
 
@@ -130,7 +141,21 @@ export const services = [
     id: 0,
     title: "Estetica zâmbetului",
     logo: "/images/logos/zambet.png.webp",
-    description: "Un zâmbet impecabil, cu aspect natural, armonizat cu trăsăturile feței pacientului se poate obține prin proceduri estetice specifice: albirea dinților, fațete si coroane dentare, implanturi și tratamente ortodontice. Fiecare tratament este ales în funcție de nevoile și dorințele pacientului și se realizează în urma unui diagnostic corect, al elaborării unui plan de tratament profesionist și al unei execuții riguroase. Folosim tehnologii moderne, simulari intraorale prin machete ale zambetului la care ne dorim sa ajungem pentru ca pacientul sa poata previzualiza in linii mari noul zambet si pentru a intelege care sunt dintii si in ce masura vor trebui ajustati estetic.",
+    description: `<p><span class="ms-4"></span>Rezultatul unui zâmbet sănătos, cu un aspect natural și armonizat cu fizionomia pacientului,
+    se obține prin următoarele proceduri stomatologice:</p>
+     <ul>
+      <li>Inserarea implanturilor dentare</li> 
+      <li>Fațete și coroane dentare</li> 
+      <li>Tratamente ortodontice</li> 
+      <li>Albirea dinților</li> 
+      <li>Obturații fizionomice</li> 
+     </ul>
+     <p class="mb-3"><span class="ms-4"></span>Fiecare tratament este ales în funcție de nevoile și dorințele pacientului și se realizează în
+     urma unui diagnostic corect, al elaborării unui plan de tratament și al unei execuții riguroase.</p>
+     
+     <p><span class="ms-4"></span>Folosim tehnologii moderne, simulări intraorale prin machete ale zâmbetului la care ne
+     dorim să ajungem pentru ca pacientul să poată previzualiza în linii mari noul zâmbet și pentru
+     a ințelege în ce masură va trebui ajustat estetic.</p>`,
     procedures: [
       {
         title: "Obturații fizionomice",

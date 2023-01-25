@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 const Specialists = () => {
   const router = useRouter();
   return (
-    <div className="meet-specialists" style={{backgroundColor: "#d4d4d4"}}>
+    <div className="meet-specialists bg-gray">
       <div className="text-center">
 
           <div className="main-title">
@@ -23,7 +23,7 @@ const Specialists = () => {
               <div className="gallery-sec">
                 <div className="image-hover img-layer-slide-left-right">
                 {/* <Image src={obj.img} width={320} height={480} placeholder="blur" blurDataURL="/images/blur.jpg" objectFit/> */}
-                <img src={obj.img} width={320} height={480} />
+                <img src={obj.thumbnail} width={320} height={480} loading='lazy'/>
                   <div className="layer d-flex flex-column justify-content-center p-4">
                     {obj.specializations?.map(specializare => (
                       <p key={specializare} style={{color: '#fff'}} className="m-3">{specializare}</p>
