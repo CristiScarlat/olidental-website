@@ -15,6 +15,7 @@ const Services = () => {
         <div className="row">
           {services.map(service => (
             <CustomCard
+            key={service.id}
             id={service.id}
             onClick={handleRedirect}
             imgSrc={service.logo}
