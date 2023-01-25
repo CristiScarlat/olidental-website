@@ -12,6 +12,6 @@ jobs:
         working-directory: ../../
     steps:
     - name: build app
-      run:  npm run build && npm export
+      run:  npm export
 
   
