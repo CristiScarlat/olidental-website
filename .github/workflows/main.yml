@@ -19,5 +19,9 @@ jobs:
       run: npm install
     - name: build app
       run:  npm run export
+    - name: install netlify
+      run: npm install -g netlify
+    - name: deploy to netlify
+      run: "netlify deploy --site c86f595d-55a7-4f5d-b488-6c3e3b1ac9b5 --prod --dir out --auth ${{ secrets.NETLIFY_AUTH_TOKEN }}"
 
   
