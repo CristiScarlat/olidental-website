@@ -13,8 +13,6 @@ const Service = () => {
 
     }, [serviceId])
 
-    console.log(imagesList, imagesList?.images?.map(image => console.log(`images/services/${imagesList.dirPath}/${image}`)))
-
     return (
         <>
 
@@ -33,7 +31,7 @@ const Service = () => {
                 </div>
                 <div className="services-one">
                     <div className="container">
-                        <div className="row justify-content-center">
+                        <div className="row justify-content-center gap-3">
                             {services[serviceId]?.procedures.map(procedure => (
                                 <CustomCard
                                     key={procedure.title}

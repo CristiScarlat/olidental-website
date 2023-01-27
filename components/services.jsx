@@ -12,7 +12,7 @@ const Services = () => {
   return (
     <div className="services-one">
       <div className="container">
-        <div className="row">
+        <div className="row justify-content-center gap-3">
           {services.map(service => (
             <CustomCard
             key={service.id}
