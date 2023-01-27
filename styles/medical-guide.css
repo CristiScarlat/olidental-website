@@ -247,7 +247,8 @@ img:hover {transition: background-color 0.5s ease; }
 
 /*..... MEET SPECIALISTS ......*/
 .meet-specialists{ padding:90px 0;}
-.meet-specialists img{ width:100%;}
+.meet-specialists img{ width:320px; height:480px; }
+@media only screen and (max-width: 300px){.meet-specialists img{ width:100%!important; height: auto}}
 .meet-specialists .detail{ margin:35px 0 0 0; }
 .meet-specialists .detail span{ }
 .meet-specialists .detail p{ margin:15px 0 0 0; }

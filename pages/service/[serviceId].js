@@ -22,11 +22,6 @@ const Service = () => {
                     <div className="container">
                         <div className="row justify-content-center">
                             {services[serviceId]?.procedures.map(procedure => (
-                                // <div key={procedure.title} className="service-procedure-item">
-                                //     <h4>{procedure.title}</h4>
-                                //     <img src={procedure.logo} alt="..." />
-                                //     <p>{procedure.description}</p>
-                                // </div>
                                 <CustomCard
                                     key={procedure.title}
                                     imgSrc={procedure.logo}

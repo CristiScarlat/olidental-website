@@ -100,27 +100,27 @@ const CustomCarousel = ({ showThumbs=true, showIndicators=false }) => {
       swipeScrollTolerance={50}
     >
       <div>
-        <img src="images/carousel/1.jpg" alt="..."  />
+        <img src="images/carousel/1.jpg" alt="carousel item 1"  style={{borderRadius: 10}}/>
         {/* <CarouselLegendContent index={0} /> */}
       </div>
       <div>
-        <img src="images/carousel/2.jpg"  />
+        <img src="images/carousel/2.jpg" alt="carousel item 2"  style={{borderRadius: 10}}/>
         {/* <CarouselLegendContent index={1} /> */}
       </div>
       <div>
-        <img src="images/carousel/3.jpg"  />
+        <img src="images/carousel/3.jpg"  alt="carousel item 3"  style={{borderRadius: 10}}/>
         {/* <CarouselLegendContent index={2} /> */}
       </div>
       <div>
-        <img src="images/carousel/4.jpg" />
+        <img src="images/carousel/4.jpg" alt="carousel item 4"  style={{borderRadius: 10}}/>
         {/* <CarouselLegendContent index={2} /> */}
       </div>
       <div>
-        <img src="images/carousel/5.jpg"  />
+        <img src="images/carousel/5.jpg" alt="carousel item 5"  style={{borderRadius: 10}}/>
         {/* <CarouselLegendContent index={2} /> */}
       </div>
       <div>
-        <img src="images/carousel/6.jpg" />
+        <img src="images/carousel/6.jpg" alt="carousel item 6"  style={{borderRadius: 10}}/>
         {/* <CarouselLegendContent index={2} /> */}
       </div>
     </Carousel>

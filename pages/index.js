@@ -15,7 +15,9 @@ const Home = () => {
   return (
     <>
       <div className="bg-gray carousel-wrapper">
-        <div className="m-auto" style={carouselContainerStyle}><CustomCarousel showThumbs={false} /></div>
+        <div className="m-auto" style={carouselContainerStyle}>
+          <CustomCarousel showThumbs={false} />
+        </div>
       </div>
       <div id="services"><Services /></div>
       <div id="team"><Specialists /></div>
