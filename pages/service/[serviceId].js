@@ -27,7 +27,7 @@ const Service = () => {
                     </div>
                 </div>
                 <div className="d-flex" style={{overflowX: 'auto'}}>
-                    {imagesList?.images?.map(image => <img src={`/images/services/${imagesList.dirPath}/${image}`} style={{width: 280}}/>)}
+                    {imagesList?.images?.map(image => <img key={image} src={`/images/services/${imagesList.dirPath}/${image}`} style={{width: 280}}/>)}
                 </div>
                 <div className="services-one">
                     <div className="container">
