@@ -239,6 +239,13 @@ export const services = [
   }
 ]
 
+export const servicesImages = [
+  {
+    images: ["thumbnail_1.JPG", "thumbnail_10.JPG", "thumbnail_100.JPG", "thumbnail_101.jpg", "thumbnail_102.JPG", "thumbnail_103.JPG", "thumbnail_104.JPG", "thumbnail_105.JPG", "thumbnail_106.JPG", "thumbnail_107.JPG", "thumbnail_108.JPG", "thumbnail_109.JPG", "thumbnail_11.JPG", "thumbnail_110.JPG", "thumbnail_111.JPG", "thumbnail_12.JPG", "thumbnail_13.JPG", "thumbnail_14.JPG", "thumbnail_15.JPG", "thumbnail_16.JPG", "thumbnail_17.JPG", "thumbnail_18.JPG", "thumbnail_19.JPG", "thumbnail_2.JPG", "thumbnail_20.JPG", "thumbnail_21.JPG", "thumbnail_22.JPG", "thumbnail_23.JPG", "thumbnail_24.JPG", "thumbnail_25.JPG", "thumbnail_26.JPG", "thumbnail_27.JPG", "thumbnail_28.jpg", "thumbnail_29.JPG", "thumbnail_3.JPG", "thumbnail_30.JPG", "thumbnail_31.JPG", "thumbnail_32.JPG", "thumbnail_33.JPG", "thumbnail_34.JPG", "thumbnail_35.JPG", "thumbnail_36.JPG", "thumbnail_37.JPG", "thumbnail_38.JPG", "thumbnail_39.JPG", "thumbnail_4.JPG", "thumbnail_40.JPG", "thumbnail_41.JPG", "thumbnail_42.JPG", "thumbnail_43.JPG", "thumbnail_44.JPG", "thumbnail_45.JPG", "thumbnail_46.JPG", "thumbnail_47.JPG", "thumbnail_48.JPG", "thumbnail_49.JPG", "thumbnail_5.JPG", "thumbnail_50.JPG", "thumbnail_51.JPG", "thumbnail_52.JPG", "thumbnail_53.JPG", "thumbnail_54.JPG", "thumbnail_55.JPG", "thumbnail_56.JPG", "thumbnail_57.JPG", "thumbnail_58.JPG", "thumbnail_59.JPG", "thumbnail_6.JPG", "thumbnail_60.JPG", "thumbnail_61.JPG", "thumbnail_62.JPG", "thumbnail_63.JPG", "thumbnail_64.JPG", "thumbnail_65.JPG", "thumbnail_66.JPG", "thumbnail_67.JPG", "thumbnail_68.JPG", "thumbnail_69.JPG", "thumbnail_7.JPG", "thumbnail_70.JPG", "thumbnail_71.JPG", "thumbnail_72.JPG", "thumbnail_73.JPG", "thumbnail_74.JPG", "thumbnail_75.JPG", "thumbnail_76.JPG", "thumbnail_77.JPG", "thumbnail_78.JPG", "thumbnail_79.JPG", "thumbnail_8.JPG", "thumbnail_80.JPG", "thumbnail_81.jpg", "thumbnail_82.JPG", "thumbnail_83.JPG", "thumbnail_84.JPG", "thumbnail_85.JPG", "thumbnail_86.JPG", "thumbnail_87.JPG", "thumbnail_88.JPG", "thumbnail_89.JPG", "thumbnail_9.JPG", "thumbnail_90.JPG", "thumbnail_91.JPG", "thumbnail_92.JPG", "thumbnail_93.JPG", "thumbnail_94.JPG", "thumbnail_95.JPG", "thumbnail_96.JPG", "thumbnail_97.JPG", "thumbnail_98.JPG", "thumbnail_99.JPG"],
+    dirPath: '1_estetica_zambetului'
+  }
+]
+
 export const beforeAfter = [
   {
     title: "What is Lorem Ipsum?",

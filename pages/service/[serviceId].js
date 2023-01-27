@@ -1,10 +1,20 @@
 import { useRouter } from "next/router";
-import { services } from "../../utils/uiConstants";
+import { services, servicesImages } from "../../utils/uiConstants";
 import CustomCard from "../../components/customCard";
+import { useEffect, useState } from "react";
 
 const Service = () => {
+    const [imagesList, setImagesList] = useState(); 
     const router = useRouter();
     const { serviceId } = router.query;
+    
+    useEffect(() => {
+        setImagesList(servicesImages[Number(serviceId)])
+
+    }, [serviceId])
+
+    console.log(imagesList, imagesList?.images?.map(image => console.log(`images/services/${imagesList.dirPath}/${image}`)))
+
     return (
         <>
 
@@ -17,6 +27,9 @@ const Service = () => {
                         </div>
                         <div className="services-container-description" dangerouslySetInnerHTML={{ __html: services[serviceId]?.description || '' }}></div>
                     </div>
+                </div>
+                <div className="d-flex" style={{overflowX: 'auto'}}>
+                    {imagesList?.images?.map(image => <img src={`/images/services/${imagesList.dirPath}/${image}`} style={{width: 280}}/>)}
                 </div>
                 <div className="services-one">
                     <div className="container">
