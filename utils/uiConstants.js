@@ -139,6 +139,8 @@ export const teamCards = [
 export const services = [
   {
     id: 0,
+    images: ["thumbnail_1.JPG", "thumbnail_10.JPG", "thumbnail_100.JPG", "thumbnail_101.jpg", "thumbnail_102.JPG", "thumbnail_103.JPG", "thumbnail_104.JPG", "thumbnail_105.JPG", "thumbnail_106.JPG", "thumbnail_107.JPG", "thumbnail_108.JPG", "thumbnail_109.JPG", "thumbnail_11.JPG", "thumbnail_110.JPG", "thumbnail_111.JPG", "thumbnail_12.JPG", "thumbnail_13.JPG", "thumbnail_14.JPG", "thumbnail_15.JPG", "thumbnail_16.JPG", "thumbnail_17.JPG", "thumbnail_18.JPG", "thumbnail_19.JPG", "thumbnail_2.JPG", "thumbnail_20.JPG", "thumbnail_21.JPG", "thumbnail_22.JPG", "thumbnail_23.JPG", "thumbnail_24.JPG", "thumbnail_25.JPG", "thumbnail_26.JPG", "thumbnail_27.JPG", "thumbnail_28.jpg", "thumbnail_29.JPG", "thumbnail_3.JPG", "thumbnail_30.JPG", "thumbnail_31.JPG", "thumbnail_32.JPG", "thumbnail_33.JPG", "thumbnail_34.JPG", "thumbnail_35.JPG", "thumbnail_36.JPG", "thumbnail_37.JPG", "thumbnail_38.JPG", "thumbnail_39.JPG", "thumbnail_4.JPG", "thumbnail_40.JPG", "thumbnail_41.JPG", "thumbnail_42.JPG", "thumbnail_43.JPG", "thumbnail_44.JPG", "thumbnail_45.JPG", "thumbnail_46.JPG", "thumbnail_47.JPG", "thumbnail_48.JPG", "thumbnail_49.JPG", "thumbnail_5.JPG", "thumbnail_50.JPG", "thumbnail_51.JPG", "thumbnail_52.JPG", "thumbnail_53.JPG", "thumbnail_54.JPG", "thumbnail_55.JPG", "thumbnail_56.JPG", "thumbnail_57.JPG", "thumbnail_58.JPG", "thumbnail_59.JPG", "thumbnail_6.JPG", "thumbnail_60.JPG", "thumbnail_61.JPG", "thumbnail_62.JPG", "thumbnail_63.JPG", "thumbnail_64.JPG", "thumbnail_65.JPG", "thumbnail_66.JPG", "thumbnail_67.JPG", "thumbnail_68.JPG", "thumbnail_69.JPG", "thumbnail_7.JPG", "thumbnail_70.JPG", "thumbnail_71.JPG", "thumbnail_72.JPG", "thumbnail_73.JPG", "thumbnail_74.JPG", "thumbnail_75.JPG", "thumbnail_76.JPG", "thumbnail_77.JPG", "thumbnail_78.JPG", "thumbnail_79.JPG", "thumbnail_8.JPG", "thumbnail_80.JPG", "thumbnail_81.jpg", "thumbnail_82.JPG", "thumbnail_83.JPG", "thumbnail_84.JPG", "thumbnail_85.JPG", "thumbnail_86.JPG", "thumbnail_87.JPG", "thumbnail_88.JPG", "thumbnail_89.JPG", "thumbnail_9.JPG", "thumbnail_90.JPG", "thumbnail_91.JPG", "thumbnail_92.JPG", "thumbnail_93.JPG", "thumbnail_94.JPG", "thumbnail_95.JPG", "thumbnail_96.JPG", "thumbnail_97.JPG", "thumbnail_98.JPG", "thumbnail_99.JPG"],
+    dirPath: '1_estetica_zambetului',
     title: "Estetica zâmbetului",
     logo: "/images/logos/zambet.png.webp",
     description: `<p><span class="ms-4"></span>Rezultatul unui zâmbet sănătos, cu un aspect natural și armonizat cu fizionomia pacientului,
@@ -160,38 +162,78 @@ export const services = [
       {
         title: "Obturații fizionomice",
         logo: "/images/logos/carii.png.webp",
-        description: "Obturația dentară fizionomică, cu alte cuvinte plomba, constituie acea modalitate de restaurare a dinților prin care se redau dintelui fizionomia și funcționalitatea normală. Tratamentul se aplică dupa îndepărtarea țesutului alterat și se realizează prin umplerea cavităților create cu diverse tipuri de materiale de restaurare în funcție de situația impusă. "
+        description: `<p><span class="ms-4"></span>Obturația dentară fizionomică, cu alte cuvinte plomba, constituie acea modalitate de
+        restaurare a dinților prin care se redau dintelui fizionomia și funcționalitatea normală.
+        Tratamentul se aplică dupa îndepărtarea țesutului alterat și se realizează prin umplerea
+        cavităților create cu diverse tipuri de materiale de restaurare în funcție de situația impusă.</p>`,
+        images: []
       },
       {
         title: "Fațete și coroane dentare integral ceramice",
         logo: "/images/logos/fatete-coroane-ceramice.png.webp",
-        description: "În funcție de caz, se impune sau se pretează acoperirea dinților cu aceste două tipuri de restaurări care fac parte din tratamentele de estetică dentară. Pentru realizarea acestor lucrări, folosim sisteme integral ceramice sau restaurările pe substrat de zirconiu care oferă un aspect natural. \
-          Fațetele dentare sunt intervenții minim invazive, fiind aplicate pe suprafața dintelui, cu preparații minime sau chiar deloc. Fațetele poate oferi o nouă culoare permanentă zâmbetului, o altă strălucire, o nouă formă, o nouă dimensiune dinților, soluționând în același timp diverse probleme dentare, precum: dinți pătați, culoare neuniformă sau neplăcută, forme inestetice, spațiere între dinți, etc. În principiu, fațetele sunt recomandate în cazurile de îmbunătățire a aspectului estetic, nu a funcționalității.\
-          Coroanele dentare sunt restaurări protetice care oferă în primul rând funcționalitate dinților, iar aspectul estetic îmbunătățit reprezintă o consecință binevenită. Coroanele dentare îmbracă un dinte care a trecut deja sau va trece printr-un tratament (cum e cazul dinților cariați, fisurați, trecuți printr-un tratament de canal, cu formă sau culoare inestetică, adiacent sau în timpul unui tratament cu implant dentar). Coroanele garantează rezistența și aspectul natural pentru o perioadă îndelungată.\
-          Atât fațetele cât și coroanele dentare sunt menite să contureze estetica zâmbetului și să asigure funcționalitatea, rezistența și durabilitatea."
+        description: `<p><span class="ms-4"></span>În funcție de caz, se impune sau se pretează acoperirea dinților cu aceste două tipuri de
+        restaurări care fac parte din tratamentele de estetică dentară.</p>
+        <p><span class="ms-4"></span>Pentru realizarea acestor lucrări, folosim sisteme integral ceramice sau restaurările pe
+        substrat de zirconiu care oferă un aspect natural.</p>
+        <p><em class="ms-4">Fațetele dentare</em> sunt intervenții minim invazive, fiind aplicate pe suprafața dintelui, cu
+        preparații minime sau chiar deloc.</p>
+        <p>
+          <em class="ms-4">Fațetele</em> pot oferi o nouă culoare permanentă zâmbetului, o altă strălucire, o nouă formă,
+          o nouă dimensiune a dinților, soluționând în același timp diverse probleme dentare, precum:
+          dinți pătați, culoare neuniformă sau neplăcută, forme inestetice, spațiere între dinți, etc.
+        </p>
+        <p class="ms-4">În principiu, fațetele sunt recomandate în cazurile de îmbunătățire a aspectului estetic, nu
+        a funcționalității.</p>
+        <p><em>Coroanele dentare</em> sunt restaurări protetice care oferă în primul rând funcționalitate dinților,
+        iar aspectul estetic îmbunătățit reprezintă o consecință binevenită.</p>
+        <p><em>Coroanele dentare</em> îmbracă un dinte care a trecut deja sau va trece printr-un tratament (cum e
+          cazul dinților cariați, fisurați, trecuți printr-un tratament de canal, cu formă sau culoare
+          inestetică, adiacent sau în timpul unui tratament cu implant dentar).</p>
+          <p><em>Coroanele</em>  garantează rezistența și aspectul natural pentru o perioadă îndelungată.</p>
+          <p>Atât fațetele cât și coroanele dentare sunt menite să contureze estetica zâmbetului și să
+          asigure funcționalitatea, rezistența și durabilitatea.</p>`,
+        images: ["thumbnail_10.JPG","thumbnail_11.JPG","thumbnail_12.jpg","thumbnail_13.jpg","thumbnail_14.jpg","thumbnail_15.JPG","thumbnail_16.JPG","thumbnail_17.JPG","thumbnail_18.JPG","thumbnail_19.jpg","thumbnail_20.JPG","thumbnail_21.jpg","thumbnail_7.JPG","thumbnail_8.JPG","thumbnail_9.JPG"],
+        dirPath: "1_fatete_si_coroane"
       },
       {
         title: "Restaurări protetice estetice",
         logo: "/images/logos/restaurari.png.webp",
-        description: "În Olidental Clinic, realizăm restaurări protetice care îmbină funcționalitatea cu estetica, conform nevoilor pacientului. Restaurările estetice sunt soluții protetice pe termen lung și sunt de tipul fațetelor, coroanelor (dentare și protetice din porțelan, pe suport de zirconiu, dentare integral ceramice, dentare zirconiu integral, acrilice și scheletate, etc), punților dentare, protezelor mobile sau mobilizabile putând fi realizate atât pe dinți naturali cât și pe implanturi dentare."
+        description: "În Olidental Clinic, realizăm restaurări protetice care îmbină funcționalitatea cu estetica, conform nevoilor pacientului. Restaurările estetice sunt soluții protetice pe termen lung și sunt de tipul fațetelor, coroanelor (dentare și protetice din porțelan, pe suport de zirconiu, dentare integral ceramice, dentare zirconiu integral, acrilice și scheletate, etc), punților dentare, protezelor mobile sau mobilizabile putând fi realizate atât pe dinți naturali cât și pe implanturi dentare.",
+        images: []
       },
       {
         title: "Albire dentară profesională",
         logo: "/images/logos/profilaxie-dentara.png.webp",
         description: "Albirea dentară profesională reprezintă o opțiune demnă de luat în considerare în momentul în care culoarea dinților se îndepărtează de albul natural. Acest tratament se realizează cu laserul sau cu acceleratorul de albire, oferind protecție ridicată țesăturilor cavității bucale și garantând confortul pacientului. Procedura nu afectează sensibilitatea dentară, iar rezultatele albirii sunt remarcabile de la prima ședință și durează de la 6 luni la 2 ani, în funcție de igiena orală și grija față de consumul anumitor alimente cu potențial ridicat de colorare a dinților.\
-          Se recomandă a se realiza albirea dentară la modul profesionist la cabinet, nu acasă dat fiind faptul că se aplică doar pe dinții naturali, iar existența eventualelor plombe și a lucrărilor dentare pot ridica probleme. Tratamentul este unul individualizat și ține cont de structura dintelui, de lucrările existente, de apelarea la alte tipuri de tratamente dentare de ordin estetic. Alternative la albirea dentară le constituie igienizarea profesională periodică, air flow sau chiar fațetele dentare. O consultație poate identifica toate aspectele necesare a fi avute în vedere. "
+          Se recomandă a se realiza albirea dentară la modul profesionist la cabinet, nu acasă dat fiind faptul că se aplică doar pe dinții naturali, iar existența eventualelor plombe și a lucrărilor dentare pot ridica probleme. Tratamentul este unul individualizat și ține cont de structura dintelui, de lucrările existente, de apelarea la alte tipuri de tratamente dentare de ordin estetic. Alternative la albirea dentară le constituie igienizarea profesională periodică, air flow sau chiar fațetele dentare. O consultație poate identifica toate aspectele necesare a fi avute în vedere. ",
+        images: []
       }
     ]
   },
   {
     id: 1,
+    images: ["thumbnail_1.jpg", "thumbnail_15.JPG", "thumbnail_2.jpg", "thumbnail_3.jpg", "thumbnail_4.jpg", "thumbnail_5.JPG", "thumbnail_6.JPG", "thumbnail_7.JPG", "thumbnail_8.JPG", "thumbnail_9.jpg", "thumbnail_IMG_4393.JPG", "thumbnail_IMG_4395.JPG", "thumbnail_IMG_6405.JPG", "thumbnail_Photo (552).jpg", "thumbnail_Photo (553).jpg", "thumbnail_Photo (554).jpg", "thumbnail_Photo (564).jpg", "thumbnail_c5.JPG", "thumbnail_c6.JPG", "thumbnail_c8.JPG", "thumbnail_10.JPG", "thumbnail_11.JPG", "thumbnail_12.JPG", "thumbnail_13.JPG", "thumbnail_14.JPG", ],
+    dirPath: '2_implantologie_orala',
     title: "Implantologie orală",
     logo: "/images/logos/implant.png.webp",
-    description: "Implantologia orală reprezintă, de obicei, soluția ideală pentru înlocuirea dinților lipsă în cazul în care pacientul este un candidat valabil pentru implanturi dentare – lipsa dinților ducând la instabilitatea dinților existenți, la degradarea sănătății osoase și gingivale și chiar la îmbătrânirea prematură.\
-      Implantul constituie un tratament minim invaziv, care presupune introducerea rădăcinii artificiale în osul mandibular sau maxilar, fără a afecta dinții din vecinătate. De reținut că este nevoie uneori de adiții sau augmentări de țesut moale sau dur. Intervenția are o durată mică și este nedureroasă, iar vindecarea este una rapidă.\
-      Implanturile imită dinții naturali atât în ceea ce privește aspectul, cât și funcționalitatea, redând astfel sănătatea zâmbetului.\
-      Implanturile dentare au o stabilitate superioară și prezintă nenumărate beneficii pe termen lung. În plus, cel mai mare avantaj al implanturilor dentare este că pot fi realizate într-o singură vizită la cabinet, pacientul putând să își reia în cel mai scurt timp posibil activitățile obișnuite.\
-      Olidental Clinic oferă certificate de autenticitate, garantând astfel calitatea superioară a implantului dentar și oferind o garanție de 10 ani.",
+    description: `<p><span class="ms-4"></span>
+          Implantologia orală reprezintă, de obicei, soluția ideală pentru înlocuirea dinților lipsă în
+        cazul în care pacientul este un candidat valabil pentru implanturi dentare – lipsa dinților
+        ducând la instabilitatea dinților existenți, la degradarea sănătății osoase și gingivale și chiar la
+        îmbătrânirea prematură.
+        </p>
+        <p><span class="ms-4"></span>Implantul constituie un tratament minim invaziv, care presupune introducerea rădăcinii
+        artificiale în osul mandibular sau maxilar, fără a afecta dinții din vecinătate.
+        </p>
+        <p class="text-center"><u>De reținut că este nevoie uneori de adiții sau augmentări de țesut moale sau dur.</u></p>
+        <p class="text-center"><u>Intervenția are o durată mică și este nedureroasă, iar vindecarea este una rapidă.</u></p>
+        <p><span class="ms-4"></span>Implanturile dentare au o stabilitate superioară și prezintă nenumărate beneficii pe
+        termen lung. În plus, cel mai mare avantaj al implanturilor dentare este că pot fi realizate într-
+        o singură vizită la cabinet, pacientul putând să își reia în cel mai scurt timp posibil activitățile
+        obișnuite.
+        </p>
+        <p class="text-italic"><strong>Olidental Clinic </strong><em>oferă certificate de autenticitate, garantând astfel calitatea superioară
+        a implantului dentar și oferind o garanție de 10 ani.</em></p>`,
     procedures: [
       {
         title: "Inserare de implanturi și adiții de os",
@@ -236,13 +278,6 @@ export const services = [
           Toate acestea trebuie avute în vedere când se realizează o reabilitare orală și se pune în aplicare planul protetic, pentru că rezultatul final să fie atât estetic cât și funcțional, iar rezultatele să se păstreze cât mai mult timp."
       }
     ]
-  }
-]
-
-export const servicesImages = [
-  {
-    images: ["thumbnail_1.JPG", "thumbnail_10.JPG", "thumbnail_100.JPG", "thumbnail_101.jpg", "thumbnail_102.JPG", "thumbnail_103.JPG", "thumbnail_104.JPG", "thumbnail_105.JPG", "thumbnail_106.JPG", "thumbnail_107.JPG", "thumbnail_108.JPG", "thumbnail_109.JPG", "thumbnail_11.JPG", "thumbnail_110.JPG", "thumbnail_111.JPG", "thumbnail_12.JPG", "thumbnail_13.JPG", "thumbnail_14.JPG", "thumbnail_15.JPG", "thumbnail_16.JPG", "thumbnail_17.JPG", "thumbnail_18.JPG", "thumbnail_19.JPG", "thumbnail_2.JPG", "thumbnail_20.JPG", "thumbnail_21.JPG", "thumbnail_22.JPG", "thumbnail_23.JPG", "thumbnail_24.JPG", "thumbnail_25.JPG", "thumbnail_26.JPG", "thumbnail_27.JPG", "thumbnail_28.jpg", "thumbnail_29.JPG", "thumbnail_3.JPG", "thumbnail_30.JPG", "thumbnail_31.JPG", "thumbnail_32.JPG", "thumbnail_33.JPG", "thumbnail_34.JPG", "thumbnail_35.JPG", "thumbnail_36.JPG", "thumbnail_37.JPG", "thumbnail_38.JPG", "thumbnail_39.JPG", "thumbnail_4.JPG", "thumbnail_40.JPG", "thumbnail_41.JPG", "thumbnail_42.JPG", "thumbnail_43.JPG", "thumbnail_44.JPG", "thumbnail_45.JPG", "thumbnail_46.JPG", "thumbnail_47.JPG", "thumbnail_48.JPG", "thumbnail_49.JPG", "thumbnail_5.JPG", "thumbnail_50.JPG", "thumbnail_51.JPG", "thumbnail_52.JPG", "thumbnail_53.JPG", "thumbnail_54.JPG", "thumbnail_55.JPG", "thumbnail_56.JPG", "thumbnail_57.JPG", "thumbnail_58.JPG", "thumbnail_59.JPG", "thumbnail_6.JPG", "thumbnail_60.JPG", "thumbnail_61.JPG", "thumbnail_62.JPG", "thumbnail_63.JPG", "thumbnail_64.JPG", "thumbnail_65.JPG", "thumbnail_66.JPG", "thumbnail_67.JPG", "thumbnail_68.JPG", "thumbnail_69.JPG", "thumbnail_7.JPG", "thumbnail_70.JPG", "thumbnail_71.JPG", "thumbnail_72.JPG", "thumbnail_73.JPG", "thumbnail_74.JPG", "thumbnail_75.JPG", "thumbnail_76.JPG", "thumbnail_77.JPG", "thumbnail_78.JPG", "thumbnail_79.JPG", "thumbnail_8.JPG", "thumbnail_80.JPG", "thumbnail_81.jpg", "thumbnail_82.JPG", "thumbnail_83.JPG", "thumbnail_84.JPG", "thumbnail_85.JPG", "thumbnail_86.JPG", "thumbnail_87.JPG", "thumbnail_88.JPG", "thumbnail_89.JPG", "thumbnail_9.JPG", "thumbnail_90.JPG", "thumbnail_91.JPG", "thumbnail_92.JPG", "thumbnail_93.JPG", "thumbnail_94.JPG", "thumbnail_95.JPG", "thumbnail_96.JPG", "thumbnail_97.JPG", "thumbnail_98.JPG", "thumbnail_99.JPG"],
-    dirPath: '1_estetica_zambetului'
   }
 ]
 

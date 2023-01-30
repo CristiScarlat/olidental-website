@@ -11,11 +11,11 @@ const CustomCard = ({ onClick, id, title, body, imgSrc, imgStyle }) => {
   return (
     <div className="col-md-4 text-center custom-card-container">
       <div className="service-sec">
-        <div className="icon">
+        <div className="d-flex align-items-center justify-content-center icon m-auto">
           <img src={imgSrc} alt="..." style={imgStyle} />
         </div>
 
-        <div className="detail">
+        <div className="detail m-auto">
           <h5>{title}</h5>
           <p dangerouslySetInnerHTML={{ __html: bodyContent }}></p>
         </div>
