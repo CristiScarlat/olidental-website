@@ -1,7 +1,6 @@
 import { useRouter } from "next/router";
 import { services } from "../../utils/uiConstants";
 import CustomCard from "../../components/customCard";
-import { useEffect, useState } from "react";
 
 const Service = () => {
     //const [imagesList, setImagesList] = useState();

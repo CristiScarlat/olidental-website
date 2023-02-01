@@ -193,7 +193,11 @@ export const services = [
           <p>Atât fațetele cât și coroanele dentare sunt menite să contureze estetica zâmbetului și să
           asigure funcționalitatea, rezistența și durabilitatea.</p>`,
         images: ["thumbnail_10.JPG","thumbnail_11.JPG","thumbnail_12.jpg","thumbnail_13.jpg","thumbnail_14.jpg","thumbnail_15.JPG","thumbnail_16.JPG","thumbnail_17.JPG","thumbnail_18.JPG","thumbnail_19.jpg","thumbnail_20.JPG","thumbnail_21.jpg","thumbnail_7.JPG","thumbnail_8.JPG","thumbnail_9.JPG"],
-        dirPath: "1_fatete_si_coroane"
+        dirPath: "1_fatete_si_coroane",
+        cazuri: {
+          images: [["1a.JPG","1b.JPG","1c.JPG"],["2a.JPG","2b.JPG","2c.JPG"],["3a.JPG","3b.JPG","3c.JPG"],["4a.JPG","4b.JPG","4c.JPG"],["5a.JPG","5b.JPG","5c.JPG"],["6a.JPG","6b.JPG","6c.JPG"]],
+          dirPath: "/services/1_fatete_si_coroane_cazuri"
+        }
       },
       {
         title: "Restaurări protetice estetice",

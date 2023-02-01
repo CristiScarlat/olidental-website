@@ -140,6 +140,18 @@ h4 {
   border-radius: 10px;
 }
 
+.green-bg {
+  background-color: #6cab44 !important;
+}
+
+.carousel .slider-wrapper.axis-horizontal .slider li {
+  z-index: 10!important;
+}
+
+.carousel-custom-root {
+  width: 240px;
+}
+
 @media only screen and (max-width: 1024px){
   .carousel-wrapper {
     padding: 0;
