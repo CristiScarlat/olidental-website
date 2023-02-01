@@ -36,7 +36,7 @@ const Procedure = () => {
                                 animationHandler="fade"
                                 swipeable={false}
                             >
-                                {arr.map(image => <div>
+                                {arr.map((image, index) => <div key={image + index}>
                                     <img src={`/images/${services[serviceId]?.procedures[procedureIndex]?.cazuri?.dirPath}/thumbnail_${image}`} style={{ width: 240 }} />
                                 </div>)}
                             </Carousel>
