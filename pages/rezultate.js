@@ -17,7 +17,7 @@ const Results = () => {
                             <span>Dificutate</span>
                             <div className="level-gradient-bar" style={{background: `linear-gradient(90deg, #6cab44 ${obj.difficultyLevel*10 - 10}%, #778187 ${obj.difficultyLevel*10}%)`}}></div>
                         </div>
-                        <div className="m-auto w-100">
+                        <div className="m-auto w-100 unselectable">
                             <ImageComparator images={obj.images.map(imgName => `images/beforeAfter/${imgName}`)} maxWidth={400}/>
                         </div>
                     </div>
