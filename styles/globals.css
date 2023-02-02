@@ -144,12 +144,39 @@ h4 {
   background-color: #6cab44 !important;
 }
 
+.dark-gray-bg {
+  background-color: #778187 !important;
+}
+
 .carousel .slider-wrapper.axis-horizontal .slider li {
   z-index: 10!important;
 }
 
 .carousel-custom-root {
   width: 240px;
+}
+
+
+  /* width */
+.custom-scroll::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.custom-scroll::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  background: #d4d4d4;
+}
+
+/* Handle */
+.custom-scroll::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: #4e5e65;
+}
+
+/* Handle on hover */
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background: #538535;
 }
 
 @media only screen and (max-width: 1024px){

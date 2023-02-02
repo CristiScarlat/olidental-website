@@ -17,7 +17,7 @@ const Procedure = () => {
                         <h3>{services[serviceId]?.procedures[procedureIndex]?.title || ''}</h3>
                     </div>
                 </div>
-                <div className="green-bg pt-3 mb-2 d-flex justify-content-center" style={{ overflowX: 'auto' }}>
+                <div className="dark-gray-bg pt-3 mb-2 d-flex justify-content-center custom-scroll" style={{ overflowX: 'auto' }}>
                     {services[serviceId]?.procedures[procedureIndex]?.cazuri?.images.map((arr, index) => (
                         <div className="mb-3" key={"before-after" + index}>
                             <Carousel
@@ -53,7 +53,6 @@ const Procedure = () => {
             {/* <div className="d-flex" style={{ overflowX: 'auto' }}>
                 {services[serviceId]?.procedures[procedureIndex]?.images?.map(image => <img key={image} src={`/images/services/${services[serviceId]?.procedures[procedureIndex]?.dirPath}/${image}`} style={{ width: 280 }} />)}
             </div> */}
-
         </div>
     )
 }
