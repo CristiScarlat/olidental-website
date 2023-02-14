@@ -12,7 +12,7 @@ const Procedure = () => {
   useEffect(() => {
     const id = setInterval(() => {
       handleChangeImages();
-    }, 5000);
+    }, 60000);
     return () => clearInterval(id);
   });
   const handleChangeImages = () => {
