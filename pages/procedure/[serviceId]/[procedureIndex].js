@@ -1,27 +1,12 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { services } from '../../../utils/uiConstants';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
+import FadeCarousel from '../../../components/fadeCarousel';
 
 const Procedure = () => {
-  const [imagesIndex, setImagesIndex] = useState(0);
   const router = useRouter();
   const { serviceId, procedureIndex } = router.query;
-
-  useEffect(() => {
-    const id = setInterval(() => {
-      handleChangeImages();
-    }, 60000);
-    return () => clearInterval(id);
-  });
-  const handleChangeImages = () => {
-    setImagesIndex((state) => {
-      if (state === 5) return 0;
-      else return state + 1;
-    });
-  };
-
+  console.log({ serviceId, procedureIndex });
   return (
     <div className="services-container m-auto">
       <div className="pt-4 pb-4 bg-gray">
@@ -55,7 +40,7 @@ const Procedure = () => {
             })}
           </div>
         </div>
-        <div className="m-auto ps-4 pe-4" style={{ maxWidth: '60rem' }}>
+        <div className="m-auto p-2" style={{ maxWidth: '60rem' }}>
           <div
             className="services-container-description"
             dangerouslySetInnerHTML={{ __html: services[serviceId]?.procedures[procedureIndex]?.description || '' }}
