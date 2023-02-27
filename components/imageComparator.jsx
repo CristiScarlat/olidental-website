@@ -23,18 +23,19 @@ const ImageComparator = ({ images, maxWidth = 400 }) => {
   }, []);
 
   const handleDeviderMove = (e) => {
-    if (deviderGrab && e.clientX - imageRef.current.x >= 2 && e.clientX - imageRef.current.x <= maxWidth - 3) {
-      const xPosProc = ((e.clientX - imageRef.current.x) * 100) / imageRef.current.clientWidth;
-      setDeviderXPos(e.clientX - imageRef.current.x);
+    const clientRectObj = imageRef.current.getBoundingClientRect();
+    const imagePosX = Math.ceil(clientRectObj.x);
+    if (deviderGrab && e.clientX - imagePosX >= 2 && e.clientX - imagePosX <= maxWidth - 3) {
+      const xPosProc = ((e.clientX - imagePosX) * 100) / imageRef.current.clientWidth;
+      setDeviderXPos(e.clientX - imagePosX);
       setImgClip([`${100 - xPosProc}% 0, 100% 0, 100% 100%, ${100 - xPosProc}% 100%'`, `${xPosProc}% 0, 100% 0, 100% 100%, ${xPosProc}% 100%`]);
     }
   };
-
   const handleDeviderMoveOnTouch = (e) => {
-    const cursorXPos = e.touches[0].clientX - imageRef.current.x/2;
-    const imageWidth = imageRef.current.clientWidth; 
+    const cursorXPos = e.touches[0].clientX - imageRef.current.x / 2;
+    const imageWidth = imageRef.current.clientWidth;
     if (deviderGrab && cursorXPos >= 2 && cursorXPos <= imageWidth - 3) {
-      const xPosProc = (cursorXPos * 100)/ imageRef.current.clientWidth;
+      const xPosProc = (cursorXPos * 100) / imageRef.current.clientWidth;
       setDeviderXPos(cursorXPos);
       setImgClip([`${100 - xPosProc}% 0, 100% 0, 100% 100%, ${100 - xPosProc}% 100%'`, `${xPosProc}% 0, 100% 0, 100% 100%, ${xPosProc}% 100%`]);
     }
@@ -43,18 +44,19 @@ const ImageComparator = ({ images, maxWidth = 400 }) => {
   const handleImgOnLoad = (imageSrc) => {
     loadedImages.current.push(imageSrc);
     if (loadedImages.current.length === 2) {
-      console.log('Done!');
       setImgLoaded(true);
     }
   };
 
   return (
     <>
+      <div></div>
       <div
         style={{ maxWidth, maxHeight: 225, visibility: imgLoaded ? 'visible' : 'hidden', margin: 'auto' }}
         className={styles.imageComparatoContainer}
         onMouseMove={handleDeviderMove}
         onTouchMove={handleDeviderMoveOnTouch}
+        onMouseDown={() => setDeviderGrab(true)}
         onMouseUp={() => {
           if (deviderGrab) setDeviderGrab(false);
         }}
