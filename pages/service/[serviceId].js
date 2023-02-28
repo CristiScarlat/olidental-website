@@ -7,7 +7,7 @@ const Service = () => {
   //const [imagesList, setImagesList] = useState();
   const router = useRouter();
   const { serviceId } = router.query;
-
+  console.log(serviceId);
   return (
     <div className="services-container m-auto">
       <div className="p-4 bg-gray">

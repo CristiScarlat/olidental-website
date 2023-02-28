@@ -434,6 +434,18 @@ export const services = [
   },
   {
     id: 2,
+    images: [
+      'protetica dentara si implantologica 2.JPG',
+      'protetica dentara si implantologica 3.JPG',
+      'protetica dentara si implantologica 4.JPG',
+      'protetica dentara si implantologica 2.JPG',
+      'protetica dentara si implantologica 3.JPG',
+      'protetica dentara si implantologica 4.JPG',
+      '3a.jpg',
+      '3b.jpg',
+      '5b.JPG'
+    ],
+    dirPath: '3_Reabilitari_orale_complexe',
     title: 'Reabilitări orale complexe',
     logo: '/images/logos/protetica.png.webp',
     description:
