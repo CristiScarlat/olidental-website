@@ -1,0 +1,15 @@
+.dropDownLabel {
+    margin: 0;
+    width: 7rem;
+    overflow-x: clip;
+    text-overflow: ellipsis;
+}
+
+.rezultateCategorie {
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #414040;
+    border-radius: 5px;
+    padding-left: 0.5rem;
+    color: #6cab44;
+}
