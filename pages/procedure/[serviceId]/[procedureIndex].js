@@ -31,13 +31,28 @@ const Procedure = () => {
             <h3>{services[serviceId]?.procedures[procedureIndex]?.title || ''}</h3>
           </div>
         </div>
-        <div className="pt-3 mb-2 d-flex flex-column custom-scroll" style={{ overflowX: 'auto' }}>
-          <div className="mb-3 d-flex me-auto ms-auto gap-md-1" style={{ minHeight: '12rem' }} onClick={handleChangeImages}>
-            {services[serviceId]?.procedures[procedureIndex]?.cazuri?.images[imagesIndex].map((image, index) => (
-              <div key={image + index}>
-                <img src={`/images/${services[serviceId]?.procedures[procedureIndex]?.cazuri?.dirPath}/thumbnail_${image}`} className="procedure-cazuri-img" />
-              </div>
-            ))}
+        <div className="pt-3 mb-2 d-flex flex-column custom-scroll">
+          <div className="m-2 d-flex flex-column gap-2" onClick={handleChangeImages}>
+            {services[serviceId]?.procedures[procedureIndex]?.cazuri?.images.map((batch, index) => {
+              return (
+                <>
+                  <div key={index} className="d-flex gap-2 text-center">
+                    {batch.map((image, index) => (
+                      <div key={image + index}>
+                        <img
+                          src={`/images/${services[serviceId]?.procedures[procedureIndex]?.cazuri?.dirPath}/thumbnail_${image}`}
+                          className="procedure-cazuri-img mx-2"
+                        />
+                        {index === 0 && <div className="mx-2">înainte</div>}
+                        {index === 1 && <div className="mx-2">în lucru</div>}
+                        {index === 2 && <div className="mx-2">după</div>}
+                      </div>
+                    ))}
+                  </div>
+                  <hr />
+                </>
+              );
+            })}
           </div>
         </div>
         <div className="m-auto ps-4 pe-4" style={{ maxWidth: '60rem' }}>
@@ -47,9 +62,6 @@ const Procedure = () => {
           ></div>
         </div>
       </div>
-      {/* <div className="d-flex" style={{ overflowX: 'auto' }}>
-                {services[serviceId]?.procedures[procedureIndex]?.images?.map(image => <img key={image} src={`/images/services/${services[serviceId]?.procedures[procedureIndex]?.dirPath}/${image}`} style={{ width: 280 }} />)}
-            </div> */}
     </div>
   );
 };
