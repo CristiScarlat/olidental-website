@@ -16,7 +16,7 @@ const Procedure = () => {
             <h3>{services[serviceId]?.procedures[procedureIndex]?.title || ''}</h3>
           </div>
         </div>
-        <div className="pt-3 mb-2 d-flex flex-column m-auto" style={{ maxWidth: '60rem' }}>
+        <div className="pt-3 mb-2 d-flex flex-column custom-scroll">
           <div className="m-2 d-flex flex-column gap-2" onClick={handleChangeImages}>
             {services[serviceId]?.procedures[procedureIndex]?.cazuri?.images.map((batch, index) => {
               return (
