@@ -403,7 +403,24 @@ export const services = [
           'Implanturile dentare constituie soluția ideală pentru înlocuirea dinților lipsă, dacă pacientul este un candidat valabil. Inserarea implanturilor dentare și a adițiilor de os se realizează în cadrul unor intervenții chirurgicale, după analiza ofertei osoase.\
           În cazul în care cantitatea osoasă este insuficientă se decide asupra efectuării unor adiții de os. Implanturile dentare utilizate în cadrul Olidental Clinic sunt durabile, sigure și eficiente.\
           După inserarea implantului, are loc procesul de osteointegrare, cu o durată diferită în funcție de particularitățile fiecarui caz (2-6 luni).\
-          Următoarea etapă o constituie atașarea componentelor protetice si realizarea unor restaurări provizorii sau finale în funcție de situație. Restaurările finale pot fi sub formă de coroană unidentară sau punte între mai multe implanturi.'
+          Următoarea etapă o constituie atașarea componentelor protetice si realizarea unor restaurări provizorii sau finale în funcție de situație. Restaurările finale pot fi sub formă de coroană unidentară sau punte între mai multe implanturi.',
+        cazuri: {
+          images: [
+            ['1a.JPG', '1b.JPG'],
+            ['2a.png', '2b.jpg'],
+            ['3a.JPG', '3b.JPG'],
+            ['4a.JPG', '4b.JPG'],
+            ['5a.JPG', '5b.JPG'],
+            ['6a.jpg', '6b.jpg'],
+            ['7a.JPG', '7b.JPG'],
+            ['8a.JPG', '8b.JPG'],
+            ['9a.JPG', '9b.JPG'],
+            ['10a.jpg', '10b.jpg'],
+            ['14a.JPG', '14b.JPG'],
+            ['15a.jpg', '15b.jpg']
+          ],
+          dirPath: 'services/2_inserare_de_implanturi_si_aditii_de_os'
+        }
       },
       {
         title: 'Restaurări protetice pe implanturi',
@@ -423,7 +440,7 @@ export const services = [
             ['8a.JPG', '8b.JPG', '8c.JPG'],
             ['9a.JPG', '9b.JPG', '9c.JPG'],
             ['10a.JPG', '10b.JPG', '10c.JPG'],
-            ['11a.JPG', '11b.JPG', '11c.JPG'],
+            ['11a.JPG', '11b.jpg', '11c.JPG'],
             ['12a.JPG', '12b.JPG', '12c.JPG'],
             ['13a.JPG', '13b.JPG', '13c.JPG']
           ],

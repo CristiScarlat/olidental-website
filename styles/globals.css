@@ -1,9 +1,10 @@
 @import './medical-guide.css';
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
 
 html,
 body {
   background: #eeeded;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Alkatra', cursive;
   color: #444444;
 }
 * {
@@ -200,6 +201,14 @@ h4 {
   max-height: 320px;
   object-fit: cover;
   margin: 0!important;
+}
+
+.custom-link-services{
+  font-weight: 800;
+  color: #6cab44 !important;
+  font-size: 18px;
+  letter-spacing: 1px;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 1024px){
