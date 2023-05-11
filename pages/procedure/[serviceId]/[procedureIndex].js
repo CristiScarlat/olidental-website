@@ -26,11 +26,11 @@ const Procedure = () => {
         </div>
         <div className="pt-3 mb-2 d-flex flex-column m-auto" style={{maxWidth: '60rem'}}>
           <div className="m-2 d-flex flex-column gap-2">
-            <CustomCarousel showThumbs={false}>
+            <CustomCarousel showThumbs={false} interval={3000}>
             {services[serviceId]?.procedures[procedureIndex]?.cazuri?.images.map((batch, index) => {
               return (
                 <>
-                  <div key={index + "-"} className="d-flex gap-2 text-center justify-content-center">
+                  <div key={index + "-"} className={`d-flex gap-2 text-center ${batch.length <= 2 ? "justify-content-center" : ""}`}>
                     {batch.map((image, index, arr) => (
                       <div key={image + index} style={{position: 'relative'}}>
                         <img
