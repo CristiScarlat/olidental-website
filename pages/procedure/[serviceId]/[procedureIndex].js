@@ -30,7 +30,7 @@ const Procedure = () => {
             {services[serviceId]?.procedures[procedureIndex]?.cazuri?.images.map((batch, index) => {
               return (
                 <>
-                  <div key={index + "-"} className="d-flex gap-2 text-center">
+                  <div key={index + "-"} className="d-flex gap-2 text-center justify-content-center">
                     {batch.map((image, index, arr) => (
                       <div key={image + index} style={{position: 'relative'}}>
                         <img
@@ -43,7 +43,6 @@ const Procedure = () => {
                       </div>
                     ))}
                   </div>
-                  <hr className="w-100"/>
                 </>
               );
             })}
