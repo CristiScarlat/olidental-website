@@ -16,7 +16,20 @@ const Home = () => {
     <>
       <div className="bg-gray carousel-wrapper">
         <div className="m-auto" style={carouselContainerStyle}>
-          <CustomCarousel showThumbs={false} />
+          <CustomCarousel showThumbs={false}>
+            <div>
+              <img src="images/carousel/1.jpg" alt="carousel item 1" style={{ borderRadius: 10 }} />
+              {/* <CarouselLegendContent index={0} /> */}
+            </div>
+            <div>
+              <img src="images/carousel/2.jpg" alt="carousel item 2" style={{ borderRadius: 10 }} />
+              {/* <CarouselLegendContent index={1} /> */}
+            </div>
+            <div>
+              <img src="images/carousel/3.jpg" alt="carousel item 3" style={{ borderRadius: 10 }} />
+              {/* <CarouselLegendContent index={2} /> */}
+            </div>
+          </CustomCarousel>
         </div>
       </div>
       <div id="services"><Services /></div>
