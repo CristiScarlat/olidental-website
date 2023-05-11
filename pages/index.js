@@ -16,7 +16,7 @@ const Home = () => {
     <>
       <div className="bg-gray carousel-wrapper">
         <div className="m-auto" style={carouselContainerStyle}>
-          <CustomCarousel showThumbs={false}>
+          <CustomCarousel showThumbs={false} showArrows={false}>
             <div>
               <img src="images/carousel/1.jpg" alt="carousel item 1" style={{ borderRadius: 10 }} />
               {/* <CarouselLegendContent index={0} /> */}

@@ -1,7 +1,7 @@
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 
-const CustomCarousel = ({ showThumbs = true, showIndicators = false, interval=5000, children }) => {
+const CustomCarousel = ({ showThumbs = true, showIndicators = false, showArrows = true, interval=5000, children }) => {
   return (
     <Carousel
       stopOnHover={false}
@@ -14,6 +14,7 @@ const CustomCarousel = ({ showThumbs = true, showIndicators = false, interval=50
       interval={interval}
       preventMovementUntilSwipeScrollTolerance={true}
       swipeScrollTolerance={50}
+      showArrows={showArrows}
     >
       {children}
     </Carousel>
