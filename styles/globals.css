@@ -211,6 +211,10 @@ h4 {
   cursor: pointer;
 }
 
+.carousel.carousel-slider .control-arrow {
+  background-color: black!important;
+}
+
 @media only screen and (max-width: 1024px){
   .carousel-wrapper {
     padding: 0;
