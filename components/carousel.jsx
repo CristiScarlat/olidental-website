@@ -7,7 +7,7 @@ const CustomCarousel = ({ showThumbs = true, showIndicators = false, showArrows 
       stopOnHover={false}
       showThumbs={showThumbs}
       showIndicators={showIndicators}
-      dynamicHeight={true}
+      dynamicHeight={false}
       infiniteLoop
       autoPlay={true}
       showStatus={false}

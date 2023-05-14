@@ -30,16 +30,16 @@ const Procedure = () => {
             {services[serviceId]?.procedures[procedureIndex]?.cazuri?.images.map((batch, index) => {
               return (
                 <>
-                  <div key={index + "-"} className={`d-flex gap-2 text-center ${batch.length <= 2 ? "justify-content-center" : ""}`}>
+                  <div key={index + "-"} className={`d-flex responsive-direction gap-2 text-center ${batch.length <= 2 ? "justify-content-center" : ""}`}>
                     {batch.map((image, index, arr) => (
                       <div key={image + index} style={{position: 'relative'}}>
                         <img
                           src={`/images/${services[serviceId]?.procedures[procedureIndex]?.cazuri?.dirPath}/thumbnail_${image}`}
                           className="procedure-cazuri-img mx-2"
                         />
-                        {(index === 0 && arr.length > 1) && <div className="mx-2" style={{position: 'absolute', bottom: 0, color: 'white', left: 0, right: 0}}>înainte</div>}
-                        {(index === 1 && arr.length > 1) && <div className="mx-2" style={{position: 'absolute', bottom: 0, color: 'white', left: 0, right: 0}}>{arr.length === 2 ? 'după' : 'în lucru'}</div>}
-                        {(index === 2 && arr.length > 1) && <div className="mx-2" style={{position: 'absolute', bottom: 0, color: 'white', left: 0, right: 0}}>după</div>}
+                        {(index === 0 && arr.length > 1) && <div className="mx-2 outline-text" style={{position: 'absolute', bottom: 0, color: 'white', left: 0, right: 0}}>înainte</div>}
+                        {(index === 1 && arr.length > 1) && <div className="mx-2 outline-text" style={{position: 'absolute', bottom: 0, color: 'white', left: 0, right: 0}}>{arr.length === 2 ? 'după' : 'în lucru'}</div>}
+                        {(index === 2 && arr.length > 1) && <div className="mx-2 outline-text" style={{position: 'absolute', bottom: 0, color: 'white', left: 0, right: 0}}>după</div>}
                       </div>
                     ))}
                   </div>

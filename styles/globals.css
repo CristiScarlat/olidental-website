@@ -1,5 +1,6 @@
 @import './medical-guide.css';
 @import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
 
 html,
 body {
@@ -211,12 +212,27 @@ h4 {
   cursor: pointer;
 }
 
-.carousel.carousel-slider .control-arrow {
-  background-color: black!important;
+/*.carousel.carousel-slider .control-arrow {*/
+/*  background-color: black!important;*/
+/*}*/
+
+.responsive-direction {
+  flex-direction: row;
+}
+
+.outline-text {
+  font-family: 'Caveat Brush', cursive;
+  opacity: 0.8;
 }
 
 @media only screen and (max-width: 1024px){
   .carousel-wrapper {
     padding: 0;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  .responsive-direction {
+    flex-direction: column;
   }
 }
