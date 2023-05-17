@@ -136,7 +136,7 @@ h4 {
 
 .custom-card-container {
   min-width: 20rem;
-  max-width: 25rem;
+  max-width: 25rem!important;
   box-shadow: 2px 4px 7px 3px #dedede;
   padding-bottom: 1rem;
   border-radius: 10px;
@@ -210,6 +210,7 @@ h4 {
   font-size: 18px;
   letter-spacing: 1px;
   cursor: pointer;
+  padding-top: 10px;
 }
 
 /*.carousel.carousel-slider .control-arrow {*/

@@ -12,22 +12,6 @@ const Results = () => {
   return (
     <>
       <hr className="m-0 mb-3" />
-      <div className="m-auto mb-3" style={{ maxWidth: '70rem' }}>
-        <Dropdown onSelect={handleSelectProcedure}>
-          <Dropdown.Toggle id="dropdown-basic" style={{ backgroundColor: '#6cab44', border: 'none' }}>
-            <p className={styles.dropDownLabel}>{selectedProcedure ? selectedProcedure : 'toate'}</p>
-          </Dropdown.Toggle>
-
-          <Dropdown.Menu>
-            {procedures.map((procedure, index) => (
-              <Dropdown.Item key={procedure} eventKey={index}>
-                {procedure}
-              </Dropdown.Item>
-            ))}
-          </Dropdown.Menu>
-        </Dropdown>
-      </div>
-
       <div style={{ maxWidth: '70rem', margin: 'auto' }}>
         {beforeAfter
           .filter((obj) => (selectedProcedure ? obj.category === procedures.indexOf(selectedProcedure) : true))
