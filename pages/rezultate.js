@@ -16,8 +16,8 @@ const Results = () => {
         {beforeAfter
           .filter((obj) => (selectedProcedure ? obj.category === procedures.indexOf(selectedProcedure) : true))
           .map((obj, index) => (
-            <div className="row custom-gray-row mb-3 m-auto align-items-center" style={{ minHeight: 300 }} key={'before-after' + index}>
-              <div className="col-md-6">
+            <div className="row custom-gray-row mb-3 m-auto" style={{ minHeight: 300 }} key={'before-after' + index}>
+              <div className="col-md-6 pt-3">
                 <h3 style={{ fontWeight: 800 }}>{obj.title}</h3>
                 <p className={styles.rezultateCategorie}>
                   <span className="me-1">Procedura:</span>
