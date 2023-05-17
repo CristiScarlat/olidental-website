@@ -34,7 +34,9 @@ const Results = () => {
                   ></div>
                 </div>
                 <div className="m-auto w-100 unselectable">
-                  <ImageComparator images={obj.images.map((imgName) => `images/beforeAfter/${imgName}`)} maxWidth={400} />
+                  {obj.images?.map(imgs => (
+                    Array.isArray(imgs) && <ImageComparator key={imgs[0]} images={imgs.map((imgName) => `images/beforeAfter/${imgName}`)} maxWidth={400} />
+                  ))}
                 </div>
               </div>
             </div>

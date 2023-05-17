@@ -49,8 +49,7 @@ const ImageComparator = ({ images, maxWidth = 400 }) => {
   };
 
   return (
-    <>
-      <div></div>
+    <div className="mb-2">
       <div
         style={{ maxWidth, maxHeight: 225, visibility: imgLoaded ? 'visible' : 'hidden', margin: 'auto' }}
         className={styles.imageComparatoContainer}
@@ -99,7 +98,7 @@ const ImageComparator = ({ images, maxWidth = 400 }) => {
       >
         <Spinner variant="light" />
       </div>
-    </>
+    </div>
   );
 };
 
