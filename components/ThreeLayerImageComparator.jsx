@@ -18,7 +18,7 @@ const ThreeLayerImageComparator = ({ images = [], maxWidth = 400 }) => {
   const loadedImages = useRef([]);
 
   useEffect(() => {
-      setDeviderHeight(imageRef.current?.clientHeight);
+      setDeviderHeight(imageRef.current?.clientHeight || 400);
       setDeviderLeftXPos(imageRef.current?.clientWidth * 33 / 100);
       setDeviderRightXPos(imageRef.current?.clientWidth * 66 / 100);
   }, [imgLoaded]);
