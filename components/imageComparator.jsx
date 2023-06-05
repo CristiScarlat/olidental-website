@@ -3,7 +3,7 @@ import Spinner from './spinner';
 import { BsHandIndexThumb } from 'react-icons/bs';
 import styles from './styles/styles.module.css';
 
-const ImageComparator = ({ images, maxWidth = 400 }) => {
+const ImageComparator = ({ images, maxWidth = 400, height = 225, showCursor=true }) => {
   const [imgClip, setImgClip] = useState(['0% 0, 100% 0, 100% 100%, 0% 100%', '50% 0, 100% 0, 100% 100%, 50% 100%']);
 
   const [deviderGrab, setDeviderGrab] = useState(false);
@@ -48,8 +48,28 @@ const ImageComparator = ({ images, maxWidth = 400 }) => {
     }
   };
 
+  const handleHover = (status, imageIndex) => {
+    if(status === 'enter' && !showCursor){
+      //hoveredImg.current = imageIndex;
+      const temp = [...imgClip];
+
+      if(imageIndex === 0){
+        setDeviderXPos(imageRef.current?.clientWidth);
+        setImgClip(['0% 0, 100% 0, 100% 100%, 0% 100%', '100% 0, 100% 0, 100% 100%, 100% 100%']);
+      }
+      else if(imageIndex === 1){
+        setDeviderXPos(0);
+        setImgClip(['0% 0, 100% 0, 100% 100%, 0% 100%', '0% 0, 100% 0, 100% 100%, 0% 100%']);
+      }
+    }
+    else if(status === 'leave' && !showCursor){
+      setImgClip(['0% 0, 100% 0, 100% 100%, 0% 100%', '50% 0, 100% 0, 100% 100%, 50% 100%']);
+      setDeviderXPos(imageRef.current.clientWidth / 2);
+    }
+  }
+
   return (
-    <div className="mb-2">
+    <div className="mb-2 ms-2 me-2">
       <div
         style={{ maxWidth, maxHeight: 225, visibility: imgLoaded ? 'visible' : 'hidden', margin: 'auto' }}
         className={styles.imageComparatoContainer}
@@ -65,14 +85,18 @@ const ImageComparator = ({ images, maxWidth = 400 }) => {
             key={image + index}
             src={image}
             alt="before/after"
-            style={{ clipPath: `polygon(${imgClip[index]})`, maxWidth: maxWidth, height: 225, objectFit: 'cover' }}
+            style={{ clipPath: `polygon(${imgClip[index]})`, maxWidth: maxWidth, height: height, objectFit: 'cover', transition: showCursor ? null : 'clip-path 1s ease' }}
             ref={imageRef}
             loading="lazy"
             onLoad={() => handleImgOnLoad(image)}
+            onMouseEnter={() => handleHover('enter', index)}
+            onMouseOut={() => handleHover('leave', index)}
+            onTouchStart={() => handleHover('enter', index)}
+            onTouchEnd={() => handleHover('leave', index)}
           />
         ))}
-        <div style={{ width: 2, height: deviderHeight, left: deviderXPos }} className={styles.imageComparatoImageDevider}>
-          <div
+        <div style={{ width: 2, height: deviderHeight, left: deviderXPos, transition: showCursor ? null : 'left 1s ease'}} className={styles.imageComparatoImageDevider}>
+          {showCursor && <div
             style={{ cursor: deviderGrab ? 'grabbing' : 'grab' }}
             className={styles.imageComparatorGrabArea}
             onMouseDown={() => setDeviderGrab(true)}
@@ -82,14 +106,14 @@ const ImageComparator = ({ images, maxWidth = 400 }) => {
           >
             {/* <div>&#x21d5;</div> */}
             <BsHandIndexThumb />
-          </div>
+          </div>}
         </div>
       </div>
       <div
         className="d-flex justify-content-center align-items-center m-auto"
         style={{
           maxWidth: maxWidth,
-          height: 225,
+          height: height,
           visibility: imgLoaded ? 'hidden' : 'visible',
           border: '1px solid gray',
           textAlign: 'center',

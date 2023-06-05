@@ -259,15 +259,15 @@ export const services = [
      dorim să ajungem pentru ca pacientul să poată previzualiza în linii mari noul zâmbet și pentru
      a ințelege în ce masură va trebui ajustat estetic.</p>`,
     procedures: [
-      {
-        title: 'Obturații fizionomice',
-        logo: '/images/logos/carii.png.webp',
-        description: `<p><span class="ms-4"></span>Obturația dentară fizionomică, cu alte cuvinte plomba, constituie acea modalitate de
-        restaurare a dinților prin care se redau dintelui fizionomia și funcționalitatea normală.
-        Tratamentul se aplică dupa îndepărtarea țesutului alterat și se realizează prin umplerea
-        cavităților create cu diverse tipuri de materiale de restaurare în funcție de situația impusă.</p>`,
-        images: []
-      },
+      // {
+      //   title: 'Obturații fizionomice',
+      //   logo: '/images/logos/carii.png.webp',
+      //   description: `<p><span class="ms-4"></span>Obturația dentară fizionomică, cu alte cuvinte plomba, constituie acea modalitate de
+      //   restaurare a dinților prin care se redau dintelui fizionomia și funcționalitatea normală.
+      //   Tratamentul se aplică dupa îndepărtarea țesutului alterat și se realizează prin umplerea
+      //   cavităților create cu diverse tipuri de materiale de restaurare în funcție de situația impusă.</p>`,
+      //   images: []
+      // },
       {
         title: 'Fațete și coroane dentare integral ceramice',
         logo: '/images/logos/fatete-coroane-ceramice.png.webp',
@@ -337,12 +337,12 @@ export const services = [
           dirPath: '/services/1_'
         }
       },
-      {
-        title: 'Albire dentară profesională',
-        logo: '/images/logos/profilaxie-dentara.png.webp',
-        description: '',
-        images: []
-      }
+      // {
+      //   title: 'Albire dentară profesională',
+      //   logo: '/images/logos/profilaxie-dentara.png.webp',
+      //   description: '',
+      //   images: []
+      // }
     ]
   },
   {

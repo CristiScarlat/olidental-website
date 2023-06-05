@@ -159,6 +159,26 @@
   z-index: 9999!important;
 }
 
+.listNavCarouselWrapper {
+  position: relative;
+}
+
+.listNavCarouselControlsContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+  padding-bottom: 0.5rem;
+}
+
+.listNavCarouselControlsContainer > button {
+  border-radius: 5px;
+  padding: 0.2rem;
+  background-color: #6cab44;
+  color: #eeeded;
+  width: 3rem;
+}
+
 @media only screen and (max-width: 600px) {
   .custom-icon-contact-container {
     flex-direction: column;

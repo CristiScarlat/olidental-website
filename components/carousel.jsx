@@ -1,7 +1,7 @@
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 
-const CustomCarousel = ({ showThumbs = true, showIndicators = false, showArrows = true, interval=5000, children }) => {
+const CustomCarousel = ({ showThumbs = true, showIndicators = false, showArrows = true, interval=5000, autoPlay=true, children }) => {
   return (
     <Carousel
       stopOnHover={false}
@@ -9,7 +9,7 @@ const CustomCarousel = ({ showThumbs = true, showIndicators = false, showArrows 
       showIndicators={showIndicators}
       dynamicHeight={false}
       infiniteLoop
-      autoPlay={true}
+      autoPlay={autoPlay}
       showStatus={false}
       interval={interval}
       preventMovementUntilSwipeScrollTolerance={true}
