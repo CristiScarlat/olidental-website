@@ -12,7 +12,10 @@ const ImageComparator = ({ images, maxWidth = 400, height = 225, showCursor=true
 
   const [deviderXPos, setDeviderXPos] = useState(200);
 
-  const [imgLoaded, setImgLoaded] = useState(false);
+  //const [imgLoaded, setImgLoaded] = useState(false);
+
+  const imgLoaded = true;
+  const setImgLoaded = () => {}
 
   const imageRef = useRef();
   const loadedImages = useRef([]);
@@ -23,9 +26,11 @@ const ImageComparator = ({ images, maxWidth = 400, height = 225, showCursor=true
   }, []);
 
   const handleDeviderMove = (e) => {
+
     const clientRectObj = imageRef.current.getBoundingClientRect();
     const imagePosX = Math.ceil(clientRectObj.x);
     if (deviderGrab && e.clientX - imagePosX >= 2 && e.clientX - imagePosX <= maxWidth - 3) {
+      console.log("move")
       const xPosProc = ((e.clientX - imagePosX) * 100) / imageRef.current.clientWidth;
       setDeviderXPos(e.clientX - imagePosX);
       setImgClip([`${100 - xPosProc}% 0, 100% 0, 100% 100%, ${100 - xPosProc}% 100%'`, `${xPosProc}% 0, 100% 0, 100% 100%, ${xPosProc}% 100%`]);
@@ -70,6 +75,7 @@ const ImageComparator = ({ images, maxWidth = 400, height = 225, showCursor=true
 
   return (
     <div className="mb-2 ms-2 me-2">
+
       <div
         style={{ maxWidth, maxHeight: 225, visibility: imgLoaded ? 'visible' : 'hidden', margin: 'auto' }}
         className={styles.imageComparatoContainer}
@@ -85,7 +91,7 @@ const ImageComparator = ({ images, maxWidth = 400, height = 225, showCursor=true
             key={image + index}
             src={image}
             alt="before/after"
-            style={{ clipPath: `polygon(${imgClip[index]})`, maxWidth: maxWidth, height: height, objectFit: 'cover', transition: showCursor ? null : 'clip-path 1s ease' }}
+            style={{ userSelect: 'none', clipPath: `polygon(${imgClip[index]})`, maxWidth: maxWidth, height: height, objectFit: 'cover', transition: showCursor ? null : 'clip-path 1s ease' }}
             ref={imageRef}
             loading="lazy"
             onLoad={() => handleImgOnLoad(image)}
@@ -105,7 +111,7 @@ const ImageComparator = ({ images, maxWidth = 400, height = 225, showCursor=true
             onTouchEnd={() => setDeviderGrab(false)}
           >
             {/* <div>&#x21d5;</div> */}
-            <BsHandIndexThumb />
+            <BsHandIndexThumb color="white"/>
           </div>}
         </div>
       </div>

@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import { services } from "../../utils/uiConstants";
 import CustomCard from "../../components/customCard";
 
+
 const Service = () => {
     //const [imagesList, setImagesList] = useState();
     const router = useRouter();

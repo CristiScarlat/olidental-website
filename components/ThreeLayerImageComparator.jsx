@@ -3,7 +3,7 @@ import Spinner from './spinner';
 import { BsHandIndexThumb } from 'react-icons/bs';
 import styles from './styles/styles.module.css';
 
-const ThreeLayerImageComparator = ({ images = [], maxWidth = 400 }) => {
+const ThreeLayerImageComparator = ({ images = [], maxWidth = 400, height=400 }) => {
   const [imgClip, setImgClip] = useState(['0% 0px, 33% 0px, 33% 100%, 0% 100%', '33% 0px, 66% 0px, 66% 100%, 33% 100%', '66% 0, 100% 0, 100% 100%, 66% 100%']);
 
   const [deviderHeight, setDeviderHeight] = useState();
@@ -64,7 +64,7 @@ const ThreeLayerImageComparator = ({ images = [], maxWidth = 400 }) => {
   return (
     <div className='mb-2 ms-2 me-2'>
       <div style={{ visibility: imgLoaded ? 'visible' : 'hidden', margin: 'auto', height: `${deviderHeight}px` }}
-           className={styles.imageComparatoContainer}
+           className={`${styles.imageComparatoContainer}`}
           >
         {images?.map((image, index) => (
           <img
@@ -73,7 +73,7 @@ const ThreeLayerImageComparator = ({ images = [], maxWidth = 400 }) => {
             alt='before/after-3layer'
             style={{
               clipPath: `polygon(${imgClip[index]})`,
-              maxHeight: '400px',
+              height: height,
               objectFit: 'cover',
               top: 0,
               position: 'absolute',
