@@ -23,7 +23,8 @@ const ImageComparator = ({ images, maxWidth = 400, height = 225, showCursor=true
   useEffect(() => {
     setDeviderHeight(imageRef.current.clientHeight || 200);
     setDeviderXPos(imageRef.current.clientWidth / 2);
-  }, []);
+    setImgClip(['0% 0, 100% 0, 100% 100%, 0% 100%', '50% 0, 100% 0, 100% 100%, 50% 100%']);
+  }, [images]);
 
   const handleDeviderMove = (e) => {
 
@@ -47,6 +48,8 @@ const ImageComparator = ({ images, maxWidth = 400, height = 225, showCursor=true
   };
 
   const handleImgOnLoad = (imageSrc) => {
+    setDeviderHeight(imageRef.current.clientHeight || 200);
+    setDeviderXPos(imageRef.current.clientWidth / 2);
     loadedImages.current.push(imageSrc);
     if (loadedImages.current.length === 2) {
       setImgLoaded(true);
@@ -74,8 +77,7 @@ const ImageComparator = ({ images, maxWidth = 400, height = 225, showCursor=true
   }
 
   return (
-    <div className="mb-2 ms-2 me-2">
-
+    <div className="mb-2 ms-2 me-2" style={{height: deviderHeight, border: '2px solid #80808042', borderWidth: '0 2px'}}>
       <div
         style={{ maxWidth, maxHeight: 225, visibility: imgLoaded ? 'visible' : 'hidden', margin: 'auto' }}
         className={styles.imageComparatoContainer}
@@ -91,7 +93,7 @@ const ImageComparator = ({ images, maxWidth = 400, height = 225, showCursor=true
             key={image + index}
             src={image}
             alt="before/after"
-            style={{ userSelect: 'none', clipPath: `polygon(${imgClip[index]})`, maxWidth: maxWidth, height: height, objectFit: 'cover', transition: showCursor ? null : 'clip-path 1s ease' }}
+            style={{ userSelect: 'none', clipPath: `polygon(${imgClip[index]})`, maxWidth: maxWidth, height: null, objectFit: 'contain', transition: showCursor ? null : 'clip-path 1s ease' }}
             ref={imageRef}
             loading="lazy"
             onLoad={() => handleImgOnLoad(image)}
@@ -119,7 +121,7 @@ const ImageComparator = ({ images, maxWidth = 400, height = 225, showCursor=true
         className="d-flex justify-content-center align-items-center m-auto"
         style={{
           maxWidth: maxWidth,
-          height: height,
+          //height: height,
           visibility: imgLoaded ? 'hidden' : 'visible',
           border: '1px solid gray',
           textAlign: 'center',

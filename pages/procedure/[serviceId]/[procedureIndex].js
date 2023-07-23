@@ -45,7 +45,7 @@ const Procedure = () => {
 
   return (
     <div className='services-container m-auto'>
-      <div className='pt-4 pb-4 bg-gray'>
+      <div className='pt-4 pb-4 bg-gray' >
         <div className='m-auto' style={{ maxWidth: '60rem' }}>
           <div className='d-flex align-items-center gap-2 justify-content-md-start justify-content-center px-2'>
             <TfiHandPointLeft size='2rem' color='#6cab44' />
@@ -86,8 +86,7 @@ const Procedure = () => {
                 <ImageComparator
                   images={cazuri[indexCaz].images[imgNo].map(image => `/images/${cazuri[indexCaz]?.dirPath}/thumbnail_${image}`)}
                   //showCursor={false}
-                  maxWidth={1000}
-                  height={500}
+                  maxWidth={850}
                 />}
             </>
           }

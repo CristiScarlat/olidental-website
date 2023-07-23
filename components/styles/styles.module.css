@@ -171,7 +171,7 @@
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #8080804d;
-  padding-bottom: 0.5rem;
+  padding: 0.5rem;
 }
 
 .listNavCarouselControlsContainer > button {
