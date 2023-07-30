@@ -852,7 +852,89 @@ export const services = [
           'Boala parodonatală este una dintre cele mai raspandite afecțiuni la nivel global, constituind una dintre principalele cauze ale pierderii premature a dinților.\
           În principiu, se manifestă prin inflamarea și înroșirea țesuturilor moi care înconjoară dintele, iar în timp, apar probleme precum sângerarea gingiilor, retracția gingivală, dureri și sensibilitate dentară,  mobilitatea dinților pe arcadă, culminând cu pierderea acestora.\
           La Olidental Clinic, detectăm afecțiunile gingivale și pierderile osoase și stabilim un tratament corespunzător. Recomandăm, de asemenea, efectuarea unui control de rutină periodic în vederea identificării eventualelor probleme parodontale și păstrării sănătății orale',
-        cazuri: []
+        cazuri: [
+          {
+            'title': '1 Trusca Monica',
+            'images': [
+              ['1a.JPG', '1b.JPG'],
+              ['2a.JPG', '2b.JPG'],
+              ['3a.JPG', '3b.JPG'],
+              ['4a.JPG', '4b.JPG']
+            ],
+            'dirPath': 'services/3_tratamente_mixte_endodontice_parodontale_si_protetice_cazuri/1 Trusca Monica'
+          },
+          {
+            'title': '2 Dinu Diana',
+            'images': [
+              ['1a.JPG', '1b.JPG'],
+              ['2a.JPG', '2b.JPG'],
+              ['3a.JPG', '3b.JPG'],
+              ['4a.JPG', '4b.JPG']
+            ],
+            'dirPath': 'services/3_tratamente_mixte_endodontice_parodontale_si_protetice_cazuri/2 Dinu Diana'
+          },
+          {
+            'title': '3 Biebel Ina',
+            'images': [
+              ['1a.JPG', '1b.JPG'],
+              ['2a.JPG', '2b.JPG'],
+              ['3a.JPG', '3b.JPG'],
+              ['4a.JPG', '4b.JPG']
+            ],
+            'dirPath': 'services/3_tratamente_mixte_endodontice_parodontale_si_protetice_cazuri/3 Biebel Ina'
+          },
+          {
+            'title': '4 Frumosu Cristina',
+            'images': [
+              ['1a.JPG', '1b.JPG'],
+              ['2a.JPG', '2b.JPG'],
+              ['3a.JPG', '3b.JPG'],
+              ['4a.JPG', '4b.JPG']
+            ],
+            'dirPath': 'services/3_tratamente_mixte_endodontice_parodontale_si_protetice_cazuri/4 Frumosu Cristina'
+          },
+          // {
+          //   'title': '5 Dumitrascu Adriana',
+          //   'images': [
+          //     ['1a.JPG', '1b.JPG'],
+          //     ['2a.jpg', '2b.JPG'],
+          //     ['3a.JPG', '3b.JPG'],
+          //     ['4a.jpg', '4b.jpg']
+          //   ],
+          //   'dirPath': 'services/3_tratamente_mixte_endodontice_parodontale_si_protetice_cazuri/5 Dumitrascu Adriana'
+          // },
+          {
+            'title': '6 Topan Mirabela',
+            'images': [
+              ['1a.JPG', '1b.JPG'],
+              ['2a.JPG', '2b.JPG'],
+              ['3a.JPG', '3b.JPG'],
+              ['4a.JPG', '4b.JPG'],
+              ['TMa.JPG', 'TMb.JPG']
+            ],
+            'dirPath': 'services/3_tratamente_mixte_endodontice_parodontale_si_protetice_cazuri/6 Topan Mirabela'
+          },
+          {
+            'title': '7 Munteanu',
+            'images': [
+              ['1a.JPG', '1b.JPG'],
+              ['2a.JPG', '2b.JPG'],
+              ['3a.JPG', '3b.JPG'],
+              ['4a.JPG', '4b.JPG']
+            ],
+            'dirPath': 'services/3_tratamente_mixte_endodontice_parodontale_si_protetice_cazuri/7 Munteanu'
+          },
+          {
+            'title': '8 Andrei Cosmina',
+            'images': [
+              ['1a.JPG', '1b.JPG'],
+              ['2a.JPG', '2b.JPG'],
+              ['3a.JPG', '3b.JPG'],
+              ['4a.JPG', '4b.JPG']
+            ],
+            'dirPath': 'services/3_tratamente_mixte_endodontice_parodontale_si_protetice_cazuri/8 Pacurar Simona'
+          }
+        ]
       }
     ]
   }
@@ -871,162 +953,162 @@ export const procedures = [
 ];
 export const beforeAfter = [
   {
-    title: 'What is Lorem Ipsum?',
+    title: 'Reabilitare estetica a dintilor maxilari',
     description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
-    difficultyLevel: 2,
+      'Pacienta s-a prezentat pentru a schimba aspectul dintilor maxilari care aveau un aspect inestetic datorita unor restaurari mai vechi. Au fost tratati dintii si s-au restaurat cu fatete integral ceramice cu aspect naturas cu respectarea pretentiilor estetice ale pacientei.',
+    difficultyLevel: 3,
     category: 0,
     images: [['1a.JPG', '1b.JPG'], ['1aa.JPG', '1bb.JPG']]
   },
   {
-    title: 'Where does it come from?',
+    title: 'Reabilitare orala complexa a tuturor dintilor',
     description:
-      'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.',
-    difficultyLevel: 4,
+      'Pacientul s-a prezentat intr-o stare avansata de degradare a intregului aparat dentar cu tulburarea severa a functiei masticatorii si un aspect inestetic sever. Dificultatea cazului a reprezentat-o restabilirea rapoartelor corecte dintre cele doua arcade dentare in conditiile unei deteriorari severe mai ales a dintolr maxilari cat si a preexistentei unor anomalii dentare de pozitie. S-au inserat implanturi dentare atat la maxilar cat si la mandibula, aditii osoase la nivelul maxilarului, dintii restanti au fost tratati si imbracati cu restaurari cu schelet de zirconiu iar implanturile s-au protezat cu restaurari fixate prin isurubare.',
+    difficultyLevel: 10,
     category: 0,
     images: [['2a.JPG', '2b.JPG'], ['2aa.JPG', '2bb.JPG']]
   },
   {
-    title: 'Why do we use it?',
+    title: 'Reabiltare orala pe dinti si implanturi',
     description:
-      'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.',
-    difficultyLevel: 5,
+      'Situatie dificila in care a trebuit sa refacem estetic si functional situatia compromisa de niste tratamente incepute gresit si incorect realizate la o pacienta tanara cu deficiente dentare majore. Tratamentul s-a intins pe durata a doi ani si a cuprins indepartarea implanturilor si restaurarilor incorect realizate, tratament ortodontic, reconstructii osoase, inseratea de implanturi noi si realizarea de restaurari dentare estetice si functionale care sa ofere stabilitate pe termen lung.',
+    difficultyLevel: 10,
     category: 1,
     images: [['3a.JPG', '3b.JPG'], ['3aa.JPG', '3bb.JPG']]
   },
   {
-    title: 'Where can I get some?',
+    title: 'Reabilitarea dintilor superiori',
     description:
-      'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.',
-    difficultyLevel: 8,
+      'Pacienta s-a prezentat pentru rezolvarea unor nemultumiri estetice ale dintilor superiori. Planul de tratament a constat in indepartarea restaurarilor vechi, tratarea dintilor, inserarea de mplanturi si restaurari esttice integral ceramice pe toti dintii superiori pentru a corecta, forma pozitia si aliniamentul dintilor.',
+    difficultyLevel: 5,
     category: 1,
     images: [['4a.JPG', '4b.JPG'], ['4aa.JPG', '4bb.JPG']]
   },
   {
-    title: 'Where can I get some?',
+    title: 'Reabilitare orala complexa a tuturor dintilor',
     description:
-      'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.',
+      'La cazul de fata s-au indepartat vechile restaurari, au fost inserate implanturi pe zonele laterale la mandibula, s-a realizat un tratament parodontal si s-au acoperit dintii cu fatete si coroane integral ceramice cu aspect natural si estetic',
     difficultyLevel: 9,
     category: 2,
     images: [['5a.JPG', '5b.JPG'], ['5aa.JPG', '5bb.JPG']]
   },
   {
-    title: 'Why do we use it?',
+    title: 'Reechilibrare functionala si estetica a dintilor maxilari la o pacienta cu tulburari estetice severe',
     description:
-      'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.',
-    difficultyLevel: 5,
+      'Dificulatea cazului a constat in schimbarea pozitiei dintilor, indreptaea planului ocluzal, modificarea formei arcadelor dentare si a rapoartelor dintre dinti. S-au indepartat vechile restaurari si am tratat dintii. Am realizat corectarea contururilor tesuturilor care sustin dintii prin chirurgie gingivala si osoasa. Dupa etapa de provizorat s-au realizat restaurari integral ceramice estetice prin care am obtinut un aspect mult imbunatatit al zambetului ',
+    difficultyLevel: 8,
     category: 3,
     images: [['6a.JPG', '6b.JPG'], ['6aa.JPG', '6bb.JPG']]
   },
   {
-    title: 'Where can I get some?',
+    title: 'Reabilitare orala estetica si funtionala',
     description:
-      'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.',
-    difficultyLevel: 8,
+      'Pacienta s-a pezentat cu nemultumiri de natura estetica, disconfort masticator si dureri dentare. Tratamentul realizat a fost multidisciplinar incluzand tratamente endodontice, parodontale si protetice. Dintii au fost tratati si irestaurati cu fatete si coroane integral ceramice cu aspect luminos si sanatos. S-a obtinut astfel un zambet nou estetic in armonie care satisface exigentele pacientei.',
+    difficultyLevel: 6,
     category: 4,
     images: [['7a.JPG', '7b.JPG'], ['7aa.JPG', '7bb.JPG']]
   },
   {
-    title: 'Where can I get some?',
+    title: 'Tratament complex estetic si functional',
     description:
-      'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.',
-    difficultyLevel: 9,
+      'Complexitatea cazului a facut sa apelam la tehnici de restaurare sare au inclus tratamente parodontale, inlocuirea dintilor lipsa cu ajutorul implanturilor dentare, reastaurarea estetica a dintilor cu ajutorul fatetelor si coroanelor integral ceramice',
+    difficultyLevel: 8,
     category: 5,
     images: [['8a.JPG', '8b.JPG'], ['8aa.JPG', '8bb.JPG']]
   },
   {
-    title: 'Where can I get some?',
+    title: 'Reabilitare orala estetica si functionala',
     description:
-      'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.',
-    difficultyLevel: 8,
+      'Dintii aveau un aspect uzat imbatranit cu multiple leziuni si restaurari inadecvate. S-a realizat tratarea si imbracarea lor cu fatete si coroane integral ceramice cu aspect natural care refac functia, sanatatea si imbunatatesc estetica zambetului',
+    difficultyLevel: 4,
     category: 6,
     images: [['9a.JPG', '9b.JPG'], ['9aa.JPG', '9bb.JPG']]
   },
   {
-    title: 'Where can I get some?',
+    title: 'Reabilitare orala complexa bimaxilara',
     description:
-      'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.',
+      'Pacientul s-a prezentat cu dantura intr-o stare avansata de degradare cu multiple disfunctionalitati atat de natura masticatorie, fonetice si cu un aspect compromis. Pe langa statusul dentar degradat pacientul prezenta si anomalii dentare de pozitie. Tratamentul a fost unul care cuprins etape de chirurgie in care s-au indepartat resturile radiculare,m eliminarea focarelor de infectie, aditie de os, inserare de implanturi. Dintii restanti au fost tratati endodontic reconstituiti si acoperiti cu restaurari protetice. Pe implanturi s-au realizat restaurari cu agregare prin insurubar. La final s-a refacut integritatea arcadelor dentare cu redarea functiei masticatorii pierdute si imbunatatirea aspectului dintilor si al zambetului.',
     difficultyLevel: 9,
-    category: 7,
+    category: 8,
     images: [['10a.JPG', '10b.JPG'], ['10aa.JPG', '10bb.JPG']]
   },
   {
-    title: 'What is Lorem Ipsum?',
+    title: 'Restaurarea estetica a dintilor superiori',
     description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
-    difficultyLevel: 2,
-    category: 8,
+      'Dintii au fost tratati iar pentru corectarea aspectului s-a recurs la chirurgie gingivo-osoasa pentru a reda sanatea parodontiului si a corecta conturul tesutului gingival din jurul dintilor. Dupa ce s-a obtinut stabilitatea tesuturilor parodontale dintii au fost acoperiti cu fatete si coroane integral ceramice cu aspect natural si imbunatatirea zambetul pacientei. ',
+    difficultyLevel: 7,
+    category: 9,
     images: [['11a.JPG', '11b.JPG'], ['11aa.JPG', '11bb.JPG']]
   },
   {
-    title: 'Where does it come from?',
+    title: 'Imbunatatirea aspectului zambetului prin tratamente estetice',
     description:
-      'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.',
-    difficultyLevel: 4,
-    category: 9,
+      'Obiectivul tratamentului a fost diminuarea  aspectului gingival al zambetului si imbunatatirea formei, volumului, culorii si pozitiei dintilor cu eliminarea aspectului uzat si dizarmonic al dintilor, S-a realizat reconturare chirurgicala a gingiei si osului din jurul dintilor si fatetarea dintilor cu restadurari estetice integral ceramice cu aspect natural.',
+    difficultyLevel: 3,
+    category: 4,
     images: [['12a.JPG', '12b.JPG'], ['12aa.JPG', '12bb.JPG']]
   },
   {
-    title: 'Why do we use it?',
+    title: 'Refacerea unor tratamente esuate',
     description:
-      'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.',
-    difficultyLevel: 5,
-    category: 4,
+      'Pacienta s-a prezentat cu un aspect inestetic al dintilor in urma unor tratamente esuate. Aspectul dintilor a fost compromis in urma inserarii gresite a implanturilor si al unor tratamente ortodontice si restaurative incorecte. Am obtinut imbunatatirea aspectului dintilor de la maxilarul superior prin interventii chirurgicale, taratamente parodontale si protetice. Dupa imbunatatirea aspectului gingival, dintii s-au restaurat cu fatete si coroane integral ceramice, prin care am reusit sa corectam aspectul zambetului.',
+    difficultyLevel: 9,
+    category: 5,
     images: [['13a.JPG', '13b.JPG'], ['13aa.JPG', '13bb.JPG']]
   },
   {
-    title: 'Where can I get some?',
+    title: 'Imbunatatirea zambetului cu fatete integral ceramice',
     description:
-      'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.',
-    difficultyLevel: 8,
-    category: 5,
+      'Dintii cu un aspect inestetic datorat uzurilor dentare, al pigmentarilor sau al unor restaurari vechi au fost acoperiti cu fatete dentare integral ceramice. Acestea au contribuit la imbunatatirea aspectului dintilor prin modificari de forma culoare si volum, oferind un aspect natural, mai simetric si au dat prospetime zambetului.',
+    difficultyLevel: 2,
+    category: 6,
     images: [['14a.JPG', '14b.JPG'], ['14aa.JPG', '14bb.JPG']]
   },
   {
-    title: 'Where can I get some?',
+    title: 'Reabilitare orala complexa in cazul unei paciente tinere cu uzuri si eroziuni dentare accentuate.',
     description:
-      'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.',
-    difficultyLevel: 9,
-    category: 6,
+      'Tratamentul a presupus realizarea de restaurari integral ceramice pe dinti si pe implanturi. Prin acestea s-a restabilit integritatea dinilor si s-a imbunatatit atat aspectul cat si functia masticatorie, in acelasi timp stopandu-se procesul de uzura al dintilor.',
+    difficultyLevel: 7,
+    category: 7,
     images: [['15a.JPG', '15b.JPG'], ['15aa.JPG', '15bb.JPG']]
   },
   {
-    title: 'Why do we use it?',
+    title: 'Reabilitare orala in cazului unui pacient parodontopat.',
     description:
-      'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.',
-    difficultyLevel: 5,
-    category: 7,
+      'In aceasta situatie s-a recurs la un tratament interdisciplinar care a cuprins indepartarea dintilor irecuperabili, tratament parodontal la dintii restanti, inserare de implanturi si aditii de os pe lcul dintilor extrasi si realizarea de restaurari protetice atat pe dinti cat si pe implanturi',
+    difficultyLevel: 9,
+    category: 8,
     images: [['16a.JPG', '16b.JPG'], ['16aa.JPG', '16bb.JPG']]
   },
   {
-    title: 'Where can I get some?',
+    title: 'Imbunatatirea functiei si esteticii dentare',
     description:
-      'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.',
-    difficultyLevel: 8,
-    category: 8,
+      'Desi dintii erau sanataosi, pacienta era nemultumita de aspectul lor in ce priveste culoarea, forma si pozitia lor. Rapoartele dintre dinti si gingie erau dezechibrate si asimetrice. Dificultatea cazului a reprezentat-o alinierea dintilor, obtinerea unui zambet cat mai simetric si eliminarea zambetului gingival in conditiile in care pacienta refuza tratamentul ortodontic. Astfel am recurs la tehnici chirurgicale prin care am corectat asimetria gingivala, am redus zambetul gingival am realizat alungiri coronare la dintii maxilari si am fatetat cu restaurari integral ceramice toti dintii maxilari si mandibulari. Astfel am obtinut un zambet mai simetric, echilibrat si mai estetic.',
+    difficultyLevel: 7,
+    category: 9,
     images: [['17a.JPG', '17b.JPG'], ['17aa.JPG', '17bb.JPG']]
   },
   {
-    title: 'Where can I get some?',
+    title: 'Reabilitare orala bimaxilara ',
     description:
-      'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.',
+      'Pacienta prezenta un dezechilibru masticor fiind edentata in zonele molare atat la maxilar cat si la mandibula, iar dintii zonei anterioare au fost afectati de multiple zeziuni carioase partial tratate. De asemenea am constatat uzura accentuata  a dintilor restanti cu modificari estetice si functionale. S-au inserat implanturi si s-au facut aditii de os pe zonele molarilor, iar dini restanti dupa ce au fost tratati au fost imbracati cu fatete integral ceramice si coroane ceramice cu schelet de zirconiu.',
     difficultyLevel: 9,
-    category: 9,
+    category: 3,
     images: [['18a.JPG', '18b.JPG'], ['18aa.JPG', '18bb.JPG']]
   },
   {
-    title: 'Where can I get some?',
+    title: 'Restaurarea functionala si estetica a aparatlui dento-maxilar ',
     description:
-      'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.',
-    difficultyLevel: 8,
+      'Pacienta s-a prezentat pentru o reabilitare a danturii acuzand multiple disfunctionalitati. Planul de tratament a inclus o etapa chirurgicala in care s-a realizat aditie osoasa, sinus-lift, inserare de implanturi, chirurgie parodontala, o etapa de terapie endodontica si una protetica in care s-au realizat restaurari integral ceramice cu schelet de zirconiu pe dinti si restaurari fixate prin insurubare pe implanturi.',
+    difficultyLevel: 9,
     category: 3,
     images: [['19a.JPG', '19b.JPG'], ['19aa.JPG', '19bb.JPG']]
   },
   {
-    title: 'Where can I get some?',
+    title: 'Reabilitare estetica si functionala a danturii prin restaurari integral  ceramice',
     description:
-      'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.',
-    difficultyLevel: 9,
+      'Scopul tratamentul a fost primordial unul estetic dar s-a avut in vedere si imbunatatirea functionalitatii dintilor. Acestia au primit restaurari minim invazive de tipul fatetelor dentare prin care s-a obtinut un zambet natural, mai estetic, si mai luminos in conformitate cu pretentiile estetice ale pacientei',
+    difficultyLevel: 5,
     category: 3,
     images: [['20a.JPG', '20b.JPG'], ['20aa.JPG', '20bb.JPG']]
   }

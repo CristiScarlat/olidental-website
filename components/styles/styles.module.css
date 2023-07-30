@@ -213,6 +213,7 @@
 
 .proceduresPreviewImages > img {
   width: 60px;
+  object-fit: contain;
 }
 @media only screen and (max-width: 600px) {
   .custom-icon-contact-container {

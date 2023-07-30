@@ -48,10 +48,10 @@ const Procedure = () => {
       <div className='pt-4 pb-4 bg-gray' >
         <div className='m-auto' style={{ maxWidth: '60rem' }}>
           <div className='d-flex align-items-center gap-2 justify-content-md-start justify-content-center px-2'>
-            <TfiHandPointLeft size='2rem' color='#6cab44' />
             <Link href={`/service/${serviceId}`}>
-              <span className='custom-link-services'>{`Mergi înapoi la ${services[serviceId]?.title}`}</span>
+              <TfiHandPointLeft size='2rem' color='#6cab44' style={{cursor: "pointer"}}/>
             </Link>
+            <span className='custom-link-services'>{`Mergi înapoi la ${services[serviceId]?.title}`}</span>
           </div>
           <hr className='w-100' />
           <div className='text-center'>

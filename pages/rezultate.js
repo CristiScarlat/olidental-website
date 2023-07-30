@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import ImageComparator from '../components/imageComparator';
-import { Dropdown } from 'react-bootstrap';
 import { beforeAfter, procedures } from '../utils/uiConstants';
 import styles from '../styles/rezultate.module.css';
 
@@ -17,12 +16,12 @@ const Results = () => {
           .filter((obj) => (selectedProcedure ? obj.category === procedures.indexOf(selectedProcedure) : true))
           .map((obj, index) => (
             <div className="row custom-gray-row mb-3 m-auto" style={{ minHeight: 300 }} key={'before-after' + index}>
-              <div className="col-md-6 pt-3">
-                <h3 style={{ fontWeight: 800 }}>{obj.title}</h3>
-                <p className={styles.rezultateCategorie}>
-                  <span className="me-1">Procedura:</span>
-                  {procedures[obj.category]}
-                </p>
+              <div className={`col-md-6 p-3 ${styles.descriptionColumnRezultateCard}`}>
+                <h3 style={{ fontWeight: 800 }}>{`${index+1}. ${obj.title}`}</h3>
+                {/*<p className={styles.rezultateCategorie}>*/}
+                {/*  <span className="me-1">Procedura:</span>*/}
+                {/*  {procedures[obj.category]}*/}
+                {/*</p>*/}
                 <p>{obj.description}</p>
               </div>
               <div className="col-md-6">

@@ -13,3 +13,9 @@
     padding-left: 0.5rem;
     color: #6cab44;
 }
+
+.descriptionColumnRezultateCard {
+    border: 1px solid #9f9a9a;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px #b6dfa8;
+}

@@ -25,6 +25,7 @@ const ThreeLayerImageComparator = ({ images = [], maxWidth = 400, height=400 }) 
 
   const handleImgOnLoad = (imageSrc) => {
     loadedImages.current.push(imageSrc);
+    setDeviderHeight(imageRef.current?.clientHeight || 400)
     if (loadedImages.current.length === 2) {
       setImgLoaded(true);
     }
@@ -73,8 +74,8 @@ const ThreeLayerImageComparator = ({ images = [], maxWidth = 400, height=400 }) 
             alt='before/after-3layer'
             style={{
               clipPath: `polygon(${imgClip[index]})`,
-              height: height,
-              objectFit: 'cover',
+              //height: height,
+              objectFit: 'contain',
               top: 0,
               position: 'absolute',
               transition: 'clip-path 1s ease',
