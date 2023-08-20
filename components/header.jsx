@@ -12,8 +12,8 @@ const Header = () => {
     <header>
       <Navbar collapseOnSelect expand="lg" variant="light" className={styles['navbar-transparent']} expanded={expanded} onToggle={() => setExpanded(true)}>
         <Container fluid className="ps-3 pe-3">
-          <Navbar.Brand className="mt-2 mb-2">
-            <Logo />
+          <Navbar.Brand className="mt-2 mb-2" onClick={() => router.push("/")} style={{cursor: "pointer"}}>
+            <Logo/>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll" style={{ flexGrow: 0 }}>

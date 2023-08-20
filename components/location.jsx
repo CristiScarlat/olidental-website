@@ -10,7 +10,8 @@ const Location = () => {
             <MdLocationOn style={{fill: '#4caf50'}}/>
           </div>
           <div style={{ color: '#807f89' }}>
-            Strada Ștefan cel Mare 53
+            Strada Ștefan cel Mare 53<br/>
+            (intrare de pe Gh Asachi)
             <br />
             Timișoara 307200
           </div>
@@ -19,14 +20,18 @@ const Location = () => {
           <div style={{ width: '100px' }}>
             <MdOutlineMail style={{fill: '#4caf50'}}/>
           </div>
-          <div style={{ color: '#807f89' }}>office@olidental.ro</div>
+          <div style={{ color: '#807f89' }}>
+            <a style={{ color: '#807f89', height: 'auto', whiteSpace: 'nowrap' }} href="email:office@olidental.ro">
+              office@olidental.ro
+            </a>
+            </div>
         </div>
         <div className={styles['custom-icon-contact']}>
           <div style={{ width: '100px' }}>
             <MdPhone style={{fill: '#4caf50'}}/>
           </div>
           <div style={{ color: '#807f89' }}>
-            +40 733.023.030
+            <a style={{ color: '#807f89', height: 'auto', whiteSpace: 'nowrap' }} href="tel:+40 733.023.030">+40 733.023.030</a>
           </div>
         </div>
       </div>
