@@ -1,9 +1,9 @@
 import styles from './styles/styles.module.css';
 import { MdLocationOn, MdOutlineMail, MdPhone } from "react-icons/md";
 
-const Location = () => {
+const Location = ({className=""}) => {
   return (
-    <div className="w-100 mt-5 mb-5">
+    <div className={`w-100 mb-5 ${className}`}>
       <div className={`${styles['custom-icon-contact-container']} d-flex justify-content-evenly mb-5`}>
         <div className={styles['custom-icon-contact']}>
           <div style={{ width: '100px' }}>
@@ -11,7 +11,7 @@ const Location = () => {
           </div>
           <div style={{ color: '#807f89' }}>
             Strada Ștefan cel Mare 53<br/>
-            (intrare de pe Gh Asachi)
+            (intrare de pe Gh. Asachi)
             <br />
             Timișoara 307200
           </div>
@@ -20,8 +20,8 @@ const Location = () => {
           <div style={{ width: '100px' }}>
             <MdOutlineMail style={{fill: '#4caf50'}}/>
           </div>
-          <div style={{ color: '#807f89' }}>
-            <a style={{ color: '#807f89', height: 'auto', whiteSpace: 'nowrap' }} href="email:office@olidental.ro">
+          <div>
+            <a style={{ color: '#807f89', height: 'auto', whiteSpace: 'nowrap', width: 'fit-content!important' }} href="email:office@olidental.ro">
               office@olidental.ro
             </a>
             </div>
@@ -30,8 +30,8 @@ const Location = () => {
           <div style={{ width: '100px' }}>
             <MdPhone style={{fill: '#4caf50'}}/>
           </div>
-          <div style={{ color: '#807f89' }}>
-            <a style={{ color: '#807f89', height: 'auto', whiteSpace: 'nowrap' }} href="tel:+40 733.023.030">+40 733.023.030</a>
+          <div>
+            <a style={{ color: '#807f89', height: 'auto', whiteSpace: 'nowrap', width: 'fit-content!important' }} href="tel:+40 733.023.030">+40 733.023.030</a>
           </div>
         </div>
       </div>

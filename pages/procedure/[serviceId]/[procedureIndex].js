@@ -43,6 +43,11 @@ const Procedure = () => {
     });
   };
 
+  const handleShowDeviderLabel = () => {
+    console.log(router, serviceId, procedureIndex, router.pathname.includes('/procedure') && serviceId === 1 && procedureIndex === 0)
+    return router.asPath !== '/procedure/1/0'
+  }
+
   return (
     <div className='services-container m-auto'>
       <div className='pt-4 pb-4 bg-gray' >
@@ -62,7 +67,6 @@ const Procedure = () => {
         </div>
         <div className='pt-3 mb-2 d-flex flex-column m-auto' style={{ maxWidth: '60rem' }}>
           {(cazuri?.length && cazuri[indexCaz].images.length > 1) && <div className={`${styles.imageComparatorContainerPreview}`}>
-            <span>Multiple faze în rezolvarea cazului</span>
             <div className={styles.proceduresPreviewImagesContainer}>
               {cazuri[indexCaz].images.map((batch, index) => (
                   <div
@@ -81,7 +85,8 @@ const Procedure = () => {
           {cazuri?.length && <>
               {cazuri[indexCaz].images[imgNo].length === 3 &&
                 <ThreeLayerImageComparator height={500}
-                                           images={cazuri[indexCaz].images[0].map(image => `/images/${cazuri[indexCaz]?.dirPath}/thumbnail_${image}`)} />}
+                                           images={cazuri[indexCaz].images[0].map(image => `/images/${cazuri[indexCaz]?.dirPath}/thumbnail_${image}`)}
+                                            showDeviderLabel={handleShowDeviderLabel()}/>}
               {cazuri[indexCaz].images[imgNo].length === 2 &&
                 <ImageComparator
                   images={cazuri[indexCaz].images[imgNo].map(image => `/images/${cazuri[indexCaz]?.dirPath}/thumbnail_${image}`)}
@@ -95,7 +100,7 @@ const Procedure = () => {
             <span>{`${indexCaz + 1}/${cazuri?.length}`}</span>
             <button onClick={handleNavNext}><BiCaretRight /></button>
           </div>
-          {windowWidth.current <= 400 && <p className='text-center opacity-75'>Touch image to see full width.</p>}
+          {(cazuri?.length && cazuri[indexCaz].images[imgNo].length > 2) && <p className='text-center opacity-75 visible-400'>Touch image to see full width.</p>}
         </div>
         <div className='m-auto p-2' style={{ maxWidth: '60rem' }}>
           <div

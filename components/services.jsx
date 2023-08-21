@@ -10,7 +10,7 @@ const Services = () => {
   };
 
   return (
-    <div className="services-one">
+    <div className="services-one pt-3 pb-3 mt-3 mb-3">
       <div className="container">
         <div className="row justify-content-center gap-3">
           {services.map(service => (

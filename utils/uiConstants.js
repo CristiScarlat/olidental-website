@@ -576,73 +576,61 @@ export const services = [
         cazuri: [
           {
             images: [
-              ['1a.JPG', '1b.JPG']
+              ["1a.JPG","1b.JPG","1c.JPG"]
             ],
             dirPath: 'services/2_inserare_de_implanturi_si_aditii_de_os'
           },
           {
             images: [
-              ['2a.png', '2b.jpg'],
+              ["2a.png","2b.jpg","2c.jpg"],
             ],
             dirPath: 'services/2_inserare_de_implanturi_si_aditii_de_os'
           },
           {
             images: [
-              ['3a.JPG', '3b.JPG'],
+              ["3a.JPG","3b.JPG","3c.JPG"],
             ],
             dirPath: 'services/2_inserare_de_implanturi_si_aditii_de_os'
           },
           {
             images: [
-              ['4a.JPG', '4b.JPG'],
+              ["4a.JPG","4b.JPG","4c.JPG"],
             ],
             dirPath: 'services/2_inserare_de_implanturi_si_aditii_de_os'
           },
           {
             images: [
-              ['5a.JPG', '5b.JPG'],
+              ["5a.JPG","5b.JPG","5c.JPG"],
             ],
             dirPath: 'services/2_inserare_de_implanturi_si_aditii_de_os'
           },
           {
             images: [
-              ['6a.jpg', '6b.jpg'],
+              ["6a.jpg","6b.jpg","6c.jpg"],
             ],
             dirPath: 'services/2_inserare_de_implanturi_si_aditii_de_os'
           },
           {
             images: [
-              ['7a.JPG', '7b.JPG'],
+              ["7a.JPG","7b.JPG","7c.JPG"],
             ],
             dirPath: 'services/2_inserare_de_implanturi_si_aditii_de_os'
           },
           {
             images: [
-              ['8a.JPG', '8b.JPG'],
+              ["8a.JPG","8b.JPG","8c.JPG"],
             ],
             dirPath: 'services/2_inserare_de_implanturi_si_aditii_de_os'
           },
           {
             images: [
-              ['9a.JPG', '9b.JPG'],
+              ["9a.JPG","9b.JPG","9c.JPG"],
             ],
             dirPath: 'services/2_inserare_de_implanturi_si_aditii_de_os'
           },
           {
             images: [
-              ['10a.jpg', '10b.jpg'],
-            ],
-            dirPath: 'services/2_inserare_de_implanturi_si_aditii_de_os'
-          },
-          {
-            images: [
-              ['14a.JPG', '14b.JPG'],
-            ],
-            dirPath: 'services/2_inserare_de_implanturi_si_aditii_de_os'
-          },
-          {
-            images: [
-              ['15a.jpg', '15b.jpg']
+              ["10a.jpg","10b.jpg","10c.jpg"],
             ],
             dirPath: 'services/2_inserare_de_implanturi_si_aditii_de_os'
           }

@@ -3,7 +3,7 @@ import Spinner from './spinner';
 import { BsHandIndexThumb } from 'react-icons/bs';
 import styles from './styles/styles.module.css';
 
-const ThreeLayerImageComparator = ({ images = [], maxWidth = 400, height=400 }) => {
+const ThreeLayerImageComparator = ({ images = [], maxWidth = 400, height=400, showDeviderLabel=true }) => {
   const [imgClip, setImgClip] = useState(['0% 0px, 33% 0px, 33% 100%, 0% 100%', '33% 0px, 66% 0px, 66% 100%, 33% 100%', '66% 0, 100% 0, 100% 100%, 66% 100%']);
 
   const [deviderHeight, setDeviderHeight] = useState();
@@ -95,9 +95,11 @@ const ThreeLayerImageComparator = ({ images = [], maxWidth = 400, height=400 }) 
         <div style={{ width: 2, height: deviderHeight, left: deviderRightXPos, transition: 'left 1s ease'}}
              className={styles.imageComparatoImageDevider}/>
 
+        {showDeviderLabel && <>
         <div className="mx-2 outline-text" style={{position: 'absolute', color: 'white', bottom: 0, left: '0', transition: 'left 1s ease', zIndex: 2, display: selectedImages[0] === 0 ? 'initial' : 'none'}}>înainte</div>
         <div className="mx-2 outline-text" style={{position: 'absolute', color: 'white', bottom: 0, left: deviderLeftXPos, transition: 'left 1s ease', zIndex: 2, display: selectedImages[1] === 1 ? 'initial' : 'none'}}>în lucru</div>
         <div className="mx-2 outline-text" style={{position: 'absolute', color: 'white', bottom: 0, left: deviderRightXPos, transition: 'left 1s ease', zIndex: 2, display: selectedImages[2] === 2 ? 'initial' : 'none'}}>după</div>
+        </>}
           {/*<div*/}
           {/*  style={{ cursor: deviderGrab ? 'grabbing' : 'grab' }}*/}
           {/*  className={styles.imageComparatorGrabArea}*/}
