@@ -33,6 +33,16 @@ export const teamCards = [
     thumbnail: '/images/team/thumbnail_dr.-Paula-Derban-medic-new.jpg'
   },
   {
+    title: 'Dr. Ana Tunaru ',
+    body: `<p><span  style='margin-left: 2rem;'></span>Dr. Tunaru, este absolventă a Facultății de Medicină Dentară din Timișoara.</p>
+    <p><span  style='margin-left: 2rem;'></span>Cu o experiență de aproximativ 5 ani în domeniu, Dr. Ana și-a descoperit pasiunea pentru endodonție, asa ca a ales sa termine aceasta specializare.</p>
+    <p><span  style='margin-left: 2rem;'></span>Fiind o fire meticuloasă, continuă să învețe, astfel încât participă la numeroase cursuri și workshop-uri cu scopul de a-și defini profesionalismul de care dă dovadă.</p>`,
+    specializations: ['Medicina stomatologie generala', 'Endodontie'],
+    services: ['Tratamente endodontice'],
+    img: '/images/team/Tunaru-Ana-new.jpg',
+    thumbnail: '/images/team/thumbnail_Tunaru-Ana-new.jpg'
+  },
+  {
     title: 'Dr. Anda Nicola',
     body: `<p><span  style='margin-left: 2rem;'></span>Dr. Anda, este medic dentist cu experiență de 19 ani.
     Dna. Dr.,  se ocupă în mod exclusiv de stomatologia pediatrică de 9 ani.</p>
@@ -64,16 +74,6 @@ export const teamCards = [
     services: ['Tratamente stomatologice/terapie'],
     img: '/images/team/dr.-Alina-Anechitei-medic-new.jpg',
     thumbnail: '/images/team/thumbnail_dr.-Alina-Anechitei-medic-new.jpg'
-  },
-  {
-    title: 'Dr. Ana Tunaru ',
-    body: `<p><span  style='margin-left: 2rem;'></span>Dr. Tunaru, este absolventă a Facultății de Medicină Dentară din Timișoara.</p>
-    <p><span  style='margin-left: 2rem;'></span>Cu o experiență de aproximativ 5 ani în domeniu, Dr. Ana și-a descoperit pasiunea pentru endodonție, asa ca a ales sa termine aceasta specializare.</p>
-    <p><span  style='margin-left: 2rem;'></span>Fiind o fire meticuloasă, continuă să învețe, astfel încât participă la numeroase cursuri și workshop-uri cu scopul de a-și defini profesionalismul de care dă dovadă.</p>`,
-    specializations: ['Medicina stomatologie generala', 'Endodontie'],
-    services: ['Tratamente endodontice'],
-    img: '/images/team/Tunaru-Ana-new.jpg',
-    thumbnail: '/images/team/thumbnail_Tunaru-Ana-new.jpg'
   },
   {
     title: 'Asistent Medical Adela Daogaru',
@@ -1102,4 +1102,4 @@ export const beforeAfter = [
   }
 ];
 
-export const carouselPics = ["1.JPG","10.JPG","11.jpg","12.JPG","13.JPG","14.JPG","15.JPG","16.JPG","17.JPG","18.JPG","19.JPG","2.JPG","20.JPG","21.JPG","22.JPG","23.JPG","24.JPG","25.JPG","26.JPG","3.JPG","4.jpg","5.JPG","6.jpg","7.JPG","8.JPG","9.JPG"];
+export const carouselPics = ["1.JPG","2.JPG","3.JPG","4.jpg","5.JPG","6.jpg","7.JPG","8.JPG","9.JPG","10.JPG","11.jpg","12.JPG","13.JPG","14.JPG","15.JPG","16.JPG","17.JPG","18.JPG","19.JPG","20.JPG","21.JPG","22.JPG","23.JPG","24.JPG","25.JPG","26.JPG"];

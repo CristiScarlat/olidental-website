@@ -10,7 +10,7 @@ const TopBar = () => {
           <div className="get-touch">
             <ul className="m-0">
               <li>
-                <a>
+                <a href="tel:0733 023 030">
                   <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                     <BsTelephoneFill />
                     0733 023 030
