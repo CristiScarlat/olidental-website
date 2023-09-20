@@ -212,7 +212,7 @@
 }
 
 .proceduresPreviewImages > img {
-  width: 80px;
+  width: 100px;
   object-fit: contain;
 }
 @media only screen and (max-width: 600px) {
