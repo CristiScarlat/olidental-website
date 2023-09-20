@@ -43,16 +43,16 @@ export const teamCards = [
     thumbnail: '/images/team/thumbnail_Tunaru-Ana-new.jpg'
   },
   {
-    title: 'Dr. Anda Nicola',
-    body: `<p><span  style='margin-left: 2rem;'></span>Dr. Anda, este medic dentist cu experiență de 19 ani.
-    Dna. Dr.,  se ocupă în mod exclusiv de stomatologia pediatrică de 9 ani.</p>
-    <p><span  style='margin-left: 2rem;'></span>Pasiunea pentru această ramură a fost susținută de numeroase cursuri de specializare și simpozioane dedicate la care a participat.</p>
-    <p><span  style='margin-left: 2rem;'></span>Faptul că este la rândul ei mamă, a ajutat-o să creeze legături frumoase și de încredere cu micii pacienți și cu părinții lor.<p/> 
-    <p><span  style='margin-left: 2rem;'></span>Empatia, abordarea caldă și înțelegerea mecanismelor psihologice, îi determină pe copiii care îi trec pragul să o îndrăgească și să revină fără frică în cabinet.</p> `,
-    specializations: ['Medic dentist pedodonție (stomatologie pediatrică)'],
-    services: ['Tratamente pedododontice'],
-    img: '/images/team/dr.-Anda-Nicola-medic-new.jpg',
-    thumbnail: '/images/team/thumbnail_dr.-Anda-Nicola-medic-new.jpg'
+    title: 'Dr. Patricia Strainu',
+    body: `<p><span  style='margin-left: 2rem;'></span>Dr. Patricia Strainu, are o experienta de 10 ani in domeniul stomatologiei generale.</p>
+    <p><span  style='margin-left: 2rem;'></span>A absolvit Facultatea de Medicina Dentara din Timisoara, cu specializarea Stomatologie Generala.</p>
+    <p><span  style='margin-left: 2rem;'></span>Dr. Patri, cum ii spunem noi, este o persoana perseverenta, devotata si serioasa.<p/> 
+    <p><span  style='margin-left: 2rem;'></span>Locul de munca, adica Olidental Clinic ii este ca o a doua casa, dat fiind faptul ca este o persoana perfectionista, pentru care calitatea actului medical este esentiala.</p>
+    <p><span  style='margin-left: 2rem;'></span> Este mereu dornica sa invete mai mult, asadar, participarea la diverse cursuri și workshop-uri este nelipsita.</p> `,
+    specializations: ['Medicina stomatologie generala'],
+    services: ['Tratamente stomatologice/terapie'],
+    img: '',
+    thumbnail: ''
   },
   {
     title: 'Dr. Diana Rada Bârsan',
@@ -64,6 +64,18 @@ export const teamCards = [
     services: ['Tratamente ortodontice'],
     img: '/images/team/Diana-Barsan-new.jpg',
     thumbnail: '/images/team/thumbnail_Diana-Barsan-new.jpg'
+  },
+  {
+    title: 'Dr. Anda Nicola',
+    body: `<p><span  style='margin-left: 2rem;'></span>Dr. Anda, este medic dentist cu experiență de 19 ani.
+    Dna. Dr.,  se ocupă în mod exclusiv de stomatologia pediatrică de 9 ani.</p>
+    <p><span  style='margin-left: 2rem;'></span>Pasiunea pentru această ramură a fost susținută de numeroase cursuri de specializare și simpozioane dedicate la care a participat.</p>
+    <p><span  style='margin-left: 2rem;'></span>Faptul că este la rândul ei mamă, a ajutat-o să creeze legături frumoase și de încredere cu micii pacienți și cu părinții lor.<p/> 
+    <p><span  style='margin-left: 2rem;'></span>Empatia, abordarea caldă și înțelegerea mecanismelor psihologice, îi determină pe copiii care îi trec pragul să o îndrăgească și să revină fără frică în cabinet.</p> `,
+    specializations: ['Medic dentist pedodonție (stomatologie pediatrică)'],
+    services: ['Tratamente pedododontice'],
+    img: '/images/team/dr.-Anda-Nicola-medic-new.jpg',
+    thumbnail: '/images/team/thumbnail_dr.-Anda-Nicola-medic-new.jpg'
   },
   {
     title: 'Dr. Alina-Florentina Anechitei',
@@ -113,7 +125,7 @@ export const teamCards = [
     thumbnail: '/images/team/thumbnail_Madalina-Catalina-pr-new.jpg'
   },
   {
-    title: 'Spîrlea Adriana',
+    title: 'Spîrlea Adriana - Manager Pacienți',
     body: `<p><span  style='margin-left: 2rem;'></span>Adriana, a absolvit facutlatea de Relatii Publice si Comunicare. Fiind Specialist PR, devine persoana responsabila de prima impresie pe care si-o construiesc pacientii, deoarece este primul contact dintre pacient si clinica.</p>
     <p><span  style='margin-left: 2rem;'></span>Pasiunea de a ajuta si de a le oferi oamenilor sprijin, o face sa devina cel mai indragit personaj de catre pacientii si echipa Olidental.</p> 
     <p><span  style='margin-left: 2rem;'></span>In cei 10 ani de experienta , a dobandit excelente abilitati de comunicare si empatie, reusind astfel sa fie orientata in exclusivitate catre pacienti si nevoile lor.</p>`,

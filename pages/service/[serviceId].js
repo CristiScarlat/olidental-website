@@ -27,9 +27,9 @@ const Service = () => {
                     <div className="services-container-description" dangerouslySetInnerHTML={{ __html: services[serviceId]?.description || '' }}></div>
                 </div>
             </div>
-            <div className="d-flex custom-scroll" style={{ overflowX: 'auto' }}>
-                {services[serviceId]?.images?.map(image => <img key={image} src={`/images/services/${services[serviceId]?.dirPath}/${image}`} style={{ width: 280 }} />)}
-            </div>
+            {/*<div className="d-flex custom-scroll m-auto" style={{ overflowX: 'auto', maxWidth: '60rem' }}>*/}
+            {/*    {services[serviceId]?.images?.map(image => <img key={image} src={`/images/services/${services[serviceId]?.dirPath}/${image}`} style={{ width: 280 }} />)}*/}
+            {/*</div>*/}
             <div className="services-one">
                 <div className="container">
                     <div className="row justify-content-center gap-3">
