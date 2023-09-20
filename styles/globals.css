@@ -1,11 +1,13 @@
 @import './medical-guide.css';
 @import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Ubuntu&display=swap');
 
 html,
 body {
   background: #eeeded;
-  font-family: 'Alkatra', cursive;
+  font-family: 'Mooli', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   color: #444444;
 }
 * {
@@ -21,7 +23,7 @@ body {
   color: #444444;
   font-weight: 700;
   font-size: 18px;
-  font-family: 'Raleway', sans-serif;
+  /*font-family: 'Raleway', sans-serif;*/
 }
 
 .read-more-button.transparent {
@@ -222,7 +224,7 @@ h4 {
 }
 
 .outline-text {
-  font-family: 'Caveat Brush', cursive;
+  /*font-family: 'Caveat Brush', cursive;*/
   opacity: 0.8;
 }
 
