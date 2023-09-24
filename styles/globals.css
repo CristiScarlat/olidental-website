@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mooli&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600&display=swap');
 
 html,
 body {
   background: #eeeded;
-  font-family: 'Mooli', sans-serif;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Exo 2', sans-serif;
   color: #444444;
 }
 * {
@@ -100,6 +100,7 @@ h4 {
 }
 
 .team-member-container {
+  /*background-color: #778187;*/
   background-color: #778187;
   padding: 1rem;
   border-radius: 10px;
@@ -143,6 +144,8 @@ h4 {
   padding-bottom: 1rem;
   border-radius: 10px;
   transition: all ease-out 0.5s;
+  background-color: #778187;
+  color: white;
 }
 
 .custom-card-container:hover {
@@ -209,7 +212,7 @@ h4 {
 .custom-link-services{
   font-weight: 800;
   color: #6cab44 !important;
-  font-size: 18px;
+  font-size: 14px;
   letter-spacing: 1px;
   cursor: pointer;
   padding-top: 10px;
@@ -230,6 +233,10 @@ h4 {
 
 .visible-400 {
   display: none;
+}
+
+.children-no-border > div {
+  border: none!important;
 }
 
 @media only screen and (max-width: 1024px){

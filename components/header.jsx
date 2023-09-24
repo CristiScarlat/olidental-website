@@ -15,21 +15,21 @@ const Header = () => {
           <Navbar.Brand className="mt-2 mb-2" onClick={() => router.push("/")} style={{cursor: "pointer"}}>
             <Logo/>
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbarScroll" />
+          <Navbar.Toggle id="toggle" onClick={() => setExpanded(false)} as={"button"}/>
           <Navbar.Collapse id="navbarScroll" style={{ flexGrow: 0 }}>
             <Nav className="me-auto my-2 my-lg-0" onClick={() => setExpanded(false)}>
               <div className="me-5" id="navbarSupportedContent">
                 <ul className="d-flex justify-content-end  navbar-nav gap-3 me-auto mb-2 mb-lg-0 w-100 fw-bold">
+                  {/*<li className="nav-item me-4 li-link">*/}
+                  {/*  <Link href="/">*/}
+                  {/*    <a className={`${styles['header-custom-link']} text-uppercase ${router.pathname === '/' ? 'active' : ''}`} aria-current="page">*/}
+                  {/*      Acasă*/}
+                  {/*    </a>*/}
+                  {/*  </Link>*/}
+                  {/*</li>*/}
                   <li className="nav-item me-4 li-link">
                     <Link href="/">
-                      <a className={`${styles['header-custom-link']} text-uppercase ${router.pathname === '/' ? 'active' : ''}`} aria-current="page">
-                        Acasă
-                      </a>
-                    </Link>
-                  </li>
-                  <li className="nav-item me-4 li-link">
-                    <Link href="/service">
-                      <a className={`${styles['header-custom-link']}  text-uppercase ${router.pathname === '/services' ? 'active' : ''}`}>Servicii</a>
+                      <a className={`${styles['header-custom-link']}  text-uppercase ${router.pathname === '/' ? 'active' : ''}`}>Servicii</a>
                     </Link>
                   </li>
                   <li className="nav-item me-4 li-link">

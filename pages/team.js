@@ -4,12 +4,12 @@ import { teamCards } from "../utils/uiConstants";
 
 const TeamMemberDetails = ({ data }) => {
     return (
-        <div className="team-member-container row mb-3 m-auto" style={{ maxWidth: 1500 }}>
+        <div className="team-member-container row mb-3 m-auto bg-gray" style={{ maxWidth: 1500, color: 'black' }}>
             <div className="col-md-3">
                 <img src={data.thumbnail} width={320} height={480} placeholder="blur" loading='lazy' style={{objectFit: 'contain'}}/>
             </div>
             <div className="col-md-9">
-                <h4 className="text-white">{data.title}</h4>
+                <h4>{data.title}</h4>
                 <div className="mb-3" dangerouslySetInnerHTML={{ __html: data.body }}></div>
                 {data?.specializations?.length > 0 && <>
                 <strong>Specializari:</strong>

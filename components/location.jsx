@@ -10,7 +10,7 @@ const Location = ({className=""}) => {
             <MdLocationOn style={{fill: '#4caf50'}}/>
           </div>
           <div style={{ color: '#807f89' }}>
-            Strada Ștefan cel Mare 53<br/>
+            Strada Ștefan cel Mare 53 Parter<br/>
             (intrare de pe Gh. Asachi)
             <br />
             Timișoara 307200

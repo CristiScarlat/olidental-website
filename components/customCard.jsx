@@ -15,7 +15,7 @@ const CustomCard = ({ onClick, id, title, body, imgSrc, imgStyle }) => {
         </div>
 
         <div className="detail m-auto">
-          <h5>{title}</h5>
+          <h5 style={{fontWeight: 600}}>{title}</h5>
           <p dangerouslySetInnerHTML={{ __html: bodyContent }}></p>
         </div>
       </div>

@@ -4,9 +4,9 @@ import { ImFacebook, ImTwitter, ImInstagram } from 'react-icons/im';
 
 const TopBar = () => {
   return (
-    <div className="top-bar">
+    <div className="top-bar w-100">
       <div className="container">
-        <div className="d-flex justify-content-end">
+        <div className="d-flex justify-content-center">
           <div className="get-touch">
             <ul className="m-0">
               <li>

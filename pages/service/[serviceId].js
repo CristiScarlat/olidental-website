@@ -1,6 +1,8 @@
 import { useRouter } from "next/router";
 import { services } from "../../utils/uiConstants";
 import CustomCard from "../../components/customCard";
+import Link from 'next/link';
+import { TfiHandPointLeft } from 'react-icons/tfi';
 
 
 const Service = () => {
@@ -18,8 +20,16 @@ const Service = () => {
 
     return (
         <div className="services-container m-auto">
+
             <div className="p-4 bg-gray">
-                <div className="m-auto" style={{ maxWidth: '60rem' }}>
+                <div className="m-auto" style={{ maxWidth: '50rem' }}>
+                    <div className='d-flex align-items-center gap-2 justify-content-md-start justify-content-center px-2'>
+                        <Link href={`/`}>
+                            <TfiHandPointLeft size='2rem' color='#6cab44' style={{cursor: "pointer"}}/>
+                        </Link>
+                        <span className='custom-link-services'>{`Înapoi la servicii`}</span>
+                    </div>
+                    <hr/>
                     <div className="text-center">
                         <img src={services[serviceId]?.logo || ''} alt="..." style={{ width: "120px" }} />
                         <h3>{services[serviceId]?.title || ''}</h3>
@@ -39,7 +49,7 @@ const Service = () => {
                                 imgSrc={procedure.logo}
                                 imgStyle={{ width: 65 }}
                                 title={procedure.title}
-                                body={procedure.description}
+                                //body={procedure.description}
                                 onClick={() => handleRedirectToProcedure(index)}
                             />
                         ))}

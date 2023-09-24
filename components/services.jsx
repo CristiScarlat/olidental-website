@@ -20,7 +20,7 @@ const Services = () => {
             onClick={handleRedirect}
             imgSrc={service.logo}
             title={service.title}
-            body={service.description}
+            //body={service.description}
             />
           ))}
         </div>

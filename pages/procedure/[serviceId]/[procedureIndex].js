@@ -45,7 +45,7 @@ const Procedure = () => {
 
   const handleShowDeviderLabel = () => {
     console.log(router, serviceId, procedureIndex, router.pathname.includes('/procedure') && serviceId === 1 && procedureIndex === 0)
-    return router.asPath !== '/procedure/1/0'
+    return router.asPath !== '/procedure/1/1'
   }
 
   return (
@@ -56,7 +56,7 @@ const Procedure = () => {
             <Link href={`/service/${serviceId}`}>
               <TfiHandPointLeft size='2rem' color='#6cab44' style={{cursor: "pointer"}}/>
             </Link>
-            <span className='custom-link-services'>{`Mergi înapoi la ${services[serviceId]?.title}`}</span>
+            <span className='custom-link-services'>{`Înapoi la ${services[serviceId]?.title}`}</span>
           </div>
           <hr className='w-100' />
           <div className='text-center'>

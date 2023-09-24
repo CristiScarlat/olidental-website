@@ -64,7 +64,7 @@
 
 .header-custom-link {
   color: #778187;
-  font-family: 'Raleway', sans-serif;
+  /*font-family: 'Raleway', sans-serif;*/
   font-size: 16px;
   padding: 12px !important;
 }
@@ -204,6 +204,8 @@
 
 .proceduresPreviewImages {
   display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
   gap: 0.2rem;
   border: 1px solid #6cab44;
   padding: 0.5rem;
@@ -212,7 +214,7 @@
 }
 
 .proceduresPreviewImages > img {
-  width: 100px;
+  width: 320px;
   object-fit: contain;
 }
 @media only screen and (max-width: 600px) {

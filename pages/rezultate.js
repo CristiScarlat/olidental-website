@@ -15,8 +15,8 @@ const Results = () => {
         {beforeAfter
           .filter((obj) => (selectedProcedure ? obj.category === procedures.indexOf(selectedProcedure) : true))
           .map((obj, index) => (
-            <div className="row custom-gray-row mb-3 m-auto" style={{ minHeight: 300 }} key={'before-after' + index}>
-              <div className={`col-md-6 p-3 ${styles.descriptionColumnRezultateCard}`}>
+            <div className="row bg-gray p-3 mb-5 m-auto" style={{ minHeight: 300 }} key={'before-after' + index}>
+              <div className={`col-md-6 p-3`}>
                 <h3 style={{ fontWeight: 800 }}>{`${index+1}. ${obj.title}`}</h3>
                 {/*<p className={styles.rezultateCategorie}>*/}
                 {/*  <span className="me-1">Procedura:</span>*/}
@@ -32,7 +32,7 @@ const Results = () => {
                     style={{ background: `linear-gradient(90deg, #6cab44 ${obj.difficultyLevel * 10 - 10}%, #778187 ${obj.difficultyLevel * 10}%)` }}
                   ></div>
                 </div>
-                <div className="m-auto w-100 unselectable">
+                <div className="m-auto w-100 unselectable children-no-border">
                   {obj.images?.map(imgs => (
                     Array.isArray(imgs) && <ImageComparator key={imgs[0]} images={imgs.map((imgName) => `images/beforeAfter/thumbnail_${imgName}`)} maxWidth={400}/>
                   ))}
