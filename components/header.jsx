@@ -8,14 +8,15 @@ import styles from './styles/styles.module.css';
 const Header = () => {
   const [expanded, setExpanded] = useState(false);
   const router = useRouter();
+  console.log(expanded)
   return (
     <header>
-      <Navbar collapseOnSelect expand="lg" variant="light" className={styles['navbar-transparent']} expanded={expanded} onToggle={() => setExpanded(true)}>
+      <Navbar collapseOnSelect expand="lg" variant="light" className={styles['navbar-transparent']} expanded={expanded}>
         <Container fluid className="ps-3 pe-3">
           <Navbar.Brand className="mt-2 mb-2" onClick={() => router.push("/")} style={{cursor: "pointer"}}>
             <Logo/>
           </Navbar.Brand>
-          <Navbar.Toggle id="toggle" onClick={() => setExpanded(false)} as={"button"}/>
+          <Navbar.Toggle id="toggle" onClick={() => setExpanded(state => !state)} as={"button"}/>
           <Navbar.Collapse id="navbarScroll" style={{ flexGrow: 0 }}>
             <Nav className="me-auto my-2 my-lg-0" onClick={() => setExpanded(false)}>
               <div className="me-5" id="navbarSupportedContent">
