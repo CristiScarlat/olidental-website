@@ -6,7 +6,7 @@ const ButtonsGroupPagination = ({ className="", buttonClassName="", noOfButtons=
   const renderButtons = () => {
     const buttons = [];
     for(let i=0; i<=noOfButtons; i++){
-      buttons.push(<button className={buttonClassName} onClick={() => buttonOnClick(i)}>{i}</button>)
+      buttons.push(<button className={buttonClassName} onClick={() => buttonOnClick(i)}>{i+1}</button>)
     }
     return buttons;
   }

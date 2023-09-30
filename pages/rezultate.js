@@ -23,7 +23,7 @@ const Results = () => {
       <hr className="m-0" />
       <ButtonsGroupPagination
         className={styles.resultsNavigationHeader}
-        noOfButtons={beforeAfter.length}
+        noOfButtons={beforeAfter.length-1}
       buttonClassName={styles.resultsNavigationButton}
         buttonOnClick={handleScrollToCard}/>
       <div style={{ maxWidth: '70rem', margin: 'auto' }}>
