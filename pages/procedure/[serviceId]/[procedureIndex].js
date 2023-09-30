@@ -44,8 +44,9 @@ const Procedure = () => {
   };
 
   const handleShowDeviderLabel = () => {
-    console.log(router, serviceId, procedureIndex, router.pathname.includes('/procedure') && serviceId === 1 && procedureIndex === 0)
-    return router.asPath !== '/procedure/1/1'
+    console.log(router, serviceId, procedureIndex, router.pathname.includes('/procedure') && serviceId === 1 && procedureIndex === 0);
+    if( router.asPath === '/procedure/1/1' ||  router.asPath === '/procedure/1/0')return false;
+    return true;
   }
 
   return (

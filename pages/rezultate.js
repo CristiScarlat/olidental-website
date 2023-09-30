@@ -1,21 +1,41 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import ImageComparator from '../components/imageComparator';
 import { beforeAfter, procedures } from '../utils/uiConstants';
 import styles from '../styles/rezultate.module.css';
+import { Pagination, Dropdown, DropdownButton, ButtonGroup } from 'react-bootstrap';
 
 const Results = () => {
-  const [selectedProcedure, setSelectedProcedure] = useState();
-  const handleSelectProcedure = (procedureIndex) => {
-    setSelectedProcedure(procedures[procedureIndex]);
-  };
+  const [selectedProcedure, setSelectedProcedure] = useState(0);
+  const cards = useRef([]);
+
+  useEffect(() => {
+    console.log(cards)
+  }, [])
+
+  const handleScrollToCard = (index) => {
+    setSelectedProcedure(index);
+    cards.current[index].scrollIntoView({block: 'center'});
+  }
+
   return (
     <>
-      <hr className="m-0 mb-3" />
+      <hr className="m-0" />
+      <div className={styles.resultsNavigationHeader}>
+        <DropdownButton
+          className={styles.dropdownResponsive}
+          as={ButtonGroup}
+          variant={'success'}
+          title={`${selectedProcedure + 1}. ${beforeAfter[selectedProcedure].title}`}
+        >
+          {beforeAfter.map((item, index) => (
+            <Dropdown.Item className={styles.resultsNavigationItem} eventKey={index} key={index + "-" + item.title} onClick={() => handleScrollToCard(index)}>{`${index + 1}. ${item.title}`}</Dropdown.Item>
+          ))}
+        </DropdownButton>
+      </div>
       <div style={{ maxWidth: '70rem', margin: 'auto' }}>
         {beforeAfter
-          .filter((obj) => (selectedProcedure ? obj.category === procedures.indexOf(selectedProcedure) : true))
           .map((obj, index) => (
-            <div className="row bg-gray p-3 mb-5 m-auto" style={{ minHeight: 300 }} key={'before-after' + index}>
+            <div ref={ref => {if(!cards.current.includes(ref))cards.current.push(ref)}} className="row bg-gray p-3 mb-5 m-auto" style={{ minHeight: 300 }} key={'before-after' + index}>
               <div className={`col-md-6 p-3`}>
                 <h3 style={{ fontWeight: 800 }}>{`${index+1}. ${obj.title}`}</h3>
                 {/*<p className={styles.rezultateCategorie}>*/}

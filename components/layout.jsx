@@ -74,9 +74,10 @@ const Layout = ({ children }) => {
           content='/Photo-431.jpg'
         />
       </Head>
-      <TopBar />
+
       <Header />
       <main  className="content">{children}</main>
+      <TopBar />
       {/* <CookieConsent
         location=""
         buttonText="Accept"
@@ -88,7 +89,7 @@ const Layout = ({ children }) => {
       >
         This website uses cookies to enhance the user experience.{" "}
       </CookieConsent> */}
-      <Footer />
+      {/*<Footer />*/}
     </>
   );
 };

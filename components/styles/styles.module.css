@@ -112,7 +112,7 @@
 .imageComparatoImageDevider {
   position: absolute;
   left: 30%;
-  z-index: 99999 !important;
+  z-index: 30!important;
   background-color: white;
   display: block;
 }

@@ -24,3 +24,31 @@
     font-size: 16px;
     line-height: 24px;
 }
+
+.resultsNavigationHeader {
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: #6cab44b5;
+    display: flex;
+    justify-content: center;
+}
+
+.dropdownResponsive>button{
+    width: 70vw;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.dropdownResponsive>div{
+    width: 100%;
+}
+
+.dropdownResponsive>div a{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

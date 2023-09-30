@@ -239,6 +239,10 @@ h4 {
   border: none!important;
 }
 
+.page-item>.page-link {
+  color: #6cab44 !important;
+}
+
 @media only screen and (max-width: 1024px){
   .carousel-wrapper {
     padding: 0;
