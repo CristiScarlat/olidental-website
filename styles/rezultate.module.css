@@ -36,19 +36,10 @@
     justify-content: center;
 }
 
-.dropdownResponsive>button{
-    width: 70vw;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.dropdownResponsive>div{
-    width: 100%;
-}
-
-.dropdownResponsive>div a{
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+.resultsNavigationButton {
+    min-width: 2rem;
+    border: none;
+    border-radius: 5px;
+    color: #ebebeb;
+    background-color: darkgreen;
 }

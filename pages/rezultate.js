@@ -3,6 +3,7 @@ import ImageComparator from '../components/imageComparator';
 import { beforeAfter, procedures } from '../utils/uiConstants';
 import styles from '../styles/rezultate.module.css';
 import { Pagination, Dropdown, DropdownButton, ButtonGroup } from 'react-bootstrap';
+import ButtonsGroupPagination from '../components/buttonsGroupPagination';
 
 const Results = () => {
   const [selectedProcedure, setSelectedProcedure] = useState(0);
@@ -14,24 +15,17 @@ const Results = () => {
 
   const handleScrollToCard = (index) => {
     setSelectedProcedure(index);
-    cards.current[index].scrollIntoView({block: 'center'});
+    cards.current[index].scrollIntoView({block: "center"});
   }
 
   return (
     <>
       <hr className="m-0" />
-      <div className={styles.resultsNavigationHeader}>
-        <DropdownButton
-          className={styles.dropdownResponsive}
-          as={ButtonGroup}
-          variant={'success'}
-          title={`${selectedProcedure + 1}. ${beforeAfter[selectedProcedure].title}`}
-        >
-          {beforeAfter.map((item, index) => (
-            <Dropdown.Item className={styles.resultsNavigationItem} eventKey={index} key={index + "-" + item.title} onClick={() => handleScrollToCard(index)}>{`${index + 1}. ${item.title}`}</Dropdown.Item>
-          ))}
-        </DropdownButton>
-      </div>
+      <ButtonsGroupPagination
+        className={styles.resultsNavigationHeader}
+        noOfButtons={beforeAfter.length}
+      buttonClassName={styles.resultsNavigationButton}
+        buttonOnClick={handleScrollToCard}/>
       <div style={{ maxWidth: '70rem', margin: 'auto' }}>
         {beforeAfter
           .map((obj, index) => (
