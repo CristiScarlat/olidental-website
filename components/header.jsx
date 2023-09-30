@@ -39,6 +39,11 @@ const Header = () => {
                     </Link>
                   </li>
                   <li className="nav-item me-4 li-link">
+                    <Link href="/smiles-gallery">
+                      <a className={`${styles['header-custom-link']}  text-uppercase ${router.pathname === '/smiles-gallery' ? 'active' : ''}`}>Zâmbete</a>
+                    </Link>
+                  </li>
+                  <li className="nav-item me-4 li-link">
                     <Link href="/team">
                       <a className={`${styles['header-custom-link']}  text-uppercase ${router.pathname === '/about' ? 'active' : ''}`}>Echipa</a>
                     </Link>
