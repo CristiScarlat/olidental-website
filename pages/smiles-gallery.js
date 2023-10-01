@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { smilesGallery } from '../utils/uiConstants'
 import styles from '../styles/Galery.module.css'
-import Image from 'next/image';
+//import Image from 'next/image';
 import { Spinner } from 'react-bootstrap';
 
 const Galery = () => {
@@ -83,7 +83,7 @@ const Galery = () => {
       <div className="text-center pt-4" style={{backgroundColor: '#d4d4d4'}}>
         <div className={styles["galery-wrapper"]}>
           {photoArray.map((photo, index) => (
-            <Image
+            <img
               key={photo}
               src={photo}
               alt="galery item"
