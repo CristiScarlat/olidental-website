@@ -4,6 +4,7 @@ import { beforeAfter, procedures } from '../utils/uiConstants';
 import styles from '../styles/rezultate.module.css';
 import { Pagination, Dropdown, DropdownButton, ButtonGroup } from 'react-bootstrap';
 import ButtonsGroupPagination from '../components/buttonsGroupPagination';
+import ScrollToTop from '../components/scrollToTop';
 
 const Results = () => {
   const [selectedProcedure, setSelectedProcedure] = useState(0);
@@ -55,6 +56,7 @@ const Results = () => {
             </div>
           ))}
       </div>
+      <ScrollToTop />
     </>
   );
 };

@@ -20,19 +20,19 @@ const Location = ({className=""}) => {
           <div style={{ width: '100px' }}>
             <MdOutlineMail style={{fill: '#4caf50'}}/>
           </div>
-          <div>
+
             <a style={{ color: '#807f89', height: 'auto', whiteSpace: 'nowrap', width: 'fit-content!important' }} href="email:office@olidental.ro">
               office@olidental.ro
             </a>
-            </div>
+
         </div>
         <div className={styles['custom-icon-contact']}>
           <div style={{ width: '100px' }}>
             <MdPhone style={{fill: '#4caf50'}}/>
           </div>
-          <div>
+
             <a style={{ color: '#807f89', height: 'auto', whiteSpace: 'nowrap', width: 'fit-content!important' }} href="tel:+40 733.023.030">+40 733.023.030</a>
-          </div>
+        
         </div>
       </div>
       <div className="ps-5 pe-5 w-100">

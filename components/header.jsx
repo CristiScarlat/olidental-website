@@ -38,14 +38,14 @@ const Header = () => {
                       <a className={`${styles['header-custom-link']}  text-uppercase ${router.pathname === '/services' ? 'active' : ''}`}>Rezultate</a>
                     </Link>
                   </li>
-                  <li className="nav-item me-4 li-link">
-                    <Link href="/smiles-gallery">
-                      <a className={`${styles['header-custom-link']}  text-uppercase ${router.pathname === '/smiles-gallery' ? 'active' : ''}`}>Zâmbete</a>
-                    </Link>
-                  </li>
+                  {/*<li className="nav-item me-4 li-link">*/}
+                  {/*  <Link href="/smiles-gallery">*/}
+                  {/*    <a className={`${styles['header-custom-link']}  text-uppercase ${router.pathname === '/smiles-gallery' ? 'active' : ''}`}>Zâmbete</a>*/}
+                  {/*  </Link>*/}
+                  {/*</li>*/}
                   <li className="nav-item me-4 li-link">
                     <Link href="/smiles-slide-gallery">
-                      <a className={`${styles['header-custom-link']}  text-uppercase ${router.pathname === '/smiles-slide-gallery' ? 'active' : ''}`}>Zâmbete II</a>
+                      <a className={`${styles['header-custom-link']}  text-uppercase ${router.pathname === '/smiles-slide-gallery' ? 'active' : ''}`}>Zâmbete</a>
                     </Link>
                   </li>
                   <li className="nav-item me-4 li-link">
