@@ -9,10 +9,12 @@ import ImageComparator from '../../../components/imageComparator';
 import { useEffect, useRef, useState } from 'react';
 import styles from '../../../components/styles/styles.module.css';
 import { BiCaretLeft, BiCaretRight } from 'react-icons/bi';
+import ScrollIndicator from '../../../components/scrollIndicator';
 
 const Procedure = () => {
   const [indexCaz, setIndexCaz] = useState(0);
   const [imgNo, setImgNo] = useState(0);
+  const [showScrollIndicator, setShowScrollIndicator] = useState(true);
   const router = useRouter();
   const { serviceId, procedureIndex } = router.query;
 
@@ -28,7 +30,6 @@ const Procedure = () => {
 
   const cazuri = services[serviceId]?.procedures[procedureIndex]?.cazuri;
 
-  console.log({ cazuri: services[serviceId]?.procedures[procedureIndex].cazuri });
 
   const handleNavPrev = () => {
     setIndexCaz(state => {
@@ -44,11 +45,17 @@ const Procedure = () => {
   };
 
   const handleShowDeviderLabel = () => {
-    console.log(router, serviceId, procedureIndex, router.pathname.includes('/procedure') && serviceId === 1 && procedureIndex === 0);
     if( router.asPath === '/procedure/1/1' ||  router.asPath === '/procedure/1/0')return false;
     return true;
   }
 
+  const renderScrollIndicator = () => {
+    const isNarrowWidth = window.innerWidth < 450;
+    if(isNarrowWidth && showScrollIndicator)return <ScrollIndicator/>;
+    return null;
+
+  }
+  
   return (
     <div className='services-container m-auto'>
       <div className='pt-4 pb-4 bg-gray' >
@@ -68,7 +75,8 @@ const Procedure = () => {
         </div>
         <div className='pt-3 mb-2 d-flex flex-column m-auto' style={{ maxWidth: '60rem' }}>
           {(cazuri?.length && cazuri[indexCaz].images.length > 1) && <div className={`${styles.imageComparatorContainerPreview}`}>
-            <div className={styles.proceduresPreviewImagesContainer}>
+            {renderScrollIndicator()}
+            <div className={styles.proceduresPreviewImagesContainer} onScroll={() => showScrollIndicator && setShowScrollIndicator(false)}>
               {cazuri[indexCaz].images.map((batch, index) => (
                   <div
                     key={batch.join()}

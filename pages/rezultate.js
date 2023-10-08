@@ -10,10 +10,6 @@ const Results = () => {
   const [selectedProcedure, setSelectedProcedure] = useState(0);
   const cards = useRef([]);
 
-  useEffect(() => {
-    console.log(cards)
-  }, [])
-
   const handleScrollToCard = (index) => {
     setSelectedProcedure(index);
     cards.current[index].scrollIntoView({block: "center"});

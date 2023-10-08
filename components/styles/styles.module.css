@@ -188,6 +188,7 @@
   padding: 1rem;
   background-color: #80808036;
   border-radius: 5px 0 0 5px;
+  position: relative;
 }
 
 .imageComparatorContainerPreview > div > img{
@@ -217,6 +218,39 @@
   width: 320px;
   object-fit: contain;
 }
+
+.scrollIndicatorAnim {
+  width: 104px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #000000a1;
+  padding: 0.2rem;
+  border-radius: 5px;
+}
+
+.scrollIndincatorArrowLeft {
+  animation-name: scrollAnimLeft;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.scrollIndincatorArrowRight {
+  animation-name: scrollAnimRight;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes scrollAnimLeft {
+  0%  {opacity: 0.2;}
+  100% {opacity: 1;}
+}
+
+@keyframes scrollAnimRight {
+  0%  {opacity: 1;}
+  100% {opacity: 0.2;}
+}
+
 @media only screen and (max-width: 600px) {
   .custom-icon-contact-container {
     flex-direction: column;

@@ -31,7 +31,6 @@ const ImageComparator = ({ images, maxWidth = 400, height = 225, showCursor=true
     const clientRectObj = imageRef.current.getBoundingClientRect();
     const imagePosX = Math.ceil(clientRectObj.x);
     if (deviderGrab && e.clientX - imagePosX >= 2 && e.clientX - imagePosX <= maxWidth - 3) {
-      console.log("move")
       const xPosProc = ((e.clientX - imagePosX) * 100) / imageRef.current.clientWidth;
       setDeviderXPos(e.clientX - imagePosX);
       setImgClip([`${100 - xPosProc}% 0, 100% 0, 100% 100%, ${100 - xPosProc}% 100%'`, `${xPosProc}% 0, 100% 0, 100% 100%, ${xPosProc}% 100%`]);

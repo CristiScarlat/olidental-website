@@ -8,7 +8,6 @@ import styles from './styles/styles.module.css';
 const Header = () => {
   const [expanded, setExpanded] = useState(false);
   const router = useRouter();
-  console.log(expanded)
   return (
     <header>
       <Navbar collapseOnSelect expand="lg" variant="light" className={styles['navbar-transparent']} expanded={expanded}>
