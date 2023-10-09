@@ -374,15 +374,20 @@ export const services = [
     dirPath: '1_estetica_zambetului',
     title: 'Estetica zâmbetului',
     logo: '/images/logos/zambet.png.webp',
-    description: `<p  class='mb-3'><span></span>Rezultatul unui zâmbet sănătos, cu un aspect natural și armonizat cu fizionomia,
-    se obține prin următoarele proceduri stomatologice: restaurări protetice estetice, fațete și coroane dentare,
-    inserarea de implanturilor dentare, tratamente ortodontice, albirea dinților, obturații fizionomice.</p>
+    description: `<p  class='mb-3'><span></span>Un zâmbet sănătos, cu un aspect natural și armonizat cu fizionomia, 
+                                                se poate obține prin diverse proceduri stomatologice: restaurări protetice estetice, 
+                                                fațete și coroane dentare, inserarea de implanturilor, tratamente ortodontice, albirea dinților,
+                                                obturații fizionomice.</p>
 
-     <p class='mb-3'><span></span>Fiecare tratament este ales în funcție de nevoile și dorințele pacientului și se realizează în
-     urma unui diagnostic corect, al elaborării unui plan de tratament și al unei execuții riguroase.</p>
+     <p class='mb-3'><span></span>Fiecare tratament este ales în funcție de nevoile și dorințele pacientului și se realizează în urma unui diagnostic precis,
+                                  al elaborării unui plan de tratament corect și al unei execuții riguroase.</p>
      
-     <p><span></span>Folosim tehnologii moderne, scanări digitale, design asistat de calculator, simulări intraorale, machete ale zâmbetului la care ne
-     dorim să ajungem. Astfel pacientul poate previzualiza în linii mari noul zâmbet și ințelege transformările estetice care se pot obține.</p>`,
+     <p><span></span>Folosim tehnologii moderne, scanări digitale, design asistat de calculator, simulări intraorale,
+      machete ale zâmbetului la care ne dorim să ajungem. Astfel pacientul poate previzualiza în linii mari noul zâmbet
+       și ințelege transformările estetice care se pot obține. Dupa o planificare riguroasa a fiecarui caz de reabilitaere
+        estetica se trece la executarea restaurarilor. Acestea multe ori implica tratamente minim invazive cu rezultate care pot fi spectaculoase. 
+        Pentru noi nimic nu este mai important ca la final de tratament pacientul sa poata zambi cu incarede avand siguranta ca a obtinut imbinarea
+         perfecta dintre functional si estetic.</p>`,
     procedures: [
       // {
       //   title: 'Obturații fizionomice',
@@ -397,18 +402,13 @@ export const services = [
         title: 'Fațete și coroane dentare integral ceramice',
         logo: '/images/logos/fatete-coroane-ceramice.png.webp',
         description: `
-        <p><span class='ms-4'></span>Pentru realizarea acestor restaurări, folosim sisteme integral ceramice sau pe
-        substrat de oxid zirconiu care oferă un aspect natural.</p>
-        <p><em class='ms-4'>Fațetele dentare</em> prsupun intervenții minim invazive, sunt aplicate pe suprafața dintelui, iar
-        preparațiile sunt minimale sau chiar deloc.
-          Ele inbunătațesc atît forma, dimensiunea, poziția, cât și culoarea dinților oferind o strălucire nouă zâmbetului. Soluționează în același timp diverse probleme estetice, precum:
-          dinți pătați, culoare neuniformă sau neplăcută, forme inestetice, spațiere între dinți, etc.
-        </p>
-        <p><em class='ms-4'>Coroanele dentare</em> sunt restaurări protetice similare fațetelor, pot fii executate din aceleași materiale ca și fațetele dentare, dar acoperă
-        circular suprafața dinților. Pe lânga inbunătațirea estetica, acestea sporesc funcționalitatea mecanică a dinților. 
-        Coroanele dentare îmbracă un dinte care a trecut deja sau va trece printr-un tratament, 
-        se pot aplica atât pe dinți naturali, cât și pe implanturi.</p>
-          `,
+        <p><span class='ms-4'></span>Pentru realizarea acestor restaurări, folosim sisteme integral ceramice sau pe substrat de oxid
+         zirconiu Fațetele dentare prsupun intervenții minim invazive pe suprafața dintelui. 
+         Ele inbunătațesc atît forma, dimensiunea, poziția, cât și culoarea dinților oferind o strălucire nouă zâmbetului.
+          Soluționează în același timp diverse probleme estetice, precum: dinți pătați, culoare neuniformă sau neplăcută, 
+          forme inestetice, spațiere între dinți, etc. Coroanele dentare sunt restaurări protetice similare fațetelor,
+           pot fii executate din aceleași materiale ca și fațetele dentare, dar acoperă circular suprafața dinților. 
+           Pe lânga inbunătațirea estetica, acestea sporesc funcționalitatea mecanică a dinților. </p>`,
         images: [
           'thumbnail_10.JPG',
           'thumbnail_11.JPG',
@@ -494,12 +494,12 @@ export const services = [
         title: 'Restaurări protetice estetice',
         logo: '/images/logos/carii.png.webp',
         description: `<p>La Clinica Olidental, realizăm restaurări protetice care îmbină funcționalitatea cu estetica,
-                      conform nevoilor pacientului.</p>
-                      <p>Restaurările estetice sunt soluții protetice pe termen lung, de tipul fațetelor și coroanelor
-                     dentare. De asemenea, includ punțile dentare, protezele mobile sau
-                      mobilizabile putând fi realizate atât pe dinți naturali cât și pe implanturi dentare.</p>
-                      <p><em>Restaurările protetice estetice</em> asigură rezistența și aspect natural și sunt menite să 
-                      înbunătățească estetica și funcția dinților pentru o perioadă îndelungată.</p>`,
+                          conform nevoilor pacientului. Restaurările estetice sunt soluții protetice pe termen lung,
+                           de tipul fațetelor și coroanelor dentare. Acestea pot cuprinde unul, sau multi dinti sau chiar toti dintii pacientului. 
+                           De asemenea,din aceeasi categorie pot face parte si punțile dentare, protezele mobile sau mobilizabile.
+                           Pot fi realizate atât pe dinți naturali cât și pe implanturi dentare. 
+                           Restaurările protetice estetice asigură rezistența și aspect natural și sunt menite să înbunătățească estetica și
+                            funcția dinților pentru o perioadă îndelungată.</p>`,
         images: [],
         cazuri: [
           {
@@ -665,32 +665,27 @@ export const services = [
     title: 'Implantologie orală',
     logo: '/images/logos/implant.png.webp',
     description: `<p><span class='ms-4'></span>
-          Implantologia orală reprezintă, de obicei, soluția ideală pentru înlocuirea dinților lipsă în
-        cazul în care pacientul este un candidat valabil pentru implanturi dentare – lipsa dinților
-        ducând la instabilitatea dinților existenți, la degradarea sănătății osoase și gingivale și chiar la
-        îmbătrânirea prematură.
+          Implantologia orală reprezintă, de cele mai multe ori, soluția ideală pentru înlocuirea dinților lipsă daca
+           pacientul este un candidat valabil pentru inserarea de implanturi dentare. 
+           Pierderea dinților duce la instabilitatea dinților restanti, la degradarea sănătății osoase și gingivale și
+            chiar la îmbătrânirea prematură. Implantul dentar presupune introducerea unei rădăcinii artificiale în osul mandibular sau maxilar, 
+            fără a afecta dinții din vecinătate. De reținut că uneori este nevoie de adiții sau augmentări de țesut osos sau gingival. 
+            In cadrul tratamentelor de implantologie orala se diferentiaza doua faze de tratament. 
+            Una chirurgicala de inserare a implanturilor si una protetica de executie a dintilor pe suportul implantar. 
+            Intervalul de timp dintre cele doua procedee poate sa fie variabil si depinde de particularitatile fiecariu caz in parte.
         </p>
-        <p><span class='ms-4'></span>Implantul constituie un tratament minim invaziv, care presupune introducerea rădăcinii
-        artificiale în osul mandibular sau maxilar, fără a afecta dinții din vecinătate.
-        </p>
-        <p class='text-center'><u>De reținut că este nevoie uneori de adiții sau augmentări de țesut moale sau dur.</u></p>
-        <p class='text-center'><u>Intervenția are o durată mică și este nedureroasă, iar vindecarea este una rapidă.</u></p>
-        <p><span class='ms-4'></span>Implanturile dentare au o stabilitate superioară și prezintă nenumărate beneficii pe
-        termen lung. În plus, cel mai mare avantaj al implanturilor dentare este că pot fi realizate într-
-        o singură vizită la cabinet, pacientul putând să își reia în cel mai scurt timp posibil activitățile
-        obișnuite.
-        </p>
-        <p class='text-italic'><strong>Olidental Clinic </strong><em>oferă certificate de autenticitate, garantând astfel calitatea superioară
-        a implantului dentar și oferind o garanție de 10 ani.</em></p>`,
+        <p><span class='ms-4'></span>Implanturile dentare prezintă numeroase beneficii pe termen lungunul dinb avantaje este că pot
+         fi realizate multiple implantari într- o singură vizită la cabinet, pacientul putând să își reia în cel mai scurt timp posibil activitățile obișnuite.</p>`,
     procedures: [
       {
         title: 'Inserare de implanturi și adiții de os',
         logo: '/images/logos/implant.png.webp',
         description:
-          'Implanturile dentare constituie soluția ideală pentru înlocuirea dinților lipsă, dacă pacientul este un candidat valabil. Inserarea implanturilor dentare și a adițiilor de os se realizează în cadrul unor intervenții chirurgicale, după analiza ofertei osoase.\
-          În cazul în care cantitatea osoasă este insuficientă se decide asupra efectuării unor adiții de os. Implanturile dentare utilizate în cadrul Olidental Clinic sunt durabile, sigure și eficiente.\
-          După inserarea implantului, are loc procesul de osteointegrare, cu o durată diferită în funcție de particularitățile fiecarui caz (2-6 luni).\
-          Următoarea etapă o constituie atașarea componentelor protetice si realizarea unor restaurări provizorii sau finale în funcție de situație. Restaurările finale pot fi sub formă de coroană unidentară sau punte între mai multe implanturi.',
+          'Inserarea implanturilor dentare și a adițiilor de os se realizează în cadrul unor intervenții chirurgicale, ' +
+          'după analiza substratului osos pe investigatiile radiografice de tip computer tomografie. ' +
+          'În cazul în care cantitatea osoasă este insuficientă se poate decide pentru realizarea unor adiții de os ' +
+          'concomitent sau anterior inserarii implanturilor. Implanturile dentare utilizate în cadrul Olidental Clinic sunt durabile, ' +
+          'sigure și eficiente. După inserarea implantului, are loc procesul de osteointegrare, cu o durată diferită în funcție de particularitățile fiecarui caz ',
         cazuri: [
           {
             images: [
@@ -758,8 +753,11 @@ export const services = [
         title: 'Restaurări protetice pe implanturi',
         logo: '/images/logos/restaurari.png.webp',
         description:
-          'Prin restaurările protetice pe implanturi se redă integritatea arcadelor dentare și reprezintă o soluție ideală în cazul pierderii dinților, care functionează pe termen lung.\
-          Dacă pacientul este validat pentru intervenție, se realizează inserarea de implanturi dentare, urmată de fixarea restaurărilor. Acestea pot fi de mai multe tipuri, fixe, sau mobilizabile, fixate prin cimentare sau cu ajutorul unor șuruburi de fixare la implantruri.',
+          'In etapa protetica se face atașarea componentelor protetice si realizarea unor restaurări provizorii' +
+          ' sau finale în funcție de situație. Restaurările finale pot fi fixe, demontabile sau mobilizabile sub formă de coroană unidentară, ' +
+          'punte între mai multe implanturi sau restaurari intinse, de arcada. Prin restaurările protetice pe implanturi se redă integritatea' +
+          ' arcadelor dentare iar acestea pot functiona impreuna cu dintii restanti ai pacientului sau cu alte tipuri de restaurari dentare. ' +
+          'Orice lucrare protetica executata fie pe dinti fie pe implanturi care functionează pe termen lung trebuie intretinuta periodic. ',
         cazuri: [
           {
             images: [
@@ -860,14 +858,29 @@ export const services = [
     title: 'Reabilitări orale complexe',
     logo: '/images/logos/reabilitari.png.webp',
     description:
-      'Cazurile de reabilitare orală complexă sunt o provocare pentru echipa Olidental Clinic. În funcție de nevoile pacientului, reabilitările orale complexe presupun un cumul de tratamente stomatologice menite să redea frumusețea zâmbetului și sănătatea orală.',
+      'Cazurile de reabilitare orală complexă sunt o provocare pentru echipa Olidental Clinic. ' +
+      'În funcție de nevoile pacientului, aceste proceduri presupun un cumul de tratamente stomatologice menite ' +
+      'să redea frumusețea zâmbetului și sănătatea orală. Abordarea acestor situatii complexe presupune un dignostic corect, ' +
+      'elaborarea unui plan de tratament individualizat convenit impreuna cu pacientul si executia lui riguroasa, ' +
+      'pentru a obtine rezultatele dorite. Astfel de restaurari de amploare au nevoie de o abordare interdisciplinara de cele mai multe ' +
+      'ori fiind nevoie de mai multi specialisti care vor contribui cu expertiza lor la desfasurarea planului de tratament. ' +
+      'Este nevoie de o echipa medicala competenta care sa se ridice la cele mai inalte standarde profesionale. ' +
+      'Tehnologia si aparatura de ultima generatie sunt indispensabile atat in etapa de diagnostic cat si la ' +
+      'executia diverselor proceduri terapeutice din cadrul taratamentului. De asemenea executia tehnica a ' +
+      'restaurarilor este important sa se faca la nivelul cel mai inalt de precizie si pentru aceasta ' +
+      'un laborator de tehnica dentara de top este indispensabil. ',
     procedures: [
       {
         title: 'Restaurari extinse pe dinti naturali si implanturi',
         logo: '/images/logos/protetica.png.webp',
         description:
-          'Integritatea arcadelor dentare se poate restabili prin restaurări protetice, dentare și implantologice, precum proteze fixe sau mobile, fațete dentare, coroane dentare, incrustații, punți dentare și lucrări complexe protetice pe implanturi.\
-          Pacienții își recapătă încrederea în sine, sănătatea orală și adesea sănătatea generală, pe lângă capacitatea de a consuma alimente fără prea multe restricții și pe lângă posibilitatea de a zâmbi fără autocenzură. ',
+          'La Olidental Clinic, tratam afecțiuni complexe care pot cuprinde toate structurile aparatului dentar, ' +
+          'stabilim un plan de tratament corespunzător si trecem apoi la executarea multidisciplinara a lui. ' +
+          'Pacienții își recapătă încrederea în sine, sănătatea orală și adesea sănătatea generală. ' +
+          'De asemenea isi reiau functiile masticatorii si au posibilitatea de a zâmbi fără a se autocenzura. ' +
+          'Dupa finalizarea oricarul caz recomandăm, efectuarea unui control periodic pentru igienizari profesionale ' +
+          'și identificării eventualelor probleme care pot sa apara in timp. Numai asa putem garanta pastarea pe termen ' +
+          'lung a restaurarilor si a sănătății orale.',
         cazuri: [
           {
             'title': '1 Copaci Costin',
@@ -955,9 +968,14 @@ export const services = [
         title: 'Tratamente mixte endodontice, parodontale și protetice',
         logo: '/images/logos/tratament.png.webp',
         description:
-          'Boala parodonatală este una dintre cele mai raspandite afecțiuni la nivel global, constituind una dintre principalele cauze ale pierderii premature a dinților.\
-          În principiu, se manifestă prin inflamarea și înroșirea țesuturilor moi care înconjoară dintele, iar în timp, apar probleme precum sângerarea gingiilor, retracția gingivală, dureri și sensibilitate dentară,  mobilitatea dinților pe arcadă, culminând cu pierderea acestora.\
-          La Olidental Clinic, detectăm afecțiunile gingivale și pierderile osoase și stabilim un tratament corespunzător. Recomandăm, de asemenea, efectuarea unui control de rutină periodic în vederea identificării eventualelor probleme parodontale și păstrării sănătății orale',
+          'In tratarea cazurilor complexe ne intalnim cu probleme de sanatate la diferite structuri ' +
+          'ale cavitatii orale. Deseori trebuie sa reabilitam in totalitate arcadele dentare si ' +
+          'este nevoie de o abordare holistica a intregului sistem oral. ' +
+          'Interventiile pot sa cuprinda dintii, tesuturile de sustinere al dintilor, ' +
+          'oasele maxilare si gingiile. Astfel tratamentul se poate intinde pe o perioada mai lunga de timp ' +
+          'si poate implica purtarea unor aparate ortodontice, inerventii de chirurgie parodontala, ' +
+          'tratamente endodontice, chirurgie implantara si la final restaurari protetice ' +
+          'care sa imbine functionalitatea cu estetica dentara.',
         cazuri: [
           {
             'title': '1 Trusca Monica',
