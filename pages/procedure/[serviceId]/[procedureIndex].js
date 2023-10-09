@@ -10,15 +10,16 @@ import { useEffect, useRef, useState } from 'react';
 import styles from '../../../components/styles/styles.module.css';
 import { BiCaretLeft, BiCaretRight } from 'react-icons/bi';
 import ScrollIndicator from '../../../components/scrollIndicator';
+import ScrollIntoViewIndicator from '../../../components/scrollIntoViewIndicator';
 
 const Procedure = () => {
   const [indexCaz, setIndexCaz] = useState(0);
   const [imgNo, setImgNo] = useState(0);
-  const [showScrollIndicator, setShowScrollIndicator] = useState(true);
   const router = useRouter();
   const { serviceId, procedureIndex } = router.query;
 
   const windowWidth = useRef();
+  const imageComparatorPreviewRef = useRef();
 
   useEffect(() => {
     windowWidth.current = window?.innerWidth;
@@ -49,13 +50,20 @@ const Procedure = () => {
     return true;
   }
 
+  const handleScrollPreviewLeft = () => {
+    imageComparatorPreviewRef.current.scrollLeft -= 341;
+  }
+
+  const handleScrollPreviewRight = () => {
+    imageComparatorPreviewRef.current.scrollLeft += 341;
+  }
   const renderScrollIndicator = () => {
     const isNarrowWidth = window.innerWidth < 450;
-    if(isNarrowWidth && showScrollIndicator)return <ScrollIndicator/>;
+    if(isNarrowWidth)return <ScrollIntoViewIndicator onClickLeft={handleScrollPreviewLeft} onClickRight={handleScrollPreviewRight} />;
     return null;
 
   }
-  
+
   return (
     <div className='services-container m-auto'>
       <div className='pt-4 pb-4 bg-gray' >
@@ -75,8 +83,8 @@ const Procedure = () => {
         </div>
         <div className='pt-3 mb-2 d-flex flex-column m-auto' style={{ maxWidth: '60rem' }}>
           {(cazuri?.length && cazuri[indexCaz].images.length > 1) && <div className={`${styles.imageComparatorContainerPreview}`}>
-            {renderScrollIndicator()}
-            <div className={styles.proceduresPreviewImagesContainer} onScroll={() => showScrollIndicator && setShowScrollIndicator(false)}>
+
+            <div className={styles.proceduresPreviewImagesContainer} ref={imageComparatorPreviewRef}>
               {cazuri[indexCaz].images.map((batch, index) => (
                   <div
                     key={batch.join()}
@@ -90,6 +98,8 @@ const Procedure = () => {
                   </div>
                 ))}
             </div>
+            {renderScrollIndicator()}
+
           </div>}
           {cazuri?.length && <>
               {cazuri[indexCaz].images[imgNo].length === 3 &&
