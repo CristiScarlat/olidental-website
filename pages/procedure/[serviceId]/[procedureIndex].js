@@ -51,11 +51,11 @@ const Procedure = () => {
   }
 
   const handleScrollPreviewLeft = () => {
-    imageComparatorPreviewRef.current.scrollLeft -= 341;
+    imageComparatorPreviewRef.current.scrollLeft -= 354;
   }
 
   const handleScrollPreviewRight = () => {
-    imageComparatorPreviewRef.current.scrollLeft += 341;
+    imageComparatorPreviewRef.current.scrollLeft += 354;
   }
   const renderScrollIndicator = () => {
     const isNarrowWidth = window.innerWidth < 450;
