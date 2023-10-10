@@ -37,12 +37,14 @@ const Procedure = () => {
       if (state === 0) return cazuri.length - 1;
       return state - 1;
     });
+    imageComparatorPreviewRef.current.scrollLeft = 0
   };
   const handleNavNext = () => {
     setIndexCaz(state => {
       if (state === cazuri.length - 1) return 0;
       return state + 1;
     });
+    imageComparatorPreviewRef.current.scrollLeft = 0
   };
 
   const handleShowDeviderLabel = () => {
@@ -51,11 +53,11 @@ const Procedure = () => {
   }
 
   const handleScrollPreviewLeft = () => {
-    imageComparatorPreviewRef.current.scrollLeft -= 354;
+    imageComparatorPreviewRef.current.scrollLeft -= 330;
   }
 
   const handleScrollPreviewRight = () => {
-    imageComparatorPreviewRef.current.scrollLeft += 354;
+    imageComparatorPreviewRef.current.scrollLeft += 330;
   }
   const renderScrollIndicator = () => {
     const isNarrowWidth = window.innerWidth < 450;

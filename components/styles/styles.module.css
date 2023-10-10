@@ -183,12 +183,14 @@
 }
 
 .imageComparatorContainerPreview {
-  border-bottom: 1px solid #8080804d;
   margin: 0 0.5rem;
-  padding: 1rem;
-  background-color: #80808036;
+  padding: 1rem 3rem;
   border-radius: 5px 0 0 5px;
   position: relative;
+  border-width: 0px 2px;
+  border-style: solid;
+  border-color: rgba(128, 128, 128, 0.26);
+  border-image: initial;
 }
 
 .imageComparatorContainerPreview > div > img{
@@ -209,8 +211,7 @@
   flex-direction: column;
   flex-wrap: nowrap;
   gap: 0.2rem;
-  border: 1px solid #6cab44;
-  padding: 0.5rem;
+  padding: 0.3rem;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -291,5 +292,13 @@
 
   .custom-icon-contact svg {
     fill: #3a539b;
+  }
+
+  .imageComparatorContainerPreview {
+    padding: 0.9rem;
+  }
+
+  .imageComparatorContainerPreview {
+    border: none;
   }
 }
