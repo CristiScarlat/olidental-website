@@ -1,0 +1,20 @@
+.titleMobile {
+    display: none;
+}
+
+.titleDesktop {
+    display: block;
+}
+
+.team-member-container > img {
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 800px){
+    .titleMobile {
+        display: block;
+    }
+    .titleDesktop {
+        display: none;
+    }
+}

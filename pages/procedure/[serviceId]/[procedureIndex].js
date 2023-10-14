@@ -37,14 +37,14 @@ const Procedure = () => {
       if (state === 0) return cazuri.length - 1;
       return state - 1;
     });
-    imageComparatorPreviewRef.current.scrollLeft = 0
+    if(imageComparatorPreviewRef.current)imageComparatorPreviewRef.current.scrollLeft = 0
   };
   const handleNavNext = () => {
     setIndexCaz(state => {
       if (state === cazuri.length - 1) return 0;
       return state + 1;
     });
-    imageComparatorPreviewRef.current.scrollLeft = 0
+    if(imageComparatorPreviewRef.current)imageComparatorPreviewRef.current.scrollLeft = 0
   };
 
   const handleShowDeviderLabel = () => {
@@ -121,7 +121,7 @@ const Procedure = () => {
             <span>{`${indexCaz + 1}/${cazuri?.length}`}</span>
             <button onClick={handleNavNext}><BiCaretRight /></button>
           </div>
-          {(cazuri?.length && cazuri[indexCaz].images[imgNo].length > 2) && <p className='text-center opacity-75 visible-400'>Touch image to see full width.</p>}
+
         </div>
         <div className='m-auto p-2' style={{ maxWidth: '60rem' }}>
           <div

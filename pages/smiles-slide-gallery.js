@@ -1,25 +1,19 @@
-import ImageGallery from 'react-image-gallery';
-import styles from '../styles/Galery.module.css';
 import { smilesGallery } from '../utils/uiConstants';
-
-
-const images = smilesGallery.images.map(image => {
-  return  {
-    original: `/images/services/${smilesGallery.dirPath}/${image}`,
-    thumbnail: `/images/services/${smilesGallery.dirPath}/${image}`,
-  }
-});
+import CustomCarousel from '../components/carousel';
+import styles from '../styles/galery.module.css';
 
 
 const SlideGallery = () => {
   return (
-    <div className='' style={{ backgroundColor: '#d4d4d4' }}>
-        <ImageGallery
-          additionalClass={styles.imageGallerySlide}
-          style={{maxWidth: '70rem', margin: 'auto'}}
-          items={images}
-          lazyLoad={true}
-          thumbnailPosition="top"/>
+    <div className={styles.smilesGalleryWrapper}>
+      <CustomCarousel>
+        {smilesGallery.images.map(pic => (
+          <div key={pic}>
+            <img src={`/images/services/${smilesGallery.dirPath}/${pic}`} alt='carousel item 1' style={{ borderRadius: 10 }} />
+            {/* <CarouselLegendContent index={0} /> */}
+          </div>
+        ))}
+      </CustomCarousel>
     </div>
   );
 };

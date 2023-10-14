@@ -44,7 +44,7 @@ export const teamCards = [
     thumbnail: '/images/team/thumbnail_Tunaru-Ana-new.jpg'
   },
   {
-    title: 'Dr. Patricia Streinu',
+    title: 'Dr. Patricia Străinu',
     body: `<p style="margin-bottom: 3rem;'"><span  style='margin-left: 2rem;'></span>Dr. Patricia, are o experienta de peste 10 ani in domeniul stomatologiei generale.
     A absolvit Facultatea de Medicina Dentara din Timisoara, cu specializarea Stomatologie Generala.
     Dr. Patri, cum îi spunem noi, este o persoana perseverenta, devotata si serioasă.
@@ -1033,8 +1033,7 @@ export const services = [
               ['1a.JPG', '1b.JPG'],
               ['2a.JPG', '2b.JPG'],
               ['3a.JPG', '3b.JPG'],
-              ['4a.JPG', '4b.JPG'],
-              ['TMa.JPG', 'TMb.JPG']
+              ['4a.JPG', '4b.JPG']
             ],
             'dirPath': 'services/3_tratamente_mixte_endodontice_parodontale_si_protetice_cazuri/6 Topan Mirabela'
           },
