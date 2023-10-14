@@ -1,13 +1,13 @@
 
 import styles from "./styles/styles.module.css";
-import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill } from "react-icons/bs";
+import { BiCaretLeft, BiCaretRight } from "react-icons/bi";
 
 const ScrollIntoViewIndicator = ({onClickLeft=()=>{}, onClickRight=()=>{}}) => {
 
   const iconStyle = {
     borderRadius: '50%',
-    fill: "green",
-    background: "#001200"
+    fill: "#bfbcbc",
+    background: "#0012006e"
   }
 
   const wrapperStyle = {
@@ -19,8 +19,8 @@ const ScrollIntoViewIndicator = ({onClickLeft=()=>{}, onClickRight=()=>{}}) => {
 
   return(
     <div className="d-flex gap-2 justify-content-between mt-2" style={wrapperStyle}>
-      <BsFillArrowLeftCircleFill size="2rem" style={iconStyle} onClick={onClickLeft}/>
-      <BsFillArrowRightCircleFill size="2rem" style={iconStyle} onClick={onClickRight}/>
+      <BiCaretLeft size="2rem" style={iconStyle} onClick={onClickLeft}/>
+      <BiCaretRight size="2rem" style={iconStyle} onClick={onClickRight}/>
     </div>
   )
 }
