@@ -11,7 +11,7 @@ const TeamMemberDetails = ({ data }) => {
             </div>
             <div className="col-md-9">
                 <h4 className={styles.titleDesktop}>{data.title}</h4>
-                <div className="mb-3" dangerouslySetInnerHTML={{ __html: data.body }}></div>
+                <div className="my-3" dangerouslySetInnerHTML={{ __html: data.body }}></div>
                 {data?.specializations?.length > 0 && <>
                 <strong>Specializari:</strong>
                 <ul className="mt-2">
