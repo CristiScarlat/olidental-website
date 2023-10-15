@@ -965,7 +965,7 @@ export const services = [
         ]
       },
       {
-        title: 'Tratamente mixte endodontice, parodontale și protetice',
+        title: 'Tratamente multidisciplinare',
         logo: '/images/logos/tratament.png.webp',
         description:
           'In tratarea cazurilor complexe ne intalnim cu probleme de sanatate la diferite structuri ' +
