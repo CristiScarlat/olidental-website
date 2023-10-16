@@ -46,8 +46,8 @@ const Team = () => {
 
     return (
         <>
-            {teamCards.length > 0 && teamCards?.map(teamMember => (
-                <div key={teamMember.title} ref={ref => { teamMemberContainerRef.current[teamMember?.title] = ref }}>
+            {teamCards.length > 0 && teamCards?.map((teamMember, index) => (
+                <div key={teamMember.title} ref={ref => { teamMemberContainerRef.current[teamMember?.title] = ref }} style={index === 0 ? {marginTop: '1rem'} : {}}>
                     {/* <hr /> */}
                     <TeamMemberDetails data={teamMember}/>
                 </div>
