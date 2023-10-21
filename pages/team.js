@@ -7,7 +7,12 @@ const TeamMemberDetails = ({ data }) => {
         <div className="team-member-container row mb-3 m-auto bg-gray" style={{ maxWidth: 1500, color: 'black' }}>
             <h4 className={styles.titleMobile}>{data.title}</h4>
             <div className="col-md-3">
-                <img src={data.thumbnail} width={320} height={480} placeholder="blur" loading='lazy' style={{objectFit: 'contain'}}/>
+              { data.thumbnail ? <img src={data.thumbnail} width={320} height={480} loading='lazy' style={{objectFit: 'contain'}}/>
+                :
+                <div style={{border: "1px solid #eeeded", borderRadius: 5, height: "100%", backgroundColor: "#eeeded", margin: "0 0.5rem"}}>
+
+                </div>
+              }
             </div>
             <div className="col-md-9">
                 <h4 className={styles.titleDesktop}>{data.title}</h4>
