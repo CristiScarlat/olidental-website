@@ -56,6 +56,7 @@ const Layout = ({ children }) => {
           <meta property="og:site_name" content="Oli Dental Clinic Timișoara - Implant dentar Timișoara"/>
           <meta property="article:modified_time" content="2021-02-03T16:28:49+00:00"/>
           <meta name="twitter:card" content="summary_large_image"/>
+          <meta name="google-site-verification" content="ZVnPRWdYCBKwPcZw_fc719GdddRhNEy8wIiq5abL6hM" />
       </Head>
 
       <Header />
