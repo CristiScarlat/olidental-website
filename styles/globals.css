@@ -24,6 +24,7 @@ body {
 }
 main {
   flex: auto;
+  position: relative;
 }
 
 * {
@@ -165,8 +166,8 @@ h4 {
 }
 
 .custom-card-container:hover {
-  box-shadow: 2px 4px 7px 3px #8b8888;
-  background-color: #d4d4d4;
+  box-shadow: 2px 4px 7px 3px #717b81de;
+  background-color: #717b81de;
   transform: scale(1.05);
 }
 
@@ -257,6 +258,25 @@ h4 {
 
 .page-item>.page-link {
   color: #6cab44 !important;
+}
+
+.band-with-label {
+  min-height: 5rem;
+  background-color: #6cab44c7;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin: 2rem auto;
+  border-radius: 5px;
+}
+
+.band-with-label>a {
+  color: white;
+  letter-spacing: 2px;
 }
 
 @media only screen and (max-width: 1024px){

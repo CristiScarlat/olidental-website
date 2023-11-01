@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import Spinner from './spinner';
-import { BsHandIndexThumb } from 'react-icons/bs';
+import { BsChevronExpand } from 'react-icons/bs';
 import styles from './styles/styles.module.css';
 
 const ImageComparator = ({ images, maxWidth = 400, height = 225, showCursor=true }) => {
@@ -112,7 +112,7 @@ const ImageComparator = ({ images, maxWidth = 400, height = 225, showCursor=true
             onTouchEnd={() => setDeviderGrab(false)}
           >
             {/* <div>&#x21d5;</div> */}
-            <BsHandIndexThumb color="white"/>
+            <BsChevronExpand color="white" size="1.8rem" style={{transform: "rotate(90deg)"}}/>
           </div>}
         </div>
       </div>

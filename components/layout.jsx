@@ -47,14 +47,13 @@ const Layout = ({ children }) => {
           <meta name="msapplication-TileImage" content="/favicons/cropped-favicon-270x270.png"/>
           <meta name="description"
                         content="Olidental Clinic Timișoara oferă servicii stomatologice premium, doctorii clinicii având specialități și competențe pentru o gamă curpinzătoare de tratamente dentare."/>
-          <link rel="canonical" href="https://olidental.netlify.app/"/>
+          <link rel="canonical" href="https://olidental.ro"/>
           <meta property="og:locale" content="ro_RO"/>
           <meta property="og:type" content="website"/>
           <meta property="og:title" content="Olidental Clinic Timișoara - Servicii stomatologice premium în Timișoara"/>
           <meta property="og:description" content="Olidental Clinic Timișoara oferă servicii stomatologice premium, doctorii clinicii având specialități și competențe pentru o gamă curpinzătoare de tratamente dentare."/>
-          <meta property="og:url" content="https://olidental.netlify.app/"/>
+          <meta property="og:url" content="https://olidental.ro"/>
           <meta property="og:site_name" content="Oli Dental Clinic Timișoara - Implant dentar Timișoara"/>
-          <meta property="article:modified_time" content="2021-02-03T16:28:49+00:00"/>
           <meta name="twitter:card" content="summary_large_image"/>
           <meta name="google-site-verification" content="ZVnPRWdYCBKwPcZw_fc719GdddRhNEy8wIiq5abL6hM" />
       </Head>

@@ -22,7 +22,12 @@ const Header = () => {
                 <ul className="d-flex justify-content-start  navbar-nav gap-4 me-auto mb-2 mb-lg-0 w-100 fw-bold">
                   <li className="nav-item ms-auto li-link">
                     <Link href="/">
-                      <a className={`${styles['header-custom-link']}  text-uppercase ${router.pathname === '/' ? 'active' : ''}`}>Servicii</a>
+                      <a className={`${styles['header-custom-link']}  text-uppercase ${router.pathname === '/' ? 'active' : ''}`}>Acasa</a>
+                    </Link>
+                  </li>
+                  <li className="nav-item ms-auto li-link">
+                    <Link href="/services">
+                      <a className={`${styles['header-custom-link']}  text-uppercase ${router.pathname === '/services' ? 'active' : ''}`}>Servicii</a>
                     </Link>
                   </li>
                   <li className="nav-item ms-auto li-link">
@@ -30,11 +35,6 @@ const Header = () => {
                       <a className={`${styles['header-custom-link']}  text-uppercase ${router.pathname === '/services' ? 'active' : ''}`}>Rezultate</a>
                     </Link>
                   </li>
-                  {/*<li className="nav-item ms-auto li-link">*/}
-                  {/*  <Link href="/smiles-gallery">*/}
-                  {/*    <a className={`${styles['header-custom-link']}  text-uppercase ${router.pathname === '/smiles-gallery' ? 'active' : ''}`}>Zâmbete</a>*/}
-                  {/*  </Link>*/}
-                  {/*</li>*/}
                   <li className="nav-item ms-auto li-link">
                     <Link href="/smiles-slide-gallery">
                       <a className={`${styles['header-custom-link']}  text-uppercase ${router.pathname === '/smiles-slide-gallery' ? 'active' : ''}`}>Zâmbete</a>
