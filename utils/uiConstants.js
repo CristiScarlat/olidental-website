@@ -117,15 +117,6 @@ export const teamCards = [
   //   thumbnail: '/images/team/thumbnail_Shiha-Iustina.jpg'
   // },
   {
-    title: 'Catalina Madalina – Manager Pacienți',
-    body: `<p style="margin-bottom: 3rem;'"><span  style='margin-left: 2rem;'></span>
-            Catalina, are o experienta de 7 ani in domeniul relatiilor publice. A absolvit facultatea de Management si a terminat Masterul in Administrarea Afacerilor.</p>`,
-    specializations: [],
-    services: [],
-    img: '/images/team/Madalina-Catalina-pr-new.jpg',
-    thumbnail: '/images/team/thumbnail_Madalina-Catalina-pr-new.jpg'
-  },
-  {
     title: 'Spîrlea Adriana - Front Desk Manager',
     body: `<p style="margin-bottom: 3rem;'"><span  style='margin-left: 2rem;'></span>Adriana, a absolvit facutlatea de Relatii Publice si Comunicare. Fiind Specialist PR, 
     devine persoana responsabila de prima impresie pe care si-o construiesc pacientii, deoarece este primul contact dintre pacient si clinica.
