@@ -9,10 +9,18 @@ import ScrollToTop from '../components/scrollToTop';
 const Results = () => {
   const [selectedProcedure, setSelectedProcedure] = useState(0);
   const cards = useRef([]);
-
+  const beforeAfterListOrder = [6, 7, 2, 17, 18, 13, 3, 8, 11, 10, 12, 5, 4, 9, 1, 14, 15, 16, 19, 20];
   const handleScrollToCard = (index) => {
     setSelectedProcedure(index);
     cards.current[index].scrollIntoView({block: "center"});
+  }
+
+  const reorderList = (list, orderedIndexes) => {
+    const newList = []
+    orderedIndexes.forEach(i => {
+      newList.push(list[i-1])
+    })
+    return newList
   }
 
   return (
@@ -24,7 +32,7 @@ const Results = () => {
       buttonClassName={styles.resultsNavigationButton}
         buttonOnClick={handleScrollToCard}/>
       <div style={{ maxWidth: '70rem', margin: 'auto' }}>
-        {beforeAfter
+        {reorderList(beforeAfter, beforeAfterListOrder)
           .map((obj, index) => (
             <div ref={ref => {if(!cards.current.includes(ref))cards.current.push(ref)}} className="row bg-gray p-3 mb-5 m-auto" style={{ minHeight: 300 }} key={'before-after' + index}>
               <div className={`col-md-6 p-3`}>
