@@ -8,7 +8,7 @@ const CustomCard = ({ onClick, id, title, body, imgSrc, imgStyle }) => {
   }, []);
 
   return (
-    <div className="col text-center custom-card-container" onClick={() => onClick(id)} style={{ cursor: 'pointer'}}>
+    <div className="text-center custom-card-container" onClick={() => onClick(id)} style={{ cursor: 'pointer'}}>
       <div className="service-sec">
         <div className="d-flex align-items-center justify-content-center icon m-auto">
           <img src={imgSrc} alt="..." style={imgStyle} />

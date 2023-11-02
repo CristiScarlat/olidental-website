@@ -33,10 +33,14 @@ const Home = () => {
           </CustomCarousel>
         </div>
       </div>
-      <div className="band-with-label">
-        <img src="/images/logos/reabilitari.png.webp" style={{maxWidth: "8rem"}}/>
-        <Link href="/rezultate">Rezultate</Link>
-      </div>
+
+        <Link href="/rezultate">
+          <div className="band-with-label">
+            <img src="/images/logos/reabilitari.png.webp" style={{maxWidth: "8rem"}}/>
+            Rezultate
+          </div>
+        </Link>
+
       {/*<div className="band-with-label">*/}
       {/*  <Link href="/rezultate">Mergi la Rezultate</Link>*/}
       {/*</div>*/}
