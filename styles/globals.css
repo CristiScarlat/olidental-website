@@ -155,8 +155,8 @@ h4 {
 }
 
 .custom-card-container {
-  min-width: 20rem;
-  max-width: 25rem!important;
+  min-width: 250px;
+  max-width: 250px!important;
   box-shadow: 2px 4px 7px 3px #dedede;
   padding-bottom: 1rem;
   border-radius: 10px;
@@ -262,21 +262,28 @@ h4 {
 
 .band-with-label {
   min-height: 5rem;
-  background-color: #6cab44c7;
+  background-color: #778187;
   color: white;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: bold;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 1rem;
   margin: 2rem auto;
   border-radius: 5px;
+  min-width: 250px;
+  max-width: 250px!important;
 }
 
 .band-with-label>a {
   color: white;
   letter-spacing: 2px;
+}
+
+.band-with-label>a:hover {
+  color: white;
 }
 
 @media only screen and (max-width: 1024px){

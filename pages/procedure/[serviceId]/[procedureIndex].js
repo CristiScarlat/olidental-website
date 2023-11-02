@@ -119,7 +119,7 @@ const Procedure = () => {
             <span>{`${indexCaz + 1}/${cazuri?.length}`}</span>
             <button onClick={handleNavNext}><BiCaretRight /></button>
           </div>
-          {(cazuri?.length && cazuri[indexCaz].images[imgNo].length > 2) && <p className='text-center opacity-75 visible-400'>Atinge imaginea pentru a o vedea în întregime.</p>}
+          {(cazuri?.length && cazuri[indexCaz].images[imgNo].length > 2) && <p className='text-center fs-6 opacity-50 visible-400'>Atinge imaginea</p>}
         </div>
         <div className='m-auto p-2' style={{ maxWidth: '60rem' }}>
           <div
