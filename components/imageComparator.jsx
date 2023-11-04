@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import Spinner from './spinner';
-import { BsChevronExpand } from 'react-icons/bs';
+import { MdArrowBackIosNew, MdOutlineArrowForwardIos } from 'react-icons/md';
 import styles from './styles/styles.module.css';
 
 const ImageComparator = ({ images, maxWidth = 400, height = 225, showCursor=true }) => {
@@ -112,7 +112,8 @@ const ImageComparator = ({ images, maxWidth = 400, height = 225, showCursor=true
             onTouchEnd={() => setDeviderGrab(false)}
           >
             {/* <div>&#x21d5;</div> */}
-            <BsChevronExpand color="white" size="1rem" style={{transform: "rotate(90deg)"}}/>
+            <MdArrowBackIosNew color="white" size="1rem"/>
+            <MdOutlineArrowForwardIos color="white" size="1rem"/>
           </div>}
         </div>
       </div>
