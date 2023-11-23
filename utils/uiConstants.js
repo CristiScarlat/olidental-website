@@ -52,8 +52,8 @@ export const teamCards = [
     Este mereu dornică sa invete mai mult, participarea la diverse cursuri și workshop-uri este nelipsită.</p> `,
     specializations: ['Medic specialist stomatologie generală'],
     services: ['Tratamente stomatologice/terapie'],
-    img: '',
-    thumbnail: ''
+    img: 'images/team/Dr_Patricia_Strainu.JPG',
+    thumbnail: '/images/team/thumbnail_Dr_Patricia_Strainu.JPG'
   },
   {
     title: 'Dr. Diana Rada Bârsan',
@@ -107,25 +107,36 @@ export const teamCards = [
     img: '/images/team/Chifa-Andreea-new.jpg',
     thumbnail: '/images/team/thumbnail_Chifa-Andreea-new.jpg'
   },
-  // {
-  //   title: 'Asistent Medical Shiha Iustina',
-  //   body: `<p><span  style='margin-left: 2rem;'></span>Iustina, este asistent medical generalist, cu o experienta in domeniu de 9 ani.</p>
-  //   <p><span  style='margin-left: 2rem;'></span>Avand experienta atat in cabinetele din Romania, cat si in alte tari, Iustina ofera un plus de energie si empatie in clinica noastra. Este indragita de pacienti pentru carisma si profesionalism.</p>`,
-  //   specializations: ['Asistent medical generalist'],
-  //   services: [],
-  //   img: '/images/team/Shiha-Iustina.jpg',
-  //   thumbnail: '/images/team/thumbnail_Shiha-Iustina.jpg'
-  // },
+  {
+    title: 'As. Bircioaga Bianca',
+    body: `<p style="margin-bottom: 3rem;"><span  style='margin-left: 2rem;'></span>Bianca este asistenta medicala generalista, cu o experienta de 12 ani in stomatologia dentara, fiind o persoana responsabila si dedicata meseriei. </p>`,
+    specializations: ['Asistent medical generalist / stomatologie'],
+    services: [],
+    img: '/images/team/Bircioaga_Bianca.JPG',
+    thumbnail: '/images/team/thumbnail_Bircioaga_Bianca.JPG'
+  },
   {
     title: 'Spîrlea Adriana - Front Desk Manager',
-    body: `<p style="margin-bottom: 3rem;'"><span  style='margin-left: 2rem;'></span>Adriana, a absolvit facutlatea de Relatii Publice si Comunicare. Fiind Specialist PR, 
+    body: `<p style="margin-bottom: 3rem;"><span  style='margin-left: 2rem;'></span>Adriana, a absolvit facutlatea de Relatii Publice si Comunicare. Fiind Specialist PR, 
     devine persoana responsabila de prima impresie pe care si-o construiesc pacientii, deoarece este primul contact dintre pacient si clinica.
     Pasiunea de a ajuta si de a le oferi oamenilor sprijin, o face sa devina cel mai indragit personaj de catre pacientii si echipa Olidental.
     In cei 10 ani de experienta , a dobandit excelente abilitati de comunicare si empatie, reusind astfel sa fie orientata in exclusivitate catre pacienti si nevoile lor.</p>`,
     specializations: [],
     services: [],
-    img: '/images/team/Spîrlea-Adriana.jpg',
-    thumbnail: '/images/team/thumbnail_Spîrlea-Adriana.jpg'
+    img: '/images/team/Spîrlea-Adriana.JPG',
+    thumbnail: '/images/team/thumbnail_Spîrlea-Adriana.JPG'
+  },
+  {
+    title: 'Jeflea Dana - Front Desk Manager',
+    body: `<p style="margin-bottom: 3rem;'"><span  style='margin-left: 2rem;'></span>Dana este absolventa a Facultatii de Biologie si are o experienta de
+    peste 5 ani ca Front Desk officer in domeniul stomatologiei dentare.In tot acest timp, prin interactiunea zilnica cu pacientii, Dana si-a
+    dezvoltat abilitatea de a empatiza cu acestia, ascultandu-i si
+    oferindu-le suport permanent. Este o persoana organizata, sociabila
+    si atenta la detalii.</p>`,
+    specializations: [],
+    services: [],
+    img: '/images/team/Jeflea_Dana .JPG',
+    thumbnail: '/images/team/thumbnail_Jeflea_Dana .JPG'
   }
 ];
 
