@@ -1301,4 +1301,5 @@ export const beforeAfter = [
   }
 ];
 
-export const carouselPics = ["home-team.JPG", "1.JPG","2.JPG","3.JPG","4.jpg","5.JPG","6.jpg","7.JPG","8.JPG","9.JPG","10.JPG","11.jpg","12.JPG","13.JPG","14.JPG","15.JPG","16.JPG","17.JPG","18.JPG","19.JPG","20.JPG","21.JPG","22.JPG","23.JPG","24.JPG","25.JPG","26.JPG"];
+export const carouselPicsHome = ["1.JPG","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg","11.jpg","12.jpg","13.jpg","14.jpg","15.jpg","16.jpg","17.jpg","18.jpg","19.jpg","20.jpg","21.jpg","22.jpg","23.jpg","24.jpg","25.jpg","26.jpg","27.jpg","28.jpg","29.jpg","30.jpg"];
+export const carouselPicsServices= ["1.JPG","2.JPG","3.JPG","4.jpg","5.JPG","6.jpg","7.JPG","8.JPG","9.JPG","10.JPG","11.jpg","12.JPG","13.JPG","14.JPG","15.JPG","16.JPG","17.JPG","18.JPG","19.JPG","20.JPG","21.JPG","22.JPG","23.JPG","24.JPG","25.JPG","26.JPG","27.JPG","28.JPG","29.JPG","30.JPG"];
