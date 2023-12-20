@@ -12,7 +12,7 @@ const Services = () => {
   return (
     <div className="services-one pt-3 pb-3 mt-3 mb-3">
       <div className="container">
-        <div className="row justify-content-center gap-3">
+        <div className="d-flex justify-content-center gap-3 flex-wrap">
           {services.map(service => (
             <CustomCard
             key={service.id}

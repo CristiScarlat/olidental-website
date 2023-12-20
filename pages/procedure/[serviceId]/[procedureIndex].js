@@ -11,6 +11,7 @@ import styles from '../../../components/styles/styles.module.css';
 import { BiCaretLeft, BiCaretRight } from 'react-icons/bi';
 import ScrollIndicator from '../../../components/scrollIndicator';
 import ScrollIntoViewIndicator from '../../../components/scrollIntoViewIndicator';
+import IconLink from '../../../components/iconLink';
 
 const Procedure = () => {
   const [indexCaz, setIndexCaz] = useState(0);
@@ -70,12 +71,9 @@ const Procedure = () => {
     <div className='services-container m-auto'>
       <div className='pt-4 pb-4 bg-gray' >
         <div className='m-auto' style={{ maxWidth: '60rem' }}>
-          <div className='d-flex align-items-center gap-2 justify-content-md-start justify-content-center px-2'>
-            <Link href={`/service/${serviceId}`}>
-              <TfiHandPointLeft size='2rem' color='#6cab44' style={{cursor: "pointer"}}/>
-            </Link>
-            <span className='custom-link-services'>{`Înapoi la ${services[serviceId]?.title}`}</span>
-          </div>
+          <IconLink label={`Înapoi la ${services[serviceId]?.title}`} href={`/service/${serviceId}`}>
+            <TfiHandPointLeft size='2rem' color='#6cab44' style={{cursor: "pointer"}}/>
+          </IconLink>
           <hr className='w-100' />
           <div className='text-center'>
             <img src={services[serviceId]?.procedures[procedureIndex]?.logo || ''} alt='...'
@@ -121,7 +119,7 @@ const Procedure = () => {
             <span>{`${indexCaz + 1}/${cazuri?.length}`}</span>
             <button onClick={handleNavNext}><BiCaretRight /></button>
           </div>
-
+          {(cazuri?.length && cazuri[indexCaz].images[imgNo].length > 2) && <p className='text-center fs-6 opacity-50 visible-400'>Atinge imaginea</p>}
         </div>
         <div className='m-auto p-2' style={{ maxWidth: '60rem' }}>
           <div
