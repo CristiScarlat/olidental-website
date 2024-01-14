@@ -1,0 +1,15 @@
+# *
+User-agent: *
+Allow: /
+
+Disallow: /wp-includes
+Disallow: /reabilitari-orale-complexe
+Disallow: /politica-cookies
+Disallow: /echipa
+
+# Host
+Host: https://olidental.ro
+
+# Sitemaps
+Sitemap: https://olidental.ro/sitemap.xml
+
