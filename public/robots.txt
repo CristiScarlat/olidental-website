@@ -1,7 +1,5 @@
 # *
 User-agent: *
-Allow: /
-
 Disallow: /wp-includes
 Disallow: /reabilitari-orale-complexe
 Disallow: /politica-cookies
