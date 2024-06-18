@@ -21,32 +21,32 @@ const Header = () => {
               <div id="navbarSupportedContent">
                 <ul className="d-flex justify-content-start  navbar-nav gap-4 me-auto mb-2 mb-lg-0 w-100 fw-bold">
                   <li className="nav-item ms-auto li-link">
-                    <Link href="/">
+                    <Link href="/" legacyBehavior>
                       <a className={`${styles['header-custom-link']}  text-uppercase ${router.pathname === '/' ? 'active' : ''}`}>Acasa</a>
                     </Link>
                   </li>
                   <li className="nav-item ms-auto li-link">
-                    <Link href="/services">
+                    <Link href="/servicii" legacyBehavior>
                       <a className={`${styles['header-custom-link']}  text-uppercase ${router.pathname === '/services' ? 'active' : ''}`}>Servicii</a>
                     </Link>
                   </li>
                   <li className="nav-item ms-auto li-link">
-                    <Link href="/rezultate">
+                    <Link href="/rezultate" legacyBehavior>
                       <a className={`${styles['header-custom-link']}  text-uppercase ${router.pathname === '/services' ? 'active' : ''}`}>Rezultate</a>
                     </Link>
                   </li>
                   <li className="nav-item ms-auto li-link">
-                    <Link href="/smiles-slide-gallery">
+                    <Link href="/smiles-slide-gallery" legacyBehavior>
                       <a className={`${styles['header-custom-link']}  text-uppercase ${router.pathname === '/smiles-slide-gallery' ? 'active' : ''}`}>Zâmbete</a>
                     </Link>
                   </li>
                   <li className="nav-item ms-auto li-link">
-                    <Link href="/team">
+                    <Link href="/echipa" legacyBehavior>
                       <a className={`${styles['header-custom-link']}  text-uppercase ${router.pathname === '/about' ? 'active' : ''}`}>Echipa</a>
                     </Link>
                   </li>
                   <li className="nav-item ms-auto li-link">
-                    <Link href="/contact">
+                    <Link href="/contact" legacyBehavior>
                       <a className={`${styles['header-custom-link']}  text-uppercase ${router.pathname === '/contact' ? 'active' : ''}`}>Contact</a>
                     </Link>
                   </li>

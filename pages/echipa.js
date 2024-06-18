@@ -38,7 +38,7 @@ const TeamMemberDetails = ({ data }) => {
     )
 }
 
-const Team = () => {
+const Echipa = () => {
     const router = useRouter();
     const teamMemberContainerRef = useRef({});
 
@@ -61,4 +61,4 @@ const Team = () => {
     )
 }
 
-export default Team;
+export default Echipa;

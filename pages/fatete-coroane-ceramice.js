@@ -1,30 +1,27 @@
 import { useRouter } from 'next/router';
-import { services } from '../../../utils/uiConstants';
+import { services } from '../utils/uiConstants';
 import { TfiHandPointLeft } from 'react-icons/tfi';
-import Link from 'next/link';
-import CustomCarousel from '../../../components/carousel';
-import ThreeLayerImageComparator from '../../../components/ThreeLayerImageComparator';
-import ListNavCarousel from '../../../components/ListNavCarousel';
-import ImageComparator from '../../../components/imageComparator';
+import ThreeLayerImageComparator from '../components/ThreeLayerImageComparator';
+import ImageComparator from '../components/imageComparator';
 import { useEffect, useRef, useState } from 'react';
-import styles from '../../../components/styles/styles.module.css';
+import styles from '../components/styles/styles.module.css';
 import { BiCaretLeft, BiCaretRight } from 'react-icons/bi';
-import ScrollIndicator from '../../../components/scrollIndicator';
-import ScrollIntoViewIndicator from '../../../components/scrollIntoViewIndicator';
-import IconLink from '../../../components/iconLink';
+import ScrollIntoViewIndicator from '../components/scrollIntoViewIndicator';
+import IconLink from '../components/iconLink';
 
-const Procedure = () => {
+const FateteCoroaneCeramice = () => {
   const [indexCaz, setIndexCaz] = useState(0);
   const [imgNo, setImgNo] = useState(0);
   const router = useRouter();
-  const { serviceId, procedureIndex } = router.query;
+  const serviceId = 0;
+  const procedureIndex = 0;
 
-  const windowWidth = useRef();
+  //const windowWidth = useRef();
   const imageComparatorPreviewRef = useRef();
 
-  useEffect(() => {
-    windowWidth.current = window?.innerWidth;
-  }, []);
+  // useEffect(() => {
+  //   windowWidth.current = window?.innerWidth;
+  // }, []);
 
   useEffect(() => {
     setImgNo(0)
@@ -72,7 +69,7 @@ const Procedure = () => {
     <div className='services-container m-auto'>
       <div className='pt-4 pb-4 bg-gray' >
         <div className='m-auto' style={{ maxWidth: '60rem' }}>
-          <IconLink label={`Înapoi la ${services[serviceId]?.title}`} href={`/service/${serviceId}`}>
+          <IconLink label={`Înapoi la ${services[serviceId]?.title}`} href={`/estetica-zambetului`}>
             <TfiHandPointLeft size='2rem' color='#6cab44' style={{cursor: "pointer"}}/>
           </IconLink>
           <hr className='w-100' />
@@ -133,14 +130,4 @@ const Procedure = () => {
   );
 };
 
-export default Procedure;
-
-
-/*
-<div className={`${styles.imageComparatorContainerPreview}`}>
-        <span>Multiple faze în rezolvarea cazului</span>
-        <div className="d-flex justify-content-start gap-4 p-3" style={{overflowX: 'auto'}}>
-          {childrenCount && renderChildren()}
-        </div>
-      </div>
- */
+export default FateteCoroaneCeramice;

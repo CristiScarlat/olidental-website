@@ -5,8 +5,8 @@ import { services } from '../utils/uiConstants';
 const Services = () => {
   const router = useRouter();
 
-  const handleRedirect = (id) => {
-    router.push(`/service/${id}`);
+  const handleRedirect = (link) => {
+    router.push(`${link}`);
   };
 
   return (
@@ -17,6 +17,7 @@ const Services = () => {
             <CustomCard
             key={service.id}
             id={service.id}
+            link={service.link}
             onClick={handleRedirect}
             imgSrc={service.logo}
             title={service.title}
