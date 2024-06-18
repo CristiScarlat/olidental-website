@@ -1,6 +1,8 @@
 import { useState, useRef, useEffect } from 'react';
 import Spinner from './spinner';
 import { MdArrowBackIosNew, MdOutlineArrowForwardIos } from 'react-icons/md';
+import { PiHandSwipeLeftBold, PiHandSwipeRightBold } from 'react-icons/pi';
+import { MdOutlineSwipe } from "react-icons/md";
 import styles from './styles/styles.module.css';
 
 const ImageComparator = ({ images, maxWidth = 400, height = 225, showCursor=true }) => {
@@ -113,6 +115,7 @@ const ImageComparator = ({ images, maxWidth = 400, height = 225, showCursor=true
           >
             {/* <div>&#x21d5;</div> */}
             <MdArrowBackIosNew color="white" size="1rem"/>
+            <MdOutlineSwipe color="white" size="2rem" />
             <MdOutlineArrowForwardIos color="white" size="1rem"/>
           </div>}
         </div>
