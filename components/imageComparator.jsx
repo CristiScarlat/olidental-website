@@ -115,7 +115,7 @@ const ImageComparator = ({ images, maxWidth = 400, height = 225, showCursor=true
           >
             {/* <div>&#x21d5;</div> */}
             <MdArrowBackIosNew color="white" size="1rem"/>
-            <MdOutlineSwipe color="white" size="2rem" />
+            <MdOutlineSwipe color="white" size="2.5rem" />
             <MdOutlineArrowForwardIos color="white" size="1rem"/>
           </div>}
         </div>
