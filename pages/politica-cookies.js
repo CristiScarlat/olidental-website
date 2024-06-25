@@ -162,8 +162,7 @@ const PoliticaCookies = () => {
     style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>Terții
       furnizori ai <span>cookie</span>-urilor trebuie să respecte, de asemenea, regulile în materie de protecție a
       datelor și Politica de Confidențialitate&nbsp;</span><span
-    style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(255,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>[pentru
-      Lucian: de adăugat hyperlink]</span><span
+    style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(255,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'><a href="/politica-confidentialitate">Politica de confidențialitate</a></span><span
     style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>&nbsp;disponibilă
       pe această pagină de internet.</span><span
     style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'><br /></span><span
