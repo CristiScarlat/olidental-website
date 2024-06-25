@@ -361,7 +361,7 @@ img:hover {transition: background-color 0.5s ease; }
 	display: flex;
 	justify-content: center;
 }
-.footer-bottom .copyrights{ color:#fff; margin:3px 0 0 0; font-size:15px;}
+.footer-bottom .copyrights{ color:#fff; margin:auto; font-size:15px; text-align: center;}
 .footer-bottom .social-icons{ float:right;}
 .footer-bottom .social-icons a{   color: #fff;  border: solid 1px #fff;  padding: 7px 9px;  border-radius: 100%;  font-size: 16px;}
 .footer-bottom .social-icons a.fb:hover{   background: #5c85ce;  border: solid 1px #5c85ce;  }
