@@ -330,7 +330,7 @@ img:hover {transition: background-color 0.5s ease; }
 	text-shadow: 2px 1px 9px black;
 	font-weight: 600;
 }
-.main-footer .useful-links ul li a{   color: #fff;  margin: 0 0 0 20px;  font-size: 18px;}
+.main-footer .useful-links ul li a{   color: #fff;  font-size: 18px;}
 .main-footer .tweets{  width: 100%;  float: left;  margin: 0 0 28px 0;}
 .main-footer .tweets .icon{ float:left;}
 .main-footer .tweets .icon i{ font-size:35px;   margin: 0 0 0 0;}
@@ -361,7 +361,7 @@ img:hover {transition: background-color 0.5s ease; }
 	display: flex;
 	justify-content: center;
 }
-.footer-bottom .copyrights{ float:left; color:#fff; margin:3px 0 0 0; font-size:15px;}
+.footer-bottom .copyrights{ color:#fff; margin:3px 0 0 0; font-size:15px;}
 .footer-bottom .social-icons{ float:right;}
 .footer-bottom .social-icons a{   color: #fff;  border: solid 1px #fff;  padding: 7px 9px;  border-radius: 100%;  font-size: 16px;}
 .footer-bottom .social-icons a.fb:hover{   background: #5c85ce;  border: solid 1px #5c85ce;  }
