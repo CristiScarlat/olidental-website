@@ -3,7 +3,6 @@ import { useRouter } from 'next/router';
 import { ImFacebook, ImInstagram } from 'react-icons/im';
 const Footer = () => {
   const { pathname } = useRouter();
-  console.log(pathname)
   return (
     <footer className='footer' id='footer'>
       {pathname === "/" && <div className='container'>
@@ -14,19 +13,19 @@ const Footer = () => {
                 <div className='detail'>
                   <ul>
                     <li>
-                      <Link href='/politica-confidentialitate'>politica de confidențialitate </Link>
+                      <Link href='/politica-confidentialitate'>Politica de confidențialitate </Link>
                     </li>
                     <li>
-                      <Link href='/politica-cookies'>politica de cookies </Link>
+                      <Link href='/politica-cookies'>Politica de cookies </Link>
                     </li>
                     <li>
-                      <a href='#.'>termeni și condiții  </a>
+                      <Link href='/termen-conditii'>Termeni și condiții  </Link>
                     </li>
                     <li>
                       <a href='https://anpc.ro/' target="_blank">ANPC</a>
                     </li>
                     <li>
-                      <a href='#.'>Politica de soluționare a litigiilor</a>
+                      <Link href='/termen-conditii/#litigii'>Politica de soluționare a litigiilor</Link>
                     </li>
                   </ul>
                 </div>

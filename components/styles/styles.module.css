@@ -72,6 +72,26 @@
   color: #004a02;
 }
 
+.subHeader {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.2rem 1rem;
+  background-color: #38af56;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.subHeader>a{
+  color: white;
+  margin-bottom: 0.25rem;
+}
+
+.subHeader>a:hover{
+  color: whitesmoke;
+}
+
 .custom-icon-contact {
   font-size: 18px;
   font-weight: bold;

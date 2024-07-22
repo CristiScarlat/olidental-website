@@ -4,7 +4,8 @@ import Logo from '../components/Logo';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import styles from './styles/styles.module.css';
-
+import { TfiHandPointRight } from 'react-icons/tfi';
+import { FaUserDoctor, FaAnglesRight } from "react-icons/fa6";
 const Header = () => {
   const [expanded, setExpanded] = useState(false);
   const router = useRouter();
@@ -56,6 +57,13 @@ const Header = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      {router.pathname !== '/programare' && <div className={styles.subHeader}>
+        <Link href="programare">
+          <FaAnglesRight size='1rem' color='white' style={{cursor: "pointer", marginRight: "0.5rem"}}/>
+          <span>Vreau o programare</span>
+          <FaAnglesRight size='1rem' color='white' style={{cursor: "pointer", marginLeft: "0.5rem"}}/>
+        </Link>
+      </div>}
     </header>
   );
 };

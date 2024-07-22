@@ -6,7 +6,6 @@ const ServicesPage = () => {
 
   return (
     <>
-      <hr />
       <div className='d-flex justify-content-center m-3'>
         <div style={{maxWidth: "50rem"}}>
           <CustomCarousel showThumbs={false}>
