@@ -29,6 +29,14 @@ const Programare = () => {
             Confirmarea programării va fi trimisă pe această adresă de email.
           </Form.Text>
         </Form.Group>
+        <Form.Group className='mb-3' >
+          <Form.Label>Intervalul de timp preferat</Form.Label>
+          <Form.Select>
+            <option value="null">oricând</option>
+            <option value="morning">înainte de ora 12</option>
+            <option value="afternoon">după ora 12</option>
+          </Form.Select>
+        </Form.Group>
         <Form.Group className='mb-3' controlId='formBasicCheckbox' id="customCheckbox">
           <Form.Check type='checkbox' label='Acord consimțământul preluării datelor personale' isValid/>
         </Form.Group>
