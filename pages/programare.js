@@ -64,13 +64,13 @@ const Programare = () => {
           },
           (error) => {
             setSpinner(false);
-            console.log('FAILED...', error.text);
+            console.log('EmailJS-FAILED...', error.text);
             toast.error(`Ne pare rău, emailul de confirmare pe adresa ${email} nu a putut fi trimis. Verificați din nou adresa de email completată in formular sau încercați mai târziu.`)
           },
         )
         .catch(error => {
           setSpinner(false);
-          console.log('FAILED...', error);
+          console.log('CODE-FAILED...', error);
           toast.error(`Ne pare rău, emailul de confirmare pe adresa ${email} nu a putut fi trimis. Verificați din nou adresa de email completată in formular sau încercați mai târziu.`)
         })
     }
