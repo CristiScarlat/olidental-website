@@ -1,29 +1,23 @@
 import { useRouter } from "next/router";
-import { services } from "../../utils/uiConstants";
-import CustomCard from "../../components/customCard";
-import Link from 'next/link';
+import { services } from "../utils/uiConstants";
+import CustomCard from "../components/customCard";
 import { TfiHandPointLeft } from 'react-icons/tfi';
-import IconLink from '../../components/iconLink';
+import IconLink from '../components/iconLink';
 
 
-const Service = () => {
-    //const [imagesList, setImagesList] = useState();
+const Implantologie = () => {
     const router = useRouter();
-    const { serviceId } = router.query;
+    const serviceId = 1;
 
-    // useEffect(() => {
-    //     setImagesList(services[serviceId].images);
-    // }, [serviceId])
-
-    const handleRedirectToProcedure = (procedureIndex) => {
-        router.push(`/procedure/${serviceId}/${procedureIndex}`)
+    const handleRedirectToProcedure = (link) => {
+        router.push(link)
     }
 
     return (
         <div className="services-container m-auto">
             <div className="p-4 bg-gray">
                 <div className="m-auto" style={{ maxWidth: '50rem' }}>
-                    <IconLink label="Înapoi la servicii" href="/services">
+                    <IconLink label="Înapoi la servicii" href="/servicii">
                         <TfiHandPointLeft size='2rem' color='#6cab44' style={{cursor: "pointer"}}/>
                     </IconLink>
                     <hr/>
@@ -41,7 +35,7 @@ const Service = () => {
                                     imgStyle={{ width: 65 }}
                                     title={procedure.title}
                                     //body={procedure.description}
-                                    onClick={() => handleRedirectToProcedure(index)}
+                                    onClick={() => handleRedirectToProcedure(procedure.link)}
                                   />
                                 ))}
                             </div>
@@ -58,4 +52,4 @@ const Service = () => {
     )
 }
 
-export default Service;
+export default Implantologie;

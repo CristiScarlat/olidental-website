@@ -4,6 +4,7 @@ import Footer from "./footer";
 import Head from "next/head";
 //import CookieConsent from "react-cookie-consent";
 import TopBar from "./topBar";
+import CookieConsentBanner from './cookieConsent';
 
 const cookieConstentStyle = {
   bottom: "40px",
@@ -60,19 +61,9 @@ const Layout = ({ children }) => {
 
       <Header />
       <main  className="content">{children}</main>
-      <TopBar />
-      {/* <CookieConsent
-        location=""
-        buttonText="Accept"
-        declineButtonText="Decline"
-        cookieName="gatsby-gdpr-google-analytics"
-        disableStyles={false}
-        style={cookieConstentStyle}
-        buttonStyle={cookieConstentButtonStyle}
-      >
-        This website uses cookies to enhance the user experience.{" "}
-      </CookieConsent> */}
-      {/*<Footer />*/}
+      {/*<TopBar />*/}
+      <Footer />
+      <CookieConsentBanner />
     </>
   );
 };

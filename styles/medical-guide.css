@@ -262,7 +262,7 @@ img:hover {transition: background-color 0.5s ease; }
 
 
 /*..... DR QUOTE ......*/
-.dr-quote{ background:url(/images/dr-testimonial-bg.jpg) no-repeat fixed ; height:600px; width:100%;  text-align: center; background-size: 100%;}
+.dr-quote{ height:600px; width:100%;  text-align: center; background-size: 100%;}
 .dr-quote span.quote{ font-size:48px;
 	/*font-family: 'Raleway', sans-serif; */
 	font-weight:800; color:#fff;   display: inline-block; margin:20% 0 0 0;}
@@ -299,7 +299,7 @@ img:hover {transition: background-color 0.5s ease; }
 .patients-testi .testi-sec span.patient{ color:#222; font-size:16px;}
 
 /*..... TESTIMONIALS WITH IMAGE ......*/
-.dark-testi{background:url(/images/testimonial-bg.jpg) no-repeat fixed ; width:100%;  text-align: center; background-size: 100%;}
+.dark-testi{width:100%;  text-align: center; background-size: 100%;}
 .dark-testi .main-title h2{ color:#fff;}
 .dark-testi .testi-sec p{color: #fff;}
 .dark-testi .testi-sec span.patient{ color:#fff;}
@@ -308,7 +308,7 @@ img:hover {transition: background-color 0.5s ease; }
 
 
 /*..... FOOTER ......*/
-.footer{ background:#434a5a; border-top:solid 6px #373e4c;}
+.footer{ background:#768187;}
 .footer .emergency{ text-align:center; margin:70px 0 0 0;}
 .footer .emergency i{ color:#fff; display:block; font-size:65px; }
 .footer .emergency .text{ margin:25px 0 0 0; font-size:18px;
@@ -324,8 +324,13 @@ img:hover {transition: background-color 0.5s ease; }
   margin: 0px 0 -1px 0;  float: left;}
 .main-footer .title{   border-bottom: solid 1px #999;  padding: 0 0 0 0;  float: left;  width: 100%;}
 .main-footer .detail{ margin:38px 0 0 0; float:left;} 
-.main-footer .useful-links ul li{   background: url(/images/links-arrow-light.png) no-repeat 0 9px;  margin: 0 0 16px 0;   float: left;  width: 50%;}
-.main-footer .useful-links ul li a{   color: #fff;  margin: 0 0 0 20px;  font-size: 18px;}
+.main-footer .useful-links ul li{   margin: 0 0 16px 0;}
+.main-footer .useful-links ul li a:hover {
+	color: #0baf5b;
+	text-shadow: 2px 1px 9px black;
+	font-weight: 600;
+}
+.main-footer .useful-links ul li a{   color: #fff;  font-size: 18px;}
 .main-footer .tweets{  width: 100%;  float: left;  margin: 0 0 28px 0;}
 .main-footer .tweets .icon{ float:left;}
 .main-footer .tweets .icon i{ font-size:35px;   margin: 0 0 0 0;}
@@ -350,8 +355,13 @@ img:hover {transition: background-color 0.5s ease; }
 .main-footer .get-touch ul li a{color:#fff; font-size: 18px; display:block;}
 
 
-.footer-bottom{ background:#373e4c;   padding: 24px 0;}
-.footer-bottom .copyrights{ float:left; color:#fff; margin:3px 0 0 0; font-size:15px;}
+.footer-bottom{
+	background:#38af56;
+	padding: 24px 0;
+	display: flex;
+	justify-content: center;
+}
+.footer-bottom .copyrights{ color:#fff; margin:auto; font-size:15px; text-align: center;}
 .footer-bottom .social-icons{ float:right;}
 .footer-bottom .social-icons a{   color: #fff;  border: solid 1px #fff;  padding: 7px 9px;  border-radius: 100%;  font-size: 16px;}
 .footer-bottom .social-icons a.fb:hover{   background: #5c85ce;  border: solid 1px #5c85ce;  }
@@ -376,7 +386,7 @@ img:hover {transition: background-color 0.5s ease; }
 .footer-light .main-footer .title h5{   text-transform: uppercase;  padding: 0 0 12px 0;  display: inline-block;  margin: 0px 0 -1px 0;  float: left;}
 .footer-light .main-footer .title{   border-bottom: solid 1px #D5D5D5;  padding: 0 0 0 0;  float: left;  width: 100%;}
 .footer-light .main-footer .detail{ margin:38px 0 0 0; float:left;} 
-.footer-light .main-footer .useful-links ul li{   background: url(/images/links-arrow-dark.png) no-repeat 0 9px;  margin: 0 0 16px 0;   float: left;  width: 50%;}
+.footer-light .main-footer .useful-links ul li{   margin: 0 0 16px 0;   float: left;  width: 50%;}
 .footer-light .main-footer .useful-links ul li a{   color: #222;  margin: 0 0 0 20px;  font-size: 18px;}
 .footer-light .main-footer .useful-links ul li a:hover{ color:#02adc6;}
 .footer-light .main-footer .tweets{  width: 100%;  float: left;  margin: 0 0 28px 0;}
@@ -421,7 +431,7 @@ img:hover {transition: background-color 0.5s ease; }
 
 
 /*..... BACK TO TOP ......*/
-.cd-top {  display: inline-block;  height: 44px;  width: 44px;  position: fixed;  bottom: 20px;  right: 16px;  overflow: hidden;  white-space: nowrap;  background: url(/images/back-top.png) no-repeat center 50%;  visibility: hidden;  opacity: 0;  -webkit-transition: opacity .3s 0s, visibility 0s .3s;  -moz-transition: opacity .3s 0s, visibility 0s .3s;  transition: opacity .3s 0s, visibility 0s .3s;  border-radius: 100%; z-index: 10000;}
+.cd-top {  display: inline-block;  height: 44px;  width: 44px;  position: fixed;  bottom: 20px;  right: 16px;  overflow: hidden;  white-space: nowrap;  visibility: hidden;  opacity: 0;  -webkit-transition: opacity .3s 0s, visibility 0s .3s;  -moz-transition: opacity .3s 0s, visibility 0s .3s;  transition: opacity .3s 0s, visibility 0s .3s;  border-radius: 100%; z-index: 10000;}
 .cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {  -webkit-transition: opacity .3s 0s, visibility 0s 0s;  -moz-transition: opacity .3s 0s, visibility 0s 0s;  transition: opacity .3s 0s, visibility 0s 0s;}
 .cd-top.cd-is-visible {  /* the button becomes visible */  visibility: visible;  opacity: 0.4;}
 .no-touch .cd-top:hover {  background-color: #e86256;  opacity: 1;}
@@ -476,7 +486,7 @@ img:hover {transition: background-color 0.5s ease; }
 
 
 /*..... FUN FACTS ......*/
-.fun-facts{  background: url(/images/counter-bg.jpg) no-repeat fixed;  height: 186px;  width: 100%;  text-align: center; overflow: hidden; padding: 32px 0; background-size: 100%;}
+.fun-facts{  height: 186px;  width: 100%;  text-align: center; overflow: hidden; padding: 32px 0; background-size: 100%;}
 .fun-facts span.number{
 	/*font-family: 'Raleway', sans-serif;  */
 	font-weight: 200;  font-size: 65px;  color: #fff; display: block; }
@@ -486,7 +496,7 @@ img:hover {transition: background-color 0.5s ease; }
 
 
 /*..... BANNER-THREE ......*/
-.banner-three{ background:url(/images/banner-three.jpg) no-repeat; background-size:100%;}
+.banner-three{ background-size:100%;}
 .banner-three .detail{   text-align: center; margin: 21% 0;}
 .banner-three .detail i{   color: #fff;  font-size: 98px;  text-shadow: 0 5px 0 rgba(0, 0, 0, 0.19);}
 .banner-three .detail span.title{
@@ -510,7 +520,7 @@ img:hover {transition: background-color 0.5s ease; }
 .sub-banner .banner-img{ width:100%; }
 .sub-banner .detail{   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.32);  padding:24px 0 28px 0;}
 .sub-banner .detail ul{}
-.sub-banner .detail ul li{   float: left;  background: url(/images/paging-arrow.png) no-repeat right 9px;  padding: 0 20px 0 0;  margin: 0 12px 0 0;}
+.sub-banner .detail ul li{   float: left;  padding: 0 20px 0 0;  margin: 0 12px 0 0;}
 .sub-banner .detail ul li:last-child { background:none;}
 .sub-banner .detail ul li a{ color:#333333;}
 
@@ -600,7 +610,7 @@ font-weight: 700;  cursor: pointer; margin:10px 0 0 0;}
 .contact-us .our-location .map { height:460px;}
 .contact-us .our-location .map iframe {  border: 0;  margin: 0;  width: 100%;  height: 100%;}
 .get-directions {  text-align: center;  margin: 40px 0 0 0;}
-.get-directions input[type="submit"] {  background: url(/images/directions-btn.jpg) no-repeat;  width: 60px;  height: 61px;
+.get-directions input[type="submit"] {  width: 60px;  height: 61px;
   padding: 0;  margin: 0;  border: 0;  min-width: 0;  position: relative;  top: -6px;}
 .get-directions input[type="text"] {    padding: 15px 2% 17px;  width: 86%;  max-width: 556px;  font-size: 22px;  color: #747474;  font-weight: 400;
 	/*font-family: 'Raleway', sans-serif;  */
@@ -1078,7 +1088,7 @@ width: 100%; float: left; text-align: center; border-radius: 5px;}
 	/*font-family: Verdana,Arial,sans-serif;*/
 	font-size: 1em;}
 .ui-widget-content {border:0;background: #ececec;-moz-box-shadow:    inset 0 3px 1px 0 #cbcbcb;   -webkit-box-shadow: inset 0 3px 1px 0 #cbcbcb;   box-shadow:         inset 0 3px 1px 0 #cbcbcb;color: #222222;	border-radius: 10px;}
-.ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default {border:0;background: url(/images/slider-pointer.png) no-repeat;font-weight: normal;color: #555555;}
+.ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default {border:0;font-weight: normal;color: #555555;}
 .ui-state-default a,.ui-state-default a:link,.ui-state-default a:visited {color: #555555;text-decoration: none;}
 .price-range{ margin:27px 0 0;}
 .price-range input[type="text"], .price-range p{ max-width:138px; height:29px; font-size:15px; color:#5e5e5e; float:right; border:1px solid #e0e0e0; border-radius:1px; text-align:center;}

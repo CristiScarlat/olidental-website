@@ -1,11 +1,12 @@
-import CustomCarousel from '../components/carousel';
+//import CustomCarousel from '../components/carousel';
 import Specialists from '../components/specialists';
 import Services from '../components/services';
 import Location from '../components/location';
-import { carouselPicsHome } from '../utils/uiConstants';
+import { carouselPicsHome, smilesGallery } from '../utils/uiConstants';
 import CustomCard from '../components/customCard';
 import Link  from "next/link";
 
+import dynamic from 'next/dynamic'
 const Home = () => {
 
   const carouselContainerStyle = {
@@ -15,29 +16,32 @@ const Home = () => {
     //backgroundColor: '#8a8a8a'
   };
 
-  const handleRedirect = () => {
-
-  }
+  const DynamicCarousel = dynamic(() => import('../components/carousel'))
 
   return (
     <>
       <div className='bg-gray carousel-wrapper'>
         <div className='m-auto' style={carouselContainerStyle}>
-          <CustomCarousel showThumbs={false}>
+          <DynamicCarousel showThumbs={false}>
             {carouselPicsHome.map(pic => (
               <div key={pic}>
                 <img src={`images/carouselHome/thumbnail_${pic}`} alt='carousel item 1' style={{ borderRadius: 10 }} />
                 {/* <CarouselLegendContent index={0} /> */}
               </div>
             ))}
-          </CustomCarousel>
+          </DynamicCarousel>
         </div>
       </div>
 
-        <Link href="/rezultate">
+        <Link href="/rezultate" legacyBehavior>
           <div className="band-with-label">
-            <img src="/images/logos/reabilitari.png.webp" style={{maxWidth: "8rem"}}/>
+            {/*<img src="/images/logos/reabilitari.png.webp" style={{maxWidth: "8rem"}}/>*/}
             Rezultate
+            <div className="d-flex gap-3 w-100 overflow-auto justify-content-center">
+            {smilesGallery.images.filter((photo, index) => index <= 2).map(pic => (
+                <img key={`/images/services/${smilesGallery.dirPath}/${pic}`} src={`/images/services/${smilesGallery.dirPath}/${pic}`} alt={pic} style={{ borderRadius: 10, width: 150 }} />
+            ))}
+            </div>
           </div>
         </Link>
 

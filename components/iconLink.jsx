@@ -1,6 +1,4 @@
 import Link from 'next/link';
-import { TfiHandPointLeft } from 'react-icons/tfi';
-
 
 const IconLink = ({children, label, href}) => {
   return(

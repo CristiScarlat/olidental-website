@@ -260,6 +260,7 @@ export const smilesGallery = {
 export const services = [
   {
     id: 0,
+    link: "estetica-zambetului",
     images: [
       'thumbnail_1.JPG',
       'thumbnail_10.JPG',
@@ -402,6 +403,7 @@ export const services = [
       // },
       {
         title: 'Fațete și coroane dentare integral ceramice',
+        link: '/fatete-coroane-ceramice',
         logo: '/images/logos/fatete-coroane-ceramice.png.webp',
         description: `
         <p><span class='ms-4'></span>Pentru realizarea acestor restaurări, folosim sisteme integral ceramice sau pe substrat de oxid de
@@ -494,6 +496,7 @@ export const services = [
       },
       {
         title: 'Restaurări protetice estetice',
+        link: '/restaurari-protetice',
         logo: '/images/logos/carii.png.webp',
         description: `<p>La Clinica Olidental, realizăm restaurări protetice care îmbină funcționalitatea cu estetica,
                           conform nevoilor pacientului. Restaurările estetice sunt soluții protetice pe termen lung,
@@ -636,6 +639,7 @@ export const services = [
   },
   {
     id: 1,
+    link: "implantologie",
     images: [
       'thumbnail_1.jpg',
       'thumbnail_15.JPG',
@@ -681,6 +685,7 @@ export const services = [
     procedures: [
       {
         title: 'Inserare de implanturi și adiții de os',
+        link: 'inserare-implant-aditii-os',
         logo: '/images/logos/implant.png.webp',
         description:
           'Inserarea implanturilor dentare și a adițiilor de os se realizează în cadrul unor intervenții chirurgicale, ' +
@@ -753,6 +758,7 @@ export const services = [
       },
       {
         title: 'Restaurări protetice pe implanturi',
+        link: 'restaurari-protetice-dentare',
         logo: '/images/logos/restaurari.png.webp',
         description:
           'In etapa protetica se face atașarea componentelor protetice si realizarea unor restaurări provizorii' +
@@ -845,6 +851,7 @@ export const services = [
   },
   {
     id: 2,
+    link: "reabilitari-orale-complexe",
     images: [
       'protetica dentara si implantologica 2.JPG',
       'protetica dentara si implantologica 3.JPG',
@@ -874,6 +881,7 @@ export const services = [
     procedures: [
       {
         title: 'Restaurari extinse pe dinti naturali si implanturi',
+        link: '/restaurari-extinse-dinti-naturali-implanturi',
         logo: '/images/logos/protetica.png.webp',
         description:
           'La Olidental Clinic, tratăm afecțiuni complexe care pot cuprinde toate structurile aparatului dentar, ' +
@@ -968,6 +976,7 @@ export const services = [
       },
       {
         title: 'Tratamente multidisciplinare',
+        link: '/tratamente-multidisciplinare',
         logo: '/images/logos/tratament.png.webp',
         description:
           'In tratarea cazurilor complexe ne intalnim cu probleme de sanatate la diferite structuri ' +
