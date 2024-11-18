@@ -47,7 +47,8 @@ const Programare = () => {
     const phone = e.target[2].value;
     const email = e.target[3].value;
     const interval = e.target[4].value;
-    const gdpr = e.target[5].checked;
+    const msg = e.target[5].checked;
+    const gdpr = e.target[6].checked;
 
     if(isFormValid(name, surname, phone, email, interval, gdpr)){
       setSpinner(true)
@@ -111,6 +112,10 @@ const Programare = () => {
             <option value="înainte de ora 12">înainte de ora 12</option>
             <option value="după ora 12">după ora 12</option>
           </Form.Select>
+        </Form.Group>
+        <Form.Group className="mb-3" controlId='formMsg'>
+          <Form.Label>Scrie un mesaj*</Form.Label>
+          <Form.Control as="textarea" name='user_msg' rows={5} max={250} style={{resize: 'none'}}/>
         </Form.Group>
         <Form.Group className='mb-3' controlId='formBasicCheckbox' id="customCheckbox">
           <Form.Check type='checkbox' label='Acord consimțământul preluării datelor personale' isValid/>
