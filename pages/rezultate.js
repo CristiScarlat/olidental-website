@@ -2,7 +2,6 @@ import { useState, useRef, useEffect } from 'react';
 import ImageComparator from '../components/imageComparator';
 import { beforeAfter, procedures } from '../utils/uiConstants';
 import styles from '../styles/rezultate.module.css';
-import { Pagination, Dropdown, DropdownButton, ButtonGroup } from 'react-bootstrap';
 import ButtonsGroupPagination from '../components/buttonsGroupPagination';
 import ScrollToTop from '../components/scrollToTop';
 

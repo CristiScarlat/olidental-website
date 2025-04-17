@@ -115,17 +115,17 @@ export const teamCards = [
     img: '/images/team/Bircioaga_Bianca.JPG',
     thumbnail: '/images/team/thumbnail_Bircioaga_Bianca.JPG'
   },
-  {
-    title: 'Spîrlea Adriana - Front Desk Manager',
-    body: `<p style="margin-bottom: 3rem;"><span  style='margin-left: 2rem;'></span>Adriana, a absolvit facutlatea de Relatii Publice si Comunicare. Fiind Specialist PR, 
-    devine persoana responsabila de prima impresie pe care si-o construiesc pacientii, deoarece este primul contact dintre pacient si clinica.
-    Pasiunea de a ajuta si de a le oferi oamenilor sprijin, o face sa devina cel mai indragit personaj de catre pacientii si echipa Olidental.
-    In cei 10 ani de experienta , a dobandit excelente abilitati de comunicare si empatie, reusind astfel sa fie orientata in exclusivitate catre pacienti si nevoile lor.</p>`,
-    specializations: [],
-    services: [],
-    img: '/images/team/Spîrlea-Adriana.JPG',
-    thumbnail: '/images/team/thumbnail_Spîrlea-Adriana.JPG'
-  },
+  // {
+  //   title: 'Spîrlea Adriana - Front Desk Manager',
+  //   body: `<p style="margin-bottom: 3rem;"><span  style='margin-left: 2rem;'></span>Adriana, a absolvit facutlatea de Relatii Publice si Comunicare. Fiind Specialist PR,
+  //   devine persoana responsabila de prima impresie pe care si-o construiesc pacientii, deoarece este primul contact dintre pacient si clinica.
+  //   Pasiunea de a ajuta si de a le oferi oamenilor sprijin, o face sa devina cel mai indragit personaj de catre pacientii si echipa Olidental.
+  //   In cei 10 ani de experienta , a dobandit excelente abilitati de comunicare si empatie, reusind astfel sa fie orientata in exclusivitate catre pacienti si nevoile lor.</p>`,
+  //   specializations: [],
+  //   services: [],
+  //   img: '/images/team/Spîrlea-Adriana.JPG',
+  //   thumbnail: '/images/team/thumbnail_Spîrlea-Adriana.JPG'
+  // },
   {
     title: 'Jeflea Dana - Front Desk Manager',
     body: `<p style="margin-bottom: 3rem;'"><span  style='margin-left: 2rem;'></span>Dana este absolventa a Facultatii de Biologie si are o experienta de
