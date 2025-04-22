@@ -126,18 +126,18 @@ export const teamCards = [
   //   img: '/images/team/Spîrlea-Adriana.JPG',
   //   thumbnail: '/images/team/thumbnail_Spîrlea-Adriana.JPG'
   // },
-  {
-    title: 'Jeflea Dana - Front Desk Manager',
-    body: `<p style="margin-bottom: 3rem;'"><span  style='margin-left: 2rem;'></span>Dana este absolventa a Facultatii de Biologie si are o experienta de
-    peste 5 ani ca Front Desk officer in domeniul stomatologiei dentare.In tot acest timp, prin interactiunea zilnica cu pacientii, Dana si-a
-    dezvoltat abilitatea de a empatiza cu acestia, ascultandu-i si
-    oferindu-le suport permanent. Este o persoana organizata, sociabila
-    si atenta la detalii.</p>`,
-    specializations: [],
-    services: [],
-    img: '/images/team/Jeflea_Dana .JPG',
-    thumbnail: '/images/team/thumbnail_Jeflea_Dana .JPG'
-  }
+  // {
+  //   title: 'Jeflea Dana - Front Desk Manager',
+  //   body: `<p style="margin-bottom: 3rem;'"><span  style='margin-left: 2rem;'></span>Dana este absolventa a Facultatii de Biologie si are o experienta de
+  //   peste 5 ani ca Front Desk officer in domeniul stomatologiei dentare.In tot acest timp, prin interactiunea zilnica cu pacientii, Dana si-a
+  //   dezvoltat abilitatea de a empatiza cu acestia, ascultandu-i si
+  //   oferindu-le suport permanent. Este o persoana organizata, sociabila
+  //   si atenta la detalii.</p>`,
+  //   specializations: [],
+  //   services: [],
+  //   img: '/images/team/Jeflea_Dana .JPG',
+  //   thumbnail: '/images/team/thumbnail_Jeflea_Dana .JPG'
+  // }
 ];
 
 export const gallery = {baseFotoName: "thumbnail_", qty: 25}
