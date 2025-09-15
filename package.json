@@ -13,6 +13,7 @@
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@netlify/plugin-nextjs": "^4.41.1",
+    "@next/third-parties": "^15.5.3",
     "bootstrap": "^5.2.1",
     "js-cookie": "^3.0.5",
     "next": "^13.5.6",

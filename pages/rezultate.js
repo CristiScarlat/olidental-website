@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef } from 'react';
 import ImageComparator from '../components/imageComparator';
 import { beforeAfter, procedures } from '../utils/uiConstants';
 import styles from '../styles/rezultate.module.css';
