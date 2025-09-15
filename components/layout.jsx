@@ -37,7 +37,6 @@ const Layout = ({ children }) => {
   return (
     <>
       <Head>
-        <GoogleAnalytics gaId="G-7Z3QYDZ2Z4" />
           <meta charSet="UTF-8"/>
           <meta name="viewport" content="width=device-width, initial-scale=1"/>
           <link rel="profile" href="http://gmpg.org/xfn/11"/>
@@ -66,6 +65,7 @@ const Layout = ({ children }) => {
       {/*<TopBar />*/}
       <Footer />
       <CookieConsentBanner />
+      <GoogleAnalytics gaId="G-7Z3QYDZ2Z4" />
     </>
   );
 };
