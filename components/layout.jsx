@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./header";
 import Footer from "./footer";
 import Head from "next/head";
-import { GoogleAnalytics } from '@next/third-parties/google'
+import { GoogleAnalytics } from '@next/third-parties/google';
 //import CookieConsent from "react-cookie-consent";
 import TopBar from "./topBar";
 import CookieConsentBanner from './cookieConsent';

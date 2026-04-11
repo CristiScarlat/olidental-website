@@ -21,8 +21,8 @@ const Location = ({className=""}) => {
             <MdOutlineMail style={{fill: '#4caf50'}}/>
           </div>
 
-            <a style={{ color: '#807f89', height: 'auto', whiteSpace: 'nowrap', width: 'fit-content!important' }} href="email:olidentalmed@gmail.com">
-              olidentalmed@gmail.com
+            <a style={{ color: '#807f89', height: 'auto', whiteSpace: 'nowrap', width: 'fit-content!important' }} href="email:clinica@olidental.ro">
+              clinica@olidental.ro
             </a>
 
         </div>

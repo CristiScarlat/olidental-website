@@ -5,6 +5,7 @@ import Location from '../components/location';
 import { carouselPicsHome, smilesGallery } from '../utils/uiConstants';
 import CustomCard from '../components/customCard';
 import Link  from "next/link";
+import GoogleReviews from "../components/reviewsCarousel";
 
 import dynamic from 'next/dynamic'
 const Home = () => {
@@ -44,6 +45,8 @@ const Home = () => {
             </div>
           </div>
         </Link>
+
+        <GoogleReviews />
 
       {/*<div className="band-with-label">*/}
       {/*  <Link href="/rezultate">Mergi la Rezultate</Link>*/}
