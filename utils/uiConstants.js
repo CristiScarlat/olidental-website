@@ -34,7 +34,7 @@ export const teamCards = [
     thumbnail: '/images/team/thumbnail_dr.-Paula-Derban-medic-new.jpg'
   },
   {
-    title: 'Dr. Ana Tunaru ',
+    title: 'Dr. Ana Strava',
     body: `<p style="margin-bottom: 3rem;'"><span  style='margin-left: 2rem;'></span>Dr. Ana, este absolventă a Facultății de Medicină Dentară din Timișoara.
     Cu o experiență de peste 5 ani în domeniu, și-a descoperit pasiunea pentru endodonție, asa ca a ales sa termine aceasta specializare.
     Fiind o fire meticuloasă, continuă să învețe, astfel încât participă la numeroase cursuri și workshop-uri cu scopul de a-și perfecționa profesionalismul de care dă dovadă.</p>`,
@@ -77,7 +77,7 @@ export const teamCards = [
     thumbnail: '/images/team/thumbnail_dr.-Anda-Nicola-medic-new.jpg'
   },
   {
-    title: 'Dr. Alina-Florentina Anechitei',
+    title: 'Dr. Alina-Florentina Mariș',
     body: `<p style="margin-bottom: 3rem;'"><span  style='margin-left: 2rem;'></span>Dr. Alina este medic stomatolog cu o experienta de 3 ani. Emana o energie debordanta si este un medic 
     devotat, reușește sa stabilească o conexiune imediată cu pacienții, empatizând cu nevoile lor.
     Atentă și la cele mai mici detalii, este într-o continuă perfecționare, paricipă la congrese cu scopul de a-și perfectiona serviciile stomatologice oferite.</p>`,
@@ -1310,5 +1310,5 @@ export const beforeAfter = [
   }
 ];
 
-export const carouselPicsHome = ["1.JPG","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg","11.jpg","12.jpg","13.jpg","14.jpg","15.jpg","16.jpg","17.jpg","18.jpg","19.jpg","20.jpg","21.jpg","22.jpg","23.jpg","24.jpg","25.jpg","26.jpg","27.jpg","28.jpg","29.jpg","30.jpg"];
+export const carouselPicsHome = ["1.JPG","2.jpg","3.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg","11.jpg","12.jpg","13.jpg","14.jpg","15.jpg","16.jpg","17.jpg","18.jpg","19.jpg","20.jpg","22.jpg","23.jpg","24.jpg","25.jpg","26.jpg","27.jpg","28.jpg","29.jpg","30.jpg"];
 export const carouselPicsServices= ["1.JPG","2.JPG","3.JPG","4.jpg","5.JPG","6.jpg","7.JPG","8.JPG","9.JPG","10.JPG","11.jpg","12.JPG","13.JPG","14.JPG","15.JPG","16.JPG","17.JPG","18.JPG","19.JPG","20.JPG","21.JPG","22.JPG","23.JPG","24.JPG","25.JPG","26.JPG","27.JPG","28.JPG","29.JPG","30.JPG"];
