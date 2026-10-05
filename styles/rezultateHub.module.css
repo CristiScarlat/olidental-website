@@ -1,0 +1,595 @@
+/* /rezultate hub. Scoped on purpose: the global template CSS
+   (styles/medical-guide.css) sets 20px/300 paragraphs, 42px headings,
+   unstyled links and list bullets off, so every text element here sets its
+   own size, weight and colour. */
+
+.page {
+    --ink: #1f2a24;
+    --text: #33403a;
+    --muted: #5c6359;
+    --green: #6cab44;
+    --green-dark: #3f7a22; /* 5.2:1 on white (WCAG AA) */
+    --green-tint: #eaf3e3;
+    --border: #e3e1da;
+    --paper: #ffffff;
+    --heading-font: 'Fraunces', Georgia, serif;
+    --content-width: 76rem;
+    --gutter: 1rem;
+    padding-bottom: 3rem;
+    color: var(--text);
+}
+
+/* Every block except the full-width "Cum lucrăm" band shares one centred
+   column. */
+.hero,
+.featured,
+.section,
+.stepsInner {
+    max-width: var(--content-width);
+    margin-inline: auto;
+    padding-inline: var(--gutter);
+    box-sizing: border-box;
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 2.5rem;
+    text-align: center;
+}
+
+.heroEyebrow,
+.eyebrow {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: var(--green-dark);
+}
+
+.heroEyebrow {
+    padding: 0.25rem 0.85rem;
+    border-radius: 999px;
+    background: var(--green-tint);
+}
+
+.heroTitle {
+    margin: 0;
+    font-family: var(--heading-font);
+    font-weight: 600;
+    font-size: clamp(2.1rem, 5vw, 3.5rem);
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    text-wrap: balance;
+}
+
+.heroText {
+    max-width: 42rem;
+    margin: 0;
+    font-size: 1.15rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--muted);
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    width: min(100%, 40rem);
+    margin-top: 0.75rem;
+    border-radius: 16px;
+    background: var(--paper);
+    box-shadow: 0 1px 3px rgba(31, 42, 36, 0.08);
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    padding: 1rem 0.75rem;
+    text-decoration: none;
+}
+
+.stat + .stat {
+    border-left: 1px solid var(--border);
+}
+
+a.stat:hover .statLabel {
+    color: var(--green-dark);
+    text-decoration: underline;
+}
+
+.statValue {
+    font-family: var(--heading-font);
+    font-size: clamp(1.5rem, 3.5vw, 2.1rem);
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--ink);
+    font-variant-numeric: tabular-nums;
+}
+
+.statLabel {
+    font-size: 0.85rem;
+    line-height: 1.35;
+    color: var(--muted);
+}
+
+/* ---------- Featured case ---------- */
+
+.featured {
+    margin-bottom: 3rem;
+}
+
+.featuredCard {
+    display: grid;
+    gap: 1.5rem;
+    padding: 1.1rem;
+    border-radius: 20px;
+    background: var(--paper);
+    box-shadow: 0 1px 3px rgba(31, 42, 36, 0.08);
+}
+
+@media (min-width: 900px) {
+    .featuredCard {
+        grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+        align-items: center;
+        gap: 3rem;
+        padding: 2rem;
+    }
+}
+
+.featuredMedia,
+.featuredText {
+    min-width: 0;
+}
+
+.featuredMedia {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.sliderHint {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--muted);
+    text-align: center;
+}
+
+.featuredText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.9rem;
+}
+
+.featuredTitle {
+    margin: 0;
+    font-family: var(--heading-font);
+    font-weight: 600;
+    font-size: clamp(1.5rem, 3vw, 2.1rem);
+    line-height: 1.15;
+    color: var(--ink);
+    text-wrap: balance;
+}
+
+.featuredText p {
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--text);
+}
+
+.featuredText strong {
+    color: var(--ink);
+}
+
+.pill {
+    padding: 0.2rem 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--muted);
+}
+
+.outlineButton {
+    display: inline-flex;
+    align-items: center;
+    min-height: 48px;
+    padding: 0 1.4rem;
+    border: 2px solid var(--green-dark);
+    border-radius: 999px;
+    color: var(--green-dark);
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.outlineButton:hover {
+    background: var(--green-dark);
+    color: #ffffff;
+}
+
+/* ---------- Shared section heading ---------- */
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-bottom: 3rem;
+}
+
+.sectionHead {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.25rem 1rem;
+}
+
+.sectionTitle {
+    margin: 0;
+    font-family: var(--heading-font);
+    font-weight: 600;
+    font-size: clamp(1.6rem, 3vw, 2.1rem);
+    line-height: 1.2;
+    color: var(--ink);
+}
+
+.sectionMeta {
+    font-size: 0.95rem;
+    color: var(--muted);
+}
+
+/* ---------- "Ce vrei să rezolvi?" ---------- */
+
+/* 4 items: 4 across, 2 × 2, or 1 per row (never a lone orphan). */
+.chips,
+.stepList {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+}
+
+@media (min-width: 560px) {
+    .chips,
+    .stepList {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1000px) {
+    .chips,
+    .stepList {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+.chips {
+    gap: 0.75rem;
+}
+
+.chip {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    min-height: 44px;
+    padding: 1rem 1.25rem;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: var(--paper);
+    text-decoration: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.chip:hover,
+.chip:focus-visible {
+    border-color: var(--green);
+    box-shadow: 0 8px 20px -12px rgba(76, 138, 52, 0.45);
+}
+
+.chipLabel {
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--ink);
+}
+
+.chipCategory {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--green-dark);
+}
+
+/* ---------- Category cards ---------- */
+
+.cards {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+}
+
+@media (min-width: 760px) {
+    .cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 18px;
+    background: var(--paper);
+    box-shadow: 0 1px 3px rgba(31, 42, 36, 0.08);
+    color: inherit;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover,
+.card:focus-visible {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 28px -12px rgba(76, 138, 52, 0.32);
+    color: inherit;
+}
+
+.cardImages {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3px;
+    height: clamp(11rem, 22vw, 16.5rem);
+    background: #ffffff;
+    transition: grid-template-columns 0.45s ease;
+}
+
+.cardImages img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    object-fit: cover;
+}
+
+/* Hover (mouse only): the divider slides left and reveals the result. */
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+    .card:hover .cardImages {
+        grid-template-columns: 0.35fr 1fr;
+    }
+}
+
+.countBadge {
+    position: absolute;
+    top: 0.75rem;
+    left: 0.75rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    background: #ffffff;
+    color: var(--ink);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.imageTag {
+    position: absolute;
+    bottom: 0.75rem;
+    padding: 0.2rem 0.7rem;
+    border-radius: 999px;
+    background: rgba(31, 42, 36, 0.66);
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.imageTagBefore {
+    left: 0.75rem;
+}
+
+.imageTagAfter {
+    right: 0.75rem;
+}
+
+.cardBody {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex-grow: 1;
+    padding: 1.4rem 1.6rem 1.6rem;
+}
+
+.cardProblem {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+.cardTitle {
+    margin: 0;
+    font-family: var(--heading-font);
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    color: var(--ink);
+}
+
+.cardTeaser {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.55;
+    color: var(--muted);
+}
+
+.cardMore {
+    margin-top: auto;
+    padding-top: 0.25rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--green-dark);
+}
+
+/* ---------- "Cum lucrăm" (full-width white band) ---------- */
+
+.steps {
+    margin-bottom: 3rem;
+    padding-block: 3rem;
+    background: var(--paper);
+}
+
+.stepsInner {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.stepsIntro {
+    margin: 0 0 1.25rem;
+    font-size: 1.05rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--muted);
+}
+
+.stepList {
+    gap: 1.75rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-top: 1.1rem;
+    border-top: 3px solid var(--green);
+}
+
+.stepNumber {
+    font-family: var(--heading-font);
+    font-size: 1.9rem;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--green-dark);
+}
+
+.stepTitle {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--ink);
+}
+
+.stepText {
+    font-size: 1rem;
+    line-height: 1.55;
+    color: var(--muted);
+}
+
+/* ---------- Closing call to action ---------- */
+
+.cta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem 2rem;
+    padding: clamp(1.75rem, 4vw, 2.75rem) clamp(1.4rem, 4vw, 3.5rem);
+    border-radius: 20px;
+    background: var(--ink);
+}
+
+.ctaText {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1 1 22rem;
+    min-width: 0;
+}
+
+.ctaTitle {
+    margin: 0;
+    font-family: var(--heading-font);
+    font-weight: 600;
+    font-size: clamp(1.6rem, 3vw, 2.1rem);
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+.ctaText p {
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 400;
+    line-height: 1.55;
+    color: #d9e2dc;
+}
+
+.ctaActions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    flex: 1 1 auto;
+    justify-content: flex-end;
+}
+
+.ctaPrimary,
+.ctaSecondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+    padding: 0 1.6rem;
+    border-radius: 999px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.ctaPrimary {
+    background: var(--green-dark);
+    color: #ffffff;
+}
+
+.ctaPrimary:hover {
+    background: #33661b;
+    color: #ffffff;
+}
+
+.ctaSecondary {
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    color: #ffffff;
+}
+
+.ctaSecondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+/* Phones: full-width buttons under the text. */
+@media (max-width: 600px) {
+    .ctaActions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .ctaPrimary,
+    .ctaSecondary {
+        width: 100%;
+    }
+}
+
+.section:last-child {
+    margin-bottom: 0;
+}

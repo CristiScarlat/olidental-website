@@ -84,23 +84,28 @@ const Programare = () => {
 
   return (
     <div>
+      <h1 className="text-center pt-3">Programare online la Olidental Clinic Timișoara</h1>
+      <p className="text-center" style={{ maxWidth: '50rem', margin: '0 auto' }}>
+        Completează formularul de mai jos și te contactăm pentru confirmare, sau sună-ne direct la{' '}
+        <a href="tel:+40733023030">+40 733.023.030</a>, Luni – Vineri, 09:30 – 18:30.
+      </p>
       <ToastContainer newestOnTop theme="colored" position={"bottom-right"}/>
-      <Form ref={formRef} className="m-auto p-3 bg-gray rounded" style={{maxWidth: "50rem"}} id="form-programare" onSubmit={handleSubmit}>
+      <Form ref={formRef} action="/programare" method="post" className="m-auto p-3 bg-gray rounded" style={{maxWidth: "50rem"}} id="form-programare" onSubmit={handleSubmit}>
         <Form.Group className='mb-3' controlId='formName'>
           <Form.Label>Nume</Form.Label>
-          <Form.Control type='text' placeholder='Nume' name='user_name' autoComplete="off"/>
+          <Form.Control type='text' placeholder='Nume' name='user_name' autoComplete="given-name" required/>
         </Form.Group>
         <Form.Group className='mb-3' controlId='formSurname' >
           <Form.Label>Prenume</Form.Label>
-          <Form.Control type='text' placeholder='Prenume' name='user_surname' autoComplete="off"/>
+          <Form.Control type='text' placeholder='Prenume' name='user_surname' autoComplete="family-name" required/>
         </Form.Group>
         <Form.Group className='mb-3' controlId='formPhone'>
           <Form.Label>Telefon</Form.Label>
-          <Form.Control type='text' placeholder='Telefon' name='user_phone' autoComplete="off"/>
+          <Form.Control type='tel' placeholder='Telefon' name='user_phone' autoComplete="tel" required/>
         </Form.Group>
         <Form.Group className='mb-3' controlId='formEmail'>
           <Form.Label>Email address</Form.Label>
-          <Form.Control type='email' placeholder='Adresa email' name='user_email' autoComplete="off"/>
+          <Form.Control type='email' placeholder='Adresa email' name='user_email' autoComplete="email" required/>
           <Form.Text className='text-muted'>
             Confirmarea programării va fi trimisă pe această adresă de email.
           </Form.Text>
@@ -118,7 +123,7 @@ const Programare = () => {
           <Form.Control as="textarea" name='user_msg' rows={5} max={250} style={{resize: 'none'}}/>
         </Form.Group>
         <Form.Group className='mb-3' controlId='formBasicCheckbox' id="customCheckbox">
-          <Form.Check type='checkbox' label='Acord consimțământul preluării datelor personale' isValid/>
+          <Form.Check type='checkbox' label='Acord consimțământul preluării datelor personale' isValid required/>
         </Form.Group>
         <ReCAPTCHA
           sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_KEY}
@@ -136,4 +141,10 @@ const Programare = () => {
     </div>
   );
 };
+Programare.seo = {
+  title: "Programare online | Olidental Clinic Timișoara",
+  description: "Fă-ți o programare online la Olidental Clinic Timișoara completând formularul cu numele, telefonul, emailul și intervalul orar preferat.",
+  canonical: "https://olidental.ro/programare",
+};
+
 export default Programare;

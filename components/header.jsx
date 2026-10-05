@@ -28,12 +28,12 @@ const Header = () => {
                   </li>
                   <li className="nav-item ms-auto li-link">
                     <Link href="/servicii" legacyBehavior>
-                      <a className={`${styles['header-custom-link']}  text-uppercase ${router.pathname === '/services' ? 'active' : ''}`}>Servicii</a>
+                      <a className={`${styles['header-custom-link']}  text-uppercase ${router.pathname === '/servicii' ? 'active' : ''}`}>Servicii</a>
                     </Link>
                   </li>
                   <li className="nav-item ms-auto li-link">
                     <Link href="/rezultate" legacyBehavior>
-                      <a className={`${styles['header-custom-link']}  text-uppercase ${router.pathname === '/services' ? 'active' : ''}`}>Rezultate</a>
+                      <a className={`${styles['header-custom-link']}  text-uppercase ${router.pathname === '/rezultate' ? 'active' : ''}`}>Rezultate</a>
                     </Link>
                   </li>
                   <li className="nav-item ms-auto li-link">
@@ -43,7 +43,12 @@ const Header = () => {
                   </li>
                   <li className="nav-item ms-auto li-link">
                     <Link href="/echipa" legacyBehavior>
-                      <a className={`${styles['header-custom-link']}  text-uppercase ${router.pathname === '/about' ? 'active' : ''}`}>Echipa</a>
+                      <a className={`${styles['header-custom-link']}  text-uppercase ${router.pathname === '/echipa' ? 'active' : ''}`}>Echipa</a>
+                    </Link>
+                  </li>
+                  <li className="nav-item ms-auto li-link">
+                    <Link href="/blog" legacyBehavior>
+                      <a className={`${styles['header-custom-link']}  text-uppercase ${router.pathname.startsWith('/blog') ? 'active' : ''}`}>Blog</a>
                     </Link>
                   </li>
                   <li className="nav-item ms-auto li-link">
@@ -58,7 +63,7 @@ const Header = () => {
         </Container>
       </Navbar>
       {router.pathname !== '/programare' && <div className={styles.subHeader}>
-        <Link href="programare">
+        <Link href="/programare">
           <FaAnglesRight size='1rem' color='white' style={{cursor: "pointer", marginRight: "0.5rem"}}/>
           <span>Vreau o programare</span>
           <FaAnglesRight size='1rem' color='white' style={{cursor: "pointer", marginLeft: "0.5rem"}}/>

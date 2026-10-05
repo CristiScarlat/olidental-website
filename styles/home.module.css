@@ -1,0 +1,215 @@
+/* Homepage-only styles. Scoped via CSS Modules so nothing else on the site
+   is affected. Palette/type intentionally match the site's existing brand
+   (Exo 2, #6cab44 green) rather than introducing a new identity — see
+   competitor research in the implementation plan for why this leans
+   sans-serif, restrained-color, photo-led (that's the local premium-clinic
+   pattern, not a generic template default). */
+
+.hero {
+  background: #d4d4d4;
+  padding: 1.5rem 1.25rem;
+}
+
+.heroFrame {
+  position: relative;
+  overflow: hidden;
+  max-width: 62rem;
+  margin: 0 auto;
+  border-radius: 10px;
+  /* Reserves the exact box the 900x600 (3:2) hero images use, so there is
+     zero layout shift whether the static fallback image, the JS carousel,
+     or (briefly) neither has painted yet. */
+  aspect-ratio: 3 / 2;
+}
+
+/* Real, server-rendered first slide — always present in the static HTML.
+   Sits behind the JS carousel mount point; once react-responsive-carousel
+   hydrates on top of it, it's simply covered (not removed), so there's no
+   flash of missing content either way. */
+.heroStaticSlide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.heroCarouselMount {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.heroFrame :global(.carousel-root),
+.heroFrame :global(.carousel.carousel-slider),
+.heroFrame :global(.carousel .slider-wrapper),
+.heroFrame :global(.carousel .slider),
+.heroFrame :global(.carousel .slide),
+.heroFrame :global(.carousel .slide > div) {
+  height: 100%;
+}
+
+.heroFrame :global(.carousel .slide) {
+  background: transparent;
+}
+
+/* The slide <img> carries width/height attributes (900x600) to reserve space.
+   The carousel library only sets width:100%, so without an explicit height the
+   attribute pins every slide to 600px: on a wider frame the slide stops short
+   and the static first slide underneath shows through as a band, on a narrow
+   frame the photo is stretched. Fill the frame exactly and crop instead. */
+.heroFrame :global(.carousel .slide img) {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.heroGradient {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  background: linear-gradient(180deg, rgba(15, 20, 17, 0.05) 35%, rgba(15, 20, 17, 0.82) 100%);
+  pointer-events: none;
+  border-radius: 10px;
+}
+
+.heroContent {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 4;
+  padding: 1.5rem 1.25rem 1.75rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.heroContent h1 {
+  margin: 0 0 0.4rem;
+  font-size: clamp(1.5rem, 4vw, 2.4rem);
+  font-weight: 700;
+  line-height: 1.15;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.35);
+}
+
+.heroSubtitle {
+  margin: 0 auto 1.1rem;
+  max-width: 34rem;
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  color: #e9ece9;
+}
+
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.heroCta {
+  display: inline-block;
+  background: #6cab44;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.75rem 1.75rem;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 6px 18px -6px rgba(0, 0, 0, 0.5);
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.heroCta:hover,
+.heroCta:focus-visible {
+  background: #5c9438;
+  transform: translateY(-1px);
+}
+
+.heroRating {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.45rem 0.9rem;
+  border-radius: 30px;
+  transition: background 0.15s ease;
+}
+
+.heroRating:hover,
+.heroRating:focus-visible {
+  background: rgba(255, 255, 255, 0.26);
+}
+
+.heroStars {
+  color: #ffc94a;
+  letter-spacing: 1px;
+}
+
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  max-width: 62rem;
+  margin: 3rem auto;
+  padding: 0 1.25rem;
+}
+
+@media (max-width: 700px) {
+  .benefits {
+    grid-template-columns: 1fr;
+  }
+}
+
+.benefitCard {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border: 1px solid #e3e1da;
+  border-top: 3px solid #6cab44;
+  border-radius: 12px;
+  padding: 1.6rem 1.6rem 1.5rem;
+  box-shadow: 0 4px 16px -8px rgba(31, 42, 36, 0.12);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.benefitCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px -10px rgba(108, 171, 68, 0.3);
+}
+
+.benefitIconWrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  background: #eaf3e3;
+  margin-bottom: 0.9rem;
+}
+
+.benefitIcon {
+  color: #4c8a34;
+  font-size: 1.35rem;
+}
+
+.benefitCard h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #202722;
+}
+
+.benefitCard p {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: #565f58;
+}

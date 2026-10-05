@@ -15,7 +15,7 @@ const PoliticaConfidentialitate = () => {
             datelor dumneavoastră cu caracter personal reprezintă una dintre preocupările principale
             ale&nbsp;</span><span
             style='font-size:11.5pt;font-family:Arial;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>SC.
-            <span>Olidental</span> Med SRL, cu sediul în Str. Anișoara Odeanu, nr. 6, camera 2, Timișoara, județ Timiș,
+            <span>Olidental</span> Med SRL, cu sediul în Str. Ștefan cel Mare, nr. 53, Timișoara, județ Timiș,
             în calitate de operator de date. Pentru o modalitate mai facilă de contactare, ne pute</span><span
             style='font-size:11.5pt;font-family:Arial;color:rgb(69,69,69);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>ț<span>i</span>
             trimite un email către </span><span style='color:rgb(69,69,69);font-family:Arial;font-size:15.3333px'><a
@@ -533,63 +533,20 @@ const PoliticaConfidentialitate = () => {
             se folosesc aceste fișiere, vă rugăm să accesaț<span>i</span> următorul link:&nbsp;</span><span
             style='font-size:11.5pt;font-family:Arial;color:rgb(255,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>
             <a href='/politica-cookies'>politica cookies</a></span></p>
-    <font color='#888888'>
-        <div><br></div><span class='gmail_signature_prefix'>-- </span><br>
-        <div dir='ltr' class='gmail_signature' data-smartmail='gmail_signature'>
-            <div dir='ltr'>
-                <div>
-                    <div dir='ltr'>
-                        <div dir='ltr'>
-                            <div dir='ltr'>
-                                <div dir='ltr'>
-                                    <div dir='ltr'>
-                                        <div dir='ltr'>
-                                            <p dir='ltr'><b>Romina Faur<br></b></p>
-                                            <p dir='ltr'><i><a href='http://www.linkedin.com/in/rominafaur'
-                                                        target='_blank'
-                                                        data-saferedirecturl='https://www.google.com/url?q=http://www.linkedin.com/in/rominafaur&amp;source=gmail&amp;ust=1719383321117000&amp;usg=AOvVaw0zIw5EJj6eWUSjQQnv4iKI'>www.linkedin.com/in/rominafaur</a><br><a
-                                                        href='http://www.facebook.com/rominafaur' target='_blank'
-                                                        data-saferedirecturl='https://www.google.com/url?q=http://www.facebook.com/rominafaur&amp;source=gmail&amp;ust=1719383321117000&amp;usg=AOvVaw1QNUr9NMdDeS762qgxRhrV'>www.facebook.com/rominafaur</a><br><a
-                                                        href='http://www.rominafaur.ro' target='_blank'
-                                                        data-saferedirecturl='https://www.google.com/url?q=http://www.rominafaur.ro&amp;source=gmail&amp;ust=1719383321117000&amp;usg=AOvVaw0f2WpXjFCV9iTdg7jxQJd1'>www.rominafaur.ro</a></i>
-                                            </p>
-                                            <p dir='ltr'><i style='font-size:12.8px'>telefon: <a
-                                                        value='+40744614156'>+40744614156</a></i><br></p>
-                                            <div>
-                                                <div><i></i>
-                                                    <div><br>
-                                                        <font size='1'><b>LEGAL DISCLAIMER. The contents of this e-mail
-                                                                and any attachments
-                                                                are strictly confidential and they may not be used or
-                                                                disclosed by
-                                                                someone who is not a named recipient.If you have
-                                                                received this email
-                                                                in error please notify the sender by replying to this
-                                                                email inserting
-                                                                the word "misdirected" as the message and delete this
-                                                                e-mail from your
-                                                                system.&nbsp;</b></font>
-                                                    </div>
-
-                                                    <br><br>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </font>
-</div>
-<div class='yj6qo'></div>
-<div class='adL'>
 </div>`
 
-  return <div dangerouslySetInnerHTML={{__html: HTMLPage}} className="p-5"></div>
+  return (
+    <div className="p-5">
+      <h1>Politica de confidențialitate</h1>
+      <div dangerouslySetInnerHTML={{__html: HTMLPage}}></div>
+    </div>
+  )
 }
+
+PoliticaConfidentialitate.seo = {
+  title: "Politică de confidențialitate | Olidental Clinic Timișoara",
+  description: "Politica de confidențialitate Olidental Clinic Timișoara privind prelucrarea datelor cu caracter personal.",
+  canonical: "https://olidental.ro/politica-confidentialitate",
+};
 
 export default PoliticaConfidentialitate;

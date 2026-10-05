@@ -1,0 +1,295 @@
+/* Site footer (components/footer.jsx). Self-contained on purpose: the
+   template's global footer rules (.main-footer, .tweets, .footer-bottom in
+   styles/medical-guide.css) rely on floats and fixed widths.
+
+   Colours were picked for WCAG AA contrast:
+   - white on the grey  #57636a  = 6.18:1, muted #e6eaec on it = 5.10:1
+     (the previous grey #768187 gave white only 3.99:1);
+   - white on the green #2d8044  = 4.90:1 (the brand green #38af56 gives 2.82:1). */
+.footer {
+  --footer-bg: #57636a;
+  --footer-text: #ffffff;
+  --footer-muted: #e6eaec;
+  --footer-rule: rgba(255, 255, 255, 0.15);
+  --footer-accent: #4caf50;
+  --footer-bar: #2d8044;
+
+  width: 100%;
+  background: var(--footer-bg);
+  color: var(--footer-text);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.footer a {
+  color: var(--footer-text);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: var(--footer-text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.footer a:focus-visible,
+.footer button:focus-visible {
+  outline: 2px solid var(--footer-text);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.main {
+  row-gap: 2.5rem;
+  padding: 3.5rem 0 2.5rem;
+}
+
+/* ---------- Brand column ---------- */
+.logoLink {
+  display: inline-block;
+}
+
+/* The full-colour logo has grey parts that vanish on the grey footer, so it
+   is shown as a white silhouette. */
+.logo {
+  display: block;
+  width: 11rem;
+  height: auto;
+  filter: brightness(0) invert(1);
+}
+
+.tagline {
+  margin: 1rem 0 1.5rem;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--footer-muted);
+}
+
+.footer .cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0.6rem 1.4rem;
+  border-radius: 6px;
+  background: var(--footer-text);
+  color: var(--footer-bar);
+  font-weight: 700;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.footer .cta:hover {
+  background: var(--footer-bar);
+  color: var(--footer-text);
+  text-decoration: none;
+}
+
+.social {
+  display: flex;
+  gap: 0.75rem;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer .socialLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--footer-muted);
+  border-radius: 50%;
+  font-size: 18px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.footer .socialLink:hover {
+  background: var(--footer-text);
+  color: var(--footer-bg);
+}
+
+/* ---------- Column headings and link lists ---------- */
+.heading {
+  margin: 0 0 1.25rem;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--footer-text);
+}
+
+.heading::after {
+  content: '';
+  display: block;
+  width: 2rem;
+  height: 2px;
+  margin-top: 0.6rem;
+  background: var(--footer-accent);
+}
+
+.linkList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.linkList li + li {
+  margin-top: 0.7rem;
+}
+
+.footer .link {
+  color: var(--footer-muted);
+}
+
+.footer .link:hover {
+  color: var(--footer-text);
+}
+
+/* ---------- Contact column (same icons as the /contact page) ---------- */
+.address {
+  margin: 0;
+  font-style: normal;
+}
+
+.contactList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+}
+
+.contactItem + .contactItem {
+  margin-top: 1rem;
+}
+
+.contactIcon {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--footer-text);
+  color: var(--footer-accent);
+  font-size: 22px;
+}
+
+.contactText {
+  padding-top: 0.45rem;
+  color: var(--footer-muted);
+  overflow-wrap: anywhere;
+}
+
+.footer .mapLink {
+  display: inline-block;
+  margin-top: 0.25rem;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ---------- Legal row ---------- */
+.legal {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 1.5rem 0 1.75rem;
+  border-top: 1px solid var(--footer-rule);
+  font-size: 14px;
+}
+
+.legalLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* "Setări cookie-uri" is an action, not a page, so it is a real <button>
+   dressed like its neighbouring links. */
+.linkButton {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--footer-text);
+  font: inherit;
+  cursor: pointer;
+}
+
+.linkButton:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.legalMeta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.company {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--footer-muted);
+}
+
+.sal {
+  display: inline-block;
+  line-height: 0;
+}
+
+.sal img {
+  display: block;
+  width: auto;
+  height: 50px;
+}
+
+/* ---------- Copyright bar ---------- */
+.bottomBar {
+  padding: 0.75rem 1rem;
+  background: var(--footer-bar);
+  color: var(--footer-text);
+  font-size: 14px;
+  text-align: center;
+}
+
+@media (max-width: 767.98px) {
+  .main {
+    row-gap: 2rem;
+    padding-top: 2.5rem;
+  }
+
+  .legalLinks,
+  .company,
+  .legalMeta {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .linkList li + li {
+    margin-top: 0;
+  }
+
+  /* Bigger tap targets for the stacked link lists on touch screens. */
+  .footer .link {
+    display: inline-block;
+    padding: 0.55rem 0;
+  }
+}

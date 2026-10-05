@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "postbuild": "next-sitemap",
-    "export": "next build && next export",
+    "export": "next build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -32,7 +32,8 @@
   },
   "devDependencies": {
     "eslint": "8.23.0",
-    "eslint-config-next": "^14.2.33"
+    "eslint-config-next": "^14.2.33",
+    "sharp": "^0.35.4"
   },
   "engines": {
     "node": "18.x"

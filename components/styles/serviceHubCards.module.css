@@ -1,0 +1,108 @@
+/* Taller variant of the service cards, used only on /servicii: same look as
+   the original cards (grey, rounded, icon + white title) but with the
+   category text and treatment links inside the card. */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  align-items: stretch;
+}
+
+@media (max-width: 991.98px) {
+  .grid {
+    grid-template-columns: 1fr;
+    max-width: 36rem;
+    margin: 0 auto;
+  }
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.5rem 1.25rem;
+  border-radius: 10px;
+  /* A touch darker than the homepage cards (#778187) so the body text
+     reaches a 4.5:1 contrast ratio against white. */
+  background-color: #6c767c;
+  color: #fff;
+  box-shadow: 2px 4px 7px 3px #dedede;
+  transition: background-color 0.3s ease-out, box-shadow 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.card:hover,
+.card:focus-within {
+  background-color: #626c72;
+  box-shadow: 2px 4px 7px 3px #717b81de;
+  transform: scale(1.02);
+}
+
+.iconWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 96px;
+}
+
+.iconWrap img {
+  max-width: 96px;
+  max-height: 96px;
+  width: auto;
+  height: auto;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Stretched link: the whole card is clickable through the title link, while
+   the treatment links below sit above it (z-index) and stay separate. */
+.titleLink {
+  color: #fff;
+  text-decoration: none;
+}
+
+.titleLink::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.titleLink:focus-visible {
+  outline: none;
+}
+
+.titleLink:focus-visible::after {
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+}
+
+.summary {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.procedures {
+  list-style: none;
+  margin: auto 0 0;
+  padding: 0.75rem 0 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.procedures a {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  font-size: 0.9rem;
+  text-decoration: underline;
+}

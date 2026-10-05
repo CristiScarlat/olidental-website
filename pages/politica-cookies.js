@@ -19,7 +19,7 @@ const PoliticaCookies = () => {
       Informațiile prezentate în continuare au ca scop informarea utilizatorilor acestei pagini de internet cu privire
       la plasarea, utilizarea și administrarea <span>cookie</span>-urilor de către&nbsp;</span><span
     style='font-size:11pt;font-family:Calibri,sans-serif;background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>
-      <font color='#000000'><span>Olidental</span> Clinic SRL</font>
+      <font color='#000000'>OLIDENTAL MED SRL (CIF RO35302885, RC J35/2982/2015), care operează Olidental Clinic,</font>
     </span><span
     style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(255,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>
     </span><span
@@ -40,8 +40,7 @@ const PoliticaCookies = () => {
       intermediul cărora se accesează internetul.</span><span
     style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'><br /></span><span
     style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'><span>Cookie</span>-urile
-      sunt instalate prin solicitarea emisă de un web-server către un browser (de ex.: Internet Explorer, Firefox,
-      Chrome). <span>Cookie</span>-urile odată instalate au o durată de existență determinată, rămânând „pasive”, în
+      sunt instalate prin solicitarea emisă de un web-server către un browser (de ex.: Chrome, Safari, Firefox, Edge). <span>Cookie</span>-urile odată instalate au o durată de existență determinată, rămânând „pasive”, în
       sensul că nu conțin programe software, viruși sau spyware și nu vor accesa informațiile de pe hard driverul
       utilizatorului pe al cărui echipament au fost instalate.</span><span
     style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'><br /></span><span
@@ -57,8 +56,7 @@ const PoliticaCookies = () => {
       Pentru ce scopuri sunt utilizate <span>cookie</span>-urile prin intermediul acestei pagini de internet:</span></p>
   <p dir='ltr' style='line-height:1.38;margin-top:0pt;margin-bottom:10pt'><span
     style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'><span>Cookie</span>-urile
-      sunt utilizate pentru a furniza utilizatorilor acestei pagini de internet o experiență mai bună de navigare și
-      servicii adaptate nevoilor și interesului fiecărui utilizator în parte și anume pentru:</span></p>
+      sunt utilizate pentru a furniza utilizatorilor acestei pagini de internet o experiență mai bună de navigare, și anume pentru:</span></p>
   <ul style='margin-top:0px;margin-bottom:0px'>
     <li dir='ltr'
         style="margin-left:15px;list-style-type:disc;font-size:10pt;font-family:'Noto Sans Symbols',sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline">
@@ -72,43 +70,22 @@ const PoliticaCookies = () => {
       <p dir='ltr' style='line-height:1.38;margin-top:0pt;margin-bottom:10pt'><span
         style='font-size:11pt;font-family:Calibri,sans-serif;background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>furnizarea
           de statistici anonime cu privire la modul în care este utilizată această pagină de internet
-          către&nbsp;[deținătorul website-ului], în calitate de deținător al acestei pagini de internet;</span></p>
-    </li>
-    <li dir='ltr'
-        style="margin-left:15px;list-style-type:disc;font-size:10pt;font-family:'Noto Sans Symbols',sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline">
-      <p dir='ltr' style='line-height:1.38;margin-top:0pt;margin-bottom:10pt'><span
-        style='font-size:11pt;font-family:Calibri,sans-serif;background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>anticiparea
-          unor eventuale bunuri care vor fi în viitor puse la dispoziția utilizatorilor prin intermediul acestei pagini
-          de internet, în funcție de serviciile / produsele accesate.</span></p>
+          către&nbsp;OLIDENTAL MED SRL, în calitate de deținător al acestei pagini de internet.</span></p>
     </li>
   </ul>
   <p dir='ltr' style='line-height:1.38;margin-top:0pt;margin-bottom:10pt'><span
     style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>Pe
       baza feedback-ului transmis prin <span>cookie</span>-uri în legătură cu modul în care se utilizează această pagină
-      de internet,&nbsp;[deținătorul website-ului]&nbsp;poate adopta măsuri pentru ca această pagină de internet să fie
+      de internet,&nbsp;OLIDENTAL MED SRL&nbsp;poate adopta măsuri pentru ca această pagină de internet să fie
       mai eficientă și mai accesibilă pentru utilizatori.</span><span
     style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'><br /></span><span
     style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>Astfel,
-      utilizarea <span>cookie</span>-urilor permite memorarea anumitor setări/preferințe stabilite de către utilizatorii
-      acestei pagini de internet, precum:&nbsp;</span></p>
+      utilizarea <span>cookie</span>-urilor permite:&nbsp;</span></p>
   <ul style='margin-top:0px;margin-bottom:0px'>
     <li dir='ltr'
         style="margin-left:15px;list-style-type:disc;font-size:10pt;font-family:'Noto Sans Symbols',sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline">
       <p dir='ltr' style='line-height:1.38;margin-top:0pt;margin-bottom:10pt'><span
-        style='font-size:11pt;font-family:Calibri,sans-serif;background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>limba
-          în care este vizualizată o pagină de internet;</span></p>
-    </li>
-    <li dir='ltr'
-        style="margin-left:15px;list-style-type:disc;font-size:10pt;font-family:'Noto Sans Symbols',sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline">
-      <p dir='ltr' style='line-height:1.38;margin-top:0pt;margin-bottom:10pt'><span
-        style='font-size:11pt;font-family:Calibri,sans-serif;background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>reținerea
-          detaliilor de contact (conform rubricilor dedicate completării datelor de contact)</span></p>
-    </li>
-    <li dir='ltr'
-        style="margin-left:15px;list-style-type:disc;font-size:10pt;font-family:'Noto Sans Symbols',sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline">
-      <p dir='ltr' style='line-height:1.38;margin-top:0pt;margin-bottom:10pt'><span
-        style='font-size:11pt;font-family:Calibri,sans-serif;background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>furnizarea
-          de publicitate relevantă pentru utilizator</span></p>
+        style='font-size:11pt;font-family:Calibri,sans-serif;background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>memorarea alegerii tale privind cookie-urile (Acceptă sau Respinge), pentru a nu te mai întreba la fiecare vizită;</span></p>
     </li>
     <li dir='ltr'
         style="margin-left:15px;list-style-type:disc;font-size:10pt;font-family:'Noto Sans Symbols',sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline">
@@ -161,13 +138,13 @@ const PoliticaCookies = () => {
     style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'><br /></span><span
     style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>Terții
       furnizori ai <span>cookie</span>-urilor trebuie să respecte, de asemenea, regulile în materie de protecție a
-      datelor și Politica de Confidențialitate&nbsp;</span><span
+      datelor și&nbsp;</span><span
     style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(255,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'><a href="/politica-confidentialitate">Politica de confidențialitate</a></span><span
     style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>&nbsp;disponibilă
       pe această pagină de internet.</span><span
     style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'><br /></span><span
     style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>Aceste
-      <span>cookie</span>-uri pot proveni de la următorii terți: Google Analytics, Facebook, Instagram.&nbsp;</span></p>
+      <span>cookie</span>-uri pot proveni de la următorii terți: Google Analytics (statistici, doar cu acordul tău), Google Maps (harta din pagină), JotForm (widget-ul de recenzii) și Google reCAPTCHA (formularul de programare).&nbsp;</span></p>
   <p dir='ltr' style='line-height:1.38;margin-top:0pt;margin-bottom:10pt'><span
     style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-weight:700;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>6.
       Ce <span>cookie</span>-uri sunt folosite prin intermediul acestei pagini de internet:</span></p>
@@ -182,16 +159,7 @@ const PoliticaCookies = () => {
       <span>Cookie</span>-uri de analiză a utilizatorilor;</span><span
     style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'><br /></span><span
     style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>c.
-      <span>Cookie</span>-uri pentru geotargetting;</span><span
-    style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'><br /></span><span
-    style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>d.
-      <span>Cookie</span>-uri de înregistrare;</span><span
-    style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'><br /></span><span
-    style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>e.
-      <span>Cookie</span>-uri pentru publicitate;</span><span
-    style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'><br /></span><span
-    style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>f.
-      <span>Cookie</span>-uri ale furnizorilor de publicitate;</span></p>
+      <span>Cookie</span>-uri ale conținutului încorporat de la terți și de securitate.</span></p>
   <p dir='ltr' style='line-height:1.38;margin-top:0pt;margin-bottom:10pt'><span
     style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-weight:700;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>a.
       <span>Cookie</span>-uri de performanță</span></p>
@@ -210,30 +178,9 @@ const PoliticaCookies = () => {
       statistice.</span></p>
   <p dir='ltr' style='line-height:1.38;margin-top:0pt;margin-bottom:10pt'><span
     style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-weight:700;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>c.
-      <span>Cookie</span>-uri pentru geotargetting</span></p>
+      <span>Cookie</span>-uri ale conținutului încorporat și de securitate</span></p>
   <p dir='ltr' style='line-height:1.38;margin-top:0pt;margin-bottom:10pt'><span
-    style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>Aceste
-      <span>cookie</span>-uri sunt utilizate de către un soft care stabilește țara de proveniență a utilizatorului
-      paginii de internet. Vor fi primite aceleași reclame indiferent de limba selectată.</span></p>
-  <p dir='ltr' style='line-height:1.38;margin-top:0pt;margin-bottom:10pt'><span
-    style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-weight:700;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>d.
-      <span>Cookie</span>-uri pentru înregistrare</span></p>
-  <p dir='ltr' style='line-height:1.38;margin-top:0pt;margin-bottom:10pt'><span
-    style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>Atunci
-      când vă înregistrați pe acest site, se generează <span>cookie</span>-uri care memorează acest demers. Serverele
-      utilizează aceste <span>cookie</span>-uri pentru a ne arăta contul cu care sunteți înregistrat. De asemenea,
-      utilizarea acestor <span>cookie</span>-uri permite să asociem orice comentariu postat pe pagina de internet cu
-      username-ul contului folosit. În cazul în care nu a fost selectată opțiunea „păstrează-mă înregistrat”, aceste
-      <span>cookie</span>-uri se vor șterge automat la momentul terminării sesiunii de navigare.</span></p>
-  <p dir='ltr' style='line-height:1.38;margin-top:0pt;margin-bottom:10pt'><span
-    style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-weight:700;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>e.
-      <span>Cookie</span>-uri pentru publicitate</span></p>
-  <p dir='ltr' style='line-height:1.38;margin-top:0pt;margin-bottom:10pt'><span
-    style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>Aceste
-      <span>cookie</span>-uri permit aflarea vizualizării de către un utilizator a unei reclame online, tipul acesteia
-      și timpul scurs de la momentul vizualizării respectvului mesaj publicitar. Ca atare, astfel de
-      <span>cookie</span>-uri sunt folosite pentru targetarea publicității online. Aceste <span>cookie</span>-uri sunt
-      anonime, stocând informații despre contentul vizualizat, nu și despre utilizatori.</span></p>
+    style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>Harta Google Maps, widget-ul de recenzii JotForm și verificarea anti-spam Google reCAPTCHA de pe formularul de programare sunt furnizate de terți, care pot plasa propriile <span>cookie</span>-uri atunci când aceste elemente se încarcă. Aceste <span>cookie</span>-uri sunt controlate de furnizorii respectivi și sunt supuse politicilor lor de confidențialitate.</span></p>
   <p dir='ltr' style='line-height:1.38;margin-top:0pt;margin-bottom:10pt'><span
     style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-weight:700;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>7.
       Ce tip de informații sunt stocate și accesate prin intermediul <span>cookie</span>-urilor?</span></p>
@@ -243,7 +190,7 @@ const PoliticaCookies = () => {
       de internet recunoaște browserul până când <span>cookie</span>-urile expiră sau sunt șterse.</span></p>
   <p dir='ltr' style='line-height:1.38;margin-top:0pt;margin-bottom:10pt'><span
     style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-weight:700;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>8.
-      Particularizarea setările browserului în ceea ce privește <span>cookie</span>-urile</span></p>
+      Particularizarea setărilor browserului în ceea ce privește <span>cookie</span>-urile</span></p>
   <p dir='ltr' style='line-height:1.38;margin-top:0pt;margin-bottom:10pt'><span
     style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>În
       cazul în care utilizarea <span>cookie</span>-urilor nu este deranjantă iar calculatorul sau echipamentul tehnic
@@ -271,12 +218,7 @@ const PoliticaCookies = () => {
     style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'><br /></span><span
     style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>Toate
       browserele moderne oferă posibilitatea de a schimba setările <span>cookie</span>-urilor. Aceste setări pot fi
-      accesate, ca regulă, în secțiunea „opțiuni” sau în meniul de „preferințe” al browserului tău.</span><span
-    style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'><br /></span><span
-    style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>Totuși,
-      refuzarea sau dezactivarea <span>cookie</span>-urilor nu înseamnă că nu veți mai primi publicitate online – ci
-      doar ca aceasta nu va fi adaptată preferințelor și interesele dumneavoastră, evidențiate prin comportamentul de
-      navigare.</span></p>
+      accesate, ca regulă, în secțiunea „opțiuni” sau în meniul de „preferințe” al browserului tău.</span></p>
   <p dir='ltr' style='line-height:1.38;margin-top:0pt;margin-bottom:10pt'><span
     style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>Pentru
       a înțelege aceste setări, următoarele linkuri pot fi folositoare:</span></p>
@@ -284,11 +226,10 @@ const PoliticaCookies = () => {
     <li dir='ltr'
         style="margin-left:15px;list-style-type:disc;font-size:10pt;font-family:'Noto Sans Symbols',sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline">
       <p dir='ltr' style='line-height:1.38;margin-top:0pt;margin-bottom:10pt'><a
-        href='https://support.microsoft.com/en-us/help/17442/windows-internet-explorer-delete-manage-cookies'
-        style='text-decoration-line:none' target='_blank'
-        data-saferedirecturl='https://www.google.com/url?q=https://support.microsoft.com/en-us/help/17442/windows-internet-explorer-delete-manage-cookies&amp;source=gmail&amp;ust=1718968804621000&amp;usg=AOvVaw317Ru0eCRoaGtZgGevKD8A'><span
+        href='https://support.microsoft.com/en-us/edge/manage-cookies-in-microsoft-edge-view-allow-block-delete-and-use'
+        style='text-decoration-line:none' target='_blank'><span
         style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,255);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;text-decoration-line:underline;vertical-align:baseline'><span>Cookie</span>
-            settings in Internet Explorer</span></a></p>
+            settings in Microsoft Edge</span></a></p>
     </li>
     <li dir='ltr'
         style="margin-left:15px;list-style-type:disc;font-size:10pt;font-family:'Noto Sans Symbols',sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline">
@@ -318,7 +259,7 @@ const PoliticaCookies = () => {
   </ul>
   <p dir='ltr' style='line-height:1.38;margin-top:0pt;margin-bottom:10pt'><span
     style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>Pentru
-      orice întrebări suplimentare cu privire la modul în sunt utilizate <span>cookie</span>-urile prin intermediul
+      orice întrebări suplimentare cu privire la modul în care sunt utilizate <span>cookie</span>-urile prin intermediul
       acestei pagini de internet, vă rugăm să vă adresați la:&nbsp;<u><a href='mailto:olidentalmed@gmail.com'
                                                                          target='_blank'>olidentalmed@gmail.com</a>.</u></span></p>
   <font color='#888888'>
@@ -329,7 +270,18 @@ const PoliticaCookies = () => {
     </font>
   </font>
 </span>`
-  return <div dangerouslySetInnerHTML={{__html: HTMLPage}} className="p-5"></div>
+  return (
+    <div className="p-5">
+      <h1>Politica de cookies</h1>
+      <div dangerouslySetInnerHTML={{__html: HTMLPage}}></div>
+    </div>
+  )
+};
+
+PoliticaCookies.seo = {
+  title: "Politică privind fișierele cookies | Olidental Clinic Timișoara",
+  description: "Politica privind utilizarea fișierelor cookie pe site-ul Olidental Clinic Timișoara.",
+  canonical: "https://olidental.ro/politica-cookies",
 };
 
 export default PoliticaCookies;

@@ -1,54 +1,53 @@
-import React, { useEffect, useState } from "react";
-import cookie from "js-cookie";
+import React, { useEffect, useRef } from "react";
 import { Button } from 'react-bootstrap';
-import { useRouter } from 'next/navigation'
+import Link from 'next/link';
+import styles from './styles/styles.module.css';
+import { CONSENT_ACCEPTED, CONSENT_REJECTED } from '../utils/useCookieConsent';
 
-const CookieConsentBanner = () => {
-  const [showBanner, setShowBanner] = useState(false);
+// Shown only while the visitor has not chosen yet (the parent decides that).
+// Accept and Reject are deliberately identical in look and size: refusing must
+// be as easy as accepting. Both use the light outline so their labels keep
+// enough contrast on the dark background (WCAG AA needs 4.5:1).
+const CookieConsentBanner = ({ onChoose, autoFocus = false }) => {
+  const regionRef = useRef(null);
 
-  const router = useRouter()
-
+  // Reopened from the footer, the banner mounts last in the DOM: move focus to
+  // it so screen readers announce it and keyboard users don't have to tab
+  // through the rest of the page. First visits never steal focus.
   useEffect(() => {
-    const consentCookie = cookie.get("cookieConsent");
-
-    if (!consentCookie) {
-      setShowBanner(true);
-    }
-  }, []);
-
-  const handleAccept = () => {
-    setShowBanner(false);
-    cookie.set("cookieConsent", "accepted", { expires: 365 });
-  };
-
-  const handleReject = () => {
-    setShowBanner(false);
-    cookie.set("cookieConsent", "rejected", { expires: 365 });
-  };
-
-  const redirectToReadMore = () => {
-    router.push('/politica-cookies')
-  }
-
-  if (!showBanner) {
-    return null;
-  }
+    if (autoFocus) regionRef.current?.focus();
+  }, [autoFocus]);
 
   return (
-    <div style={{
-      bottom: "10px",
-      backgroundColor: "#082d3f",
-      width: "100%",
-      position: "fixed",
-      color: "white",
-      padding: '0.5rem 2rem'
-    }}>
-      <p>Acest website folosește cookies pentru a ne asigura că beneficiezi de cea mai bună experiență.</p>
-      <p>Presupunem că ești de acord cu acest lucru, dar dacă nu, poți oricând modifica setările - vezi <a>Politica de utilizare a lor.</a> </p>
+    <div
+      ref={regionRef}
+      tabIndex={-1}
+      role="region"
+      aria-label="Consimțământ cookie-uri"
+      className={styles.cookieConsentBanner}
+      style={{
+        backgroundColor: "#082d3f",
+        width: "100%",
+        position: "fixed",
+        color: "white",
+        padding: '0.5rem 2rem',
+        outline: 'none'
+      }}
+    >
+      <p>Folosim cookie-uri pentru funcționarea site-ului și, doar cu acordul tău, cookie-uri de analiză (Google Analytics) pentru a-l îmbunătăți.</p>
+      <p>Poți accepta sau refuza analiza, iar site-ul funcționează la fel. Detalii în <Link href="/politica-cookies" style={{ color: 'inherit', textDecoration: 'underline' }}>Politica de cookies</Link>.</p>
       <div className="d-flex gap-3 mt-3">
-        <Button onClick={handleAccept} variant="outline-success">Acceptă</Button>
-        <Button onClick={handleReject} variant="outline-danger">Respinge</Button>
-        <Button onClick={redirectToReadMore} variant="outline-secondary">Află mai mult</Button>
+        <Button onClick={() => onChoose(CONSENT_ACCEPTED)} variant="outline-light">Acceptă</Button>
+        <Button onClick={() => onChoose(CONSENT_REJECTED)} variant="outline-light">Respinge</Button>
+        {/* A plain Link styled as a button: react-bootstrap's `Button as={Link}`
+            would force role="button" and swallow the Space key on a real link. */}
+        <Link
+          href="/politica-cookies"
+          className="btn btn-link text-white"
+          style={{ '--bs-btn-focus-shadow-rgb': '248, 249, 250' }}
+        >
+          Află mai mult
+        </Link>
       </div>
     </div>
   );

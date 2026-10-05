@@ -3,7 +3,11 @@ import Spinner from './spinner';
 import { BsHandIndexThumb } from 'react-icons/bs';
 import styles from './styles/styles.module.css';
 
-const ThreeLayerImageComparator = ({ images = [], maxWidth = 400, height=400, showDeviderLabel=true }) => {
+// Source before/after photos are consistently ~16:9 (confirmed via sips on public/images/beforeAfter and public/images/services samples).
+const IMAGE_ASPECT_RATIO = 16 / 9;
+
+const ThreeLayerImageComparator = ({ images = [], maxWidth = 400, height=400, showDeviderLabel=true, altText = 'Rezultat tratament stomatologic Olidental Clinic' }) => {
+  const imgHeightAttr = Math.round(maxWidth / IMAGE_ASPECT_RATIO);
   const [imgClip, setImgClip] = useState(['0% 0px, 33% 0px, 33% 100%, 0% 100%', '33% 0px, 66% 0px, 66% 100%, 33% 100%', '66% 0, 100% 0, 100% 100%, 66% 100%']);
 
   const [deviderHeight, setDeviderHeight] = useState();
@@ -71,10 +75,15 @@ const ThreeLayerImageComparator = ({ images = [], maxWidth = 400, height=400, sh
           <img
             key={image}
             src={image}
-            alt='before/after-3layer'
+            alt={`${altText} - ${['înainte', 'în lucru', 'după'][index] || 'progres'} tratament`}
+            width={maxWidth}
+            height={imgHeightAttr}
             style={{
               clipPath: `polygon(${imgClip[index]})`,
               //height: height,
+              // The width/height attributes below are only an aspect-ratio hint (CLS);
+              // without an explicit auto they would pin the height and squash the image.
+              height: 'auto',
               objectFit: 'contain',
               top: 0,
               position: 'absolute',

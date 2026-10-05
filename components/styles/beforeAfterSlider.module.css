@@ -1,0 +1,105 @@
+.slider {
+    --handle-size: 48px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 14px;
+    background: #eceae4;
+    user-select: none;
+    touch-action: pan-y;
+    cursor: ew-resize;
+}
+
+.image {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.before {
+    clip-path: inset(0 calc(100% - var(--position)) 0 0);
+}
+
+/* The whole picture is the slider's track; the (invisible) thumb sits
+   exactly under the visible round handle so it can be grabbed on iOS too. */
+.range {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    opacity: 0;
+    cursor: ew-resize;
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+}
+
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: var(--handle-size);
+    height: var(--handle-size);
+}
+
+.range::-moz-range-thumb {
+    width: var(--handle-size);
+    height: var(--handle-size);
+    border: 0;
+}
+
+.divider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: var(--position);
+    width: 3px;
+    margin-left: -1.5px;
+    background: #ffffff;
+    pointer-events: none;
+}
+
+.handle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--handle-size);
+    height: var(--handle-size);
+    transform: translate(-50%, -50%);
+    border-radius: 999px;
+    background: #ffffff;
+    color: #1f2a24;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range:focus-visible + .divider .handle {
+    outline: 3px solid #3f7a22;
+    outline-offset: 3px;
+}
+
+.tag {
+    position: absolute;
+    top: 12px;
+    padding: 4px 12px;
+    border-radius: 999px;
+    background: rgba(31, 42, 36, 0.66);
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1.4;
+    pointer-events: none;
+}
+
+.tagBefore {
+    left: 12px;
+}
+
+.tagAfter {
+    right: 12px;
+}

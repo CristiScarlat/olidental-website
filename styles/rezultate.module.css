@@ -15,9 +15,12 @@
 }
 
 .descriptionColumnRezultateCard {
-    border: 1px solid #9f9a9a;
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px 0px #b6dfa8;
+    background-color: #ffffff;
+    border: 1px solid #e2ded9;
+    border-radius: 12px;
+    box-shadow: 0px 2px 10px 0px rgba(108, 171, 68, 0.18);
+    padding: 1.75rem;
+    margin: 2rem 0;
 }
 
 .descriptionColumnRezultateCard p {

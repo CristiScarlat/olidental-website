@@ -1,9 +1,51 @@
-.footer {
-  width: 100%;
-  /* background: linear-gradient( to bottom, rgb(0 62 116) 0, rgb(0 118 160) 100% ) !important; */
-  padding: 0.7rem;
-  text-align: center;
-  color: #808080b5;
+/* Sticky mobile "Sună acum" call bar (components/callBar.jsx). Hidden by
+   default; shown fixed to the bottom only under the same 600px breakpoint
+   the rest of the site already treats as "mobile" (see .visible-400 and the
+   custom-icon-contact media query in this file / globals.css). */
+.callBar {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .callBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9000;
+    min-height: 48px;
+    padding: 0.6rem 1rem calc(0.6rem + env(safe-area-inset-bottom, 0px));
+    background: #6cab44;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .callBar:hover,
+  .callBar:focus-visible {
+    background: #5a9438;
+    color: #fff;
+  }
+}
+
+/* Cookie consent banner (components/cookieConsent.jsx). Sits below the call
+   bar (z-index, and a bottom offset that clears the call bar's 48px height)
+   so the two never overlap on mobile — they previously stacked on top of
+   each other, with the call bar's higher z-index stealing taps meant for
+   the consent buttons. */
+.cookieConsentBanner {
+  bottom: 10px;
+  z-index: 8000;
+}
+
+@media only screen and (max-width: 600px) {
+  .cookieConsentBanner {
+    bottom: calc(48px + env(safe-area-inset-bottom, 0px) + 10px);
+  }
 }
 
 .caruselItemContainer {
@@ -117,6 +159,11 @@
 
 .custom-icon-contact svg {
   fill: whitesmoke;
+}
+
+.custom-icon-contact-link {
+  text-decoration: none;
+  color: inherit;
 }
 
 .imageComparatoContainer {
@@ -311,6 +358,11 @@
 
   .custom-icon-contact svg {
     fill: #3a539b;
+  }
+
+  .custom-icon-contact-link {
+    min-height: 44px;
+    padding: 0.75rem 0.25rem;
   }
 
   .imageComparatorContainerPreview {

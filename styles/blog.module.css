@@ -1,0 +1,742 @@
+/* Blog (index + article) styles. Scoped on purpose: the global template CSS
+   (styles/medical-guide.css) resets margins, list bullets, link underlines
+   and sets 54px/42px headings, so long-form text needs its own rules. */
+
+/* ---------- Shared ---------- */
+
+.article,
+.indexPage {
+    --blog-ink: #1f2a24;
+    --blog-text: #33403a;
+    --blog-muted: #5c6359;
+    --blog-green: #6cab44;
+    --blog-green-dark: #3f7a22; /* 5.2:1 on white, 4.6:1 on the tint (WCAG AA) */
+    --blog-green-tint: #eaf3e3;
+    --blog-border: #e3e1da;
+    --blog-paper: #ffffff;
+    --blog-heading-font: 'Fraunces', Georgia, serif;
+    padding: 0 1rem 3rem;
+}
+
+/* ---------- Article ---------- */
+
+/* Wide frame (hero + text column + side column). The text column itself
+   keeps a readable line length; the extra width goes to the side column. */
+.article {
+    max-width: 76rem;
+    margin: 0 auto;
+}
+
+.articleHeader {
+    max-width: 56rem;
+    margin: 1.5rem auto 1.75rem;
+    text-align: center;
+}
+
+.eyebrow {
+    display: inline-block;
+    margin-bottom: 0.9rem;
+    padding: 0.2rem 0.75rem;
+    border-radius: 999px;
+    background: var(--blog-green-tint);
+    color: var(--blog-green-dark);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    line-height: 1.6;
+    text-transform: uppercase;
+}
+
+.title {
+    font-family: var(--blog-heading-font);
+    font-weight: 600;
+    font-size: clamp(1.85rem, 4.2vw, 2.7rem);
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    color: var(--blog-ink);
+    margin: 0;
+}
+
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.25rem 0.6rem;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--blog-muted);
+}
+
+.hero {
+    margin: 0 0 2rem;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    object-position: 50% 60%;
+    border-radius: 14px;
+}
+
+/* Wide screens: a panoramic crop so the photo doesn't fill the whole
+   viewport before any text shows. */
+@media (min-width: 900px) {
+    .hero img {
+        aspect-ratio: 21 / 9;
+    }
+}
+
+.paper {
+    min-width: 0;
+    background: var(--blog-paper);
+    border-radius: 14px;
+    padding: 2rem clamp(1.25rem, 5vw, 3rem);
+    box-shadow: 0 1px 3px rgba(31, 42, 36, 0.06);
+}
+
+/* Text column + side column. One column (contents above the text) until
+   there is room for both side by side. */
+.articleBody {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media (min-width: 1100px) {
+    .articleBody {
+        grid-template-columns: minmax(0, 1fr) 17.5rem;
+        gap: 2.5rem;
+        align-items: start;
+    }
+
+    .articleBody > .paper {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .sidebar {
+        grid-column: 2;
+        grid-row: 1;
+        position: sticky;
+        top: 1.5rem;
+    }
+}
+
+.toc {
+    padding: 1.25rem 1.4rem;
+    border-radius: 14px;
+    background: var(--blog-paper);
+    box-shadow: 0 1px 3px rgba(31, 42, 36, 0.06);
+}
+
+.tocTitle {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: var(--blog-green-dark);
+    margin: 0 0 0.6rem;
+}
+
+.toc ol {
+    margin: 0;
+    padding: 0;
+    counter-reset: toc;
+}
+
+.toc li {
+    counter-increment: toc;
+    display: flex;
+    gap: 0.6rem;
+    padding: 0.35rem 0;
+    border-top: 1px solid #f0efea;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.toc li:first-child {
+    border-top: 0;
+}
+
+.toc li::before {
+    content: counter(toc);
+    flex: 0 0 1.2rem;
+    font-weight: 600;
+    color: var(--blog-green-dark);
+}
+
+/* "Pe scurt" and the FAQ are not article sections: keep them out of the
+   numbering so the numbers match the article's own numbered headings. */
+.toc li.tocExtra {
+    counter-increment: none;
+}
+
+.toc li.tocExtra::before {
+    content: '•';
+}
+
+.toc a {
+    color: var(--blog-text);
+    text-decoration: none;
+}
+
+.toc a:hover {
+    color: var(--blog-green-dark);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+/* Phones and tablets: the contents sit above the text, so show them as
+   compact wrapping chips instead of a tall list. */
+@media (max-width: 1099.98px) {
+    .toc ol {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .toc li,
+    .toc li:first-child {
+        gap: 0.4rem;
+        padding: 0.3rem 0.8rem;
+        border: 1px solid var(--blog-border);
+        border-radius: 999px;
+        font-size: 0.9rem;
+    }
+
+    .toc li::before {
+        flex: 0 0 auto;
+    }
+}
+
+/* Booking card in the side column: wide screens only (phones already get
+   the closing CTA and the sticky call bar). */
+.sidebarCta {
+    display: none;
+}
+
+@media (min-width: 1100px) {
+    .sidebarCta {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.6rem;
+        padding: 1.25rem 1.4rem;
+        border-radius: 14px;
+        background: var(--blog-ink);
+        text-align: center;
+    }
+}
+
+.sidebarCtaTitle {
+    font-family: var(--blog-heading-font);
+    font-size: 1.15rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #ffffff;
+    margin: 0 0 0.2rem;
+}
+
+.sidebarPhone {
+    font-size: 0.95rem;
+    color: #d9e2dc;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.sidebarPhone:hover {
+    color: #ffffff;
+}
+
+/* Keep anchored headings clear of the viewport edge when jumped to. */
+.prose h2,
+.takeaways,
+.faq {
+    scroll-margin-top: 1.5rem;
+}
+
+/* "Pe scurt" key-takeaways box */
+.takeaways {
+    margin: 0 0 2rem;
+    padding: 1.25rem 1.5rem;
+    border-left: 4px solid var(--blog-green);
+    border-radius: 0 10px 10px 0;
+    background: var(--blog-green-tint);
+}
+
+.takeawaysTitle {
+    font-family: var(--blog-heading-font);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--blog-ink);
+    margin: 0 0 0.6rem;
+}
+
+.takeaways ul {
+    margin: 0;
+    padding-left: 1.2rem;
+}
+
+.takeaways li {
+    list-style: disc;
+    margin: 0.35rem 0;
+    font-size: 1rem;
+    line-height: 1.55;
+    color: var(--blog-text);
+}
+
+/* Long-form article body */
+.prose p {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.75;
+    color: var(--blog-text);
+    margin: 0 0 1.25rem;
+}
+
+.prose h2 {
+    font-family: var(--blog-heading-font);
+    font-size: clamp(1.45rem, 3vw, 1.8rem);
+    font-weight: 600;
+    line-height: 1.25;
+    color: var(--blog-ink);
+    margin: 2.5rem 0 1rem;
+}
+
+.prose a,
+.faq a,
+.founder a {
+    color: var(--blog-green-dark);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+.prose a:hover,
+.faq a:hover,
+.founder a:hover {
+    color: var(--blog-ink);
+}
+
+.prose ul {
+    margin: 0 0 1.25rem;
+    padding-left: 1.4rem;
+}
+
+.prose li {
+    list-style: disc;
+    margin: 0.4rem 0;
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--blog-text);
+}
+
+.prose blockquote {
+    margin: 2rem 0;
+    padding: 0.25rem 0 0.25rem 1.5rem;
+    border-left: 4px solid var(--blog-green);
+}
+
+.prose blockquote p {
+    font-family: var(--blog-heading-font);
+    font-size: 1.3rem;
+    font-style: italic;
+    line-height: 1.5;
+    color: var(--blog-ink);
+    margin-bottom: 0.6rem;
+}
+
+.prose blockquote footer {
+    font-size: 0.95rem;
+    color: var(--blog-muted);
+}
+
+.prose blockquote cite {
+    font-style: normal;
+    font-weight: 600;
+}
+
+.prose figure {
+    margin: 2rem 0;
+}
+
+.prose figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.prose figcaption {
+    margin-top: 0.6rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--blog-muted);
+    text-align: center;
+}
+
+/* FAQ */
+.faq {
+    margin-top: 2.75rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--blog-border);
+}
+
+.sectionTitle {
+    font-family: var(--blog-heading-font);
+    font-size: clamp(1.45rem, 3vw, 1.8rem);
+    font-weight: 600;
+    line-height: 1.25;
+    color: var(--blog-ink);
+    margin: 0 0 1.25rem;
+}
+
+.faqItem {
+    margin-bottom: 1.4rem;
+}
+
+.faqQuestion {
+    font-size: 1.15rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--blog-ink);
+    margin: 0 0 0.4rem;
+}
+
+.faqItem p {
+    font-size: 1.05rem;
+    font-weight: 400;
+    line-height: 1.65;
+    color: var(--blog-text);
+    margin: 0;
+}
+
+.faqLink {
+    display: inline-block;
+    margin-top: 0.3rem;
+    font-size: 1rem;
+}
+
+/* Founder box */
+.founder {
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
+    margin-top: 2.5rem;
+    padding: 1.5rem;
+    border: 1px solid var(--blog-border);
+    border-radius: 12px;
+}
+
+.founder img {
+    flex: 0 0 auto;
+    width: 104px;
+    height: 156px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.founderLabel {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--blog-green-dark);
+    margin: 0 0 0.25rem;
+}
+
+.founderName {
+    font-family: var(--blog-heading-font);
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--blog-ink);
+    margin: 0 0 0.5rem;
+}
+
+.founder ul {
+    margin: 0 0 0.75rem;
+    padding-left: 1.1rem;
+}
+
+.founder li {
+    list-style: disc;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--blog-text);
+}
+
+.founderMotto {
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--blog-ink);
+    margin: 0 0 0.6rem;
+}
+
+.founder .founderLink {
+    font-size: 0.95rem;
+}
+
+@media (max-width: 520px) {
+    .founder {
+        flex-direction: column;
+    }
+}
+
+/* Closing call to action */
+.cta {
+    margin-top: 2.5rem;
+    padding: 1.75rem 1.5rem;
+    border-radius: 12px;
+    background: var(--blog-ink);
+    color: #ffffff;
+    text-align: center;
+}
+
+.ctaTitle {
+    font-family: var(--blog-heading-font);
+    font-size: 1.45rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #ffffff;
+    margin: 0 0 0.4rem;
+}
+
+.ctaText {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #d9e2dc;
+    margin: 0 0 1.25rem;
+}
+
+.ctaActions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.ctaPrimary,
+.ctaSecondary {
+    display: inline-block;
+    padding: 0.7rem 1.4rem;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.ctaPrimary {
+    background: var(--blog-green-dark);
+    color: #ffffff;
+}
+
+.ctaPrimary:hover {
+    background: #33661b;
+    color: #ffffff;
+}
+
+.ctaSecondary {
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    color: #ffffff;
+}
+
+.ctaSecondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+/* "Citește și": links to the other articles */
+.related {
+    margin-top: 2.5rem;
+}
+
+.related ul {
+    margin: 0;
+    padding: 0;
+}
+
+.related li {
+    padding: 0.9rem 0;
+    border-top: 1px solid var(--blog-border);
+}
+
+.related li:last-child {
+    border-bottom: 1px solid var(--blog-border);
+}
+
+.relatedLink {
+    font-family: var(--blog-heading-font);
+    font-size: 1.15rem;
+    font-weight: 600;
+    line-height: 1.35;
+    color: var(--blog-ink);
+    text-decoration: none;
+}
+
+.relatedLink:hover {
+    color: var(--blog-green-dark);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.relatedMeta {
+    margin: 0.3rem 0 0;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    color: var(--blog-muted);
+}
+
+.updated {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--blog-muted);
+    text-align: center;
+}
+
+/* ---------- Blog index ---------- */
+
+.indexPage {
+    max-width: 76rem;
+    margin: 0 auto;
+}
+
+.indexHeader {
+    max-width: 38rem;
+    margin: 1.5rem auto 2.5rem;
+    text-align: center;
+}
+
+.indexHeader h1 {
+    font-family: var(--blog-heading-font);
+    font-weight: 600;
+    font-size: clamp(1.9rem, 4vw, 2.6rem);
+    line-height: 1.15;
+    color: var(--blog-ink);
+    margin: 0;
+}
+
+.indexHeader p {
+    font-size: 1.05rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--blog-muted);
+    margin-top: 0.75rem;
+}
+
+.postGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+/* Latest article: full-width card, photo beside the text on wide screens. */
+@media (min-width: 900px) {
+    .card.cardFeatured {
+        display: grid;
+        grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+    }
+
+    .card.cardFeatured img {
+        height: 100%;
+        aspect-ratio: auto;
+        min-height: 22rem;
+    }
+
+    .cardFeatured .cardBody {
+        justify-content: center;
+        padding: 2.25rem 2.5rem;
+    }
+
+    .cardFeatured .cardTitle {
+        font-size: clamp(1.5rem, 2.4vw, 2rem);
+    }
+
+    .cardFeatured .cardExcerpt {
+        font-size: 1.05rem;
+    }
+
+    .cardFeatured .cardMore {
+        margin-top: 0.5rem;
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 14px;
+    background: var(--blog-paper);
+    box-shadow: 0 1px 3px rgba(31, 42, 36, 0.08);
+    color: inherit;
+    text-decoration: none;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 24px rgba(31, 42, 36, 0.12);
+    transform: translateY(-2px);
+    color: inherit;
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+}
+
+.cardBody {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1.25rem 1.4rem 1.5rem;
+}
+
+.cardMeta {
+    font-size: 0.85rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--blog-muted);
+    margin: 0 0 0.5rem;
+}
+
+.cardTitle {
+    font-family: var(--blog-heading-font);
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--blog-ink);
+    margin: 0 0 0.6rem;
+}
+
+.cardExcerpt {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--blog-text);
+    margin: 0 0 1rem;
+}
+
+.cardMore {
+    margin-top: auto;
+    font-weight: 600;
+    color: var(--blog-green-dark);
+}

@@ -5,7 +5,11 @@ import { PiHandSwipeLeftBold, PiHandSwipeRightBold } from 'react-icons/pi';
 import { MdOutlineSwipe } from "react-icons/md";
 import styles from './styles/styles.module.css';
 
-const ImageComparator = ({ images, maxWidth = 400, height = 225, showCursor=true }) => {
+// Source before/after photos are consistently ~16:9 (confirmed via sips on public/images/beforeAfter and public/images/services samples).
+const IMAGE_ASPECT_RATIO = 16 / 9;
+
+const ImageComparator = ({ images, maxWidth = 400, height = 225, showCursor=true, altText = 'Rezultat tratament stomatologic Olidental Clinic' }) => {
+  const imgHeightAttr = Math.round(maxWidth / IMAGE_ASPECT_RATIO);
   const [imgClip, setImgClip] = useState(['0% 0, 100% 0, 100% 100%, 0% 100%', '50% 0, 100% 0, 100% 100%, 50% 100%']);
 
   const [deviderGrab, setDeviderGrab] = useState(false);
@@ -93,8 +97,10 @@ const ImageComparator = ({ images, maxWidth = 400, height = 225, showCursor=true
           <img
             key={image + index}
             src={image}
-            alt="before/after"
-            style={{ userSelect: 'none', clipPath: `polygon(${imgClip[index]})`, maxWidth: maxWidth, height: null, objectFit: 'contain', transition: showCursor ? null : 'clip-path 1s ease' }}
+            alt={`${altText} - ${index === 0 ? 'înainte' : 'după'} tratament`}
+            width={maxWidth}
+            height={imgHeightAttr}
+            style={{ userSelect: 'none', clipPath: `polygon(${imgClip[index]})`, maxWidth: maxWidth, height: 'auto', objectFit: 'contain', transition: showCursor ? null : 'clip-path 1s ease' }}
             ref={imageRef}
             loading="lazy"
             onLoad={() => handleImgOnLoad(image)}

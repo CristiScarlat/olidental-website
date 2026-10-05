@@ -8,6 +8,8 @@ import styles from '../components/styles/styles.module.css';
 import { BiCaretLeft, BiCaretRight } from 'react-icons/bi';
 import ScrollIntoViewIndicator from '../components/scrollIntoViewIndicator';
 import IconLink from '../components/iconLink';
+import TreatmentAttribution from '../components/treatmentAttribution';
+import MedicalDisclaimer from '../components/medicalDisclaimer';
 
 const TratamenteMultidisciplinare = () => {
   const [indexCaz, setIndexCaz] = useState(0);
@@ -73,9 +75,10 @@ const TratamenteMultidisciplinare = () => {
           </IconLink>
           <hr className='w-100' />
           <div className='text-center'>
-            <img src={services[serviceId]?.procedures[procedureIndex]?.logo || ''} alt='...'
+            {/* Decorative procedure icon: intentionally alt="" since it's redundant with the h1 title below */}
+            <img src={services[serviceId]?.procedures[procedureIndex]?.logo || ''} alt=''
                  style={{ width: '75px', userSelect: 'none' }} />
-            <h3>{services[serviceId]?.procedures[procedureIndex]?.title || ''}</h3>
+            <h1>{services[serviceId]?.procedures[procedureIndex]?.title || ''}</h1>
           </div>
         </div>
         <div className='pt-3 mb-2 d-flex flex-column m-auto' style={{ maxWidth: '60rem' }}>
@@ -90,7 +93,7 @@ const TratamenteMultidisciplinare = () => {
                   onClick={() => setImgNo(index)}>
                   {batch.map(image => <img key={image}
                                            src={`/images/${cazuri[indexCaz]?.dirPath}/thumbnail_${image}`}
-                                           alt='before/after-3layer-preview'
+                                           alt={`${services[serviceId]?.procedures[procedureIndex]?.title || 'Procedură dentară'} - previzualizare caz înainte-după`}
                   />)}
                 </div>
               ))}
@@ -102,12 +105,14 @@ const TratamenteMultidisciplinare = () => {
             {cazuri[indexCaz].images[imgNo].length === 3 &&
               <ThreeLayerImageComparator height={500}
                                          images={cazuri[indexCaz].images[0].map(image => `/images/${cazuri[indexCaz]?.dirPath}/thumbnail_${image}`)}
-                                         showDeviderLabel={handleShowDeviderLabel()}/>}
+                                         showDeviderLabel={handleShowDeviderLabel()}
+                                         altText={services[serviceId]?.procedures[procedureIndex]?.title || 'Procedură dentară'}/>}
             {cazuri[indexCaz].images[imgNo].length === 2 &&
               <ImageComparator
                 images={cazuri[indexCaz].images[imgNo].map(image => `/images/${cazuri[indexCaz]?.dirPath}/thumbnail_${image}`)}
                 //showCursor={false}
                 maxWidth={850}
+                altText={services[serviceId]?.procedures[procedureIndex]?.title || 'Procedură dentară'}
               />}
           </>
           }
@@ -123,10 +128,18 @@ const TratamenteMultidisciplinare = () => {
             className='services-container-description'
             dangerouslySetInnerHTML={{ __html: services[serviceId]?.procedures[procedureIndex]?.description || '' }}
           ></div>
+          <TreatmentAttribution />
+          <MedicalDisclaimer />
         </div>
       </div>
     </div>
   );
+};
+
+TratamenteMultidisciplinare.seo = {
+  title: "Tratamente multidisciplinare | Olidental Clinic Timișoara",
+  description: "Tratamente multidisciplinare la Olidental Clinic Timișoara: intervenții ortodontice, parodontale, endodontice și implantare pentru cazuri stomatologice complexe.",
+  canonical: "https://olidental.ro/tratamente-multidisciplinare",
 };
 
 export default TratamenteMultidisciplinare;

@@ -4,7 +4,7 @@ const Logo = () => {
         style={{width: "10rem", height: "auto"}}
         src="/images/logo-olidental-clinic.webp"
         alt="logo olidental clinic"
-        loading="lazy"
+        loading="eager"
         itemProp="logo"
       />
   );

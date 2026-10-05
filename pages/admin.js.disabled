@@ -1,3 +1,6 @@
+// Route disabled — not needed currently. Renamed off .js so Next.js's
+// pages/ router no longer picks it up. Restore by renaming back to admin.js.
+/*
 import { useEffect, useState } from 'react';
 
 const AdminPage = () => {
@@ -28,4 +31,12 @@ const AdminPage = () => {
   }
 };
 
+AdminPage.seo = {
+  title: "Admin | Olidental Clinic Timișoara",
+  description: "Panou de administrare Olidental Clinic Timișoara.",
+  canonical: "https://olidental.ro/admin",
+  noindex: true,
+};
+
 export default AdminPage;
+*/

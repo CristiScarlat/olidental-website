@@ -1,5 +1,5 @@
 import styles from './styles/styles.module.css';
-import { MdLocationOn, MdOutlineMail, MdPhone } from "react-icons/md";
+import { MdLocationOn, MdOutlineMail, MdPhone, MdAccessTime } from "react-icons/md";
 
 const Location = ({className=""}) => {
   return (
@@ -16,23 +16,36 @@ const Location = ({className=""}) => {
             Timișoara 307200
           </div>
         </div>
-        <div className={styles['custom-icon-contact']}>
+        <a
+          href="mailto:clinica@olidental.ro"
+          className={`${styles['custom-icon-contact']} ${styles['custom-icon-contact-link']}`}
+          style={{ color: '#807f89' }}
+        >
           <div style={{ width: '100px' }}>
             <MdOutlineMail style={{fill: '#4caf50'}}/>
           </div>
-
-            <a style={{ color: '#807f89', height: 'auto', whiteSpace: 'nowrap', width: 'fit-content!important' }} href="email:clinica@olidental.ro">
-              clinica@olidental.ro
-            </a>
-
-        </div>
-        <div className={styles['custom-icon-contact']}>
+          <span style={{ height: 'auto', whiteSpace: 'nowrap' }}>
+            clinica@olidental.ro
+          </span>
+        </a>
+        <a
+          href="tel:+40733023030"
+          className={`${styles['custom-icon-contact']} ${styles['custom-icon-contact-link']}`}
+          style={{ color: '#807f89' }}
+        >
           <div style={{ width: '100px' }}>
             <MdPhone style={{fill: '#4caf50'}}/>
           </div>
-
-            <a style={{ color: '#807f89', height: 'auto', whiteSpace: 'nowrap', width: 'fit-content!important' }} href="tel:+40 733.023.030">+40 733.023.030</a>
-        
+          <span style={{ height: 'auto', whiteSpace: 'nowrap' }}>+40 733.023.030</span>
+        </a>
+        <div className={styles['custom-icon-contact']}>
+          <div style={{ width: '100px' }}>
+            <MdAccessTime style={{fill: '#4caf50'}}/>
+          </div>
+          <div style={{ color: '#807f89' }}>
+            Luni – Vineri: 09:30 – 18:30<br/>
+            Sâmbătă, Duminică: închis
+          </div>
         </div>
       </div>
       <div className="ps-5 pe-5 w-100">

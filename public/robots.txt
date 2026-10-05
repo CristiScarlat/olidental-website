@@ -1,12 +1,7 @@
 # *
 User-agent: *
 Allow: /
-
-Disallow: /wp-includes
-
-# Host
-Host: https://olidental.ro
+Disallow: /admin
 
 # Sitemaps
 Sitemap: https://olidental.ro/sitemap.xml
-

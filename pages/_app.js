@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
   }, []);
 
   return (
-      <Layout>
+      <Layout {...Component.seo}>
         <Component {...pageProps} />
       </Layout>
   )

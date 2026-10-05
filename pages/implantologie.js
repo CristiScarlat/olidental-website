@@ -1,17 +1,13 @@
-import { useRouter } from "next/router";
 import { services } from "../utils/uiConstants";
 import CustomCard from "../components/customCard";
 import { TfiHandPointLeft } from 'react-icons/tfi';
 import IconLink from '../components/iconLink';
+import TreatmentAttribution from '../components/treatmentAttribution';
+import MedicalDisclaimer from '../components/medicalDisclaimer';
 
 
 const Implantologie = () => {
-    const router = useRouter();
     const serviceId = 1;
-
-    const handleRedirectToProcedure = (link) => {
-        router.push(link)
-    }
 
     return (
         <div className="services-container m-auto">
@@ -22,8 +18,9 @@ const Implantologie = () => {
                     </IconLink>
                     <hr/>
                     <div className="text-center">
-                        <img src={services[serviceId]?.logo || ''} alt="..." style={{ width: "120px" }} />
-                        <h3>{services[serviceId]?.title || ''}</h3>
+                        {/* Decorative service icon: intentionally alt="" since it's redundant with the h1 title below */}
+                        <img src={services[serviceId]?.logo || ''} alt="" style={{ width: "120px" }} />
+                        <h1>{services[serviceId]?.title || ''}</h1>
                     </div>
                     <div className="services-one">
                         <div className="container">
@@ -31,17 +28,24 @@ const Implantologie = () => {
                                 {services[serviceId]?.procedures.map((procedure, index) => (
                                   <CustomCard
                                     key={procedure.title}
+                                    link={procedure.link}
                                     imgSrc={procedure.logo}
                                     imgStyle={{ width: 65 }}
                                     title={procedure.title}
                                     //body={procedure.description}
-                                    onClick={() => handleRedirectToProcedure(procedure.link)}
                                   />
                                 ))}
                             </div>
                         </div>
                     </div>
                     <div className="services-container-description" dangerouslySetInnerHTML={{ __html: services[serviceId]?.description || '' }}></div>
+                    <TreatmentAttribution />
+                    <MedicalDisclaimer />
+                    <div className="mt-3">
+                        <IconLink label="Vezi rezultate reale de implantologie" href="/rezultate/implantologie">
+                            <TfiHandPointLeft size='1.5rem' color='#6cab44' style={{ cursor: "pointer", transform: 'scaleX(-1)' }}/>
+                        </IconLink>
+                    </div>
                 </div>
             </div>
             {/*<div className="d-flex custom-scroll m-auto" style={{ overflowX: 'auto', maxWidth: '60rem' }}>*/}
@@ -51,5 +55,11 @@ const Implantologie = () => {
         </div>
     )
 }
+
+Implantologie.seo = {
+    title: "Implantologie orală | Olidental Clinic Timișoara",
+    description: "Implantologie orală la Olidental Clinic Timișoara: inserare de implanturi dentare, adiții de os și restaurări protetice pe implanturi pentru înlocuirea dinților lipsă.",
+    canonical: "https://olidental.ro/implantologie",
+};
 
 export default Implantologie;

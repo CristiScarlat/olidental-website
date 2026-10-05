@@ -1,6 +1,12 @@
 
 
 
+TermenConditii.seo = {
+  title: "Termeni și condiții | Olidental Clinic Timișoara",
+  description: "Termenii și condițiile de utilizare a site-ului Olidental Clinic Timișoara.",
+  canonical: "https://olidental.ro/termen-conditii",
+};
+
 export default function TermenConditii(){
   return(
     <div dir="ltr" className="m-5">
@@ -28,8 +34,8 @@ export default function TermenConditii(){
           </li>
           <li>”administratorul/proprietarul site-ului”: Olidental Med SRL,
 
-            societate română constituită conform legislației române, cu sediul în Timișoara, str. Anișoara Odeanu,
-            nr. 6, camera 2, jud. Timiș, înregistrată la Oficiul Comerțului de pe lângă Tribunalul Timiș sub nr.
+            societate română constituită conform legislației române, cu sediul în Timișoara, str. Ștefan cel Mare,
+            nr. 53, jud. Timiș, înregistrată la Oficiul Comerțului de pe lângă Tribunalul Timiș sub nr.
             J35/2982/2015, având&nbsp;
 
             CIF RO35302885.&nbsp;</li>
@@ -78,8 +84,8 @@ export default function TermenConditii(){
       <div>De asemenea, în cazul în care utilizatorul constată nerespectarea actualilor Termeni și condiții,
         respecitv încălcări a drepturilor de proprietate intelectuală sau are cunoștință o astfel de situație,
         acesta este obligat să sesizeze Olidental Med. Sesizări, cereri și reclamații cu privire la&nbsp;drepturile
-        de proprietate intelectuală se realizează la adresa de email <a href="mailto:olidentalmed@gmail.ro"
-                                                                        target="_blank">olidentalmed@gmail.ro</a>.
+        de proprietate intelectuală se realizează la adresa de email <a href="mailto:olidentalmed@gmail.com"
+                                                                        target="_blank">olidentalmed@gmail.com</a>.
       </div>
       <div><br /><b>3.&nbsp;</b> <b>Conținutul site-ului<br /></b><br />Site-ul constituie o platformă de prezentare a
         serviciilor stomatologice oferite de echipa Olidental Med, incluzând tipologia de tratamente, rezultatele cu
@@ -208,16 +214,7 @@ export default function TermenConditii(){
           email <b><a href="mailto:olidentalmed@gmail.com" target="_blank">olidentalmed@gmail.com</a></b> sau via
           telefon <b>0733023030.</b></div>
         <div><b><br /></b></div>
-        <div>Acești Termeni și condiții au fost acualizate la 01.07.2024.&nbsp;&nbsp;<br /><br />
-          <hr/>
-          <br /><br />Romina
-          Faur<br /><br /><a href="http://www.linkedin.com/in/rominafaur" target="_blank"
-                             data-saferedirecturl="https://www.google.com/url?q=http://www.linkedin.com/in/rominafaur&amp;source=gmail&amp;ust=1721715795813000&amp;usg=AOvVaw0CBLFAZD1Fv5qge3JUvbcO">www.linkedin.com/in/rominafaur</a><br /><a
-            href="http://www.facebook.com/rominafaur" target="_blank"
-            data-saferedirecturl="https://www.google.com/url?q=http://www.facebook.com/rominafaur&amp;source=gmail&amp;ust=1721715795813000&amp;usg=AOvVaw39ipdrZETj2lMkN5Rp2N-g">www.facebook.com/rominafaur</a><br /><a
-            href="http://www.rominafaur.ro" target="_blank"
-            data-saferedirecturl="https://www.google.com/url?q=http://www.rominafaur.ro&amp;source=gmail&amp;ust=1721715795813000&amp;usg=AOvVaw2NIWBPpQnQCz19Q2YGK6Z_">www.rominafaur.ro</a><br /><br />telefon:
-          +40744614156<br /><br /><br />
+        <div>Acești Termeni și condiții au fost actualizați la 01.07.2024.&nbsp;&nbsp;<br /><br />
         </div>
       </div>
     </div>

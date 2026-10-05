@@ -1,15 +1,15 @@
 export const teamCards = [
   {
     title: 'Dr. Olimpiu Ladislau Karancsi',
-    body: `<p><span  style='margin-left: 2rem;'></span>Dr. Oli, cum este cunoscut de pacienți, a infiintat familia Olidental Clinic din dorinta de a-si exprima viziunea perfectionista, combinata cu functionalitatea si estetica.
-                                         Este un medic devotat vocatiei sale si mereu pregatit de noi provocari.
-                                         Rezolvarea cazurilor dificile este punctul lui forte, sustinand ca “Nu exista probleme, ci doar solutii!”.</p>`,
+    body: `<p><span  style='margin-left: 2rem;'></span>Dr. Oli, cum este cunoscut de pacienți, a înființat familia Olidental Clinic din dorința de a-și exprima viziunea perfecționistă, combinată cu funcționalitatea și estetica.
+                                         Este un medic devotat vocației sale și mereu pregătit de noi provocări.
+                                         Rezolvarea cazurilor dificile este punctul lui forte, susținând că “Nu există probleme, ci doar soluții!”.</p>`,
 
     specializations: [
       'Medic primar protetică dentară',
       'Medic specialist chirurgie dento-alveolară ',
       'Atestat în implantologie orală',
-      'Șef de lucrări UMF “Victor Babeș” Timișoara –  Restaurări protetice pe implante'
+      'Șef de lucrări UMF “Victor Babeș” Timișoara, restaurări protetice pe implanturi'
     ],
     services: [
       'Estetica zâmbetului',
@@ -24,10 +24,10 @@ export const teamCards = [
   },
   {
     title: 'Dr. Paula Derban',
-    body: `<p style="margin-bottom: 3rem;'"><span  style='margin-left: 2rem;'></span>Dr. Paula, are o experienta in domeniul stomatologic de 17 ani.
-    Timp in care si-a dezvoltat abilitatea de a-si contopi viziunea creativa cu dorintele si nevoile clinice ale pacientului, astfel incat rezultatele sa fie de exceptie.
-    Profunda atentie la detalii si simtul umorului ale doamnei doctor, ii determina pe pacienti sa se simta parte din familia Olidental Clinic.
-    Este o fire optimistă si păstrează un echilibru între seriozitate și bună dispoziție.</p>`,
+    body: `<p style="margin-bottom: 3rem;'"><span  style='margin-left: 2rem;'></span>Dr. Paula are o experiență în domeniul stomatologic de 17 ani.
+    Timp în care și-a dezvoltat abilitatea de a-și contopi viziunea creativă cu dorințele și nevoile clinice ale pacientului, astfel încât rezultatele să fie de excepție.
+    Profunda atenție la detalii și simțul umorului ale doamnei doctor îi determină pe pacienți să se simtă parte din familia Olidental Clinic.
+    Este o fire optimistă și păstrează un echilibru între seriozitate și bună dispoziție.</p>`,
     specializations: ['Medic primar protetică dentară', 'Atestat implantologie orală'],
     services: ['Protetică dentară', 'Implantologie orală', 'Estetica dentară', 'Stomatologie generală'],
     img: '/images/team/dr.-Paula-Derban-medic-new.jpg',
@@ -36,20 +36,20 @@ export const teamCards = [
   {
     title: 'Dr. Ana Strava',
     body: `<p style="margin-bottom: 3rem;'"><span  style='margin-left: 2rem;'></span>Dr. Ana, este absolventă a Facultății de Medicină Dentară din Timișoara.
-    Cu o experiență de peste 5 ani în domeniu, și-a descoperit pasiunea pentru endodonție, asa ca a ales sa termine aceasta specializare.
+    Cu o experiență de peste 5 ani în domeniu, și-a descoperit pasiunea pentru endodonție, așa că a ales să termine această specializare.
     Fiind o fire meticuloasă, continuă să învețe, astfel încât participă la numeroase cursuri și workshop-uri cu scopul de a-și perfecționa profesionalismul de care dă dovadă.</p>`,
-    specializations: ['Medicina specialist endodont', 'Endodontie'],
+    specializations: ['Medic specialist endodont', 'Endodonție'],
     services: ['Tratamente endodontice'],
     img: '/images/team/Tunaru-Ana-new.jpg',
     thumbnail: '/images/team/thumbnail_Tunaru-Ana-new.jpg'
   },
   {
     title: 'Dr. Patricia Străinu',
-    body: `<p style="margin-bottom: 3rem;'"><span  style='margin-left: 2rem;'></span>Dr. Patricia, are o experienta de peste 10 ani in domeniul stomatologiei generale.
-    A absolvit Facultatea de Medicina Dentara din Timisoara, cu specializarea Stomatologie Generala.
-    Dr. Patri, cum îi spunem noi, este o persoana perseverenta, devotata si serioasă.
-    Locul de munca, adica Olidental Clinic ii este ca o a doua casa, este o persoana perfectionista, pentru care calitatea actului medical este esentiala.
-    Este mereu dornică sa invete mai mult, participarea la diverse cursuri și workshop-uri este nelipsită.</p> `,
+    body: `<p style="margin-bottom: 3rem;'"><span  style='margin-left: 2rem;'></span>Dr. Patricia are o experiență de peste 10 ani în domeniul stomatologiei generale.
+    A absolvit Facultatea de Medicină Dentară din Timișoara, cu specializarea Stomatologie Generală.
+    Dr. Patri, cum îi spunem noi, este o persoană perseverentă, devotată și serioasă.
+    Locul de muncă, adică Olidental Clinic, îi este ca o a doua casă, este o persoană perfecționistă, pentru care calitatea actului medical este esențială.
+    Este mereu dornică să învețe mai mult, participarea la diverse cursuri și workshop-uri este nelipsită.</p> `,
     specializations: ['Medic specialist stomatologie generală'],
     services: ['Tratamente stomatologice/terapie'],
     img: 'images/team/Dr_Patricia_Strainu.JPG',
@@ -57,9 +57,9 @@ export const teamCards = [
   },
   {
     title: 'Dr. Diana Rada Bârsan',
-    body: `<p style="margin-bottom: 3rem;'"><span  style='margin-left: 2rem;'></span>Dna. Dr. Diana, este un medic indrăgit de catre toți pacienții, de la mic la mare.
-    Are o experienta de 12 ani in domeniul stomatologic. Este medic specialist ortodont, se ocupă în mod exclusiv de tratamentele ortodontice si aduce “ordine și disciplină” 
-    in zambetul tuturor. O fire comunicativă, atentă la nevoile fiecărui pacient, obisnuieste sa va indrume spre alegerea celei mai potrivite variante de tratament.</p>`,
+    body: `<p style="margin-bottom: 3rem;'"><span  style='margin-left: 2rem;'></span>Dna. Dr. Diana este un medic îndrăgit de către toți pacienții, de la mic la mare.
+    Are o experiență de 12 ani în domeniul stomatologic. Este medic specialist ortodont, se ocupă în mod exclusiv de tratamentele ortodontice și aduce “ordine și disciplină”
+    în zâmbetul tuturor. O fire comunicativă, atentă la nevoile fiecărui pacient, obișnuiește să vă îndrume spre alegerea celei mai potrivite variante de tratament.</p>`,
     specializations: ['Medic primar ortodont'],
     services: ['Tratamente ortodontice'],
     img: '/images/team/Diana-Barsan-new.jpg',
@@ -88,10 +88,10 @@ export const teamCards = [
   // },
   {
     title: 'As. Adela Dăogaru',
-    body: `<p style="margin-bottom: 3rem;'"><span  style='margin-left: 2rem;'></span>Adela, este Asistent medical si este o persoana serioasa, constiincioasa, perseverenta, ambitioasa si foarte dedicata meseriei.
-    Cu o experienta de peste 7 ani in domeniul stomatologiei, a reusit performante impresionante, muncind, invatand și dedicandu-și timpul perfecționării profesionale. 
-    Avand numeroase responsabilitati, reuseste sa gestioneze lucrurile chiar si in situatii dificile.
-    Pacientii si echipa o apreciaza pentru calitatile sale atat profesionale cat si umane.</p>`,
+    body: `<p style="margin-bottom: 3rem;'"><span  style='margin-left: 2rem;'></span>Adela este asistent medical și este o persoană serioasă, conștiincioasă, perseverentă, ambițioasă și foarte dedicată meseriei.
+    Cu o experiență de peste 7 ani în domeniul stomatologiei, a reușit performanțe impresionante, muncind, învățând și dedicându-și timpul perfecționării profesionale.
+    Având numeroase responsabilități, reușește să gestioneze lucrurile chiar și în situații dificile.
+    Pacienții și echipa o apreciază pentru calitățile sale atât profesionale cât și umane.</p>`,
     specializations: ['Asistent Medical Generalist / Stomatologie'],
     services: [],
     img: '/images/team/Adela-Daogaru-asistenta-new.jpg',
@@ -101,7 +101,7 @@ export const teamCards = [
     title: 'As. Andreea Chifa',
     body: `<p style="margin-bottom: 3rem;'"><span  style='margin-left: 2rem;'></span>Andreea, este asistent medical generalist cu o experiență de peste 5 ani în domeniul stomatologic.
     În toți acești ani, Andreea și-a dezvoltat abilitățile de a empatiza atât cu pacienții adulți, cât și cu cei mici.
-    Blândețea și receptivitatea față de nevoile pacienților sunt calitățile pentru care este îndrăgită de catre toti pacientii.</p>`,
+    Blândețea și receptivitatea față de nevoile pacienților sunt calitățile pentru care este îndrăgită de către toți pacienții.</p>`,
     specializations: ['Asistent medical generalist / stomatologie'],
     services: [],
     img: '/images/team/Chifa-Andreea-new.jpg',
@@ -109,7 +109,7 @@ export const teamCards = [
   },
   {
     title: 'As. Bircioaga Bianca',
-    body: `<p style="margin-bottom: 3rem;"><span  style='margin-left: 2rem;'></span>Bianca este asistenta medicala generalista, cu o experienta de 12 ani in stomatologia dentara, fiind o persoana responsabila si dedicata meseriei. </p>`,
+    body: `<p style="margin-bottom: 3rem;"><span  style='margin-left: 2rem;'></span>Bianca este asistentă medicală generalistă, cu o experiență de 12 ani în stomatologia dentară, fiind o persoană responsabilă și dedicată meseriei. </p>`,
     specializations: ['Asistent medical generalist / stomatologie'],
     services: [],
     img: '/images/team/Bircioaga_Bianca.JPG',
@@ -260,7 +260,7 @@ export const smilesGallery = {
 export const services = [
   {
     id: 0,
-    link: "estetica-zambetului",
+    link: "/estetica-zambetului",
     images: [
       'thumbnail_1.JPG',
       'thumbnail_10.JPG',
@@ -387,10 +387,10 @@ export const services = [
      
      <p><span></span>Folosim tehnologii moderne, scanări digitale, design asistat de calculator, simulări intraorale,
       machete ale zâmbetului la care ne dorim să ajungem. Astfel pacientul poate previzualiza în linii mari noul zâmbet
-       și ințelege transformările estetice care se pot obține. Dupa o planificare riguroasa a fiecarui caz de reabilitare
-        estetică se trece la executarea restaurărilor. Acestea de multe ori implică tratamente minim invazive cu rezultate care pot fi spectaculoase. 
-        Pentru noi nimic nu este mai important, decât ca la final de tratament, pacientul să poată zâmbi cu încredere având siguranța că a obținut îmbinarea
-         perfectă dintre funcțional și estetic.</p>`,
+       și înțelege transformările estetice care se pot obține. După o planificare riguroasă a fiecărui caz de reabilitare
+        estetică se trece la executarea restaurărilor, de multe ori prin tratamente minim invazive.
+        Pentru noi este important ca, la final de tratament, pacientul să poată zâmbi cu încredere, mulțumit de îmbinarea
+         dintre funcțional și estetic.</p>`,
     procedures: [
       // {
       //   title: 'Obturații fizionomice',
@@ -407,12 +407,14 @@ export const services = [
         logo: '/images/logos/fatete-coroane-ceramice.png.webp',
         description: `
         <p><span class='ms-4'></span>Pentru realizarea acestor restaurări, folosim sisteme integral ceramice sau pe substrat de oxid de
-         zirconiu. Fațetele dentare presupun intervenții minim invazive pe suprafața dintelui. 
-         Ele înbunătațesc atît forma, dimensiunea, poziția, cât și culoarea dinților oferind o strălucire nouă zâmbetului.
-          Soluționează în același timp diversele probleme estetice, precum: dinți pătați, culoare neuniformă sau neplăcută, 
+         zirconiu. Fațetele dentare presupun intervenții minim invazive pe suprafața dintelui.
+         Ele îmbunătățesc atât forma, dimensiunea, poziția, cât și culoarea dinților oferind o strălucire nouă zâmbetului.
+          Soluționează în același timp diversele probleme estetice, precum: dinți pătați, culoare neuniformă sau neplăcută,
           forme inestetice, spațiere între dinți, etc. Coroanele dentare sunt restaurări protetice similare fațetelor,
-           pot fii executate din aceleași materiale ca și fațetele dentare, dar acoperă circular suprafața dinților. 
-           Pe lânga inbunătațirea estetica, acestea sporesc funcționalitatea mecanică a dinților. </p>`,
+           pot fi executate din aceleași materiale ca și fațetele dentare, dar acoperă circular suprafața dinților.
+           Pe lângă îmbunătățirea estetică, acestea sporesc funcționalitatea mecanică a dinților. </p>
+        <h2>Cui se adresează acest tratament</h2>
+        <p>Acest tip de tratament este potrivit pacienților care își doresc un zâmbet mai armonios fără intervenții ample asupra dinților naturali, precum și celor care au restaurări vechi, degradate sau decolorate. Procesul începe cu o evaluare atentă a stării dentare și stabilirea planului de tratament, urmată de pregătirea minimă a dinților și confecționarea fațetelor sau coroanelor. După aplicare, recomandăm controale periodice și o igienă orală riguroasă pentru menținerea rezultatului pe termen lung; durata exactă a tratamentului diferă de la caz la caz și este stabilită de medic în cadrul consultației.</p>`,
         images: [
           'thumbnail_10.JPG',
           'thumbnail_11.JPG',
@@ -436,61 +438,61 @@ export const services = [
             images: [
               ['1a.JPG', '1b.JPG', '1c.JPG']
             ],
-            dirPath: '/services/1_fatete_si_coroane_cazuri'
+            dirPath: 'services/1_fatete_si_coroane_cazuri'
           },
           {
             images: [
               ['2a.JPG', '2b.JPG', '2c.JPG']
             ],
-            dirPath: '/services/1_fatete_si_coroane_cazuri'
+            dirPath: 'services/1_fatete_si_coroane_cazuri'
           },
           {
             images: [
               ['3a.JPG', '3b.JPG', '3c.JPG']
             ],
-            dirPath: '/services/1_fatete_si_coroane_cazuri'
+            dirPath: 'services/1_fatete_si_coroane_cazuri'
           },
           {
             images: [
               ['4a.JPG', '4b.JPG', '4c.JPG']
             ],
-            dirPath: '/services/1_fatete_si_coroane_cazuri'
+            dirPath: 'services/1_fatete_si_coroane_cazuri'
           },
           {
             images: [
               ['5a.JPG', '5b.JPG', '5c.JPG']
             ],
-            dirPath: '/services/1_fatete_si_coroane_cazuri'
+            dirPath: 'services/1_fatete_si_coroane_cazuri'
           },
           {
             images: [
               ['6a.JPG', '6b.JPG', '6c.JPG']
             ],
-            dirPath: '/services/1_fatete_si_coroane_cazuri'
+            dirPath: 'services/1_fatete_si_coroane_cazuri'
           },
           {
             images: [
               ['7a.JPG', '7b.JPG', '7c.JPG']
             ],
-            dirPath: '/services/1_fatete_si_coroane_cazuri'
+            dirPath: 'services/1_fatete_si_coroane_cazuri'
           },
           {
             images: [
               ['8a.JPG', '8b.JPG', '8c.JPG']
             ],
-            dirPath: '/services/1_fatete_si_coroane_cazuri'
+            dirPath: 'services/1_fatete_si_coroane_cazuri'
           },
           {
             images: [
               ['9a.JPG', '9b.JPG', '9c.JPG']
             ],
-            dirPath: '/services/1_fatete_si_coroane_cazuri'
+            dirPath: 'services/1_fatete_si_coroane_cazuri'
           },
           {
             images: [
               ['10a.JPG', '10b.JPG', '10c.JPG']
             ],
-            dirPath: '/services/1_fatete_si_coroane_cazuri'
+            dirPath: 'services/1_fatete_si_coroane_cazuri'
           }
         ]
       },
@@ -500,11 +502,13 @@ export const services = [
         logo: '/images/logos/carii.png.webp',
         description: `<p>La Clinica Olidental, realizăm restaurări protetice care îmbină funcționalitatea cu estetica,
                           conform nevoilor pacientului. Restaurările estetice sunt soluții protetice pe termen lung,
-                           de tipul fațetelor și coroanelor dentare. Acestea pot cuprinde unul, sau mai mulți dinți sau chiar toți dinții pacientului. 
+                           de tipul fațetelor și coroanelor dentare. Acestea pot cuprinde unul, sau mai mulți dinți sau chiar toți dinții pacientului.
                            De asemenea,din aceeași categorie pot face parte și punțile dentare, protezele mobile sau mobilizabile.
-                           Pot fi realizate atât pe dinți naturali cât și pe implanturi dentare. 
-                           Restaurările protetice estetice asigură rezistența și aspectul natural și sunt menite să îmbunătățească estetica și
-                            funcția dinților pentru o perioadă îndelungată.</p>`,
+                           Pot fi realizate atât pe dinți naturali cât și pe implanturi dentare.
+                           Restaurările protetice estetice sunt alese pentru rezistență și aspect natural și sunt menite să îmbunătățească estetica și
+                            funcția dinților pentru o perioadă îndelungată.</p>
+                           <h2>Cui se adresează acest tratament</h2>
+                           <p>Aceste restaurări sunt recomandate atunci când unul sau mai mulți dinți sunt afectați structural, lipsesc sau necesită înlocuirea unor lucrări vechi. Alegerea între fațete, coroane, punți sau proteze se face în funcție de numărul dinților afectați și de starea osului și a țesuturilor de susținere, stabilită în cadrul unei evaluări clinice complete. Materialele sunt alese pentru rezistență și aspect natural, iar menținerea rezultatului pe termen lung depinde de o igienă orală constantă și de controalele periodice recomandate de medic.</p>`,
         images: [],
         cazuri: [
           {
@@ -639,7 +643,7 @@ export const services = [
   },
   {
     id: 1,
-    link: "implantologie",
+    link: "/implantologie",
     images: [
       'thumbnail_1.jpg',
       'thumbnail_15.JPG',
@@ -671,28 +675,33 @@ export const services = [
     title: 'Implantologie orală',
     logo: '/images/logos/implant.png.webp',
     description: `<p><span class='ms-4'></span>
-          Implantologia orală reprezintă, de cele mai multe ori, soluția ideală pentru înlocuirea dinților lipsă daca
-           pacientul este un candidat valabil pentru inserarea de implanturi dentare. 
-           Pierderea dinților duce la instabilitatea dinților restanti, la degradarea sănătății osoase și gingivale și
-            chiar la îmbătrânirea prematură. Implantul dentar presupune introducerea unei rădăcini artificiale în osul mandibular sau maxilar, 
-            fără a afecta dinții din vecinătate. De reținut că uneori este nevoie de adiții sau augmentări de țesut osos sau gingival. 
-            In cadrul tratamentelor de implantologie orala se diferențiază doua faze de tratament: 
-            una chirurgicala de inserare a implanturilor si una protetica de executie a dintilor pe suportul implantar. 
-            Intervalul de timp dintre cele doua procedee poate sa fie variabil si depinde de particularitatile fiecariu caz in parte.
+          Implantologia orală reprezintă, de cele mai multe ori, soluția ideală pentru înlocuirea dinților lipsă dacă
+           pacientul este un candidat valabil pentru inserarea de implanturi dentare.
+           Pierderea dinților duce la instabilitatea dinților restanți, la degradarea sănătății osoase și gingivale și
+            chiar la îmbătrânirea prematură. Implantul dentar presupune introducerea unei rădăcini artificiale în osul mandibular sau maxilar,
+            fără a afecta dinții din vecinătate. De reținut că uneori este nevoie de adiții sau augmentări de țesut osos sau gingival.
+            În cadrul tratamentelor de implantologie orală se diferențiază două faze de tratament:
+            una chirurgicală de inserare a implanturilor și una protetică de execuție a dinților pe suportul implantar.
+            Intervalul de timp dintre cele două proceduri poate să fie variabil și depinde de particularitățile fiecărui caz în parte.
         </p>
-        <p><span class='ms-4'></span>Implanturile dentare prezintă numeroase beneficii pe termen lungunul dinb avantaje este că pot
-         fi realizate multiple implantari într- o singură vizită la cabinet, pacientul putând să își reia în cel mai scurt timp posibil activitățile obișnuite.</p>`,
+        <p><span class='ms-4'></span>Implanturile dentare prezintă numeroase beneficii pe termen lung. Unul dintre avantaje este că pot
+         fi realizate multiple implantări într-o singură vizită la cabinet, iar reluarea activităților obișnuite depinde de particularitățile fiecărui caz.</p>`,
     procedures: [
       {
         title: 'Inserare de implanturi și adiții de os',
-        link: 'inserare-implant-aditii-os',
+        link: '/inserare-implant-aditii-os',
         logo: '/images/logos/implant.png.webp',
         description:
           'Inserarea implanturilor dentare și a adițiilor de os se realizează în cadrul unor intervenții chirurgicale, ' +
-          'după analiza substratului osos pe investigatiile radiografice de tip computer-tomografie. ' +
+          'după analiza substratului osos pe investigațiile radiografice de tip computer-tomografie. ' +
           'În cazul în care cantitatea osoasă este insuficientă se poate decide pentru realizarea unor adiții de os ' +
-          'concomitent sau anterior inserarii implanturilor. Implanturile dentare utilizate în cadrul Olidental Clinic sunt durabile, ' +
-          'sigure și eficiente. După inserarea implantului, are loc procesul de osteointegrare, cu o durată diferită în funcție de particularitățile fiecarui caz ',
+          'concomitent sau anterior inserării implanturilor. La Olidental Clinic folosim sisteme de implant consacrate, ' +
+          'alese în funcție de fiecare caz în parte. După inserarea implantului, are loc procesul de osteointegrare, cu o durată diferită în funcție de particularitățile fiecărui caz. ' +
+          '<h2>Cui se adresează acest tratament</h2> ' +
+          'Implantologia dentară este recomandată pacienților care au pierdut unul sau mai mulți dinți și doresc o soluție fixă, stabilă pe termen lung. ' +
+          'Evaluarea inițială, care include investigațiile radiografice menționate mai sus, stabilește dacă este necesară o adiție de os înainte de inserarea implantului. ' +
+          'Perioada de vindecare și osteointegrare variază de la caz la caz, în funcție de calitatea osoasă și de starea generală de sănătate a pacientului, ' +
+          'iar planul exact de tratament este stabilit împreună cu medicul în cadrul consultației. ',
         cazuri: [
           {
             images: [
@@ -758,14 +767,18 @@ export const services = [
       },
       {
         title: 'Restaurări protetice pe implanturi',
-        link: 'restaurari-protetice-dentare',
+        link: '/restaurari-protetice-dentare',
         logo: '/images/logos/restaurari.png.webp',
         description:
-          'In etapa protetica se face atașarea componentelor protetice si realizarea unor restaurări provizorii' +
-          ' sau finale în funcție de situație. Restaurările finale pot fi fixe, demontabile sau mobilizabile sub formă de coroană unidentară, ' +
-          'punte între mai multe implanturi sau restaurari intinse, de arcada. Prin restaurările protetice pe implanturi se redă integritatea' +
-          ' arcadelor dentare iar acestea pot functiona impreuna cu dintii restanti ai pacientului sau cu alte tipuri de restaurari dentare. ' +
-          'Orice lucrare protetica executata fie pe dinti fie pe implanturi care functionează pe termen lung trebuie intretinuta periodic. ',
+          'În etapa protetică se face atașarea componentelor protetice și realizarea unor restaurări provizorii' +
+          ' sau finale, în funcție de situație. Restaurările finale pot fi fixe, demontabile sau mobilizabile, sub formă de coroană unidentară, ' +
+          'punte între mai multe implanturi sau restaurări întinse, de arcadă. Prin restaurările protetice pe implanturi se redă integritatea' +
+          ' arcadelor dentare, iar acestea pot funcționa împreună cu dinții restanți ai pacientului sau cu alte tipuri de restaurări dentare. ' +
+          'Orice lucrare protetică executată, fie pe dinți, fie pe implanturi, care funcționează pe termen lung, trebuie întreținută periodic. ' +
+          '<h2>Cui se adresează acest tratament</h2> ' +
+          'Această etapă este potrivită pacienților care au deja implanturi inserate și au parcurs perioada de osteointegrare, sau care se află într-un plan de tratament implanto-protetic. ' +
+          'Alegerea tipului de restaurare, fixă, demontabilă sau mobilizabilă, se face împreună cu medicul, în funcție de numărul de implanturi, de starea osoasă și de preferințele pacientului. ' +
+          'După finalizare, recomandăm igienizări profesionale periodice, întrucât menținerea pe termen lung a lucrărilor protetice depinde direct de îngrijirea zilnică și de controalele stomatologice regulate.',
         cazuri: [
           {
             images: [
@@ -851,7 +864,7 @@ export const services = [
   },
   {
     id: 2,
-    link: "reabilitari-orale-complexe",
+    link: "/reabilitari-orale-complexe",
     images: [
       'protetica dentara si implantologica 2.JPG',
       'protetica dentara si implantologica 3.JPG',
@@ -870,107 +883,102 @@ export const services = [
       'Cazurile de reabilitare orală complexă sunt o provocare pentru echipa Olidental Clinic. ' +
       'În funcție de nevoile pacientului, aceste proceduri presupun un cumul de tratamente stomatologice menite ' +
       'să redea frumusețea zâmbetului și sănătatea orală. Abordarea acestor situații complexe presupune un diagnostic corect, ' +
-      'elaborarea unui plan de tratament individualizat convenit impreuna cu pacientul si executia lui riguroasa, ' +
-      'pentru a obtine rezultatele dorite. Astfel de restaurari de amploare au nevoie de o abordare interdisciplinara de cele mai multe ' +
-      'ori fiind nevoie de mai multi specialisti care vor contribui cu expertiza lor la desfasurarea planului de tratament. ' +
-      'Este nevoie de o echipa medicala competenta care sa se ridice la cele mai inalte standarde profesionale. ' +
-      'Tehnologia si aparatura de ultima generatie sunt indispensabile atat in etapa de diagnostic cat si la ' +
-      'executia diverselor proceduri terapeutice din cadrul taratamentului. De asemenea executia tehnica a ' +
-      'restaurarilor este important sa se faca la nivelul cel mai inalt de precizie si pentru aceasta ' +
-      'un laborator de tehnica dentara de top este indispensabil. ',
+      'elaborarea unui plan de tratament individualizat convenit împreună cu pacientul și execuția lui riguroasă, ' +
+      'pentru a obține rezultatele dorite. Astfel de restaurări de amploare au nevoie de o abordare interdisciplinară de cele mai multe ' +
+      'ori fiind nevoie de mai mulți specialiști care vor contribui cu expertiza lor la desfășurarea planului de tratament. ' +
+      'Este nevoie de o echipă medicală competentă, care să respecte standardele profesionale actuale. ' +
+      'Tehnologia și aparatura moderne sunt importante atât în etapa de diagnostic cât și la ' +
+      'execuția diverselor proceduri terapeutice din cadrul tratamentului. De asemenea execuția tehnică a ' +
+      'restaurărilor este important să se facă cu precizie, iar pentru aceasta ' +
+      'colaborarea cu un laborator de tehnică dentară de încredere este esențială. ',
     procedures: [
       {
-        title: 'Restaurari extinse pe dinti naturali si implanturi',
+        title: 'Restaurări extinse pe dinți naturali și implanturi',
         link: '/restaurari-extinse-dinti-naturali-implanturi',
         logo: '/images/logos/protetica.png.webp',
         description:
           'La Olidental Clinic, tratăm afecțiuni complexe care pot cuprinde toate structurile aparatului dentar, ' +
-          'stabilim un plan de tratament corespunzător si trecem apoi la executarea multidisciplinară a lui. ' +
+          'stabilim un plan de tratament corespunzător și trecem apoi la executarea multidisciplinară a lui. ' +
           'Pacienții își recapătă încrederea în sine, sănătatea orală și adesea sănătatea generală. ' +
-          'De asemenea își reiau funcțiile masticatorii si au posibilitatea de a zâmbi fără a se autocenzura. ' +
-          'Dupa finalizarea oricărui caz recomandăm, efectuarea unui control periodic pentru igienizări profesionale ' +
-          'și identificării eventualelor probleme care pot să apară în timp. Numai asa putem garanta păstrarea pe termen ' +
-          'lung a restaurărilor ăi a sănătății orale.',
+          'De asemenea își reiau funcțiile masticatorii și au posibilitatea de a zâmbi fără a se autocenzura. ' +
+          'După finalizarea oricărui caz recomandăm, efectuarea unui control periodic pentru igienizări profesionale ' +
+          'și identificării eventualelor probleme care pot să apară în timp. Numai așa putem susține păstrarea pe termen ' +
+          'lung a restaurărilor și a sănătății orale. ' +
+          '<h2>Cui se adresează acest tratament</h2> ' +
+          'Acest tip de reabilitare este potrivit pacienților cu afectare extinsă a arcadei dentare, fie prin pierderea mai multor dinți, fie prin degradarea severă a restaurărilor anterioare. ' +
+          'Planul de tratament combină, după caz, implantologia, protetica și, atunci când este necesar, tratamentul parodontal sau ortodontic, într-o succesiune stabilită de medic în funcție de complexitatea cazului.',
         cazuri: [
           {
-            'title': '1 Copaci Costin',
             'images': [
               ['1a.jpg', '1b.jpg'],
               ['2a.JPG', '2b.JPG'],
               ['3a.JPG', '3b.JPG'],
               ['4a.jpg', '4b.jpg']
             ],
-            'dirPath': 'services/3_restaurari_extinse_pe_dinti_naturali_si_implanturi_cazuri/1 Copaci Costin'
+            'dirPath': 'services/3_restaurari_extinse_pe_dinti_naturali_si_implanturi_cazuri/caz-01'
           },
           {
-            'title': '2 Mazilu Cristina',
             'images': [
               ['1a.JPG', '1b.JPG'],
               ['2a.JPG', '2b.JPG'],
               ['3a.JPG', '3b.JPG'],
               ['4a.jpg', '4b.jpg']
             ],
-            'dirPath': 'services/3_restaurari_extinse_pe_dinti_naturali_si_implanturi_cazuri/2 Mazilu Cristina'
+            'dirPath': 'services/3_restaurari_extinse_pe_dinti_naturali_si_implanturi_cazuri/caz-02'
           },
           {
-            'title': '3 Mosoarca Tatiana',
             'images': [
               ['1a.JPG', '1b.JPG'],
               ['2a.JPG', '2b.JPG'],
               ['3a.JPG', '3b.JPG'],
               ['4a.jpg', '4b.jpg']
             ],
-            'dirPath': 'services/3_restaurari_extinse_pe_dinti_naturali_si_implanturi_cazuri/3 Mosoarca Tatiana'
+            'dirPath': 'services/3_restaurari_extinse_pe_dinti_naturali_si_implanturi_cazuri/caz-03'
           },
           {
-            'title': '4 Petcu Mariana',
             'images': [
               ['1a.JPG', '1b.JPG'],
               ['2a.JPG', '2b.JPG'],
               ['3a.JPG', '3b.JPG'],
               ['4a.jpg', '4b.jpg']
             ],
-            'dirPath': 'services/3_restaurari_extinse_pe_dinti_naturali_si_implanturi_cazuri/4 Petcu Mariana'
+            'dirPath': 'services/3_restaurari_extinse_pe_dinti_naturali_si_implanturi_cazuri/caz-04'
           },
           {
-            'title': '5 Ban Alexandra',
             'images': [
               ['1a.JPG', '1b.JPG'],
               ['2a.jpg', '2b.JPG'],
               ['3a.JPG', '3b.JPG'],
               ['4a.jpg', '4b.jpg']
             ],
-            'dirPath': 'services/3_restaurari_extinse_pe_dinti_naturali_si_implanturi_cazuri/5 Ban Alexandraaaaaaaa'
+            'dirPath': 'services/3_restaurari_extinse_pe_dinti_naturali_si_implanturi_cazuri/caz-05'
           },
           {
-            'title': '6 Tamas Alina',
             'images': [
               ['1a.JPG', '1b.JPG'],
               ['2a.JPG', '2b.JPG'],
               ['3a.JPG', '3b.JPG'],
               ['4a.jpg', '4b.jpg']
             ],
-            'dirPath': 'services/3_restaurari_extinse_pe_dinti_naturali_si_implanturi_cazuri/6 Tamas Alina'
+            'dirPath': 'services/3_restaurari_extinse_pe_dinti_naturali_si_implanturi_cazuri/caz-06'
           },
           {
-            'title': '7 Munteanu Adrianaaaaa',
             'images': [
               ['1a.JPG', '1b.JPG'],
               ['2a.JPG', '2b.JPG'],
               ['3a.JPG', '3b.JPG'],
               ['4a.jpg', '4b.jpg']
             ],
-            'dirPath': 'services/3_restaurari_extinse_pe_dinti_naturali_si_implanturi_cazuri/7 Munteanu Adrianaaaaa'
+            'dirPath': 'services/3_restaurari_extinse_pe_dinti_naturali_si_implanturi_cazuri/caz-07'
           },
           {
-            'title': '8 Andrei Cosmina',
             'images': [
               ['1a.JPG', '1b.JPG'],
               ['2a.JPG', '2b.JPG'],
               ['3a.JPG', '3b.JPG'],
               ['4a.jpg', '4b.jpg']
             ],
-            'dirPath': 'services/3_restaurari_extinse_pe_dinti_naturali_si_implanturi_cazuri/8 Andrei Cosmina'
+            'dirPath': 'services/3_restaurari_extinse_pe_dinti_naturali_si_implanturi_cazuri/caz-08'
           }
         ]
       },
@@ -979,94 +987,89 @@ export const services = [
         link: '/tratamente-multidisciplinare',
         logo: '/images/logos/tratament.png.webp',
         description:
-          'In tratarea cazurilor complexe ne intalnim cu probleme de sanatate la diferite structuri ' +
-          'ale cavitatii orale. Deseori trebuie sa reabilitam in totalitate arcadele dentare si ' +
-          'este nevoie de o abordare holistica a intregului sistem oral. ' +
-          'Interventiile pot sa cuprinda dintii, tesuturile de sustinere al dintilor, ' +
-          'oasele maxilare si gingiile. Astfel tratamentul se poate intinde pe o perioada mai lunga de timp ' +
-          'si poate implica purtarea unor aparate ortodontice, intervenți de chirurgie parodontală, ' +
-          'tratamente endodontice, chirurgie implantara si la final restaurari protetice ' +
-          'care sa imbine functionalitatea cu estetica dentara.',
+          'În tratarea cazurilor complexe ne întâlnim cu probleme de sănătate la diferite structuri ' +
+          'ale cavității orale. Deseori trebuie să reabilităm în totalitate arcadele dentare și ' +
+          'este nevoie de o abordare holistică a întregului sistem oral. ' +
+          'Intervențiile pot să cuprindă dinții, țesuturile de susținere ale dinților, ' +
+          'oasele maxilare și gingiile. Astfel tratamentul se poate întinde pe o perioadă mai lungă de timp ' +
+          'și poate implica purtarea unor aparate ortodontice, intervenții de chirurgie parodontală, ' +
+          'tratamente endodontice, chirurgie implantară și la final restaurări protetice ' +
+          'care să îmbine funcționalitatea cu estetica dentară. ' +
+          '<h2>Cui se adresează acest tratament</h2> ' +
+          'Fiecare caz multidisciplinar este planificat individual, în urma unei evaluări complete a stării orale, iar etapele de tratament sunt coordonate pentru a asigura un rezultat coerent, atât funcțional, cât și estetic. ' +
+          'Succesul pe termen lung depinde de respectarea planului stabilit de medic și de controalele periodice ulterioare finalizării tratamentului.',
         cazuri: [
           {
-            'title': '1 Trusca Monica',
             'images': [
               ['1a.JPG', '1b.JPG'],
               ['2a.JPG', '2b.JPG'],
               ['3a.JPG', '3b.JPG'],
               ['4a.JPG', '4b.JPG']
             ],
-            'dirPath': 'services/3_tratamente_mixte_endodontice_parodontale_si_protetice_cazuri/1 Trusca Monica'
+            'dirPath': 'services/3_tratamente_mixte_endodontice_parodontale_si_protetice_cazuri/caz-01'
           },
           {
-            'title': '2 Dinu Diana',
             'images': [
               ['1a.JPG', '1b.JPG'],
               ['2a.JPG', '2b.JPG'],
               ['3a.JPG', '3b.JPG'],
               ['4a.JPG', '4b.JPG']
             ],
-            'dirPath': 'services/3_tratamente_mixte_endodontice_parodontale_si_protetice_cazuri/2 Dinu Diana'
+            'dirPath': 'services/3_tratamente_mixte_endodontice_parodontale_si_protetice_cazuri/caz-02'
           },
           {
-            'title': '3 Biebel Ina',
             'images': [
               ['1a.JPG', '1b.JPG'],
               ['2a.JPG', '2b.JPG'],
               ['3a.JPG', '3b.JPG'],
               ['4a.JPG', '4b.JPG']
             ],
-            'dirPath': 'services/3_tratamente_mixte_endodontice_parodontale_si_protetice_cazuri/3 Biebel Ina'
+            'dirPath': 'services/3_tratamente_mixte_endodontice_parodontale_si_protetice_cazuri/caz-03'
           },
           {
-            'title': '4 Frumosu Cristina',
             'images': [
               ['1a.JPG', '1b.JPG'],
               ['2a.JPG', '2b.JPG'],
               ['3a.JPG', '3b.JPG'],
               ['4a.JPG', '4b.JPG']
             ],
-            'dirPath': 'services/3_tratamente_mixte_endodontice_parodontale_si_protetice_cazuri/4 Frumosu Cristina'
+            'dirPath': 'services/3_tratamente_mixte_endodontice_parodontale_si_protetice_cazuri/caz-04'
           },
           {
-            'title': '5 Dumitrascu Adriana',
             'images': [
               ['1a.JPG', '1b.jpg'],
               ['2a.JPG', '2b.jpg'],
               ['3a.JPG', '3b.jpg'],
               ['4a.JPG', '4b.jpg']
             ],
-            'dirPath': 'services/3_tratamente_mixte_endodontice_parodontale_si_protetice_cazuri/5 Dumitrascu Adriana'
+            'dirPath': 'services/3_tratamente_mixte_endodontice_parodontale_si_protetice_cazuri/caz-05'
           },
           {
-            'title': '6 Topan Mirabela',
             'images': [
               ['1a.JPG', '1b.JPG'],
               ['2a.JPG', '2b.JPG'],
               ['3a.JPG', '3b.JPG'],
               ['4a.JPG', '4b.JPG']
             ],
-            'dirPath': 'services/3_tratamente_mixte_endodontice_parodontale_si_protetice_cazuri/6 Topan Mirabela'
+            'dirPath': 'services/3_tratamente_mixte_endodontice_parodontale_si_protetice_cazuri/caz-06'
           },
           {
-            'title': '7 Munteanu',
             'images': [
               ['1a.JPG', '1b.JPG'],
               ['2a.JPG', '2b.JPG'],
               ['3a.JPG', '3b.JPG'],
               ['4a.JPG', '4b.JPG']
             ],
-            'dirPath': 'services/3_tratamente_mixte_endodontice_parodontale_si_protetice_cazuri/7 Munteanu'
+            'dirPath': 'services/3_tratamente_mixte_endodontice_parodontale_si_protetice_cazuri/caz-07'
           },
           {
-            'title': '8 Andrei Cosmina',
             'images': [
               ['1a.JPG', '1b.JPG'],
               ['2a.JPG', '2b.JPG'],
               ['3a.JPG', '3b.JPG'],
               ['4a.JPG', '4b.JPG']
             ],
-            'dirPath': 'services/3_tratamente_mixte_endodontice_parodontale_si_protetice_cazuri/8 Pacurar Simona'
+            'dirPath': 'services/3_tratamente_mixte_endodontice_parodontale_si_protetice_cazuri/caz-08'
           }
         ]
       }
@@ -1087,223 +1090,221 @@ export const procedures = [
 ];
 export const beforeAfter = [
   {
-    title: 'Reabilitare estetica a dintilor maxilari',
+    title: 'Reabilitare estetică a dinților maxilari',
+    resultCategory: 'fatete-coroane-ceramice',
     description:
-      'Pacienta s-a prezentat pentru a schimba aspectul dintilor maxilari, care aratau inestetic\n' +
-      'datorita unor restaurari mai vechi. Au fost tratati dintii si s-au restaurat cu fatete integral\n' +
-      'ceramice, cu aspect natural si cu respectarea pretentiilor estetice ale pacientei.',
+      '<p><strong>Provocarea:</strong> Pacienta s-a prezentat nemulțumită de aspectul inestetic al dinților maxilari, cauzat de restaurări mai vechi, degradate în timp.</p>' +
+      '<p><strong>Tratamentul:</strong> Dinții afectați au fost tratați, apoi acoperiți cu fațete integral ceramice, alese pentru aspectul natural pe care îl oferă.</p>' +
+      '<p><strong>Rezultatul:</strong> Am obținut un zâmbet cu aspect natural, care respectă exact preferințele estetice ale pacientei.</p>',
     difficultyLevel: 3,
     category: 0,
     images: [['1a.JPG', '1b.JPG'], ['1aa.JPG', '1bb.JPG']]
   },
   {
-    title: 'Reabilitare orala complexa a tuturor dintilor',
+    title: 'Reabilitare orală complexă a tuturor dinților',
+    resultCategory: 'reabilitare-orala-completa',
     description:
-      'La cazul de fata s-au indepartat vechile restaurari, au fost inserate implanturi pe zonele\n' +
-      'laterale la mandibula, s-a realizat un tratament parodontal si s-au acoperit dintii cu fatete si\n' +
-      'coroane integral ceramice cu aspect natural si estetic',
+      '<p><strong>Provocarea:</strong> Pacientul necesita o reabilitare completă a tuturor dinților, cu restaurări vechi degradate și nevoie de tratament parodontal.</p>' +
+      '<p><strong>Tratamentul:</strong> Am îndepărtat restaurările vechi, am inserat implanturi pe zonele laterale ale mandibulei, am realizat tratamentul parodontal necesar, apoi am acoperit toți dinții cu fațete și coroane integral ceramice.</p>' +
+      '<p><strong>Rezultatul:</strong> Am obținut o reabilitare completă, cu aspect natural și estetic pe toată arcada dentară.</p>',
     difficultyLevel: 10,
     category: 0,
     images: [['2a.JPG', '2b.JPG'], ['2aa.JPG', '2bb.JPG']]
   },
   {
-    title: 'Reabiltare orala pe dinti si implanturi',
+    title: 'Reabilitare orală pe dinți și implanturi',
+    resultCategory: 'reabilitare-orala-completa',
     description:
-      'A fost un caz dificil in care a trebuit sa refacem estetic si functional situatia compromisa de\n' +
-      'tratamente incepute gresit si incorect realizate, la o pacienta tanara cu deficiente dentare\n' +
-      'majore. Tratamentul s-a intins pe durata a doi ani si a cuprins indepartarea implanturilor si\n' +
-      'restaurarilor incorect realizate, tratament ortodontic, reconstructii osoase, inseratea de\n' +
-      'implanturi noi si realizarea de restaurari dentare estetice si functionale care sa ofere stabilitate\n' +
-      'pe termen lung.',
+      '<p><strong>Provocarea:</strong> O pacientă tânără, cu deficiențe dentare majore, avea o situație compromisă de tratamente anterioare începute greșit și realizate incorect.</p>' +
+      '<p><strong>Tratamentul:</strong> A fost un caz dificil, desfășurat pe durata a doi ani: am îndepărtat implanturile și restaurările incorect realizate, am aplicat tratament ortodontic, am realizat reconstrucții osoase, am inserat implanturi noi și am realizat restaurări dentare estetice și funcționale.</p>' +
+      '<p><strong>Rezultatul:</strong> Am refăcut complet situația estetic și funcțional, oferind pacientei stabilitate dentară pe termen lung.</p>',
     difficultyLevel: 10,
     category: 1,
     images: [['3a.JPG', '3b.JPG'], ['3aa.JPG', '3bb.JPG']]
   },
   {
-    title: 'Reabilitarea dintilor superiori',
+    title: 'Reabilitarea dinților superiori',
+    resultCategory: 'implantologie',
     description:
-      'Pacienta s-a prezentat pentru rezolvarea unor nemultumiri estetice ale dintilor superiori.\n' +
-      'Planul de tratament a constat in indepartarea restaurarilor vechi, tratarea dintilor, inserarea de\n' +
-      'implanturi si restaurari esttice integral ceramice pe toti dintii superiori, pentru a corecta\n' +
-      'forma , pozitia si aliniamentul dintilor.',
+      '<p><strong>Provocarea:</strong> Pacienta era nemulțumită estetic de dinții superiori și dorea corectarea formei, poziției și aliniamentului lor.</p>' +
+      '<p><strong>Tratamentul:</strong> Am îndepărtat restaurările vechi, am tratat dinții, am inserat implanturi acolo unde a fost necesar și am realizat restaurări estetice integral ceramice pe toți dinții superiori.</p>' +
+      '<p><strong>Rezultatul:</strong> Forma, poziția și aliniamentul dinților superiori au fost corectate complet, cu un rezultat estetic natural.</p>',
     difficultyLevel: 5,
     category: 1,
     images: [['4a.JPG', '4b.JPG'], ['4aa.JPG', '4bb.JPG']]
   },
   {
-    title: 'Reabilitare orala complexa a tuturor dintilor',
+    title: 'Reabilitare orală complexă a tuturor dinților, un caz similar',
+    resultCategory: 'reabilitare-orala-completa',
     description:
-      'La cazul de fata s-au indepartat vechile restaurari, au fost inserate implanturi pe zonele laterale la mandibula, s-a realizat un tratament parodontal si s-au acoperit dintii cu fatete si coroane integral ceramice cu aspect natural si estetic',
+      '<p><strong>Provocarea:</strong> Un alt caz de reabilitare completă a arcadei dentare, cu restaurări anterioare uzate și afectare parodontală care necesita tratament.</p>' +
+      '<p><strong>Tratamentul:</strong> Aceeași abordare integrată: îndepărtarea restaurărilor vechi, inserarea de implanturi în zona laterală a mandibulei, tratament parodontal și acoperirea tuturor dinților cu fațete și coroane integral ceramice.</p>' +
+      '<p><strong>Rezultatul:</strong> Rezultat similar: reabilitare completă, cu aspect natural și funcțional pe întreaga arcadă.</p>',
     difficultyLevel: 9,
     category: 2,
     images: [['5a.JPG', '5b.JPG'], ['5aa.JPG', '5bb.JPG']]
   },
   {
-    title: 'Reechilibrare functionala si estetica a dintilor maxilari la o pacienta cu tulburari estetice severe',
+    title: 'Reechilibrare funcțională și estetică a dinților maxilari la o pacientă cu tulburări estetice severe',
+    resultCategory: 'estetica-gingivala',
     description:
-      'Dificultatea cazului a constat in schimbarea pozitiei dintilor, îndreptarea planului ocluzal, modificarea formei arcadelor dentare si a rapoartelor dintre dinti. S-au indepartat vechile restaurari si am tratat dintii. Am realizat corectarea contururilor tesuturilor care sustin dintii prin chirurgie gingivala si osoasa. Dupa etapa de provizorat s-au realizat restaurari integral ceramice estetice prin care am obtinut un aspect mult imbunatatit al zambetului ',
+      '<p><strong>Provocarea:</strong> Pacienta prezenta tulburări estetice severe: poziția dinților era necorespunzătoare, planul ocluzal deviat, iar forma arcadelor dentare afecta armonia zâmbetului.</p>' +
+      '<p><strong>Tratamentul:</strong> Am îndepărtat restaurările vechi și am tratat dinții, apoi am corectat conturul țesuturilor de susținere prin chirurgie gingivală și osoasă. După etapa de provizorat, dinții au fost acoperiți cu restaurări integral ceramice.</p>' +
+      '<p><strong>Rezultatul:</strong> Am obținut un aspect mult îmbunătățit al zâmbetului, cu funcție și estetică restabilite.</p>',
     difficultyLevel: 8,
     category: 3,
     images: [['6a.JPG', '6b.JPG'], ['6aa.JPG', '6bb.JPG']]
   },
   {
-    title: 'Reabilitare orala estetica si funtionala',
+    title: 'Reabilitare orală estetică și funcțională',
+    resultCategory: 'estetica-gingivala',
     description:
-      'Pacienta s-a pezentat cu nemulțumiri de natură estetică, disconfort masticator și dureri dentare. Tratamentul realizat a fost multidisciplinar incluzând tratamente endodontice, parodontale și protetice. Dinții au fost tratați și restaurați cu fațete și coroane integral ceramice cu aspect luminos si sănătos. S-a obținut astfel un zambet nou estetic în armonie care satisface exigențele pacientei.',
+      '<p><strong>Provocarea:</strong> Pacienta acuza nemulțumiri estetice, disconfort la masticație și dureri dentare.</p>' +
+      '<p><strong>Tratamentul:</strong> Am realizat un tratament multidisciplinar, endodontic, parodontal și protetic, iar dinții au fost restaurați cu fațete și coroane integral ceramice.</p>' +
+      '<p><strong>Rezultatul:</strong> Pacienta a obținut un zâmbet nou, estetic și armonios, cu funcția masticatorie restabilită.</p>',
     difficultyLevel: 6,
     category: 4,
     images: [['7a.JPG', '7b.JPG'], ['7aa.JPG', '7bb.JPG']]
   },
   {
-    title: 'Tratament complex estetic si functional',
+    title: 'Tratament complex estetic și funcțional',
+    resultCategory: 'implantologie',
     description:
-      'Complexitatea cazului ne-a determinat sa apelam la tehnici de restaurare care au inclus\n' +
-      'tratamente parodontale, inlocuirea dintilor lipsa cu ajutorul implanturilor dentare,\n' +
-      'reastaurarea estetica a dintilor cu ajutorul fatetelor si coroanelor integral ceramice',
+      '<p><strong>Provocarea:</strong> Cazul necesita o abordare complexă, atât funcțională cât și estetică, inclusiv înlocuirea dinților lipsă.</p>' +
+      '<p><strong>Tratamentul:</strong> Am combinat tratamente parodontale, implanturi dentare pentru dinții lipsă și restaurări estetice cu fațete și coroane integral ceramice pentru restul dinților.</p>' +
+      '<p><strong>Rezultatul:</strong> Am restabilit atât funcția masticatorie, cât și estetica zâmbetului, printr-un plan de tratament integrat.</p>',
     difficultyLevel: 8,
     category: 5,
     images: [['8a.JPG', '8b.JPG'], ['8aa.JPG', '8bb.JPG']]
   },
   {
-    title: 'Reabilitare orala estetica si functionala',
+    title: 'Reabilitare orală estetică și funcțională',
+    resultCategory: 'fatete-coroane-ceramice',
     description:
-      'Dintii aveau un aspect uzat, imbatranit, cu multiple leziuni si restaurari inadecvate. S-a\n' +
-      'realizat tratarea si imbracarea lor cu fatete si coroane integral ceramice cu aspect natural care\n' +
-      'refac functia, sanatatea si imbunatatesc estetica zambetului',
+      '<p><strong>Provocarea:</strong> Dinții aveau un aspect uzat și îmbătrânit, afectați de multiple leziuni și restaurări vechi, necorespunzătoare.</p>' +
+      '<p><strong>Tratamentul:</strong> Dinții au fost tratați și acoperiți cu fațete și coroane integral ceramice, alese pentru aspectul lor natural.</p>' +
+      '<p><strong>Rezultatul:</strong> Tratamentul a refăcut atât funcția masticatorie, cât și sănătatea dinților, îmbunătățind vizibil estetica zâmbetului.</p>',
     difficultyLevel: 4,
     category: 6,
     images: [['9a.JPG', '9b.JPG'], ['9aa.JPG', '9bb.JPG']]
   },
   {
-    title: 'Reabilitare orala complexa bimaxilara',
+    title: 'Reabilitare orală complexă bimaxilară',
+    resultCategory: 'reabilitare-orala-completa',
     description:
-      'Pacientul s-a prezentat cu dantura intr-o stare avansata de degradare, cu multiple\n' +
-      'disfunctionalitati atat de natura masticatorie, fonetice cat si cu un aspect compromis. Pe langa\n' +
-      'statusul dentar degradat, pacientul prezenta si anomalii dentare de pozitie. Tratamentul a fost\n' +
-      '\n' +
-      'unul care cuprins etape de chirurgie, in care s-au indepartat resturile radiculare, eliminarea\n' +
-      'focarelor de infectie, aditie de os, inserare de implanturi. Dintii restanti au fost tratati\n' +
-      'endodontic, reconstituiti si acoperiti cu restaurari protetice. Pe implanturi s-au realizat\n' +
-      'restaurari cu agregare prin insurubare. La final, s-a refacut integritatea arcadelor dentare cu\n' +
-      'redarea functiei masticatorii pierdute si imbunatatirea aspectului dintilor si al zambetului.',
+      '<p><strong>Provocarea:</strong> Pacientul se prezenta cu dantura într-o stare avansată de degradare: disfuncții masticatorii și fonetice, aspect compromis și anomalii de poziție ale dinților.</p>' +
+      '<p><strong>Tratamentul:</strong> Tratamentul a inclus etape de chirurgie: îndepărtarea resturilor radiculare, eliminarea focarelor de infecție, adiție de os și inserare de implanturi. Dinții rămași au fost tratați endodontic, reconstituiți și acoperiți cu restaurări protetice, iar pe implanturi s-au realizat restaurări cu agregare prin înșurubare.</p>' +
+      '<p><strong>Rezultatul:</strong> Am refăcut integritatea completă a arcadelor dentare, redând funcția masticatorie pierdută și îmbunătățind estetica zâmbetului.</p>',
     difficultyLevel: 9,
     category: 8,
     images: [['10a.JPG', '10b.JPG'], ['10aa.JPG', '10bb.JPG']]
   },
   {
-    title: 'Restaurarea estetica a dintilor superiori',
+    title: 'Restaurarea estetică a dinților superiori',
+    resultCategory: 'estetica-gingivala',
     description:
-      'Dintii au fost tratati, iar pentru corectarea aspectului, s-a recurs la chirurgie gingivo-osoasa,\n' +
-      'pentru a reda sanatatea parodontiului si a corecta conturul tesutului gingival din jurul\n' +
-      'dintilor. Dupa ce s-a obtinut stabilitatea tesuturilor parodontale, dintii au fost acoperiti cu\n' +
-      'fatete si coroane integral ceramice cu aspect natural , ceea ce a dus la imbunatatirea\n' +
-      'zambetului pacientei.',
+      '<p><strong>Provocarea:</strong> Dinții superiori necesitau tratament, iar aspectul gingiei din jurul lor afecta estetica generală a zâmbetului.</p>' +
+      '<p><strong>Tratamentul:</strong> Dinții au fost tratați, iar pentru corectarea conturului gingival am recurs la chirurgie gingivo-osoasă, redând sănătatea parodonțiului. După stabilizarea țesuturilor, dinții au fost acoperiți cu fațete și coroane integral ceramice.</p>' +
+      '<p><strong>Rezultatul:</strong> Zâmbetul pacientei s-a îmbunătățit vizibil, cu un aspect natural și armonios.</p>',
     difficultyLevel: 7,
     category: 9,
     images: [['11a.JPG', '11b.JPG'], ['11aa.JPG', '11bb.JPG']]
   },
   {
-    title: 'Imbunatatirea aspectului zambetului prin tratamente estetice',
+    title: 'Îmbunătățirea aspectului zâmbetului prin tratamente estetice',
+    resultCategory: 'estetica-gingivala',
     description:
-      'Obiectivul tratamentului a fost diminuarea aspectului gingival al zambetului si imbunatatirea\n' +
-      'formei, volumului, culorii si pozitiei dintilor, cu eliminarea aspectului uzat si dizarmonic al\n' +
-      'dintilor. S-a realizat reconturarea chirurgicala a gingiei si osului din jurul dintilor si fatetarea\n' +
-      'dintilor cu restaurari estetice integral ceramice cu aspect natural.',
+      '<p><strong>Provocarea:</strong> Pacienta avea un zâmbet gingival pronunțat, iar dinții prezentau un aspect uzat și dizarmonic în privința formei, volumului și culorii.</p>' +
+      '<p><strong>Tratamentul:</strong> Am realizat reconturarea chirurgicală a gingiei și osului din jurul dinților, urmată de fațetarea dinților cu restaurări estetice integral ceramice.</p>' +
+      '<p><strong>Rezultatul:</strong> Zâmbetul gingival a fost diminuat, iar dinții au căpătat un aspect natural, armonios.</p>',
     difficultyLevel: 3,
     category: 4,
     images: [['12a.JPG', '12b.JPG'], ['12aa.JPG', '12bb.JPG']]
   },
   {
-    title: 'Refacerea unor tratamente esuate',
+    title: 'Refacerea unor tratamente eșuate',
+    resultCategory: 'implantologie',
     description:
-      'Pacienta s-a prezentat cu un aspect inestetic al dintilor, in urma unor tratamente esuate.\n' +
-      'Aspectul dintilor a fost compromis in urma inserarii gresite a implanturilor si al unor\n' +
-      'tratamente ortodontice si restaurative incorecte. Am obtinut imbunatatirea aspectului dintilor\n' +
-      'de la maxilarul superior prin interventii chirurgicale, taratamente parodontale si protetice.\n' +
-      'Dupa imbunatatirea aspectului gingival, dintii s-au restaurat cu fatete si coroane integral\n' +
-      'ceramice, prin care am reusit sa corectam aspectul zambetului.',
+      '<p><strong>Provocarea:</strong> Pacienta venea cu un aspect dentar compromis, urmare a unor tratamente eșuate anterior: implanturi inserate greșit și tratamente ortodontice și restaurative incorecte, realizate în altă parte.</p>' +
+      '<p><strong>Tratamentul:</strong> Am corectat situația la maxilarul superior prin intervenții chirurgicale, tratamente parodontale și protetice. După îmbunătățirea aspectului gingival, dinții au fost restaurați cu fațete și coroane integral ceramice.</p>' +
+      '<p><strong>Rezultatul:</strong> Am reușit să corectăm complet aspectul zâmbetului, remediind erorile tratamentelor anterioare.</p>',
     difficultyLevel: 9,
     category: 5,
     images: [['13a.JPG', '13b.JPG'], ['13aa.JPG', '13bb.JPG']]
   },
   {
-    title: 'Imbunatatirea zambetului cu fatete integral ceramice',
+    title: 'Îmbunătățirea zâmbetului cu fațete integral ceramice',
+    resultCategory: 'fatete-coroane-ceramice',
     description:
-      'Dintii cu un aspect inestetic datorat uzurilor dentare, al pigmentarilor sau al unor restaurari\n' +
-      'vechi au fost acoperiti cu fatete dentare integral ceramice. Acestea au contribuit la\n' +
-      'imbunatatirea aspectului dintilor prin modificari de forma, culoare si volum, oferind un\n' +
-      'aspect natural, mai simetric si redand prospetime zambetului.',
+      '<p><strong>Provocarea:</strong> Dinții aveau un aspect inestetic, cauzat de uzură, pigmentări sau restaurări vechi.</p>' +
+      '<p><strong>Tratamentul:</strong> Au fost acoperiți cu fațete dentare integral ceramice, care au permis modificarea formei, culorii și volumului dinților.</p>' +
+      '<p><strong>Rezultatul:</strong> Zâmbetul a devenit mai simetric, cu un aspect natural și mai proaspăt.</p>',
     difficultyLevel: 2,
     category: 6,
     images: [['14a.JPG', '14b.JPG'], ['14aa.JPG', '14bb.JPG']]
   },
   {
-    title: 'Reabilitare orala complexa in cazul unei paciente tinere cu uzuri si eroziuni dentare accentuate.',
+    title: 'Reabilitare orală complexă în cazul unei paciente tinere cu uzuri și eroziuni dentare accentuate.',
+    resultCategory: 'implantologie',
     description:
-      'Tratamentul a presupus realizarea de restaurari integral ceramice pe dinti si pe implanturi.\n' +
-      'Prin acestea s-a restabilit integritatea dinilor si s-a imbunatatit atat aspectul cat si functia\n' +
-      'masticatorie, in acelasi timp stopandu-se procesul de uzura al dintilor.',
+      '<p><strong>Provocarea:</strong> O pacientă tânără prezenta uzuri și eroziuni dentare accentuate, care afectau atât integritatea, cât și funcția dinților.</p>' +
+      '<p><strong>Tratamentul:</strong> Am realizat restaurări integral ceramice atât pe dinții naturali, cât și pe implanturi, acolo unde a fost necesar.</p>' +
+      '<p><strong>Rezultatul:</strong> Am restabilit integritatea dinților și funcția masticatorie, oprind în același timp procesul de uzură.</p>',
     difficultyLevel: 7,
     category: 7,
     images: [['15a.JPG', '15b.JPG'], ['15aa.JPG', '15bb.JPG']]
   },
   {
-    title: 'Reabilitare orala in cazului unui pacient parodontopat.',
+    title: 'Reabilitare orală în cazul unui pacient parodontopat.',
+    resultCategory: 'implantologie',
     description:
-      'In aceasta situatie s-a recurs la un tratament interdisciplinar, care a cuprins indepartarea\n' +
-      'dintilor irecuperabili, tratament parodontal la dintii restanti, inserare de implanturi si aditii de\n' +
-      'os pe locul dintilor extrasi si realizarea de restaurari protetice atat pe dinti cat si pe implanturi',
+      '<p><strong>Provocarea:</strong> Pacientul suferea de boală parodontală avansată, cu dinți irecuperabili care necesitau extracție.</p>' +
+      '<p><strong>Tratamentul:</strong> Am aplicat un tratament interdisciplinar: îndepărtarea dinților irecuperabili, tratament parodontal la dinții rămași, inserare de implanturi cu adiții de os pe locul dinților extrași, și restaurări protetice atât pe dinți, cât și pe implanturi.</p>' +
+      '<p><strong>Rezultatul:</strong> Am reabilitat complet arcadele dentare, redând funcția și stabilitatea pe termen lung.</p>',
     difficultyLevel: 9,
     category: 8,
     images: [['16a.JPG', '16b.JPG'], ['16aa.JPG', '16bb.JPG']]
   },
   {
-    title: 'Imbunatatirea functiei si esteticii dentare',
+    title: 'Îmbunătățirea funcției și esteticii dentare',
+    resultCategory: 'estetica-gingivala',
     description:
-      `Desi dintii erau sanatosi, pacienta era nemultumita de aspectul lor, in ceea ce priveste 
-      culoarea, forma si pozitia lor. Rapoartele dintre dinti si gingie erau dezechibrate si asimetrice.
-      Dificultatea cazului a reprezentat-o alinierea dintilor, obtinerea unui zambet cat mai simetric
-      si eliminarea zambetului gingival in conditiile in care pacienta refuza tratamentul ortodontic.
-      Astfel am recurs la tehnici chirurgicale prin care am corectat asimetria gingivala, am redus
-      zambetul gingival, am realizat alungiri coronare la dintii maxilari si am fatetat cu restaurari
-      integral ceramice toti dintii maxilari si mandibulari. Astfel am obtinut un zambet mai
-      simetric, echilibrat si mai estetic.`,
+      '<p><strong>Provocarea:</strong> Deși dinții erau sănătoși, pacienta era nemulțumită de culoarea, forma și poziția lor, iar raportul dintre dinți și gingie era asimetric. Dificultatea suplimentară: pacienta refuza tratamentul ortodontic, așa că soluția trebuia găsită altfel.</p>' +
+      '<p><strong>Tratamentul:</strong> Am corectat asimetria gingivală prin tehnici chirurgicale, am redus zâmbetul gingival prin alungiri coronare la dinții maxilari, apoi am fațetat cu restaurări integral ceramice toți dinții, maxilari și mandibulari.</p>' +
+      '<p><strong>Rezultatul:</strong> Am obținut un zâmbet mai simetric, echilibrat și estetic, fără a recurge la ortodonție.</p>',
     difficultyLevel: 7,
     category: 9,
     images: [['17a.JPG', '17b.JPG'], ['17aa.JPG', '17bb.JPG']]
   },
   {
-    title: 'Reabilitare orala bimaxilara ',
+    title: 'Reabilitare orală bimaxilară',
+    resultCategory: 'reabilitare-orala-completa',
     description:
-      'Pacienta prezenta un dezechilibru masticor fiind edentata in zonele molare atat la maxilar cat\n' +
-      'si la mandibula, iar dintii zonei anterioare au fost afectati de multiple leziuni carioase partial\n' +
-      'tratate. De asemenea, am constatat uzura accentuata a dintilor restanti cu modificari estetice\n' +
-      'si functionale. S-au inserat implanturi si s-au facut aditii de os pe zonele molarilor, iar dintii\n' +
-      'restanti si tratati au fost restaurati cu fatete integral ceramice si coroane ceramice cu\n' +
-      'schelet de zirconiu.',
+      '<p><strong>Provocarea:</strong> Pacienta prezenta un dezechilibru masticator, fiind edentată în zonele molare atât la maxilar, cât și la mandibulă, cu dinți frontali afectați de leziuni carioase parțial tratate și uzură accentuată.</p>' +
+      '<p><strong>Tratamentul:</strong> Am inserat implanturi și am realizat adiții de os pe zonele molarilor, iar dinții rămași, tratați în prealabil, au fost restaurați cu fațete integral ceramice și coroane ceramice cu schelet de zirconiu.</p>' +
+      '<p><strong>Rezultatul:</strong> Am restabilit echilibrul masticator pe ambele arcade, cu un rezultat estetic natural.</p>',
     difficultyLevel: 9,
     category: 3,
     images: [['18a.JPG', '18b.JPG'], ['18aa.JPG', '18bb.JPG']]
   },
   {
-    title: 'Restaurarea functionala si estetica a aparatului dento-maxilar',
+    title: 'Restaurarea funcțională și estetică a aparatului dento-maxilar',
+    resultCategory: 'reabilitare-orala-completa',
     description:
-      'Pacienta s-a prezentat pentru o reabilitare a danturii, acuzand multiple disfunctionalitati.\n' +
-      'Planul de tratament a inclus o etapa chirurgicala in care s-a realizat aditie osoasa, sinus-lift,\n' +
-      'inserare de implanturi, chirurgie parodontala, o etapa de terapie endodontica si una protetica,\n' +
-      'in care s-au realizat restaurari integral ceramice cu schelet de zirconiu pe dinti si restaurari\n' +
-      'fixate prin insurubare pe implanturi.',
+      '<p><strong>Provocarea:</strong> Pacienta acuza multiple disfuncționalități ale danturii și avea nevoie de o reabilitare completă.</p>' +
+      '<p><strong>Tratamentul:</strong> Planul a inclus o etapă chirurgicală (adiție osoasă, sinus-lift, inserare de implanturi, chirurgie parodontală), o etapă de terapie endodontică și una protetică, cu restaurări integral ceramice cu schelet de zirconiu pe dinți și restaurări fixate prin înșurubare pe implanturi.</p>' +
+      '<p><strong>Rezultatul:</strong> Am restabilit funcția și estetica aparatului dento-maxilar printr-un plan de tratament complet, etapizat.</p>',
     difficultyLevel: 9,
     category: 3,
     images: [['19a.JPG', '19b.JPG'], ['19aa.JPG', '19bb.JPG']]
   },
   {
-    title: 'Reabilitare estetica si functionala a danturii prin restaurari integral ceramice',
+    title: 'Reabilitare estetică și funcțională a danturii prin restaurări integral ceramice',
+    resultCategory: 'fatete-coroane-ceramice',
     description:
-      'Scopul tratamentului a fost primordial unul estetic, dar s-a avut in vedere si imbunatatirea\n' +
-      'functionalitatii dintilor. Acestia au primit restaurari minim invazive de tipul fatetelor dentare,\n' +
-      'prin care s-a obtinut un zambet natural, mai estetic si mai luminos, in conformitate cu\n' +
-      'pretentiile estetice ale pacientei',
+      '<p><strong>Provocarea:</strong> Pacienta dorea în primul rând îmbunătățirea esteticii dentare, cu atenție și la funcționalitatea dinților.</p>' +
+      '<p><strong>Tratamentul:</strong> Dinții au primit restaurări minim invazive de tipul fațetelor dentare, o abordare care păstrează cât mai mult din structura dentară naturală.</p>' +
+      '<p><strong>Rezultatul:</strong> S-a obținut un zâmbet natural, mai estetic și mai luminos, exact conform preferințelor pacientei.</p>',
     difficultyLevel: 5,
     category: 3,
     images: [['20a.JPG', '20b.JPG'], ['20aa.JPG', '20bb.JPG']]

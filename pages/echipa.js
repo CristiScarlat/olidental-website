@@ -7,7 +7,7 @@ const TeamMemberDetails = ({ data }) => {
         <div className="team-member-container row mb-3 m-auto bg-gray" style={{ maxWidth: 1500, color: 'black' }}>
             <h4 className={styles.titleMobile}>{data.title}</h4>
             <div className="col-md-3">
-              { data.thumbnail ? <img src={data.thumbnail} width={320} height={480} loading='lazy' style={{objectFit: 'contain'}}/>
+              { data.thumbnail ? <img src={data.thumbnail} alt={data.title} width={320} height={480} loading='lazy' style={{objectFit: 'contain'}}/>
                 :
                 <div style={{border: "1px solid #eeeded", borderRadius: 5, height: "100%", backgroundColor: "#eeeded", margin: "0 0.5rem"}}>
 
@@ -51,6 +51,7 @@ const Echipa = () => {
 
     return (
         <>
+            <h1 className="text-center pt-3">Echipa noastră</h1>
             {teamCards.length > 0 && teamCards?.map((teamMember, index) => (
                 <div key={teamMember.title} ref={ref => { teamMemberContainerRef.current[teamMember?.title] = ref }} style={index === 0 ? {marginTop: '1rem'} : {}}>
                     {/* <hr /> */}
@@ -60,5 +61,11 @@ const Echipa = () => {
         </>
     )
 }
+
+Echipa.seo = {
+    title: "Echipa noastră | Olidental Clinic Timișoara",
+    description: "Cunoaște echipa medicală Olidental Clinic Timișoara: medici stomatologi și asistente cu specializări în implantologie, estetică dentară și reabilitări orale complexe.",
+    canonical: "https://olidental.ro/echipa",
+};
 
 export default Echipa;

@@ -1,3 +1,14 @@
 [build]
-    command = "npm run build && npm run export"
+    command = "npm run build"
     publish = "out"
+
+[[headers]]
+  for = "/*"
+
+  [headers.values]
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+    Content-Security-Policy-Report-Only = "default-src 'self'; script-src 'self' 'unsafe-inline' www.jotform.com cdn.jotfor.ms www.googletagmanager.com www.google-analytics.com analytics.google.com www.google.com www.gstatic.com; style-src 'self' 'unsafe-inline' fonts.googleapis.com; font-src 'self' fonts.gstatic.com; img-src 'self' data: www.google-analytics.com www.googletagmanager.com cdn.jotfor.ms www.jotform.com www.gstatic.com; connect-src 'self' www.google-analytics.com analytics.google.com www.googletagmanager.com www.jotform.com cdn.jotfor.ms api.emailjs.com; frame-src 'self' www.google.com www.jotform.com; object-src 'none'; base-uri 'self'; form-action 'self'"

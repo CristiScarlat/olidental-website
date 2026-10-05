@@ -1,8 +1,5 @@
 @import './medical-guide.css';
-@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Ubuntu&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600&display=swap');
+/* Exo 2 font is loaded via <link rel="stylesheet"> in pages/_document.js to avoid chained @import FOIT */
 @import "~react-image-gallery/styles/css/image-gallery.css";
 
 html,
@@ -75,6 +72,7 @@ main {
   list-style: initial;
 }
 
+.services-container h1,
 .services-container h3,
 h4 {
   font-weight: 600;
@@ -165,8 +163,10 @@ h4 {
   min-width: 250px;
 }
 
-.custom-card-container h6{
+.custom-card-container h3{
   font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
 }
 
 .custom-card-container:hover {
@@ -304,5 +304,33 @@ h4 {
 @media only screen and (max-width: 600px){
   .visible-400 {
     display: block;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* Reserves room for the fixed "Sună acum" call bar (components/callBar.jsx)
+     so it never covers the last section of a page's content. */
+  body {
+    padding-bottom: calc(48px + env(safe-area-inset-bottom, 0px));
+  }
+}
+
+/* Mobile hamburger menu toggle: Bootstrap's default navbar-toggler
+   (icon ~30px + padding: .25rem .75rem) renders below the 44px minimum
+   tap-target height, so we enforce an explicit 48x48 box. This lives in
+   global CSS (not the CSS module) because CSS Modules' "pure" mode refuses
+   a selector that is entirely :global(), and components/header.jsx renders
+   a literal id="toggle" that this must match unhashed.
+   Scoped below Bootstrap's `lg` breakpoint (navbar-expand-lg): an ID selector
+   outranks `.navbar-expand-lg .navbar-toggler { display: none }`, so without
+   the media query the button would also show up on desktop. */
+@media (max-width: 991.98px) {
+  #toggle {
+    min-width: 48px;
+    min-height: 48px;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
