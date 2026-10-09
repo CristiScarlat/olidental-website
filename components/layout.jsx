@@ -11,6 +11,7 @@ import CallBar from './callBar';
 import JsonLd from './JsonLd';
 import Breadcrumbs from './breadcrumbs';
 import { getSchemaForRoute, getBreadcrumbItems } from '../utils/schema';
+import { getPageDate } from '../utils/pageDates';
 import { useCookieConsent, CONSENT_ACCEPTED } from '../utils/useCookieConsent';
 import { GA_MEASUREMENT_ID, applyAnalyticsConsent } from '../utils/analytics';
 
@@ -60,6 +61,9 @@ const Layout = ({ children, title, description, canonical, ogImage, noindex, ogT
     : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1";
   const pageOgType = ogType || "website";
   const pageMeta = { title: pageTitle, description: pageDescription, url: pageCanonical, noindex };
+  // Date extractors (htmldate, AI crawlers) skip JSON-LD dateModified and
+  // otherwise read the footer's "Copyright <year>" as the page date.
+  const pageUpdatedTime = !noindex && !article ? getPageDate(pathname) : null;
   const structuredData = [...getSchemaForRoute(pathname, pageMeta), ...(Array.isArray(schema) ? schema : [])];
   const breadcrumbItems = breadcrumbs || getBreadcrumbItems(pathname);
 
@@ -92,6 +96,7 @@ const Layout = ({ children, title, description, canonical, ogImage, noindex, ogT
           {article?.publishedTime && <meta key="article:published_time" property="article:published_time" content={article.publishedTime}/>}
           {article?.modifiedTime && <meta key="article:modified_time" property="article:modified_time" content={article.modifiedTime}/>}
           {article?.section && <meta key="article:section" property="article:section" content={article.section}/>}
+          {pageUpdatedTime && <meta key="og:updated_time" property="og:updated_time" content={pageUpdatedTime}/>}
           <meta key="twitter:card" name="twitter:card" content="summary_large_image"/>
           <meta key="twitter:title" name="twitter:title" content={pageTitle}/>
           <meta key="twitter:description" name="twitter:description" content={pageDescription}/>
