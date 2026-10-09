@@ -1,11 +1,11 @@
 @import './medical-guide.css';
-/* Exo 2 font is loaded via <link rel="stylesheet"> in pages/_document.js to avoid chained @import FOIT */
+/* Exo 2 is self-hosted with next/font in pages/_app.js, which sets --font-exo2. */
 @import "~react-image-gallery/styles/css/image-gallery.css";
 
 html,
 body {
   background-color: #eeeded!important;
-  font-family: 'Exo 2', sans-serif!important;
+  font-family: var(--font-exo2, 'Exo 2'), sans-serif!important;
   color: #444444!important;
   min-height: 100vh!important;
 }

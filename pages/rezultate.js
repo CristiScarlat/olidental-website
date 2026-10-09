@@ -60,7 +60,10 @@ const FeaturedCase = () => {
   const category = RESULT_CATEGORIES.find((c) => c.slug === featured.resultCategory);
   const categoryCount = getCasesInCategory(featured.resultCategory).length;
   const challenge = getCaseSectionText(featured, 'Provocarea');
+  // Only some cases have an outcome written by the clinic; the others show
+  // their treatment paragraph instead.
   const result = getCaseSectionText(featured, 'Rezultatul');
+  const treatment = result ? '' : getCaseSectionText(featured, 'Tratamentul');
 
   return (
     <section className={styles.featured} aria-labelledby="caz-reprezentativ">
@@ -82,6 +85,7 @@ const FeaturedCase = () => {
           {category && <span className={styles.pill}>{category.label}</span>}
           {challenge && <p><strong>Provocarea.</strong> {challenge}</p>}
           {result && <p><strong>Rezultatul.</strong> {result}</p>}
+          {treatment && <p><strong>Tratamentul.</strong> {treatment}</p>}
           {category && (
             <Link href={getCategoryPath(category)} className={styles.outlineButton}>
               Vezi toate cele {formatCases(categoryCount)} →
@@ -206,7 +210,7 @@ const Results = () => {
 
 Results.seo = {
   title: "Rezultatele pacienților noștri | Olidental Clinic Timișoara",
-  description: "Cazuri reale de tratamente stomatologice la Olidental Clinic Timișoara, grupate pe categorie: fațete și coroane ceramice, estetică gingivală, implantologie, reabilitare orală completă.",
+  description: "Cazuri reale tratate la Olidental Clinic Timișoara, pe categorii: fațete și coroane ceramice, estetică gingivală, implantologie, reabilitare orală completă.",
   canonical: "https://olidental.ro/rezultate",
 };
 

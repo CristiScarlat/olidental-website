@@ -84,7 +84,7 @@ export const blogPosts = [
     slug: 'de-ce-sa-alegi-olidental-clinic',
     title: 'De ce să alegi Olidental Clinic? Servicii stomatologice complete în Timișoara',
     shortTitle: 'De ce să alegi Olidental Clinic',
-    seoTitle: 'De ce să alegi Olidental Clinic Timișoara | Dr. Olimpiu Karancsi',
+    seoTitle: 'De ce să alegi Olidental Clinic | Dr. Olimpiu Karancsi',
     description:
       'Descoperă Olidental Clinic din Timișoara: servicii stomatologice complete, imagistică 3D pe loc, tratamente minim invazive fără durere și soluții de finanțare.',
     excerpt:

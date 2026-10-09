@@ -3,6 +3,7 @@ import { smilesGallery } from '../utils/uiConstants';
 import CustomCarousel from '../components/carousel';
 import styles from '../styles/galery.module.css';
 import ResultsDisclaimer from '../components/resultsDisclaimer';
+import { toWebp } from '../utils/images';
 
 
 const SlideGallery = () => {
@@ -18,7 +19,7 @@ const SlideGallery = () => {
         {smilesGallery.images.map((pic, index) => (
           <div key={pic}>
             <img
-              src={`/images/services/${smilesGallery.dirPath}/${pic}`}
+              src={toWebp(`/images/services/${smilesGallery.dirPath}/${pic}`)}
               alt={`Zâmbet transformat prin tratament stomatologic la Olidental Clinic Timișoara - fotografia ${index + 1}`}
               style={{ borderRadius: 10 }}
               loading={index < 2 ? undefined : 'lazy'}

@@ -79,8 +79,10 @@ h6 .small,
 h1{
 	font-weight: 900;
 	/*font-family: 'Raleway', sans-serif;*/
-	font-size:54px;
-	
+	/* 54px from ~768px up; smaller on phones so long words such as
+	   "confidențialitate" don't push the page wider than the screen. */
+	font-size: clamp(1.75rem, 6vw + 0.5rem, 54px);
+	overflow-wrap: break-word;
 }
 h2{
 	font-weight: 700;

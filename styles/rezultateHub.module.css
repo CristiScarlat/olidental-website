@@ -12,7 +12,7 @@
     --green-tint: #eaf3e3;
     --border: #e3e1da;
     --paper: #ffffff;
-    --heading-font: 'Fraunces', Georgia, serif;
+    --heading-font: var(--font-fraunces, Georgia), Georgia, serif;
     --content-width: 76rem;
     --gutter: 1rem;
     padding-bottom: 3rem;

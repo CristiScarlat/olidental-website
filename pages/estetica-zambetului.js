@@ -41,6 +41,21 @@ const EsteticaZambetului = () => {
                     <div className="services-container-description" dangerouslySetInnerHTML={{ __html: services[serviceId]?.description || '' }}></div>
                     <TreatmentAttribution />
                     <MedicalDisclaimer />
+                    <div className="mt-3">
+                      <IconLink label="Vezi rezultate reale de fațete și coroane ceramice" href="/rezultate/fatete-coroane-ceramice">
+                        <TfiHandPointLeft size='1.5rem' color='#6cab44' style={{ cursor: 'pointer', transform: 'scaleX(-1)' }}/>
+                      </IconLink>
+                    </div>
+                    <div className="mt-3">
+                      <IconLink label="Vezi rezultate reale de estetică gingivală" href="/rezultate/estetica-gingivala">
+                        <TfiHandPointLeft size='1.5rem' color='#6cab44' style={{ cursor: 'pointer', transform: 'scaleX(-1)' }}/>
+                      </IconLink>
+                    </div>
+                    <div className="mt-3">
+                      <IconLink label="Vezi galeria de zâmbete" href="/zambete">
+                        <TfiHandPointLeft size='1.5rem' color='#6cab44' style={{ cursor: 'pointer', transform: 'scaleX(-1)' }}/>
+                      </IconLink>
+                    </div>
                 </div>
             </div>
             {/*<div className="d-flex custom-scroll m-auto" style={{ overflowX: 'auto', maxWidth: '60rem' }}>*/}
@@ -53,7 +68,7 @@ const EsteticaZambetului = () => {
 
 EsteticaZambetului.seo = {
     title: "Estetica zâmbetului | Olidental Clinic Timișoara",
-    description: "Estetica zâmbetului la Olidental Clinic Timișoara: fațete și coroane dentare integral ceramice, restaurări protetice estetice pentru un zâmbet natural și armonios.",
+    description: "Estetica zâmbetului la Olidental Clinic Timișoara: fațete și coroane dentare integral ceramice și restaurări protetice estetice, pentru un zâmbet natural.",
     canonical: "https://olidental.ro/estetica-zambetului",
 };
 

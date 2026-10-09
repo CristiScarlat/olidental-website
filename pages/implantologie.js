@@ -58,7 +58,7 @@ const Implantologie = () => {
 
 Implantologie.seo = {
     title: "Implantologie orală | Olidental Clinic Timișoara",
-    description: "Implantologie orală la Olidental Clinic Timișoara: inserare de implanturi dentare, adiții de os și restaurări protetice pe implanturi pentru înlocuirea dinților lipsă.",
+    description: "Implantologie orală la Olidental Clinic Timișoara: implanturi dentare, adiții de os și restaurări protetice pe implanturi pentru înlocuirea dinților lipsă.",
     canonical: "https://olidental.ro/implantologie",
 };
 

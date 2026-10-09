@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import styles from '../../styles/blog.module.css';
 import { getFounder } from '../../utils/schema';
+import { toWebp } from '../../utils/images';
 
 // Motto quoted in the founder's bio on /echipa (utils/uiConstants.js).
 const FOUNDER_MOTTO = '„Nu există probleme, ci doar soluții!”';
@@ -17,9 +18,9 @@ const FounderBox = () => {
   const specializations = (founder.specializations || []).map((item) => item.trim());
 
   return (
-    <aside className={styles.founder} aria-labelledby="despre-fondator">
+    <section className={styles.founder} aria-labelledby="despre-fondator">
       <img
-        src={founder.thumbnail}
+        src={toWebp(founder.thumbnail)}
         alt={`${founder.title}, fondatorul Olidental Clinic`}
         width={FOUNDER_PHOTO.width}
         height={FOUNDER_PHOTO.height}
@@ -39,7 +40,7 @@ const FounderBox = () => {
           Cunoaște echipa Olidental Clinic
         </Link>
       </div>
-    </aside>
+    </section>
   );
 };
 

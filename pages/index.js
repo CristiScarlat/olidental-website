@@ -10,6 +10,7 @@ import styles from '../styles/home.module.css';
 import { MdMedicalServices, MdSchool, MdGroups, MdHealthAndSafety } from 'react-icons/md';
 
 import dynamic from 'next/dynamic'
+import { toWebp } from '../utils/images';
 
 // Descriptive, non-identical alt text for the homepage hero carousel slides
 // (clinic/treatment photos). Cycled by index so every slide gets distinct,
@@ -138,10 +139,12 @@ const Home = () => {
               {smilesGallery.images.filter((photo, index) => index <= 2).map((pic, index) => (
                   <img
                     key={`/images/services/${smilesGallery.dirPath}/${pic}`}
-                    src={`/images/services/${smilesGallery.dirPath}/${pic}`}
+                    src={toWebp(`/images/services/${smilesGallery.dirPath}/${pic}`)}
                     alt={`Rezultat tratament stomatologic Olidental Clinic ${index + 1}`}
                     width={150}
                     height={100}
+                    loading="lazy"
+                    decoding="async"
                     style={{ borderRadius: 10, width: 150 }}
                   />
               ))}
@@ -160,8 +163,8 @@ const Home = () => {
 };
 
 Home.seo = {
-  title: "Olidental Clinic Timișoara - Servicii stomatologice premium în Timișoara",
-  description: "Olidental Clinic Timișoara oferă servicii stomatologice premium, doctorii clinicii având specialități și competențe pentru o gamă cuprinzătoare de tratamente dentare.",
+  title: "Olidental Clinic Timișoara | Clinică stomatologică premium",
+  description: "Olidental Clinic Timișoara oferă servicii stomatologice premium: implantologie, fațete și coroane ceramice, reabilitări orale complexe, cu medici specializați.",
   canonical: "https://olidental.ro",
 };
 

@@ -10,6 +10,7 @@ import ScrollIntoViewIndicator from '../components/scrollIntoViewIndicator';
 import IconLink from '../components/iconLink';
 import TreatmentAttribution from '../components/treatmentAttribution';
 import MedicalDisclaimer from '../components/medicalDisclaimer';
+import { toWebp } from '../utils/images';
 
 const ImplantologieRestaurariProtetice = () => {
   const [indexCaz, setIndexCaz] = useState(0);
@@ -93,7 +94,7 @@ const ImplantologieRestaurariProtetice = () => {
                   style={{backgroundColor: index === imgNo ? '#6cab44' : '#80808091'}}
                   onClick={() => setImgNo(index)}>
                   {batch.map(image => <img key={image}
-                                           src={`/images/${cazuri[indexCaz]?.dirPath}/thumbnail_${image}`}
+                                           src={toWebp(`/images/${cazuri[indexCaz]?.dirPath}/thumbnail_${image}`)}
                                            alt={`${services[serviceId]?.procedures[procedureIndex]?.title || 'Procedură dentară'} - previzualizare caz înainte-după`}
                   />)}
                 </div>
@@ -105,12 +106,12 @@ const ImplantologieRestaurariProtetice = () => {
           {cazuri?.length && <>
             {cazuri[indexCaz].images[imgNo].length === 3 &&
               <ThreeLayerImageComparator height={500}
-                                         images={cazuri[indexCaz].images[0].map(image => `/images/${cazuri[indexCaz]?.dirPath}/thumbnail_${image}`)}
+                                         images={cazuri[indexCaz].images[0].map(image => toWebp(`/images/${cazuri[indexCaz]?.dirPath}/thumbnail_${image}`))}
                                          showDeviderLabel={handleShowDeviderLabel()}
                                          altText={services[serviceId]?.procedures[procedureIndex]?.title || 'Procedură dentară'}/>}
             {cazuri[indexCaz].images[imgNo].length === 2 &&
               <ImageComparator
-                images={cazuri[indexCaz].images[imgNo].map(image => `/images/${cazuri[indexCaz]?.dirPath}/thumbnail_${image}`)}
+                images={cazuri[indexCaz].images[imgNo].map(image => toWebp(`/images/${cazuri[indexCaz]?.dirPath}/thumbnail_${image}`))}
                 //showCursor={false}
                 maxWidth={850}
                 altText={services[serviceId]?.procedures[procedureIndex]?.title || 'Procedură dentară'}
@@ -131,6 +132,11 @@ const ImplantologieRestaurariProtetice = () => {
           ></div>
           <TreatmentAttribution />
           <MedicalDisclaimer />
+          <div className='mt-3'>
+            <IconLink label='Vezi rezultate reale de implantologie' href='/rezultate/implantologie'>
+              <TfiHandPointLeft size='1.5rem' color='#6cab44' style={{ cursor: 'pointer', transform: 'scaleX(-1)' }}/>
+            </IconLink>
+          </div>
         </div>
       </div>
     </div>
@@ -138,7 +144,7 @@ const ImplantologieRestaurariProtetice = () => {
 };
 
 ImplantologieRestaurariProtetice.seo = {
-  title: "Restaurări protetice pe implanturi | Olidental Clinic Timișoara",
+  title: "Restaurări protetice pe implanturi | Olidental Timișoara",
   description: "Restaurări protetice pe implanturi la Olidental Clinic Timișoara: coroane unidentare, punți sau restaurări de arcadă fixe ori mobilizabile.",
   canonical: "https://olidental.ro/restaurari-protetice-dentare",
 };

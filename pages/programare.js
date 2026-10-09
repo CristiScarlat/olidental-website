@@ -104,8 +104,8 @@ const Programare = () => {
           <Form.Control type='tel' placeholder='Telefon' name='user_phone' autoComplete="tel" required/>
         </Form.Group>
         <Form.Group className='mb-3' controlId='formEmail'>
-          <Form.Label>Email address</Form.Label>
-          <Form.Control type='email' placeholder='Adresa email' name='user_email' autoComplete="email" required/>
+          <Form.Label>Adresă de email</Form.Label>
+          <Form.Control type='email' placeholder='Adresă de email' name='user_email' autoComplete="email" required/>
           <Form.Text className='text-muted'>
             Confirmarea programării va fi trimisă pe această adresă de email.
           </Form.Text>

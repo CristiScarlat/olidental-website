@@ -58,7 +58,7 @@ const ReabilitariOraleComplexe = () => {
 
 ReabilitariOraleComplexe.seo = {
     title: "Reabilitări orale complexe | Olidental Clinic Timișoara",
-    description: "Reabilitări orale complexe la Olidental Clinic Timișoara: restaurări extinse pe dinți naturali și implanturi, tratamente multidisciplinare pentru cazuri stomatologice dificile.",
+    description: "Reabilitări orale complexe la Olidental Clinic Timișoara: restaurări pe dinți naturali și implanturi, tratamente multidisciplinare pentru cazuri dificile.",
     canonical: "https://olidental.ro/reabilitari-orale-complexe",
 };
 

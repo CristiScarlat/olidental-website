@@ -1095,7 +1095,7 @@ export const beforeAfter = [
     description:
       '<p><strong>Provocarea:</strong> Pacienta s-a prezentat nemulțumită de aspectul inestetic al dinților maxilari, cauzat de restaurări mai vechi, degradate în timp.</p>' +
       '<p><strong>Tratamentul:</strong> Dinții afectați au fost tratați, apoi acoperiți cu fațete integral ceramice, alese pentru aspectul natural pe care îl oferă.</p>' +
-      '<p><strong>Rezultatul:</strong> Am obținut un zâmbet cu aspect natural, care respectă exact preferințele estetice ale pacientei.</p>',
+      '<p><strong>Rezultatul:</strong> Un aspect natural, cu respectarea pretențiilor estetice ale pacientei.</p>',
     difficultyLevel: 3,
     category: 0,
     images: [['1a.JPG', '1b.JPG'], ['1aa.JPG', '1bb.JPG']]
@@ -1105,8 +1105,7 @@ export const beforeAfter = [
     resultCategory: 'reabilitare-orala-completa',
     description:
       '<p><strong>Provocarea:</strong> Pacientul necesita o reabilitare completă a tuturor dinților, cu restaurări vechi degradate și nevoie de tratament parodontal.</p>' +
-      '<p><strong>Tratamentul:</strong> Am îndepărtat restaurările vechi, am inserat implanturi pe zonele laterale ale mandibulei, am realizat tratamentul parodontal necesar, apoi am acoperit toți dinții cu fațete și coroane integral ceramice.</p>' +
-      '<p><strong>Rezultatul:</strong> Am obținut o reabilitare completă, cu aspect natural și estetic pe toată arcada dentară.</p>',
+      '<p><strong>Tratamentul:</strong> Am îndepărtat restaurările vechi, am inserat implanturi pe zonele laterale ale mandibulei, am realizat tratamentul parodontal necesar, apoi am acoperit toți dinții cu fațete și coroane integral ceramice, cu aspect natural și estetic.</p>',
     difficultyLevel: 10,
     category: 0,
     images: [['2a.JPG', '2b.JPG'], ['2aa.JPG', '2bb.JPG']]
@@ -1116,8 +1115,7 @@ export const beforeAfter = [
     resultCategory: 'reabilitare-orala-completa',
     description:
       '<p><strong>Provocarea:</strong> O pacientă tânără, cu deficiențe dentare majore, avea o situație compromisă de tratamente anterioare începute greșit și realizate incorect.</p>' +
-      '<p><strong>Tratamentul:</strong> A fost un caz dificil, desfășurat pe durata a doi ani: am îndepărtat implanturile și restaurările incorect realizate, am aplicat tratament ortodontic, am realizat reconstrucții osoase, am inserat implanturi noi și am realizat restaurări dentare estetice și funcționale.</p>' +
-      '<p><strong>Rezultatul:</strong> Am refăcut complet situația estetic și funcțional, oferind pacientei stabilitate dentară pe termen lung.</p>',
+      '<p><strong>Tratamentul:</strong> A fost un caz dificil, desfășurat pe durata a doi ani: am îndepărtat implanturile și restaurările incorect realizate, am aplicat tratament ortodontic, am realizat reconstrucții osoase, am inserat implanturi noi și am realizat restaurări dentare estetice și funcționale, care să ofere stabilitate pe termen lung.</p>',
     difficultyLevel: 10,
     category: 1,
     images: [['3a.JPG', '3b.JPG'], ['3aa.JPG', '3bb.JPG']]
@@ -1127,8 +1125,7 @@ export const beforeAfter = [
     resultCategory: 'implantologie',
     description:
       '<p><strong>Provocarea:</strong> Pacienta era nemulțumită estetic de dinții superiori și dorea corectarea formei, poziției și aliniamentului lor.</p>' +
-      '<p><strong>Tratamentul:</strong> Am îndepărtat restaurările vechi, am tratat dinții, am inserat implanturi acolo unde a fost necesar și am realizat restaurări estetice integral ceramice pe toți dinții superiori.</p>' +
-      '<p><strong>Rezultatul:</strong> Forma, poziția și aliniamentul dinților superiori au fost corectate complet, cu un rezultat estetic natural.</p>',
+      '<p><strong>Tratamentul:</strong> Am îndepărtat restaurările vechi, am tratat dinții, am inserat implanturi acolo unde a fost necesar și am realizat restaurări estetice integral ceramice pe toți dinții superiori, pentru a corecta forma, poziția și aliniamentul dinților.</p>',
     difficultyLevel: 5,
     category: 1,
     images: [['4a.JPG', '4b.JPG'], ['4aa.JPG', '4bb.JPG']]
@@ -1138,8 +1135,7 @@ export const beforeAfter = [
     resultCategory: 'reabilitare-orala-completa',
     description:
       '<p><strong>Provocarea:</strong> Un alt caz de reabilitare completă a arcadei dentare, cu restaurări anterioare uzate și afectare parodontală care necesita tratament.</p>' +
-      '<p><strong>Tratamentul:</strong> Aceeași abordare integrată: îndepărtarea restaurărilor vechi, inserarea de implanturi în zona laterală a mandibulei, tratament parodontal și acoperirea tuturor dinților cu fațete și coroane integral ceramice.</p>' +
-      '<p><strong>Rezultatul:</strong> Rezultat similar: reabilitare completă, cu aspect natural și funcțional pe întreaga arcadă.</p>',
+      '<p><strong>Tratamentul:</strong> Aceeași abordare integrată: îndepărtarea restaurărilor vechi, inserarea de implanturi în zona laterală a mandibulei, tratament parodontal și acoperirea tuturor dinților cu fațete și coroane integral ceramice, cu aspect natural și estetic.</p>',
     difficultyLevel: 9,
     category: 2,
     images: [['5a.JPG', '5b.JPG'], ['5aa.JPG', '5bb.JPG']]
@@ -1150,7 +1146,7 @@ export const beforeAfter = [
     description:
       '<p><strong>Provocarea:</strong> Pacienta prezenta tulburări estetice severe: poziția dinților era necorespunzătoare, planul ocluzal deviat, iar forma arcadelor dentare afecta armonia zâmbetului.</p>' +
       '<p><strong>Tratamentul:</strong> Am îndepărtat restaurările vechi și am tratat dinții, apoi am corectat conturul țesuturilor de susținere prin chirurgie gingivală și osoasă. După etapa de provizorat, dinții au fost acoperiți cu restaurări integral ceramice.</p>' +
-      '<p><strong>Rezultatul:</strong> Am obținut un aspect mult îmbunătățit al zâmbetului, cu funcție și estetică restabilite.</p>',
+      '<p><strong>Rezultatul:</strong> Am obținut un aspect mult îmbunătățit al zâmbetului.</p>',
     difficultyLevel: 8,
     category: 3,
     images: [['6a.JPG', '6b.JPG'], ['6aa.JPG', '6bb.JPG']]
@@ -1161,7 +1157,7 @@ export const beforeAfter = [
     description:
       '<p><strong>Provocarea:</strong> Pacienta acuza nemulțumiri estetice, disconfort la masticație și dureri dentare.</p>' +
       '<p><strong>Tratamentul:</strong> Am realizat un tratament multidisciplinar, endodontic, parodontal și protetic, iar dinții au fost restaurați cu fațete și coroane integral ceramice.</p>' +
-      '<p><strong>Rezultatul:</strong> Pacienta a obținut un zâmbet nou, estetic și armonios, cu funcția masticatorie restabilită.</p>',
+      '<p><strong>Rezultatul:</strong> S-a obținut astfel un zâmbet nou, estetic, în armonie, care satisface exigențele pacientei.</p>',
     difficultyLevel: 6,
     category: 4,
     images: [['7a.JPG', '7b.JPG'], ['7aa.JPG', '7bb.JPG']]
@@ -1171,8 +1167,7 @@ export const beforeAfter = [
     resultCategory: 'implantologie',
     description:
       '<p><strong>Provocarea:</strong> Cazul necesita o abordare complexă, atât funcțională cât și estetică, inclusiv înlocuirea dinților lipsă.</p>' +
-      '<p><strong>Tratamentul:</strong> Am combinat tratamente parodontale, implanturi dentare pentru dinții lipsă și restaurări estetice cu fațete și coroane integral ceramice pentru restul dinților.</p>' +
-      '<p><strong>Rezultatul:</strong> Am restabilit atât funcția masticatorie, cât și estetica zâmbetului, printr-un plan de tratament integrat.</p>',
+      '<p><strong>Tratamentul:</strong> Am combinat tratamente parodontale, implanturi dentare pentru dinții lipsă și restaurări estetice cu fațete și coroane integral ceramice pentru restul dinților.</p>',
     difficultyLevel: 8,
     category: 5,
     images: [['8a.JPG', '8b.JPG'], ['8aa.JPG', '8bb.JPG']]
@@ -1183,7 +1178,7 @@ export const beforeAfter = [
     description:
       '<p><strong>Provocarea:</strong> Dinții aveau un aspect uzat și îmbătrânit, afectați de multiple leziuni și restaurări vechi, necorespunzătoare.</p>' +
       '<p><strong>Tratamentul:</strong> Dinții au fost tratați și acoperiți cu fațete și coroane integral ceramice, alese pentru aspectul lor natural.</p>' +
-      '<p><strong>Rezultatul:</strong> Tratamentul a refăcut atât funcția masticatorie, cât și sănătatea dinților, îmbunătățind vizibil estetica zâmbetului.</p>',
+      '<p><strong>Rezultatul:</strong> Restaurări cu aspect natural, care refac funcția, sănătatea și îmbunătățesc estetica zâmbetului.</p>',
     difficultyLevel: 4,
     category: 6,
     images: [['9a.JPG', '9b.JPG'], ['9aa.JPG', '9bb.JPG']]
@@ -1194,7 +1189,7 @@ export const beforeAfter = [
     description:
       '<p><strong>Provocarea:</strong> Pacientul se prezenta cu dantura într-o stare avansată de degradare: disfuncții masticatorii și fonetice, aspect compromis și anomalii de poziție ale dinților.</p>' +
       '<p><strong>Tratamentul:</strong> Tratamentul a inclus etape de chirurgie: îndepărtarea resturilor radiculare, eliminarea focarelor de infecție, adiție de os și inserare de implanturi. Dinții rămași au fost tratați endodontic, reconstituiți și acoperiți cu restaurări protetice, iar pe implanturi s-au realizat restaurări cu agregare prin înșurubare.</p>' +
-      '<p><strong>Rezultatul:</strong> Am refăcut integritatea completă a arcadelor dentare, redând funcția masticatorie pierdută și îmbunătățind estetica zâmbetului.</p>',
+      '<p><strong>Rezultatul:</strong> La final, s-a refăcut integritatea arcadelor dentare, cu redarea funcției masticatorii pierdute și îmbunătățirea aspectului dinților și al zâmbetului.</p>',
     difficultyLevel: 9,
     category: 8,
     images: [['10a.JPG', '10b.JPG'], ['10aa.JPG', '10bb.JPG']]
@@ -1205,7 +1200,7 @@ export const beforeAfter = [
     description:
       '<p><strong>Provocarea:</strong> Dinții superiori necesitau tratament, iar aspectul gingiei din jurul lor afecta estetica generală a zâmbetului.</p>' +
       '<p><strong>Tratamentul:</strong> Dinții au fost tratați, iar pentru corectarea conturului gingival am recurs la chirurgie gingivo-osoasă, redând sănătatea parodonțiului. După stabilizarea țesuturilor, dinții au fost acoperiți cu fațete și coroane integral ceramice.</p>' +
-      '<p><strong>Rezultatul:</strong> Zâmbetul pacientei s-a îmbunătățit vizibil, cu un aspect natural și armonios.</p>',
+      '<p><strong>Rezultatul:</strong> Restaurările cu aspect natural au dus la îmbunătățirea zâmbetului pacientei.</p>',
     difficultyLevel: 7,
     category: 9,
     images: [['11a.JPG', '11b.JPG'], ['11aa.JPG', '11bb.JPG']]
@@ -1215,8 +1210,7 @@ export const beforeAfter = [
     resultCategory: 'estetica-gingivala',
     description:
       '<p><strong>Provocarea:</strong> Pacienta avea un zâmbet gingival pronunțat, iar dinții prezentau un aspect uzat și dizarmonic în privința formei, volumului și culorii.</p>' +
-      '<p><strong>Tratamentul:</strong> Am realizat reconturarea chirurgicală a gingiei și osului din jurul dinților, urmată de fațetarea dinților cu restaurări estetice integral ceramice.</p>' +
-      '<p><strong>Rezultatul:</strong> Zâmbetul gingival a fost diminuat, iar dinții au căpătat un aspect natural, armonios.</p>',
+      '<p><strong>Tratamentul:</strong> Am realizat reconturarea chirurgicală a gingiei și osului din jurul dinților, urmată de fațetarea dinților cu restaurări estetice integral ceramice, cu aspect natural.</p>',
     difficultyLevel: 3,
     category: 4,
     images: [['12a.JPG', '12b.JPG'], ['12aa.JPG', '12bb.JPG']]
@@ -1227,7 +1221,7 @@ export const beforeAfter = [
     description:
       '<p><strong>Provocarea:</strong> Pacienta venea cu un aspect dentar compromis, urmare a unor tratamente eșuate anterior: implanturi inserate greșit și tratamente ortodontice și restaurative incorecte, realizate în altă parte.</p>' +
       '<p><strong>Tratamentul:</strong> Am corectat situația la maxilarul superior prin intervenții chirurgicale, tratamente parodontale și protetice. După îmbunătățirea aspectului gingival, dinții au fost restaurați cu fațete și coroane integral ceramice.</p>' +
-      '<p><strong>Rezultatul:</strong> Am reușit să corectăm complet aspectul zâmbetului, remediind erorile tratamentelor anterioare.</p>',
+      '<p><strong>Rezultatul:</strong> Am reușit să corectăm aspectul zâmbetului.</p>',
     difficultyLevel: 9,
     category: 5,
     images: [['13a.JPG', '13b.JPG'], ['13aa.JPG', '13bb.JPG']]
@@ -1238,7 +1232,7 @@ export const beforeAfter = [
     description:
       '<p><strong>Provocarea:</strong> Dinții aveau un aspect inestetic, cauzat de uzură, pigmentări sau restaurări vechi.</p>' +
       '<p><strong>Tratamentul:</strong> Au fost acoperiți cu fațete dentare integral ceramice, care au permis modificarea formei, culorii și volumului dinților.</p>' +
-      '<p><strong>Rezultatul:</strong> Zâmbetul a devenit mai simetric, cu un aspect natural și mai proaspăt.</p>',
+      '<p><strong>Rezultatul:</strong> Fațetele au contribuit la îmbunătățirea aspectului dinților, oferind un aspect natural, mai simetric și redând prospețime zâmbetului.</p>',
     difficultyLevel: 2,
     category: 6,
     images: [['14a.JPG', '14b.JPG'], ['14aa.JPG', '14bb.JPG']]
@@ -1249,7 +1243,7 @@ export const beforeAfter = [
     description:
       '<p><strong>Provocarea:</strong> O pacientă tânără prezenta uzuri și eroziuni dentare accentuate, care afectau atât integritatea, cât și funcția dinților.</p>' +
       '<p><strong>Tratamentul:</strong> Am realizat restaurări integral ceramice atât pe dinții naturali, cât și pe implanturi, acolo unde a fost necesar.</p>' +
-      '<p><strong>Rezultatul:</strong> Am restabilit integritatea dinților și funcția masticatorie, oprind în același timp procesul de uzură.</p>',
+      '<p><strong>Rezultatul:</strong> S-a restabilit integritatea dinților și s-a îmbunătățit atât aspectul, cât și funcția masticatorie, stopându-se în același timp procesul de uzură al dinților.</p>',
     difficultyLevel: 7,
     category: 7,
     images: [['15a.JPG', '15b.JPG'], ['15aa.JPG', '15bb.JPG']]
@@ -1259,8 +1253,7 @@ export const beforeAfter = [
     resultCategory: 'implantologie',
     description:
       '<p><strong>Provocarea:</strong> Pacientul suferea de boală parodontală avansată, cu dinți irecuperabili care necesitau extracție.</p>' +
-      '<p><strong>Tratamentul:</strong> Am aplicat un tratament interdisciplinar: îndepărtarea dinților irecuperabili, tratament parodontal la dinții rămași, inserare de implanturi cu adiții de os pe locul dinților extrași, și restaurări protetice atât pe dinți, cât și pe implanturi.</p>' +
-      '<p><strong>Rezultatul:</strong> Am reabilitat complet arcadele dentare, redând funcția și stabilitatea pe termen lung.</p>',
+      '<p><strong>Tratamentul:</strong> Am aplicat un tratament interdisciplinar: îndepărtarea dinților irecuperabili, tratament parodontal la dinții rămași, inserare de implanturi cu adiții de os pe locul dinților extrași, și restaurări protetice atât pe dinți, cât și pe implanturi.</p>',
     difficultyLevel: 9,
     category: 8,
     images: [['16a.JPG', '16b.JPG'], ['16aa.JPG', '16bb.JPG']]
@@ -1271,7 +1264,7 @@ export const beforeAfter = [
     description:
       '<p><strong>Provocarea:</strong> Deși dinții erau sănătoși, pacienta era nemulțumită de culoarea, forma și poziția lor, iar raportul dintre dinți și gingie era asimetric. Dificultatea suplimentară: pacienta refuza tratamentul ortodontic, așa că soluția trebuia găsită altfel.</p>' +
       '<p><strong>Tratamentul:</strong> Am corectat asimetria gingivală prin tehnici chirurgicale, am redus zâmbetul gingival prin alungiri coronare la dinții maxilari, apoi am fațetat cu restaurări integral ceramice toți dinții, maxilari și mandibulari.</p>' +
-      '<p><strong>Rezultatul:</strong> Am obținut un zâmbet mai simetric, echilibrat și estetic, fără a recurge la ortodonție.</p>',
+      '<p><strong>Rezultatul:</strong> Astfel am obținut un zâmbet mai simetric, echilibrat și mai estetic.</p>',
     difficultyLevel: 7,
     category: 9,
     images: [['17a.JPG', '17b.JPG'], ['17aa.JPG', '17bb.JPG']]
@@ -1281,8 +1274,7 @@ export const beforeAfter = [
     resultCategory: 'reabilitare-orala-completa',
     description:
       '<p><strong>Provocarea:</strong> Pacienta prezenta un dezechilibru masticator, fiind edentată în zonele molare atât la maxilar, cât și la mandibulă, cu dinți frontali afectați de leziuni carioase parțial tratate și uzură accentuată.</p>' +
-      '<p><strong>Tratamentul:</strong> Am inserat implanturi și am realizat adiții de os pe zonele molarilor, iar dinții rămași, tratați în prealabil, au fost restaurați cu fațete integral ceramice și coroane ceramice cu schelet de zirconiu.</p>' +
-      '<p><strong>Rezultatul:</strong> Am restabilit echilibrul masticator pe ambele arcade, cu un rezultat estetic natural.</p>',
+      '<p><strong>Tratamentul:</strong> Am inserat implanturi și am realizat adiții de os pe zonele molarilor, iar dinții rămași, tratați în prealabil, au fost restaurați cu fațete integral ceramice și coroane ceramice cu schelet de zirconiu.</p>',
     difficultyLevel: 9,
     category: 3,
     images: [['18a.JPG', '18b.JPG'], ['18aa.JPG', '18bb.JPG']]
@@ -1292,8 +1284,7 @@ export const beforeAfter = [
     resultCategory: 'reabilitare-orala-completa',
     description:
       '<p><strong>Provocarea:</strong> Pacienta acuza multiple disfuncționalități ale danturii și avea nevoie de o reabilitare completă.</p>' +
-      '<p><strong>Tratamentul:</strong> Planul a inclus o etapă chirurgicală (adiție osoasă, sinus-lift, inserare de implanturi, chirurgie parodontală), o etapă de terapie endodontică și una protetică, cu restaurări integral ceramice cu schelet de zirconiu pe dinți și restaurări fixate prin înșurubare pe implanturi.</p>' +
-      '<p><strong>Rezultatul:</strong> Am restabilit funcția și estetica aparatului dento-maxilar printr-un plan de tratament complet, etapizat.</p>',
+      '<p><strong>Tratamentul:</strong> Planul a inclus o etapă chirurgicală (adiție osoasă, sinus-lift, inserare de implanturi, chirurgie parodontală), o etapă de terapie endodontică și una protetică, cu restaurări integral ceramice cu schelet de zirconiu pe dinți și restaurări fixate prin înșurubare pe implanturi.</p>',
     difficultyLevel: 9,
     category: 3,
     images: [['19a.JPG', '19b.JPG'], ['19aa.JPG', '19bb.JPG']]
@@ -1304,7 +1295,7 @@ export const beforeAfter = [
     description:
       '<p><strong>Provocarea:</strong> Pacienta dorea în primul rând îmbunătățirea esteticii dentare, cu atenție și la funcționalitatea dinților.</p>' +
       '<p><strong>Tratamentul:</strong> Dinții au primit restaurări minim invazive de tipul fațetelor dentare, o abordare care păstrează cât mai mult din structura dentară naturală.</p>' +
-      '<p><strong>Rezultatul:</strong> S-a obținut un zâmbet natural, mai estetic și mai luminos, exact conform preferințelor pacientei.</p>',
+      '<p><strong>Rezultatul:</strong> S-a obținut un zâmbet natural, mai estetic și mai luminos, în conformitate cu pretențiile estetice ale pacientei.</p>',
     difficultyLevel: 5,
     category: 3,
     images: [['20a.JPG', '20b.JPG'], ['20aa.JPG', '20bb.JPG']]

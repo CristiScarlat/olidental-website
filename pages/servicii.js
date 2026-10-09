@@ -2,6 +2,7 @@ import CustomCarousel from '../components/carousel';
 import ServiceHubCards from '../components/serviceHubCards';
 import { carouselPicsServices, services } from '../utils/uiConstants';
 import { buildCarouselAltTextGetter } from '../utils/carouselAlt';
+import { toWebp } from '../utils/images';
 
 // Descriptive, non-identical alt text for the services carousel slides.
 const getServicesCarouselAltText = buildCarouselAltTextGetter([
@@ -37,12 +38,14 @@ const ServicesPage = () => {
         Servicii stomatologice Olidental Clinic Timișoara
       </h1>
       <div className='d-flex justify-content-center m-3'>
-        <div style={{maxWidth: "50rem"}}>
+        {/* Full width + fixed 16:9 box: as a shrink-to-fit flex item the carousel
+            started near 0px wide and pushed the cards below down once the JS ran. */}
+        <div style={{ width: '100%', maxWidth: '50rem', aspectRatio: '16 / 9' }}>
           <CustomCarousel showThumbs={false}>
             {carouselPicsServices.map((pic, index) => (
               <div key={pic}>
                 <img
-                  src={`/images/carouselServices/thumbnail_${pic}`}
+                  src={toWebp(`/images/carouselServices/thumbnail_${pic}`)}
                   alt={getServicesCarouselAltText(index)}
                   width={SERVICES_CAROUSEL_IMAGE_WIDTH}
                   height={SERVICES_CAROUSEL_IMAGE_HEIGHT}

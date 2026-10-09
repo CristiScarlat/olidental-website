@@ -7,20 +7,55 @@
 // live Google Business Profile and are intentionally hardcoded constants
 // (there is no other source of truth for them in the codebase).
 import { services, teamCards, beforeAfter } from './uiConstants';
+import { getPageDate } from './pageDates';
 
 export const SITE_URL = 'https://olidental.ro';
 export const DENTIST_ID = `${SITE_URL}/#dentist`;
+export const WEBSITE_ID = `${SITE_URL}/#website`;
+const LANGUAGE = 'ro-RO';
 const SERVICES_HUB_PATH = '/servicii';
 const TEAM_PAGE_PATH = '/echipa';
 const RESULTS_HUB_PATH = '/rezultate';
 const CONTACT_PAGE_PATH = '/contact';
-export const HOME_LABEL = 'Acasa';
+const BLOG_POST_PREFIX = '/blog/';
+export const HOME_LABEL = 'Acasă';
 const SERVICES_LABEL = 'Servicii';
 const RESULTS_LABEL = 'Rezultate';
 // Founder, looked up in `teamCards` by title. Founding year confirmed by the
 // client (matches the company registration J35/2982/2015 in the footer).
 const FOUNDER_TITLE = 'Dr. Olimpiu Ladislau Karancsi';
 const FOUNDING_YEAR = '2015';
+// Company identifiers, as printed in the footer (components/footer.jsx).
+const LEGAL_NAME = 'OLIDENTAL MED SRL';
+const TAX_ID = 'RO35302885';
+const SERVICE_DESCRIPTION_MAX_LENGTH = 300;
+
+/** Top-level pages with a plain "Acasă / <page>" trail (shown and in JSON-LD). */
+const SIMPLE_PAGE_LABELS = {
+  [SERVICES_HUB_PATH]: SERVICES_LABEL,
+  [RESULTS_HUB_PATH]: RESULTS_LABEL,
+  [TEAM_PAGE_PATH]: 'Echipa',
+  [CONTACT_PAGE_PATH]: 'Contact',
+  '/zambete': 'Zâmbete',
+  '/programare': 'Programare',
+  '/politica-confidentialitate': 'Politica de confidențialitate',
+  '/politica-cookies': 'Politica de cookies',
+  '/termen-conditii': 'Termeni și condiții',
+};
+
+/** Facts stated in each person's bio on /echipa (utils/uiConstants.js),
+ * keyed by `teamCards` title, named the way the bio names them. */
+const DENTAL_FACULTY_TIMISOARA = {
+  '@type': 'EducationalOrganization',
+  name: 'Facultatea de Medicină Dentară din Timișoara',
+};
+const PERSON_EXTRAS = {
+  'Dr. Olimpiu Ladislau Karancsi': {
+    affiliation: { '@type': 'CollegeOrUniversity', name: 'UMF „Victor Babeș” Timișoara' },
+  },
+  'Dr. Ana Strava': { alumniOf: DENTAL_FACULTY_TIMISOARA },
+  'Dr. Patricia Străinu': { alumniOf: DENTAL_FACULTY_TIMISOARA },
+};
 
 /**
  * The 4 dedicated "results by treatment category" pages under /rezultate/.
@@ -58,6 +93,30 @@ function stripHtml(html) {
     .replace(/<[^>]*>/g, ' ')
     .replace(/\s+/g, ' ')
     .trim();
+}
+
+/**
+ * First sentences of a long description, cut at a sentence end so the
+ * JSON-LD summary stays readable (Service descriptions run 1,000+ chars).
+ */
+function summarize(text, maxLength) {
+  if (text.length <= maxLength) {
+    return text;
+  }
+  const sentences = text.match(/[^.!?]+[.!?]+/g) || [];
+  let summary = '';
+  for (const sentence of sentences) {
+    const next = `${summary} ${sentence.trim()}`.trim();
+    if (next.length > maxLength) {
+      break;
+    }
+    summary = next;
+  }
+  return summary || `${text.slice(0, maxLength - 1).trim()}…`;
+}
+
+function pageUrl(pathname) {
+  return pathname === '/' ? SITE_URL : `${SITE_URL}${pathname}`;
 }
 
 function buildBreadcrumbTrail(entries) {
@@ -145,6 +204,16 @@ function buildResultsRouteIndex() {
 
 const resultsRouteIndex = buildResultsRouteIndex();
 
+function getSimplePageBreadcrumb(pathname) {
+  const label = SIMPLE_PAGE_LABELS[pathname];
+  return label
+    ? buildBreadcrumbTrail([
+        { label: HOME_LABEL, href: '/' },
+        { label, href: pathname },
+      ])
+    : null;
+}
+
 /** Public Google Maps place link, decoded from the CID already embedded in
  * the /contact page's Maps iframe (components/location.jsx) — not a new
  * lookup, just the same place made linkable. Used both as `hasMap` and as
@@ -173,13 +242,33 @@ export function getFounder() {
     : null;
 }
 
-export function buildDentistSchema() {
+/** Short typed reference to a team member, enough to stand on its own on
+ * pages that don't carry the full Person nodes (only /echipa does). */
+function personReference(member) {
+  return {
+    '@type': 'Person',
+    '@id': personId(member),
+    name: member.title,
+    url: personId(member),
+  };
+}
+
+/**
+ * `employee` is listed only where the Person nodes it points to are emitted
+ * (/echipa); everywhere else it would be 9 references to nothing.
+ */
+export function buildDentistSchema({ includeEmployees = false } = {}) {
   const founder = getFounder();
+  const team = Array.isArray(teamCards) ? teamCards : [];
   return {
     '@context': 'https://schema.org',
     '@type': 'Dentist',
     '@id': DENTIST_ID,
     name: 'Olidental Clinic',
+    legalName: LEGAL_NAME,
+    taxID: TAX_ID,
+    description:
+      'Clinică stomatologică din Timișoara, fondată în 2015: implantologie, fațete și coroane ceramice, reabilitări orale complexe și tratamente multidisciplinare.',
     url: SITE_URL,
     image: `${SITE_URL}/images/og/olidental-clinic-1200x630.jpg`,
     logo: `${SITE_URL}/images/logo-olidental-clinic.jpg`,
@@ -200,9 +289,11 @@ export function buildDentistSchema() {
     },
     hasMap: GOOGLE_MAPS_URL,
     foundingDate: FOUNDING_YEAR,
-    ...(founder ? { founder: { '@id': personId(founder) } } : {}),
-    ...(Array.isArray(teamCards) && teamCards.length > 0
-      ? { employee: teamCards.map((member) => ({ '@id': personId(member) })) }
+    areaServed: { '@type': 'City', name: 'Timișoara' },
+    knowsLanguage: 'ro',
+    ...(founder ? { founder: personReference(founder) } : {}),
+    ...(includeEmployees && team.length > 0
+      ? { employee: team.map((member) => ({ '@id': personId(member) })) }
       : {}),
     sameAs: [
       'https://www.facebook.com/OlidentalClinic/',
@@ -229,7 +320,7 @@ function buildServiceSchema(routeEntry, pathname) {
     '@type': 'Service',
     '@id': `${url}#service`,
     name: routeEntry.title,
-    description: stripHtml(routeEntry.description),
+    description: summarize(stripHtml(routeEntry.description), SERVICE_DESCRIPTION_MAX_LENGTH),
     url,
     ...(routeEntry.logo ? { image: `${SITE_URL}${routeEntry.logo}` } : {}),
     serviceType: routeEntry.title,
@@ -238,9 +329,41 @@ function buildServiceSchema(routeEntry, pathname) {
       name: 'Timișoara',
     },
     provider: { '@id': DENTIST_ID },
-    // Real date this content was last substantively edited — updated by hand
-    // when a page's copy actually changes, not auto-generated at build time.
-    dateModified: '2026-09-18',
+    // The page's date lives on its WebPage node: Service has no dateModified.
+  };
+}
+
+function buildWebSiteSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': WEBSITE_ID,
+    url: SITE_URL,
+    name: 'Olidental Clinic',
+    inLanguage: LANGUAGE,
+    publisher: { '@id': DENTIST_ID },
+  };
+}
+
+/**
+ * The page itself, with its real last-change date (utils/pageDates.js) so
+ * date extractors stop reading the footer's "Copyright <year>" as one.
+ */
+function buildWebPageSchema(pathname, meta, { type = 'WebPage', hasBreadcrumb = false, extra = {} } = {}) {
+  const url = meta.url || pageUrl(pathname);
+  return {
+    '@context': 'https://schema.org',
+    '@type': type,
+    '@id': `${url}#webpage`,
+    url,
+    ...(meta.title ? { name: meta.title } : {}),
+    ...(meta.description ? { description: meta.description } : {}),
+    inLanguage: LANGUAGE,
+    isPartOf: { '@id': WEBSITE_ID },
+    about: { '@id': DENTIST_ID },
+    dateModified: getPageDate(pathname),
+    ...(hasBreadcrumb ? { breadcrumb: { '@id': `${url}#breadcrumb` } } : {}),
+    ...extra,
   };
 }
 
@@ -304,34 +427,53 @@ function buildResultsImageObjects(pathname, categorySlug) {
   return objects;
 }
 
-export function buildBreadcrumbSchema(breadcrumbItems) {
+/** `pathname` (optional) gives the list an @id the page's WebPage can point to. */
+export function buildBreadcrumbSchema(breadcrumbItems, pathname) {
   return {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
+    ...(pathname ? { '@id': `${pageUrl(pathname)}#breadcrumb` } : {}),
     itemListElement: breadcrumbItems.map((item, index) => ({
       '@type': 'ListItem',
       position: index + 1,
       name: item.label,
-      item: `${SITE_URL}${item.href}`,
+      // Same form as the canonical and the Dentist url: no trailing slash on home.
+      item: pageUrl(item.href),
     })),
   };
 }
 
+/** URL-safe anchor for a team member, e.g. "Dr. Diana Rada Bârsan" ->
+ * "diana-rada-barsan". /echipa puts it on each member's block. */
+export function personSlug(member) {
+  return member.title
+    .replace(/^(Dr|As)\.\s*/i, '')
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
 export function personId(member) {
-  return `${SITE_URL}/echipa#${encodeURIComponent(member.title)}`;
+  return `${SITE_URL}${TEAM_PAGE_PATH}#${personSlug(member)}`;
 }
 
 export function buildPersonSchema(member) {
-  const specializations = Array.isArray(member.specializations) ? member.specializations : [];
+  const specializations = Array.isArray(member.specializations) ? member.specializations.map((s) => s.trim()) : [];
+  const knowsAbout = Array.isArray(member.services) ? member.services.filter(Boolean) : [];
 
   return {
     '@context': 'https://schema.org',
     '@type': 'Person',
     '@id': personId(member),
     name: member.title,
+    url: personId(member),
     ...(specializations.length > 0 ? { jobTitle: specializations[0] } : {}),
+    ...(knowsAbout.length > 0 ? { knowsAbout } : {}),
     ...(member.thumbnail ? { image: `${SITE_URL}${member.thumbnail}` } : {}),
     worksFor: { '@id': DENTIST_ID },
+    ...(PERSON_EXTRAS[member.title] || {}),
   };
 }
 
@@ -340,60 +482,68 @@ export function buildPersonSchema(member) {
  * JSON.stringify) that should be emitted for a given route pathname.
  * Always includes exactly one Dentist entity.
  */
-export function getSchemaForRoute(pathname) {
-  const dentist = buildDentistSchema();
-
-  if (typeof pathname !== 'string' || pathname.length === 0) {
-    return [dentist];
-  }
-
-  const normalizedPathname = normalizeLink(pathname);
-  const routeEntry = routeIndex.get(normalizedPathname);
-
+/**
+ * Route-specific nodes: Service + breadcrumb on treatment pages, breadcrumb +
+ * photos on /rezultate/*, the team's Person nodes on /echipa, a breadcrumb on
+ * the other top-level pages.
+ */
+function getRouteNodes(pathname) {
+  const routeEntry = routeIndex.get(pathname);
   if (routeEntry) {
-    return [
-      dentist,
-      buildServiceSchema(routeEntry, normalizedPathname),
-      buildBreadcrumbSchema(routeEntry.breadcrumb),
-    ];
+    return [buildServiceSchema(routeEntry, pathname), buildBreadcrumbSchema(routeEntry.breadcrumb, pathname)];
   }
 
-  const resultsEntry = resultsRouteIndex.get(normalizedPathname);
+  const resultsEntry = resultsRouteIndex.get(pathname);
   if (resultsEntry) {
     return [
-      dentist,
-      buildBreadcrumbSchema(resultsEntry.breadcrumb),
-      ...buildResultsImageObjects(normalizedPathname, resultsEntry.slug),
+      buildBreadcrumbSchema(resultsEntry.breadcrumb, pathname),
+      ...buildResultsImageObjects(pathname, resultsEntry.slug),
     ];
   }
 
-  if (normalizedPathname === TEAM_PAGE_PATH) {
+  const simpleBreadcrumb = getSimplePageBreadcrumb(pathname);
+  const breadcrumbNodes = simpleBreadcrumb ? [buildBreadcrumbSchema(simpleBreadcrumb, pathname)] : [];
+  if (pathname === TEAM_PAGE_PATH) {
     const teamMembers = Array.isArray(teamCards) ? teamCards : [];
-    return [dentist, ...teamMembers.map(buildPersonSchema)];
+    return [...breadcrumbNodes, ...teamMembers.map(buildPersonSchema)];
   }
-
-  if (normalizedPathname === CONTACT_PAGE_PATH) {
-    return [
-      dentist,
-      {
-        '@context': 'https://schema.org',
-        '@type': 'ContactPage',
-        '@id': `${SITE_URL}${CONTACT_PAGE_PATH}#contactpage`,
-        name: 'Contact Olidental Clinic Timișoara',
-        url: `${SITE_URL}${CONTACT_PAGE_PATH}`,
-        about: { '@id': DENTIST_ID },
-        mainEntity: { '@id': DENTIST_ID },
-      },
-    ];
-  }
-
-  return [dentist];
+  return breadcrumbNodes;
 }
 
 /**
- * Returns the visible breadcrumb trail ({ label, href }[]) for service and
- * procedure pages, or null for every other route (breadcrumbs are only
- * rendered on those pages).
+ * Returns the list of schema.org objects (plain JS objects, ready for
+ * JSON.stringify) that should be emitted for a given route pathname.
+ * Always includes exactly one Dentist entity and the WebSite. `meta` is the
+ * page's { title, description, url (canonical), noindex } from its `.seo`.
+ */
+export function getSchemaForRoute(pathname, meta = {}) {
+  const normalizedPathname = typeof pathname === 'string' && pathname.length > 0 ? normalizeLink(pathname) : '';
+  const dentist = buildDentistSchema({ includeEmployees: normalizedPathname === TEAM_PAGE_PATH });
+  const base = [dentist, buildWebSiteSchema()];
+
+  // No page node for the 404 page, and blog posts bring their own WebPage
+  // (utils/blogSchema.js).
+  if (!normalizedPathname || meta.noindex || normalizedPathname.startsWith(BLOG_POST_PREFIX)) {
+    return base;
+  }
+
+  const routeNodes = getRouteNodes(normalizedPathname);
+  const hasBreadcrumb = routeNodes.some((node) => node['@type'] === 'BreadcrumbList');
+  const webPage =
+    normalizedPathname === CONTACT_PAGE_PATH
+      ? buildWebPageSchema(normalizedPathname, meta, {
+          type: 'ContactPage',
+          hasBreadcrumb,
+          extra: { mainEntity: { '@id': DENTIST_ID } },
+        })
+      : buildWebPageSchema(normalizedPathname, meta, { hasBreadcrumb });
+
+  return [...base, webPage, ...routeNodes];
+}
+
+/**
+ * Returns the visible breadcrumb trail ({ label, href }[]) for every page
+ * except the homepage (and the blog, which builds its own), or null.
  */
 export function getBreadcrumbItems(pathname) {
   if (typeof pathname !== 'string' || pathname.length === 0) {
@@ -407,5 +557,9 @@ export function getBreadcrumbItems(pathname) {
   }
 
   const resultsEntry = resultsRouteIndex.get(normalizedPathname);
-  return resultsEntry ? resultsEntry.breadcrumb : null;
+  if (resultsEntry) {
+    return resultsEntry.breadcrumb;
+  }
+
+  return getSimplePageBreadcrumb(normalizedPathname);
 }

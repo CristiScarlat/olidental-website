@@ -2,6 +2,7 @@
 // the /rezultate hub. The case data stays the single source: counts, teaser
 // photos and the featured case's text are all derived from it.
 import { beforeAfter } from './uiConstants';
+import { toWebp } from './images';
 
 export const RESULTS_HUB_PATH = '/rezultate';
 const IMAGE_DIR = '/images/beforeAfter';
@@ -62,8 +63,8 @@ export function getCaseImagePair(caseItem, batchIndex = 0) {
     return null;
   }
   return {
-    before: `${IMAGE_DIR}/thumbnail_${batch[0]}`,
-    after: `${IMAGE_DIR}/thumbnail_${batch[batch.length - 1]}`,
+    before: toWebp(`${IMAGE_DIR}/thumbnail_${batch[0]}`),
+    after: toWebp(`${IMAGE_DIR}/thumbnail_${batch[batch.length - 1]}`),
   };
 }
 

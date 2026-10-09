@@ -1,3 +1,5 @@
+const { getPageDate } = require('./utils/pageDates');
+
 const SERVICE_PAGES = ['/estetica-zambetului', '/implantologie', '/reabilitari-orale-complexe'];
 
 const PROCEDURE_PAGES = [
@@ -27,6 +29,7 @@ module.exports = {
   siteUrl: process.env.SITE_URL || 'https://olidental.ro',
   generateRobotsTxt: false, // (optional)
   exclude: ['/admin'],
+  // Real per-page dates from utils/pageDates.js, not the build time.
   autoLastmod: false,
   transform: async (config, path) => {
     let priority = 0.7;
@@ -62,7 +65,7 @@ module.exports = {
       loc: path,
       changefreq,
       priority,
-      lastmod: config.autoLastmod ? new Date().toISOString() : undefined,
+      lastmod: getPageDate(path),
       alternateRefs: config.alternateRefs ?? [],
     };
   },

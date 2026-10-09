@@ -14,8 +14,8 @@ import { getSchemaForRoute, getBreadcrumbItems } from '../utils/schema';
 import { useCookieConsent, CONSENT_ACCEPTED } from '../utils/useCookieConsent';
 import { GA_MEASUREMENT_ID, applyAnalyticsConsent } from '../utils/analytics';
 
-const DEFAULT_TITLE = "Olidental Clinic Timișoara - Servicii stomatologice premium în Timișoara";
-const DEFAULT_DESCRIPTION = "Olidental Clinic Timișoara oferă servicii stomatologice premium, doctorii clinicii având specialități și competențe pentru o gamă cuprinzătoare de tratamente dentare.";
+const DEFAULT_TITLE = "Olidental Clinic Timișoara | Clinică stomatologică premium";
+const DEFAULT_DESCRIPTION = "Olidental Clinic Timișoara oferă servicii stomatologice premium: implantologie, fațete și coroane ceramice, reabilitări orale complexe, cu medici specializați.";
 const DEFAULT_CANONICAL = "https://olidental.ro";
 // Fallback social-share image for every page that doesn't pass its own
 // `ogImage`: 1200×630, the size WhatsApp/Facebook/LinkedIn expect (generated
@@ -59,7 +59,8 @@ const Layout = ({ children, title, description, canonical, ogImage, noindex, ogT
     ? "noindex, nofollow"
     : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1";
   const pageOgType = ogType || "website";
-  const structuredData = [...getSchemaForRoute(pathname), ...(Array.isArray(schema) ? schema : [])];
+  const pageMeta = { title: pageTitle, description: pageDescription, url: pageCanonical, noindex };
+  const structuredData = [...getSchemaForRoute(pathname, pageMeta), ...(Array.isArray(schema) ? schema : [])];
   const breadcrumbItems = breadcrumbs || getBreadcrumbItems(pathname);
 
   return (

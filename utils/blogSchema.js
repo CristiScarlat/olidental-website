@@ -6,6 +6,7 @@
 import {
   SITE_URL,
   DENTIST_ID,
+  WEBSITE_ID,
   HOME_LABEL,
   personId,
   getFounder,
@@ -95,6 +96,9 @@ export function buildBlogPostSchema(post) {
     name: post.title,
     description: post.description,
     inLanguage: LANGUAGE,
+    isPartOf: { '@id': WEBSITE_ID },
+    datePublished: post.datePublished,
+    dateModified: post.dateModified,
     primaryImageOfPage: {
       '@type': 'ImageObject',
       url: heroUrl,
@@ -129,9 +133,21 @@ export function buildBlogPostSchema(post) {
     '@id': `${url}#breadcrumb`,
   };
 
+  // The blog itself, so the article's isPartOf points at a node on this page.
+  const blog = {
+    '@context': 'https://schema.org',
+    '@type': 'Blog',
+    '@id': BLOG_ID,
+    name: BLOG_TITLE,
+    url: BLOG_URL,
+    inLanguage: LANGUAGE,
+    publisher: { '@id': DENTIST_ID },
+  };
+
   return [
     webPage,
     article,
+    blog,
     founder ? buildPersonSchema(founder) : null,
     breadcrumb,
     buildFaqSchema(post, url),

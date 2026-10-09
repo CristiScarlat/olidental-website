@@ -35,8 +35,7 @@ const PoliticaConfidentialitate = () => {
             style='font-size:11.5pt;font-family:Arial;color:rgb(255,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>
         </span><span
             style='font-size:11.5pt;font-family:Arial;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'><a
-                href='http://olidental.ro/' target='_blank'
-                data-saferedirecturl='https://www.google.com/url?q=http://olidental.ro/&amp;source=gmail&amp;ust=1719383321117000&amp;usg=AOvVaw2f-bX26d_B28l-jabDDt6C'><span>olidental</span>.ro</a></span><span
+                href='https://olidental.ro/' target='_blank'><span>olidental</span>.ro</a></span><span
             style='font-size:11.5pt;font-family:Arial;color:rgb(69,69,69);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>
             („Site-ul”), a interacțiunii cu noi ș<span>i</span> a utilizării serviciilor noastre. Prezenta politică are
             scopul de a vă aduce la cunoștință categoriile de date cu caracter personal pe care le colectăm
@@ -60,15 +59,14 @@ const PoliticaConfidentialitate = () => {
             prelucra datele dumneavoastră cu caracter personal pe care le furnizaț<span>i</span> în mod direct în
             contextul utilizării acestuia, cum ar fi datele pe care le furnizaț<span>i</span> în cadrul secțiunii de
             contact, în măsura în care ne contactaț<span>i</span> în acest fel, date referitoare la modul în care
-            utilizaț<span>i</span> Site-ul, de exemplu comportamentul / preferinţele / obişnuințele dumneavoastră sau
+            utilizaț<span>i</span> Site-ul, de exemplu comportamentul / preferințele / obișnuințele dumneavoastră sau
             orice altă modalitate prin care utilizaț<span>i</span> Site-ul. </span><span
             style='font-size:11.5pt;font-family:Arial;color:rgb(255,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>
             <a href='/politica-cookies'>Conform politicii de cookies</a></span><span
             style='font-size:11.5pt;font-family:Arial;color:rgb(69,69,69);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>,
             cu ajutorul acestora colectăm date obținute de pe dispozitivul utilizat de dvs., informații cu care vă
             puteț<span>i</span> identifica online, fiind date menite să îmbunătățească experiența online pe <a
-                href='http://olidental.ro/' target='_blank'
-                data-saferedirecturl='https://www.google.com/url?q=http://olidental.ro/&amp;source=gmail&amp;ust=1719383321117000&amp;usg=AOvVaw2f-bX26d_B28l-jabDDt6C'><span>olidental</span>.ro</a>:
+                href='https://olidental.ro/' target='_blank'><span>olidental</span>.ro</a>:
             adresa IP/MAC, browserul folosit, date de protocol HTTP/HTTPS, date de geotargetting.&nbsp;</span></p>
     <p dir='ltr' style='line-height:1.2;margin-top:0pt;margin-bottom:0pt'>&nbsp;</p>
     <p dir='ltr' style='line-height:1.2;margin-top:0pt;margin-bottom:0pt'><span
@@ -162,9 +160,9 @@ const PoliticaConfidentialitate = () => {
             este necesar pentru realizarea scopurilor de prelucrare menționate mai sus. În general, datele pot fi
             stocate pentru o perioadă cuprinsă între 6 luni ș<span>i</span> 100 de ani, în cazul documentelor medicale.
             În cazul în care sunteț<span>i</span> client, vom prelucra datele dumneavoastră pe întreaga durată a
-            raporturilor contractuale ș<span>i</span> ulterior conform obligaţiilor legale care revin în sarcina&nbsp;SC
+            raporturilor contractuale ș<span>i</span> ulterior conform obligațiilor legale care revin în sarcina&nbsp;SC
             <span>Olidental</span> Med SRL (de ex., în cazul documentelor justificative financiar-contabile pentru care
-            termenul de păstrare prevăzut de lege este de 10 ani de la data încheierii exerciţiului financiar în cursul
+            termenul de păstrare prevăzut de lege este de 10 ani de la data încheierii exercițiului financiar în cursul
             căruia au fost întocmite). Datele cu caracter personal sunt prelucrate atât timp cât sunt necesare pentru
             îndeplinirea scopurilor menționate la alineatul anterior, după care pot fi anonimizate în scop de cercetare
             sau statistică.&nbsp;</span></p>
@@ -185,8 +183,7 @@ const PoliticaConfidentialitate = () => {
     <p dir='ltr' style='line-height:1.2;margin-top:0pt;margin-bottom:0pt'><span
             style='font-size:11.5pt;font-family:Arial;color:rgb(69,69,69);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>Datele
             cu caracter personal prelucrate în scopul administrării ș<span>i</span> protejării site-lui <a
-                href='http://olidental.ro/' target='_blank'
-                data-saferedirecturl='https://www.google.com/url?q=http://olidental.ro/&amp;source=gmail&amp;ust=1719383321117000&amp;usg=AOvVaw2f-bX26d_B28l-jabDDt6C'><span>olidental</span>.ro</a>
+                href='https://olidental.ro/' target='_blank'><span>olidental</span>.ro</a>
             ș<span>i</span> cele prelucrate în scopul analizării datelor de acces ale vizitatorilor vor fi reținute
             pentru o perioadă rezonabilă de timp. </span><span
             style='font-size:10.5pt;font-family:&quot;Trebuchet MS&quot;;color:rgb(33,37,41);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>&nbsp;</span>
@@ -214,8 +211,7 @@ const PoliticaConfidentialitate = () => {
             style='margin-left:15px;list-style-type:disc;font-size:10pt;font-family:&quot;Noto Sans Symbols&quot;,sans-serif;color:rgb(69,69,69);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>
             <p dir='ltr' style='line-height:1.2;margin-top:0pt;margin-bottom:0pt'><span
                     style='font-size:11.5pt;font-family:Arial;background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>pentru
-                    administrarea site-ului <a href='http://olidental.ro/' target='_blank'
-                        data-saferedirecturl='https://www.google.com/url?q=http://olidental.ro/&amp;source=gmail&amp;ust=1719383321117000&amp;usg=AOvVaw2f-bX26d_B28l-jabDDt6C'><span>olidental</span>.ro</a>;</span>
+                    administrarea site-ului <a href='https://olidental.ro/' target='_blank'><span>olidental</span>.ro</a>;</span>
             </p>
         </li>
         <li dir='ltr'
@@ -506,7 +502,7 @@ const PoliticaConfidentialitate = () => {
                 style='margin-left:15px;list-style-type:disc;font-size:10pt;font-family:&quot;Noto Sans Symbols&quot;,sans-serif;color:rgb(69,69,69);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>
                 <p dir='ltr' style='line-height:1.2;margin-top:0pt;margin-bottom:0pt'><span
                         style='font-size:11.5pt;font-family:Arial;background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>dreptul
-                        de a vă adresa Autorităţii Naţionale de Supraveghere a Prelucrării Datelor cu Caracter Personal
+                        de a vă adresa Autorității Naționale de Supraveghere a Prelucrării Datelor cu Caracter Personal
                         sau instanțelor competente, în măsura în care consideraț<span>i</span> necesar.</span></p>
             </li>
         </ul>

@@ -4,6 +4,7 @@ import { TfiHandPointLeft } from 'react-icons/tfi';
 import IconLink from '../../components/iconLink';
 import styles from '../../styles/rezultate.module.css';
 import ResultsDisclaimer from '../../components/resultsDisclaimer';
+import { toWebp } from '../../utils/images';
 
 const ORDER = [6, 7, 2, 17, 18, 13, 3, 8, 11, 10, 12, 5, 4, 9, 1, 14, 15, 16, 19, 20]; // 1-based, matches pages/rezultate.js curated display order
 
@@ -33,7 +34,7 @@ const RezultateReabilitareCompleta = () => {
                             <div dangerouslySetInnerHTML={{ __html: obj.description }} />
                             <div className="m-auto w-100 unselectable children-no-border">
                                 {obj.images?.map((imgs) => (
-                                    Array.isArray(imgs) && <ImageComparator key={imgs[0]} images={imgs.map((imgName) => `/images/beforeAfter/thumbnail_${imgName}`)} maxWidth={600} altText={obj.title} />
+                                    Array.isArray(imgs) && <ImageComparator key={imgs[0]} images={imgs.map((imgName) => toWebp(`/images/beforeAfter/thumbnail_${imgName}`))} maxWidth={600} altText={obj.title} />
                                 ))}
                             </div>
                         </div>
@@ -52,7 +53,7 @@ const RezultateReabilitareCompleta = () => {
 }
 
 RezultateReabilitareCompleta.seo = {
-    title: "Rezultate reabilitare orală completă | Olidental Clinic Timișoara",
+    title: "Rezultate reabilitare orală completă | Olidental Timișoara",
     description: "Cazuri complexe de reabilitare orală completă la Olidental Clinic Timișoara, cu rezultate reale, înainte și după, pentru pacienți cu nevoi dentare extinse.",
     canonical: "https://olidental.ro/rezultate/reabilitare-orala-completa",
 };

@@ -10,6 +10,7 @@ import ScrollIntoViewIndicator from '../components/scrollIntoViewIndicator';
 import IconLink from '../components/iconLink';
 import TreatmentAttribution from '../components/treatmentAttribution';
 import MedicalDisclaimer from '../components/medicalDisclaimer';
+import { toWebp } from '../utils/images';
 
 const FateteCoroaneCeramice = () => {
   const [indexCaz, setIndexCaz] = useState(0);
@@ -93,7 +94,7 @@ const FateteCoroaneCeramice = () => {
                     style={{backgroundColor: index === imgNo ? '#6cab44' : '#80808091'}}
                     onClick={() => setImgNo(index)}>
                     {batch.map(image => <img key={image}
-                                             src={`/images/${cazuri[indexCaz]?.dirPath}/thumbnail_${image}`}
+                                             src={toWebp(`/images/${cazuri[indexCaz]?.dirPath}/thumbnail_${image}`)}
                                              alt={`${services[serviceId]?.procedures[procedureIndex]?.title || 'Procedură dentară'} - previzualizare caz înainte-după`}
                     />)}
                   </div>
@@ -105,12 +106,12 @@ const FateteCoroaneCeramice = () => {
           {cazuri?.length && <>
               {cazuri[indexCaz].images[imgNo].length === 3 &&
                 <ThreeLayerImageComparator height={500}
-                                           images={cazuri[indexCaz].images[0].map(image => `/images/${cazuri[indexCaz]?.dirPath}/thumbnail_${image}`)}
+                                           images={cazuri[indexCaz].images[0].map(image => toWebp(`/images/${cazuri[indexCaz]?.dirPath}/thumbnail_${image}`))}
                                             showDeviderLabel={handleShowDeviderLabel()}
                                             altText={services[serviceId]?.procedures[procedureIndex]?.title || 'Procedură dentară'}/>}
               {cazuri[indexCaz].images[imgNo].length === 2 &&
                 <ImageComparator
-                  images={cazuri[indexCaz].images[imgNo].map(image => `/images/${cazuri[indexCaz]?.dirPath}/thumbnail_${image}`)}
+                  images={cazuri[indexCaz].images[imgNo].map(image => toWebp(`/images/${cazuri[indexCaz]?.dirPath}/thumbnail_${image}`))}
                   //showCursor={false}
                   maxWidth={850}
                   altText={services[serviceId]?.procedures[procedureIndex]?.title || 'Procedură dentară'}
@@ -143,8 +144,8 @@ const FateteCoroaneCeramice = () => {
 };
 
 FateteCoroaneCeramice.seo = {
-  title: "Fațete și coroane dentare integral ceramice | Olidental Clinic Timișoara",
-  description: "Fațete și coroane dentare integral ceramice la Olidental Clinic Timișoara: intervenții minim invazive care îmbunătățesc forma, culoarea și strălucirea zâmbetului.",
+  title: "Fațete și coroane ceramice în Timișoara | Olidental Clinic",
+  description: "Fațete și coroane dentare integral ceramice la Olidental Clinic Timișoara: intervenții minim invazive pentru forma, culoarea și strălucirea zâmbetului.",
   canonical: "https://olidental.ro/fatete-coroane-ceramice",
 };
 

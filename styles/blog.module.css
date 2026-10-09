@@ -14,7 +14,7 @@
     --blog-green-tint: #eaf3e3;
     --blog-border: #e3e1da;
     --blog-paper: #ffffff;
-    --blog-heading-font: 'Fraunces', Georgia, serif;
+    --blog-heading-font: var(--font-fraunces, Georgia), Georgia, serif;
     padding: 0 1rem 3rem;
 }
 

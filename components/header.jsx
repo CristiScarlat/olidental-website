@@ -23,7 +23,7 @@ const Header = () => {
                 <ul className="d-flex justify-content-start  navbar-nav gap-4 me-auto mb-2 mb-lg-0 w-100 fw-bold">
                   <li className="nav-item ms-auto li-link">
                     <Link href="/" legacyBehavior>
-                      <a className={`${styles['header-custom-link']}  text-uppercase ${router.pathname === '/' ? 'active' : ''}`}>Acasa</a>
+                      <a className={`${styles['header-custom-link']}  text-uppercase ${router.pathname === '/' ? 'active' : ''}`}>Acasă</a>
                     </Link>
                   </li>
                   <li className="nav-item ms-auto li-link">

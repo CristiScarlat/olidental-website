@@ -14,12 +14,9 @@ export default function TermenConditii(){
       <h1 style={{fontSize: "32px"}}>Termeni și condiții</h1>
       <div><br /><b>1. DISPOZIȚII GENERALE<br /></b><br />&nbsp;Prezentul document reprezintă termenii și condițiile
         de
-        utilizare ale site-ului <b><a href="https://olidental.ro" target="_blank"
-                                      data-saferedirecturl="https://www.google.com/url?q=https://www.olidental.ro&amp;source=gmail&amp;ust=1721715795813000&amp;usg=AOvVaw2NDpXuPM63c83RH9c4giOn">www.olidental.ro</a>
+        utilizare ale site-ului <b><a href="https://olidental.ro" target="_blank">www.olidental.ro</a>
         </b>și este&nbsp;denumit în continuare <b>Termeni și condiții. </b>Acesta stabilește condițiile prin care
-        orice persoană poate accesa / vizita site-ul <a href="https://olidental.ro" target="_blank"
-                                                        data-saferedirecturl="https://www.google.com/url?q=http://olidental.ro&amp;source=gmail&amp;ust=1721715795813000&amp;usg=AOvVaw2nN7O5FOMJ2AzIWTymdxby"
-                                                        jslog="32272; 1:WyIjdGhyZWFkLWY6MTgwNTAxODU4MjU5NDg2OTYyMyJd; 4:WyIjbXNnLWY6MTgwNTAxODU4MjU5NDg2OTYyMyJd">olidental.ro</a>
+        orice persoană poate accesa / vizita site-ul <a href="https://olidental.ro" target="_blank">olidental.ro</a>
         și
         prin care poate beneficia de serviciile oferite prin intermediul acestuia, constituind un contract dintre
         utilizatorul site-ului și proprietarul acestuia. Se stabilesc, de asemenea, drepturile și obigațiile
@@ -28,9 +25,7 @@ export default function TermenConditii(){
         următoarele noțiuni:&nbsp;</div>
       <div>
         <ul>
-          <li>”site” :&nbsp; <a href="https://olidental.ro" target="_blank"
-                                data-saferedirecturl="https://www.google.com/url?q=https://olidental.ro&amp;source=gmail&amp;ust=1721715795813000&amp;usg=AOvVaw2NDpXuPM63c83RH9c4giOn"
-                                jslog="32272; 1:WyIjdGhyZWFkLWY6MTgwNTAxODU4MjU5NDg2OTYyMyJd; 4:WyIjbXNnLWY6MTgwNTAxODU4MjU5NDg2OTYyMyJd">www.olidental.ro</a>
+          <li>”site” :&nbsp; <a href="https://olidental.ro" target="_blank">www.olidental.ro</a>
           </li>
           <li>”administratorul/proprietarul site-ului”: Olidental Med SRL,
 
@@ -99,8 +94,7 @@ export default function TermenConditii(){
       ca urmare a accesării acestora. Accesarea lor se face de către utilizator pe propriul risc și în cunoștință de
       cauză, prin studierea Termenilor și condițiilor și a Politicilor fiecărei platforme externe.&nbsp;
       <div>În cazul în care aplicațiile, platformele sau site-urile oferă linkuri către conținutul <a
-        href="http://olidental.ro" target="_blank"
-        data-saferedirecturl="https://www.google.com/url?q=http://olidental.ro&amp;source=gmail&amp;ust=1721715795813000&amp;usg=AOvVaw2nN7O5FOMJ2AzIWTymdxby">olidental.ro</a>,
+        href='https://olidental.ro/' target="_blank">olidental.ro</a>,
         acest lucru nu înseamnă că există o legătură sau o asociere mai semnificativă cu acestea.&nbsp;</div>
       <div>Eventualele plângeri, pretenții, revendicări și nici întrebări legate de produsele, serviciile și
         conținutul lor trebuie direcționate către acestea.&nbsp;&nbsp;<font color="#000000" face="Raleway, sans-serif">
@@ -144,8 +138,7 @@ export default function TermenConditii(){
           rezervăm dreptul de a le corecta, prin modificare și prin actualizarea informațiilor, fără informări în
           prealabil.&nbsp; &nbsp;&nbsp;<br />Olidental Med nu își asumă răspunderea pentru niciun produs sau serviciu
           oferit de terț sau la care se face reclamă sub orice formă sau al cărui site este conectat la site-ul <a
-            href="http://olidental.ro" target="_blank"
-            data-saferedirecturl="https://www.google.com/url?q=http://olidental.ro&amp;source=gmail&amp;ust=1721715795813000&amp;usg=AOvVaw2nN7O5FOMJ2AzIWTymdxby">olidental.ro</a>
+            href='https://olidental.ro/' target="_blank">olidental.ro</a>
           și
           nu este responsabil de încheierea unei tranzacții între utilizator și oricare terț.&nbsp;&nbsp;</div>
         <div><br /><b><br /></b></div>

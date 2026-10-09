@@ -14,8 +14,7 @@ const PoliticaCookies = () => {
   <p dir='ltr' style='line-height:1.38;margin-top:0pt;margin-bottom:10pt'><span
     style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>Prezenta
       Politică privind fișierele <span>cookies</span> se aplică tuturor utilizatorilor paginii de internet&nbsp;<a
-      href='http://olidental.ro/' target='_blank'
-      data-saferedirecturl='https://www.google.com/url?q=http://olidental.ro/&amp;source=gmail&amp;ust=1718968804621000&amp;usg=AOvVaw10ePudCvepyueScKJ6Pnx3'><span>olidental</span>.ro</a>.
+      href='https://olidental.ro/' target='_blank'><span>olidental</span>.ro</a>.
       Informațiile prezentate în continuare au ca scop informarea utilizatorilor acestei pagini de internet cu privire
       la plasarea, utilizarea și administrarea <span>cookie</span>-urilor de către&nbsp;</span><span
     style='font-size:11pt;font-family:Calibri,sans-serif;background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>
@@ -131,8 +130,7 @@ const PoliticaCookies = () => {
   <p dir='ltr' style='line-height:1.38;margin-top:0pt;margin-bottom:10pt'><span
     style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>Anumite
       secțiuni de conținut de pe pagina de internet pot fi furnizate prin intermediul unor terți, adică nu de
-      către&nbsp;<a href='http://olidental.ro/' target='_blank'
-                    data-saferedirecturl='https://www.google.com/url?q=http://olidental.ro/&amp;source=gmail&amp;ust=1718968804621000&amp;usg=AOvVaw10ePudCvepyueScKJ6Pnx3'><span>olidental</span>.ro</a>,
+      către&nbsp;<a href='https://olidental.ro/' target='_blank'><span>olidental</span>.ro</a>,
       caz în care aceste <span>cookie</span>-uri sunt denumite <span>cookie</span>-uri plasate de terți („third party
       <span>cookie</span>-uri”).</span><span
     style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'><br /></span><span
@@ -235,24 +233,21 @@ const PoliticaCookies = () => {
         style="margin-left:15px;list-style-type:disc;font-size:10pt;font-family:'Noto Sans Symbols',sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline">
       <p dir='ltr' style='line-height:1.38;margin-top:0pt;margin-bottom:10pt'><a
         href='https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences'
-        style='text-decoration-line:none' target='_blank'
-        data-saferedirecturl='https://www.google.com/url?q=https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences&amp;source=gmail&amp;ust=1718968804621000&amp;usg=AOvVaw2aqeCjqEIHbU0W_KsS1DAE'><span
+        style='text-decoration-line:none' target='_blank'><span
         style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,255);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;text-decoration-line:underline;vertical-align:baseline'><span>Cookie</span>
             settings in Firefox</span></a></p>
     </li>
     <li dir='ltr'
         style="margin-left:15px;list-style-type:disc;font-size:10pt;font-family:'Noto Sans Symbols',sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline">
       <p dir='ltr' style='line-height:1.38;margin-top:0pt;margin-bottom:10pt'><a
-        href='https://support.google.com/chrome/answer/95647' style='text-decoration-line:none' target='_blank'
-        data-saferedirecturl='https://www.google.com/url?q=https://support.google.com/chrome/answer/95647&amp;source=gmail&amp;ust=1718968804621000&amp;usg=AOvVaw2rwvvNZwu-5kvWQOVz24lB'><span
+        href='https://support.google.com/chrome/answer/95647' style='text-decoration-line:none' target='_blank'><span
         style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,255);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;text-decoration-line:underline;vertical-align:baseline'><span>Cookie</span>
             settings in Chrome</span></a></p>
     </li>
     <li dir='ltr'
         style="margin-left:15px;list-style-type:disc;font-size:10pt;font-family:'Noto Sans Symbols',sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline">
       <p dir='ltr' style='line-height:1.38;margin-top:0pt;margin-bottom:10pt'><a
-        href='https://support.apple.com/kb/ph21411' style='text-decoration-line:none' target='_blank'
-        data-saferedirecturl='https://www.google.com/url?q=https://support.apple.com/kb/ph21411&amp;source=gmail&amp;ust=1718968804621000&amp;usg=AOvVaw0rkw6YQS66yI_n1Kzl5Hfc'><span
+        href='https://support.apple.com/kb/ph21411' style='text-decoration-line:none' target='_blank'><span
         style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,255);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;text-decoration-line:underline;vertical-align:baseline'><span>Cookie</span>
             settings in Safari</span></a></p>
     </li>
@@ -279,7 +274,7 @@ const PoliticaCookies = () => {
 };
 
 PoliticaCookies.seo = {
-  title: "Politică privind fișierele cookies | Olidental Clinic Timișoara",
+  title: "Politica de cookies | Olidental Clinic Timișoara",
   description: "Politica privind utilizarea fișierelor cookie pe site-ul Olidental Clinic Timișoara.",
   canonical: "https://olidental.ro/politica-cookies",
 };

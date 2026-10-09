@@ -31,7 +31,8 @@ const Breadcrumbs = ({ items }) => {
       <style jsx>{`
         .site-breadcrumbs {
           width: 100%;
-          padding: 0.85rem 0;
+          /* Side padding lines the trail up with the header logo instead of the screen edge. */
+          padding: 0.85rem 1rem;
         }
 
         .site-breadcrumbs ol {

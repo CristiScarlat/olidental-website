@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { GiClick } from 'react-icons/gi';
+import { toWebp } from '../utils/images';
 
 const FadeCarousel = ({ images, path }) => {
   const [imagesIndex, setImagesIndex] = useState(0);
@@ -50,7 +51,7 @@ const FadeCarousel = ({ images, path }) => {
             )}
             {batch.map((image, index) => (
               <div key={image + index}>
-                <img src={`${path}thumbnail_${image}`} className="procedure-cazuri-img" ref={imageContainerRef} />
+                <img src={toWebp(`${path}thumbnail_${image}`)} className="procedure-cazuri-img" ref={imageContainerRef} />
               </div>
             ))}
           </div>
