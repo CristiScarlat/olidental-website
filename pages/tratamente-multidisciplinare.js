@@ -15,6 +15,9 @@ import TreatmentLead from '../components/treatmentLead';
 import CaseNavControls from '../components/caseNavControls';
 import { toWebp } from '../utils/images';
 
+// Below this width the case previews get scroll arrows.
+const NARROW_WIDTH = 450;
+
 const TratamenteMultidisciplinare = () => {
   const [indexCaz, setIndexCaz] = useState(0);
   const [imgNo, setImgNo] = useState(0);
@@ -32,6 +35,16 @@ const TratamenteMultidisciplinare = () => {
   useEffect(() => {
     setImgNo(0)
   }, [indexCaz])
+
+  // Measured after mount: reading window during render made the server HTML
+  // and the first client render differ below 450px (React errors #418/#423).
+  const [isNarrowWidth, setIsNarrowWidth] = useState(false);
+  useEffect(() => {
+    const updateWidth = () => setIsNarrowWidth(window.innerWidth < NARROW_WIDTH);
+    updateWidth();
+    window.addEventListener('resize', updateWidth);
+    return () => window.removeEventListener('resize', updateWidth);
+  }, []);
 
   const cazuri = services[serviceId]?.procedures[procedureIndex]?.cazuri;
 
@@ -64,8 +77,6 @@ const TratamenteMultidisciplinare = () => {
     imageComparatorPreviewRef.current.scrollLeft += 335;
   }
   const renderScrollIndicator = () => {
-    if(typeof window === "undefined")return null;
-    const isNarrowWidth = window.innerWidth < 450;
     if(isNarrowWidth)return <ScrollIntoViewIndicator onClickLeft={handleScrollPreviewLeft} onClickRight={handleScrollPreviewRight} />;
     return null;
   }
