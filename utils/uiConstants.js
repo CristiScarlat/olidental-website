@@ -414,7 +414,7 @@ export const services = [
            pot fi executate din aceleași materiale ca și fațetele dentare, dar acoperă circular suprafața dinților.
            Pe lângă îmbunătățirea estetică, acestea sporesc funcționalitatea mecanică a dinților. </p>
         <h2>Cui se adresează acest tratament</h2>
-        <p>Acest tip de tratament este potrivit pacienților care își doresc un zâmbet mai armonios fără intervenții ample asupra dinților naturali, precum și celor care au restaurări vechi, degradate sau decolorate. Procesul începe cu o evaluare atentă a stării dentare și stabilirea planului de tratament, urmată de pregătirea minimă a dinților și confecționarea fațetelor sau coroanelor. După aplicare, recomandăm controale periodice și o igienă orală riguroasă pentru menținerea rezultatului pe termen lung; durata exactă a tratamentului diferă de la caz la caz și este stabilită de medic în cadrul consultației.</p>`,
+        <p>Acest tip de tratament este potrivit pacienților care își doresc un zâmbet mai armonios, precum și celor care au restaurări vechi, degradate sau decolorate. Procesul începe cu o evaluare atentă a stării dentare și stabilirea planului de tratament, urmată de pregătirea minimă a dinților și confecționarea fațetelor sau coroanelor. După aplicare, recomandăm controale periodice și o igienă orală riguroasă pentru menținerea rezultatului pe termen lung; durata exactă a tratamentului diferă de la caz la caz și este stabilită de medic în cadrul consultației.</p>`,
         images: [
           'thumbnail_10.JPG',
           'thumbnail_11.JPG',

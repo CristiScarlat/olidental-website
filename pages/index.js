@@ -192,7 +192,7 @@ const Home = () => {
 
 Home.seo = {
   title: "Olidental Clinic Timișoara | Implant, fațete, reabilitări",
-  description: "Olidental Clinic Timișoara oferă servicii stomatologice: implantologie, fațete și coroane ceramice, reabilitări orale complexe, cu medici specializați.",
+  description: "Olidental Clinic Timișoara: implantologie, fațete și coroane ceramice, reabilitări orale complexe și stomatologie generală, realizate de medici cu experiență.",
   canonical: "https://olidental.ro",
 };
 

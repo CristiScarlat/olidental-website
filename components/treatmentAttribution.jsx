@@ -21,7 +21,7 @@ const TreatmentAttribution = () => {
   return (
     <p className="text-muted" style={{ fontSize: '0.85rem', marginTop: '1rem' }}>
       Conținut medical realizat de echipa Olidental Clinic.{' '}
-      <Link href="/echipa">Vezi echipa și specializările noastre</Link>.
+      <Link href="/echipa">Vezi echipa noastră</Link>.
       <br />
       <time dateTime={updatedOn}>{`Ultima actualizare: ${formatDateRo(updatedOn)}`}</time>
     </p>
