@@ -1,9 +1,7 @@
 import Link from 'next/link';
 import styles from '../../styles/doctorProfile.module.css';
+import { PHONE_DISPLAY, PHONE_HREF } from '../../utils/clinicContact';
 import { NewTabHint } from './DoctorSections';
-
-const PHONE_HREF = 'tel:+40733023030';
-const PHONE_LABEL = '0733 023 030';
 
 // Side column of a doctor's page: where they see patients and how to book
 // (stays in view while scrolling on wide screens), then their public
@@ -20,7 +18,7 @@ const DoctorSide = ({ profile }) => (
         Programează-te online
       </Link>
       <a href={PHONE_HREF} className={styles.visitPhone}>
-        sau sună la {PHONE_LABEL}
+        sau sună la {PHONE_DISPLAY}
       </a>
     </div>
     {profile.profiles?.length > 0 && (

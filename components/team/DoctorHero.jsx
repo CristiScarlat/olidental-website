@@ -1,9 +1,8 @@
 import Link from 'next/link';
 import styles from '../../styles/doctorProfile.module.css';
+import { PHONE_DISPLAY, PHONE_HREF } from '../../utils/clinicContact';
 import { toWebp } from '../../utils/images';
 
-const PHONE_HREF = 'tel:+40733023030';
-const PHONE_LABEL = '0733 023 030';
 // Size of every team thumbnail (public/images/team/thumbnail_*).
 const PORTRAIT = { width: 833, height: 1250 };
 
@@ -41,7 +40,7 @@ const DoctorHero = ({ member, profile }) => (
           Programează o consultație
         </Link>
         <a href={PHONE_HREF} className={styles.secondary}>
-          Sună: {PHONE_LABEL}
+          Sună: {PHONE_DISPLAY}
         </a>
       </div>
     </div>
