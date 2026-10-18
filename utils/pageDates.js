@@ -18,10 +18,25 @@ const PAGE_DATES = {
   '/blog/povestea-olidental-clinic': '2026-10-05',
   // Case texts restored to the clinic's own wording.
   '/rezultate': '2026-10-09',
-  '/rezultate/fatete-coroane-ceramice': '2026-10-09',
-  '/rezultate/estetica-gingivala': '2026-10-09',
-  '/rezultate/implantologie': '2026-10-09',
-  '/rezultate/reabilitare-orala-completa': '2026-10-09',
+  // Category intros softened, case sentences restored (AI-search stage 1).
+  '/rezultate/fatete-coroane-ceramice': '2026-10-18',
+  '/rezultate/estetica-gingivala': '2026-10-18',
+  '/rezultate/implantologie': '2026-10-18',
+  '/rezultate/reabilitare-orala-completa': '2026-10-18',
+  // AI-search stage 1: clinic facts on home and contact, lead sentences,
+  // question headings and visible update date on the treatment pages.
+  '/': '2026-10-18',
+  '/contact': '2026-10-18',
+  '/servicii': '2026-10-18',
+  '/implantologie': '2026-10-18',
+  '/estetica-zambetului': '2026-10-18',
+  '/reabilitari-orale-complexe': '2026-10-18',
+  '/fatete-coroane-ceramice': '2026-10-18',
+  '/inserare-implant-aditii-os': '2026-10-18',
+  '/restaurari-protetice': '2026-10-18',
+  '/restaurari-protetice-dentare': '2026-10-18',
+  '/restaurari-extinse-dinti-naturali-implanturi': '2026-10-18',
+  '/tratamente-multidisciplinare': '2026-10-18',
 };
 
 function getPageDate(path) {
