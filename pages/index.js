@@ -50,7 +50,7 @@ const BENEFITS = [
   {
     Icon: MdSchool,
     title: 'Echipă cu experiență academică',
-    text: 'Coordonată de Dr. Olimpiu Ladislau Karancsi, medic primar protetică dentară și șef de lucrări la UMF „Victor Babeș” Timișoara.',
+    text: 'Coordonată de Dr. Olimpiu Ladislau Karancsi, șef de lucrări la UMF „Victor Babeș” Timișoara.',
   },
   {
     Icon: MdGroups,
