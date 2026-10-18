@@ -24,7 +24,7 @@ const RezultateImplantologie = () => {
                     <div className="text-center">
                         <h1>Rezultate implantologie dentară: cazuri reale, înainte și după</h1>
                     </div>
-                    <p>Implanturile dentare sunt soluția potrivită atunci când unul sau mai mulți dinți lipsesc, fiind afectați de boală parodontală, tratamente eșuate sau uzură severă. La Olidental Clinic Timișoara, folosim implanturile dentare atât pentru înlocuirea dinților lipsă, cât și ca parte a unor planuri de tratament mai complexe, combinate cu tratamente parodontale sau restaurări protetice. Mai jos găsești cazuri reale de pacienți la care implantologia a redat funcția masticatorie și un aspect natural al zâmbetului, inclusiv situații în care am corectat tratamente cu implanturi realizate incorect în altă parte.</p>
+                    <p>Implanturile dentare sunt o opțiune de tratament atunci când unul sau mai mulți dinți lipsesc, fiind afectați de boală parodontală, tratamente eșuate sau uzură severă, dacă pacientul este un candidat pentru inserarea de implanturi. La Olidental Clinic Timișoara, folosim implanturile dentare atât pentru înlocuirea dinților lipsă, cât și ca parte a unor planuri de tratament mai complexe, combinate cu tratamente parodontale sau restaurări protetice. Mai jos găsești cazuri reale de pacienți la care implantologia a redat funcția masticatorie și un aspect natural al zâmbetului, inclusiv situații în care am corectat tratamente cu implanturi realizate incorect în altă parte.</p>
 
                     {cases.map((obj, index) => (
                         <div key={obj.title + index} className={styles.descriptionColumnRezultateCard}>

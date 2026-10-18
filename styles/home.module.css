@@ -213,3 +213,26 @@
   line-height: 1.55;
   color: #565f58;
 }
+
+/* "Despre clinică": a short factual paragraph above the contact block. */
+.about {
+  max-width: 46rem;
+  margin: 3rem auto;
+  padding: 0 1.25rem;
+}
+
+.about p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.65;
+  text-align: center;
+  color: #565f58;
+}
+
+.about a {
+  /* Darker than the brand green: 5.1:1 on the #eeeded page background. */
+  color: #3b6f27;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
