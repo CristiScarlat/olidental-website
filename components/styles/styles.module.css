@@ -248,6 +248,16 @@
   width: 3rem;
 }
 
+/* Gallery chrome drawn from data-* attributes, so it isn't DOM text that
+   extractors read as page content (components/caseNavControls.jsx). */
+.caseCounter::before {
+  content: attr(data-count);
+}
+
+.touchHint::before {
+  content: attr(data-hint);
+}
+
 .imageComparatorContainerPreview {
   margin: 0 0.5rem;
   padding: 1rem 3rem;

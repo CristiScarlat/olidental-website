@@ -1,0 +1,23 @@
+/* Treatment pages (hubs and procedures): the content column that holds the
+   H1, the case gallery and the clinic's description. */
+
+/* medical-guide.css sets every h2 to a fixed 42px, which on phones is larger
+   than the H1 (clamped there to ~30px). Same idea as its h1 rule: 42px from
+   ~750px up, smaller below, so the H2s never outrank the title. */
+.content h2 {
+  font-size: clamp(1.5rem, 4vw + 0.75rem, 42px);
+  overflow-wrap: break-word;
+}
+
+/* One-sentence lead under the H1 (components/treatmentLead.jsx): same size
+   and weight as the description paragraphs below it
+   (.services-container-description p in globals.css), centred like the title. */
+.lead {
+  max-width: 44rem;
+  margin: 0 auto 1rem;
+  padding: 0 0.5rem;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  color: black;
+}
