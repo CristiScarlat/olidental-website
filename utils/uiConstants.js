@@ -698,7 +698,7 @@ export const services = [
           'concomitent sau anterior inserării implanturilor. La Olidental Clinic folosim sisteme de implant consacrate, ' +
           'alese în funcție de fiecare caz în parte. După inserarea implantului, are loc procesul de osteointegrare, cu o durată diferită în funcție de particularitățile fiecărui caz. ' +
           '<h2>Cui se adresează acest tratament</h2> ' +
-          'Implantologia dentară este recomandată pacienților care au pierdut unul sau mai mulți dinți și doresc o soluție fixă, stabilă pe termen lung. ' +
+          'Implantologia dentară este recomandată pacienților care au pierdut unul sau mai mulți dinți și doresc o soluție fixă. ' +
           'Evaluarea inițială, care include investigațiile radiografice menționate mai sus, stabilește dacă este necesară o adiție de os înainte de inserarea implantului. ' +
           'Perioada de vindecare și osteointegrare variază de la caz la caz, în funcție de calitatea osoasă și de starea generală de sănătate a pacientului, ' +
           'iar planul exact de tratament este stabilit împreună cu medicul în cadrul consultației. ',
@@ -996,7 +996,7 @@ export const services = [
           'tratamente endodontice, chirurgie implantară și la final restaurări protetice ' +
           'care să îmbine funcționalitatea cu estetica dentară. ' +
           '<h2>Cui se adresează acest tratament</h2> ' +
-          'Fiecare caz multidisciplinar este planificat individual, în urma unei evaluări complete a stării orale, iar etapele de tratament sunt coordonate pentru a asigura un rezultat coerent, atât funcțional, cât și estetic. ' +
+          'Fiecare caz multidisciplinar este planificat individual, în urma unei evaluări complete a stării orale, iar etapele de tratament sunt coordonate, urmărind atât aspectul funcțional, cât și cel estetic. ' +
           'Succesul pe termen lung depinde de respectarea planului stabilit de medic și de controalele periodice ulterioare finalizării tratamentului.',
         cazuri: [
           {
@@ -1294,7 +1294,7 @@ export const beforeAfter = [
     resultCategory: 'fatete-coroane-ceramice',
     description:
       '<p><strong>Provocarea:</strong> Pacienta dorea în primul rând îmbunătățirea esteticii dentare, cu atenție și la funcționalitatea dinților.</p>' +
-      '<p><strong>Tratamentul:</strong> Dinții au primit restaurări minim invazive de tipul fațetelor dentare, o abordare care păstrează cât mai mult din structura dentară naturală.</p>' +
+      '<p><strong>Tratamentul:</strong> Dinții au primit restaurări minim invazive de tipul fațetelor dentare.</p>' +
       '<p><strong>Rezultatul:</strong> S-a obținut un zâmbet natural, mai estetic și mai luminos, în conformitate cu pretențiile estetice ale pacientei.</p>',
     difficultyLevel: 5,
     category: 3,

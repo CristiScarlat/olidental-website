@@ -2,13 +2,12 @@ import Link from "next/link";
 import { ImFacebook, ImInstagram } from 'react-icons/im';
 import { MdLocationOn, MdOutlineMail, MdPhone, MdAccessTime } from 'react-icons/md';
 import { services } from '../utils/uiConstants';
+import { EMAIL, PHONE_DISPLAY, PHONE_HREF } from '../utils/clinicContact';
 import styles from './styles/footer.module.css';
 
-// Contact details, kept identical to the /contact page (components/location.jsx)
-// and the Dentist schema (utils/schema.js).
-const PHONE_DISPLAY = '+40 733.023.030';
-const PHONE_HREF = 'tel:+40733023030';
-const EMAIL = 'clinica@olidental.ro';
+// Phone and email come from utils/clinicContact.js, the same source as the
+// /contact page (components/location.jsx). Address and hours are still kept
+// here; they match the Dentist schema (utils/schema.js).
 const ADDRESS_LINES = ['Strada Ștefan cel Mare 53, Parter', '(intrare de pe Gh. Asachi)', 'Timișoara 307200'];
 // Plain Maps link (no embed), so the footer sets no third-party cookies.
 const MAPS_URL = 'https://www.google.com/maps/search/?api=1&query=Olidental%20Clinic%2C%20Strada%20%C8%98tefan%20cel%20Mare%2053%2C%20Timi%C8%99oara';
@@ -96,7 +95,7 @@ const Footer = ({ onOpenCookieSettings }) => {
                 className={styles.logo}
               />
             </Link>
-            <p className={styles.tagline}>Servicii stomatologice premium în Timișoara</p>
+            <p className={styles.tagline}>Servicii stomatologice în Timișoara</p>
             <Link href='/programare' className={styles.cta}>Programează o consultație</Link>
             <ul className={styles.social}>
               {SOCIAL_LINKS.map(({ href, label, Icon }) => (

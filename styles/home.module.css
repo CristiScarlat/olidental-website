@@ -221,6 +221,15 @@
   padding: 0 1.25rem;
 }
 
+/* medical-guide.css sets every h2 to a fixed 42px, which on phones is larger
+   than the hero H1 (clamp(1.5rem, 4vw, 2.4rem), 24px there). Same approach as
+   .content h2 in components/styles/treatmentPage.module.css: scale with the
+   viewport and cap at 42px, so this H2 stays at or below the H1 up to ~960px. */
+.about h2 {
+  font-size: clamp(1.375rem, 4vw, 42px);
+  overflow-wrap: break-word;
+}
+
 .about p {
   margin: 0;
   font-size: 1rem;

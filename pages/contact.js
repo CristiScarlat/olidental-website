@@ -14,11 +14,15 @@ const Contact = () => {
                 <Link href="/programare">programare online</Link>. Suntem disponibili de luni până vineri, între 09:30 și 18:30.
             </p>
             {/* Phone and email as text in the main content too: text extractors
-                (search engines, AI answers) drop the icon contact block below. */}
+                (search engines, AI answers) drop the icon contact block below.
+                Below 768px each item gets its own line and the "·" is hidden, so
+                it never dangles at the end of a wrapped line. No aria-hidden on
+                the "·": trafilatura drops aria-hidden text and would then glue
+                the phone number to "Email:". */}
             <p className="text-center m-auto px-3 pb-4" style={INTRO_STYLE}>
-                <span className="text-nowrap">Telefon: <a href={PHONE_HREF}>{PHONE_DISPLAY}</a></span>
-                {' · '}
-                <span className="text-nowrap">Email: <a href={`mailto:${EMAIL}`}>{EMAIL}</a></span>
+                <span className="text-nowrap d-block d-md-inline">Telefon: <a href={PHONE_HREF}>{PHONE_DISPLAY}</a></span>
+                <span className="d-none d-md-inline">{' · '}</span>
+                <span className="text-nowrap d-block d-md-inline">Email: <a href={`mailto:${EMAIL}`}>{EMAIL}</a></span>
             </p>
             <Location />
         </div>

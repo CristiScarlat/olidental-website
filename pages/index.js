@@ -60,7 +60,7 @@ const BENEFITS = [
   {
     Icon: MdHealthAndSafety,
     title: 'Corectăm și tratamente eșuate',
-    text: 'O parte din pacienții noștri vin după intervenții începute greșit în alte cabinete. Pornim mereu de la evaluarea completă a situației.',
+    text: 'O parte din pacienții noștri vin pentru refacerea unor tratamente anterioare. Pornim mereu de la evaluarea completă a situației.',
   },
 ];
 
@@ -82,7 +82,7 @@ const AboutClinic = () => (
       {CITY}, și oferă servicii de estetică a zâmbetului, implantologie orală și reabilitări orale
       complexe. Programul este de luni până vineri, între {OPENING_HOURS.opens} și{' '}
       {OPENING_HOURS.closes}. Programările se fac telefonic, la{' '}
-      <a href={PHONE_HREF}>{PHONE_DISPLAY}</a>, sau <Link href="/programare">online</Link>.
+      <a href={PHONE_HREF}>{PHONE_DISPLAY}</a>, sau prin <Link href="/programare">programare online</Link>.
       Clinica are nota {GOOGLE_RATING.value} din{' '}
       {formatCount(GOOGLE_RATING.count, 'recenzie', 'recenzii')} Google.
     </p>
@@ -132,7 +132,7 @@ const Home = () => {
           <div className={styles.heroContent}>
             <h1>Olidental Clinic Timișoara</h1>
             <p className={styles.heroSubtitle}>
-              Servicii stomatologice premium, de la un singur dinte fațetat până la reabilitări
+              Servicii stomatologice, de la un singur dinte fațetat până la reabilitări
               orale complexe.
             </p>
             <div className={styles.heroActions}>
@@ -191,8 +191,8 @@ const Home = () => {
 };
 
 Home.seo = {
-  title: "Olidental Clinic Timișoara | Clinică stomatologică premium",
-  description: "Olidental Clinic Timișoara oferă servicii stomatologice premium: implantologie, fațete și coroane ceramice, reabilitări orale complexe, cu medici specializați.",
+  title: "Olidental Clinic Timișoara | Implant, fațete, reabilitări",
+  description: "Olidental Clinic Timișoara oferă servicii stomatologice: implantologie, fațete și coroane ceramice, reabilitări orale complexe, cu medici specializați.",
   canonical: "https://olidental.ro",
 };
 

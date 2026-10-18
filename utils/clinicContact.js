@@ -1,7 +1,8 @@
 // Clinic facts written into page copy: the homepage "Despre clinică" section,
-// the /contact page and the contact block (components/location.jsx). Same
-// values as the footer and the Dentist JSON-LD in utils/schema.js, which still
-// keep their own copies. The postcode is left out on purpose (pending check).
+// the /contact page, the contact block (components/location.jsx) and the
+// footer's phone and email. Same values as the footer's address and hours and
+// the Dentist JSON-LD in utils/schema.js, which still keep their own copies.
+// The postcode is left out on purpose (pending check).
 
 // Founding year, confirmed by the clinic (company registration J35/2982/2015).
 export const FOUNDING_YEAR = '2015';
