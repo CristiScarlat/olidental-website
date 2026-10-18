@@ -45,7 +45,7 @@ const PovesteaOlidentalClinic = () => (
     <h2 id={SECTIONS.vision.id}>{SECTIONS.vision.title}</h2>
     <p>
       Cunoscut de pacienți modest, comunicativ și empatic, ca Dr. Oli, fondatorul clinicii noastre,{' '}
-      <Link href="/echipa">Dr. Olimpiu Karancsi</Link>, a pornit la drum cu un obiectiv clar: să
+      <Link href="/echipa/olimpiu-ladislau-karancsi">Dr. Olimpiu Karancsi</Link>, a pornit la drum cu un obiectiv clar: să
       creeze un spațiu medical în care excelența profesională să meargă mână în mână cu a fi uman.
       Ca medic primar protetician și cadru didactic universitar, Dr. Oli a înțeles că stomatologia
       modernă înseamnă mult mai mult decât rezolvarea unei probleme dentare, oricât de dificilă sau

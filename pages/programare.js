@@ -6,6 +6,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import emailjs from '@emailjs/browser';
+import { trackEvent } from '../utils/analytics';
 
 const Programare = () => {
   const [recaptcha, setRecaptcha] = useState();
@@ -61,6 +62,8 @@ const Programare = () => {
         .then(
           () => {
             setSpinner(false);
+            // Booking-request conversion (GA4 -> Google Ads). No form data is sent.
+            trackEvent('generate_lead', { form_name: 'programare' });
             toast.success(`Un email de confirmare a fost trimis la ${email}, mulțumim.`);
           },
           (error) => {

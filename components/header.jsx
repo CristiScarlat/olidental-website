@@ -43,7 +43,7 @@ const Header = () => {
                   </li>
                   <li className="nav-item ms-auto li-link">
                     <Link href="/echipa" legacyBehavior>
-                      <a className={`${styles['header-custom-link']}  text-uppercase ${router.pathname === '/echipa' ? 'active' : ''}`}>Echipa</a>
+                      <a className={`${styles['header-custom-link']}  text-uppercase ${router.pathname.startsWith('/echipa') ? 'active' : ''}`}>Echipa</a>
                     </Link>
                   </li>
                   <li className="nav-item ms-auto li-link">

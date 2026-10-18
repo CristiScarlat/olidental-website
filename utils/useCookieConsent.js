@@ -1,7 +1,11 @@
 import { useCallback, useEffect, useState } from 'react';
 import cookie from 'js-cookie';
 
-export const CONSENT_COOKIE = 'cookieConsent';
+// "2": since 2026-10 the choice covers Google Ads as well as Analytics. A choice
+// made on the old analytics-only banner (cookie "cookieConsent") doesn't
+// cover advertising, so those visitors are asked again.
+export const CONSENT_COOKIE = 'cookieConsent2';
+const LEGACY_CONSENT_COOKIE = 'cookieConsent';
 export const CONSENT_ACCEPTED = 'accepted';
 export const CONSENT_REJECTED = 'rejected';
 const CONSENT_LIFETIME_DAYS = 365;
@@ -21,6 +25,7 @@ export const useCookieConsent = () => {
   const [state, setState] = useState({ ready: false, choice: undefined });
 
   useEffect(() => {
+    cookie.remove(LEGACY_CONSENT_COOKIE);
     setState({ ready: true, choice: readChoice() });
   }, []);
 

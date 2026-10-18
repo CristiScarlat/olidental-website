@@ -109,7 +109,7 @@ const DeCeSaAlegiOlidentalClinic = () => (
       Fundamentul fiecărui tratament reușit este pregătirea riguroasă a medicului. Olidental Clinic
       este fondată și coordonată de{' '}
       <strong>
-        <Link href="/echipa">Dr. Olimpiu Karancsi (Dr. Oli)</Link>
+        <Link href="/echipa/olimpiu-ladislau-karancsi">Dr. Olimpiu Karancsi (Dr. Oli)</Link>
       </strong>
       , medic primar protetician și cadru didactic universitar.
     </p>

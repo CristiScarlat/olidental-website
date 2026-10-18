@@ -8,13 +8,20 @@
 // (there is no other source of truth for them in the codebase).
 import { services, teamCards, beforeAfter } from './uiConstants';
 import { getPageDate } from './pageDates';
+import {
+  TEAM_PAGE_PATH,
+  personSlug,
+  getDoctorProfile,
+  teamMemberPath,
+  getProfileMemberForPath,
+  bioText,
+} from './team';
 
 export const SITE_URL = 'https://olidental.ro';
 export const DENTIST_ID = `${SITE_URL}/#dentist`;
 export const WEBSITE_ID = `${SITE_URL}/#website`;
 const LANGUAGE = 'ro-RO';
 const SERVICES_HUB_PATH = '/servicii';
-const TEAM_PAGE_PATH = '/echipa';
 const RESULTS_HUB_PATH = '/rezultate';
 const CONTACT_PAGE_PATH = '/contact';
 const BLOG_POST_PREFIX = '/blog/';
@@ -43,8 +50,9 @@ const SIMPLE_PAGE_LABELS = {
   '/termen-conditii': 'Termeni și condiții',
 };
 
-/** Facts stated in each person's bio on /echipa (utils/uiConstants.js),
- * keyed by `teamCards` title, named the way the bio names them. */
+/** Facts stated in each person's bio on /echipa (utils/uiConstants.js) or
+ * on their own page (utils/doctorProfiles.js), keyed by `teamCards` title,
+ * named the way the page names them. */
 const DENTAL_FACULTY_TIMISOARA = {
   '@type': 'EducationalOrganization',
   name: 'Facultatea de Medicină Dentară din Timișoara',
@@ -55,6 +63,7 @@ const PERSON_EXTRAS = {
   },
   'Dr. Ana Strava': { alumniOf: DENTAL_FACULTY_TIMISOARA },
   'Dr. Patricia Străinu': { alumniOf: DENTAL_FACULTY_TIMISOARA },
+  'Dr. Anda Nicola': { alumniOf: DENTAL_FACULTY_TIMISOARA },
 };
 
 /**
@@ -243,13 +252,14 @@ export function getFounder() {
 }
 
 /** Short typed reference to a team member, enough to stand on its own on
- * pages that don't carry the full Person nodes (only /echipa does). */
+ * pages that don't carry the full Person nodes (/echipa and each doctor's
+ * own page do). */
 function personReference(member) {
   return {
     '@type': 'Person',
     '@id': personId(member),
     name: member.title,
-    url: personId(member),
+    url: personUrl(member),
   };
 }
 
@@ -443,20 +453,32 @@ export function buildBreadcrumbSchema(breadcrumbItems, pathname) {
   };
 }
 
-/** URL-safe anchor for a team member, e.g. "Dr. Diana Rada Bârsan" ->
- * "diana-rada-barsan". /echipa puts it on each member's block. */
-export function personSlug(member) {
-  return member.title
-    .replace(/^(Dr|As)\.\s*/i, '')
-    .normalize('NFD')
-    .replace(/[̀-ͯ]/g, '')
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-+|-+$/g, '');
+/** The page about the person: their own page (/echipa/<slug>) for the
+ * doctors who have one, otherwise their block on /echipa. */
+function personUrl(member) {
+  return `${SITE_URL}${teamMemberPath(member)}`;
 }
 
+/** Doctors with their own page get `<page>#person` (the page itself is the
+ * ProfilePage); everyone else keeps the /echipa#<slug> anchor. */
 export function personId(member) {
-  return `${SITE_URL}${TEAM_PAGE_PATH}#${personSlug(member)}`;
+  return getDoctorProfile(member)
+    ? `${personUrl(member)}#person`
+    : `${SITE_URL}${TEAM_PAGE_PATH}#${personSlug(member)}`;
+}
+
+/** What only the doctors with their own page add: nickname, a one-line
+ * description and public profiles, all shown on that page. */
+function profileExtras(member) {
+  const profile = getDoctorProfile(member);
+  if (!profile) {
+    return {};
+  }
+  return {
+    ...(profile.nickname ? { alternateName: profile.nickname } : {}),
+    description: profile.intro || bioText(member),
+    ...(Array.isArray(profile.sameAs) && profile.sameAs.length > 0 ? { sameAs: profile.sameAs } : {}),
+  };
 }
 
 export function buildPersonSchema(member) {
@@ -468,13 +490,23 @@ export function buildPersonSchema(member) {
     '@type': 'Person',
     '@id': personId(member),
     name: member.title,
-    url: personId(member),
+    url: personUrl(member),
     ...(specializations.length > 0 ? { jobTitle: specializations[0] } : {}),
     ...(knowsAbout.length > 0 ? { knowsAbout } : {}),
     ...(member.thumbnail ? { image: `${SITE_URL}${member.thumbnail}` } : {}),
     worksFor: { '@id': DENTIST_ID },
+    ...profileExtras(member),
     ...(PERSON_EXTRAS[member.title] || {}),
   };
+}
+
+/** Visible and JSON-LD trail of a doctor's own page: Acasă / Echipa / name. */
+function profileBreadcrumb(member) {
+  return buildBreadcrumbTrail([
+    { label: HOME_LABEL, href: '/' },
+    { label: SIMPLE_PAGE_LABELS[TEAM_PAGE_PATH], href: TEAM_PAGE_PATH },
+    { label: member.title, href: teamMemberPath(member) },
+  ]);
 }
 
 /**
@@ -499,6 +531,11 @@ function getRouteNodes(pathname) {
       buildBreadcrumbSchema(resultsEntry.breadcrumb, pathname),
       ...buildResultsImageObjects(pathname, resultsEntry.slug),
     ];
+  }
+
+  const profileMember = getProfileMemberForPath(pathname);
+  if (profileMember) {
+    return [buildBreadcrumbSchema(profileBreadcrumb(profileMember), pathname), buildPersonSchema(profileMember)];
   }
 
   const simpleBreadcrumb = getSimplePageBreadcrumb(pathname);
@@ -529,14 +566,23 @@ export function getSchemaForRoute(pathname, meta = {}) {
 
   const routeNodes = getRouteNodes(normalizedPathname);
   const hasBreadcrumb = routeNodes.some((node) => node['@type'] === 'BreadcrumbList');
-  const webPage =
-    normalizedPathname === CONTACT_PAGE_PATH
-      ? buildWebPageSchema(normalizedPathname, meta, {
-          type: 'ContactPage',
-          hasBreadcrumb,
-          extra: { mainEntity: { '@id': DENTIST_ID } },
-        })
-      : buildWebPageSchema(normalizedPathname, meta, { hasBreadcrumb });
+  const profileMember = getProfileMemberForPath(normalizedPathname);
+  let webPage;
+  if (normalizedPathname === CONTACT_PAGE_PATH) {
+    webPage = buildWebPageSchema(normalizedPathname, meta, {
+      type: 'ContactPage',
+      hasBreadcrumb,
+      extra: { mainEntity: { '@id': DENTIST_ID } },
+    });
+  } else if (profileMember) {
+    webPage = buildWebPageSchema(normalizedPathname, meta, {
+      type: 'ProfilePage',
+      hasBreadcrumb,
+      extra: { mainEntity: { '@id': personId(profileMember) } },
+    });
+  } else {
+    webPage = buildWebPageSchema(normalizedPathname, meta, { hasBreadcrumb });
+  }
 
   return [...base, webPage, ...routeNodes];
 }
@@ -559,6 +605,11 @@ export function getBreadcrumbItems(pathname) {
   const resultsEntry = resultsRouteIndex.get(normalizedPathname);
   if (resultsEntry) {
     return resultsEntry.breadcrumb;
+  }
+
+  const profileMember = getProfileMemberForPath(normalizedPathname);
+  if (profileMember) {
+    return profileBreadcrumb(profileMember);
   }
 
   return getSimplePageBreadcrumb(normalizedPathname);

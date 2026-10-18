@@ -142,7 +142,7 @@ const PoliticaCookies = () => {
       pe această pagină de internet.</span><span
     style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'><br /></span><span
     style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>Aceste
-      <span>cookie</span>-uri pot proveni de la următorii terți: Google Analytics (statistici, doar cu acordul tău), Google Maps (harta din pagină), JotForm (widget-ul de recenzii) și Google reCAPTCHA (formularul de programare).&nbsp;</span></p>
+      <span>cookie</span>-uri pot proveni de la următorii terți: Google Analytics (statistici, doar cu acordul tău), Google Ads (măsurarea reclamelor și reclame personalizate, doar cu acordul tău), Google Maps (harta din pagină), JotForm (widget-ul de recenzii) și Google reCAPTCHA (formularul de programare).&nbsp;</span></p>
   <p dir='ltr' style='line-height:1.38;margin-top:0pt;margin-bottom:10pt'><span
     style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-weight:700;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>6.
       Ce <span>cookie</span>-uri sunt folosite prin intermediul acestei pagini de internet:</span></p>
@@ -157,7 +157,10 @@ const PoliticaCookies = () => {
       <span>Cookie</span>-uri de analiză a utilizatorilor;</span><span
     style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'><br /></span><span
     style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>c.
-      <span>Cookie</span>-uri ale conținutului încorporat de la terți și de securitate.</span></p>
+      <span>Cookie</span>-uri ale conținutului încorporat de la terți și de securitate;</span><span
+    style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'><br /></span><span
+    style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>d.
+      <span>Cookie</span>-uri de marketing (publicitate).</span></p>
   <p dir='ltr' style='line-height:1.38;margin-top:0pt;margin-bottom:10pt'><span
     style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-weight:700;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>a.
       <span>Cookie</span>-uri de performanță</span></p>
@@ -179,6 +182,11 @@ const PoliticaCookies = () => {
       <span>Cookie</span>-uri ale conținutului încorporat și de securitate</span></p>
   <p dir='ltr' style='line-height:1.38;margin-top:0pt;margin-bottom:10pt'><span
     style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>Harta Google Maps, widget-ul de recenzii JotForm și verificarea anti-spam Google reCAPTCHA de pe formularul de programare sunt furnizate de terți, care pot plasa propriile <span>cookie</span>-uri atunci când aceste elemente se încarcă. Aceste <span>cookie</span>-uri sunt controlate de furnizorii respectivi și sunt supuse politicilor lor de confidențialitate.</span></p>
+  <p dir='ltr' style='line-height:1.38;margin-top:0pt;margin-bottom:10pt'><span
+    style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-weight:700;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>d.
+      <span>Cookie</span>-uri de marketing</span></p>
+  <p dir='ltr' style='line-height:1.38;margin-top:0pt;margin-bottom:10pt'><span
+    style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>Doar dacă accepți <span>cookie</span>-urile din bannerul afișat la prima vizită, Google Ads poate plasa <span>cookie</span>-uri (de exemplu _gcl_au) care ne arată câți vizitatori ajung pe site din reclamele noastre și ce fac aici, cum ar fi trimiterea formularului de programare sau un apel telefonic, și care permit afișarea de reclame personalizate. Folosim modul de consimțământ Google (Google Consent Mode): fără acordul tău nu se plasează <span>cookie</span>-uri de analiză sau de marketing, iar Google primește doar semnale fără <span>cookie</span>-uri și fără identificatori (de exemplu, că a avut loc o vizită sau o programare), pe care le folosește pentru estimări statistice. Poți retrage acordul oricând, din linkul „Setări <span>cookie</span>-uri” din subsolul paginii.</span></p>
   <p dir='ltr' style='line-height:1.38;margin-top:0pt;margin-bottom:10pt'><span
     style='font-size:11pt;font-family:Calibri,sans-serif;color:rgb(0,0,0);background-color:transparent;font-weight:700;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>7.
       Ce tip de informații sunt stocate și accesate prin intermediul <span>cookie</span>-urilor?</span></p>

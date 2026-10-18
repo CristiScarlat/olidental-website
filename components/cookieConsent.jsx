@@ -34,8 +34,8 @@ const CookieConsentBanner = ({ onChoose, autoFocus = false }) => {
         outline: 'none'
       }}
     >
-      <p>Folosim cookie-uri pentru funcționarea site-ului și, doar cu acordul tău, cookie-uri de analiză (Google Analytics) pentru a-l îmbunătăți.</p>
-      <p>Poți accepta sau refuza analiza, iar site-ul funcționează la fel. Detalii în <Link href="/politica-cookies" style={{ color: 'inherit', textDecoration: 'underline' }}>Politica de cookies</Link>.</p>
+      <p>Folosim cookie-uri pentru funcționarea site-ului și, doar cu acordul tău, cookie-uri de analiză (Google Analytics) și de marketing (Google Ads), ca să îmbunătățim site-ul și să măsurăm reclamele noastre.</p>
+      <p>Poți accepta sau refuza, iar site-ul funcționează la fel. Detalii în <Link href="/politica-cookies" style={{ color: 'inherit', textDecoration: 'underline' }}>Politica de cookies</Link>.</p>
       <div className="d-flex gap-3 mt-3">
         <Button onClick={() => onChoose(CONSENT_ACCEPTED)} variant="outline-light">Acceptă</Button>
         <Button onClick={() => onChoose(CONSENT_REJECTED)} variant="outline-light">Respinge</Button>

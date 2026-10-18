@@ -1,13 +1,20 @@
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect, useRef } from "react";
 import { teamCards } from "../utils/uiConstants";
-import { personSlug } from "../utils/schema";
+import { personSlug, getDoctorProfile, teamMemberPath } from "../utils/team";
 import styles from "../styles/team.module.css";
 import { toWebp } from '../utils/images';
+// Doctors with their own page (utils/doctorProfiles.js): the name links to it.
+const MemberName = ({ data, hasProfile }) => (
+    hasProfile ? <Link href={teamMemberPath(data)} className={styles.nameLink}>{data.title}</Link> : data.title
+);
+
 const TeamMemberDetails = ({ data }) => {
+    const hasProfile = Boolean(getDoctorProfile(data));
     return (
         <div className="team-member-container row mb-3 m-auto bg-gray" style={{ maxWidth: 1500, color: 'black' }}>
-            <h4 className={styles.titleMobile}>{data.title}</h4>
+            <h4 className={styles.titleMobile}><MemberName data={data} hasProfile={hasProfile}/></h4>
             <div className="col-md-3">
               { data.thumbnail ? <img src={toWebp(data.thumbnail)} alt={data.title} width={320} height={480} loading='lazy' style={{objectFit: 'contain'}}/>
                 :
@@ -17,7 +24,7 @@ const TeamMemberDetails = ({ data }) => {
               }
             </div>
             <div className="col-md-9">
-                <h4 className={styles.titleDesktop}>{data.title}</h4>
+                <h4 className={styles.titleDesktop}><MemberName data={data} hasProfile={hasProfile}/></h4>
                 <div className="my-3" dangerouslySetInnerHTML={{ __html: data.body }}></div>
                 {data?.specializations?.length > 0 && <>
                 <strong>Specializări:</strong>
@@ -35,6 +42,11 @@ const TeamMemberDetails = ({ data }) => {
                         ))}
                     </ul>
                 </>}
+                {hasProfile && (
+                    <Link href={teamMemberPath(data)} className={styles.profileLink}>
+                        Vezi profilul complet al {data.title}
+                    </Link>
+                )}
             </div>
         </div>
     )

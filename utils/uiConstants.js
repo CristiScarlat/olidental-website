@@ -72,7 +72,7 @@ export const teamCards = [
     simpozioane la care a participat. Faptul că este la rândul ei mamă, a ajutat-o să creeze legături frumoase și de încredere cu micii pacienți și cu părinții lor.
     Empatia, abordarea caldă și înțelegerea mecanismelor psihologice, îi determină pe copiii care îi trec pragul să o îndrăgească și să revină fără frică în cabinet.</p> `,
     specializations: ['Medic dentist pedodonție (stomatologie pediatrică)'],
-    services: ['Tratamente pedododontice'],
+    services: ['Tratamente pedodontice'],
     img: '/images/team/dr.-Anda-Nicola-medic-new.jpg',
     thumbnail: '/images/team/thumbnail_dr.-Anda-Nicola-medic-new.jpg'
   },

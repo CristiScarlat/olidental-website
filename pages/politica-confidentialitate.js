@@ -235,7 +235,7 @@ const PoliticaConfidentialitate = () => {
             <p dir='ltr' style='line-height:1.2;margin-top:0pt;margin-bottom:0pt'><span
                     style='font-size:11.5pt;font-family:Arial;background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline'>pentru
                     efectuarea analizei datelor, testarea ș<span>i</span> cercetarea, monitorizarea tendințelor de
-                    utilizare ș<span>i</span> activitate, inclusiv de tipul Google Analytics dezvoltarea
+                    utilizare ș<span>i</span> activitate, inclusiv de tipul Google Analytics, măsurarea eficienței reclamelor noastre Google Ads (doar cu acordul tău, exprimat prin bannerul de <span>cookie</span>-uri), dezvoltarea
                     caracteristicilor de siguranță ș<span>i</span> autentificarea utilizatorilor, respectiv
                     pacienților;</span></p>
         </li>

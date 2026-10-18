@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import styles from '../../styles/blog.module.css';
 import { getFounder } from '../../utils/schema';
+import { teamMemberPath } from '../../utils/team';
 import { toWebp } from '../../utils/images';
 
 // Motto quoted in the founder's bio on /echipa (utils/uiConstants.js).
@@ -8,7 +9,8 @@ const FOUNDER_MOTTO = '„Nu există probleme, ci doar soluții!”';
 const FOUNDER_PHOTO = { width: 833, height: 1250 };
 
 // "Despre fondator": the founder's real credentials, read from the same team
-// data the /echipa page renders, so the two can't disagree.
+// data the /echipa page renders, so the two can't disagree. Links to his own
+// page (/echipa/<slug>).
 const FounderBox = () => {
   const founder = getFounder();
   if (!founder) {
@@ -36,8 +38,8 @@ const FounderBox = () => {
           ))}
         </ul>
         <p className={styles.founderMotto}>{FOUNDER_MOTTO}</p>
-        <Link href="/echipa" className={styles.founderLink}>
-          Cunoaște echipa Olidental Clinic
+        <Link href={teamMemberPath(founder)} className={styles.founderLink}>
+          Vezi profilul Dr. Oli
         </Link>
       </div>
     </section>

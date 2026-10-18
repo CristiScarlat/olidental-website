@@ -22,6 +22,11 @@ const PAGE_DATES = {
   '/rezultate/estetica-gingivala': '2026-10-09',
   '/rezultate/implantologie': '2026-10-09',
   '/rezultate/reabilitare-orala-completa': '2026-10-09',
+  // Doctors' own pages (utils/doctorProfiles.js), and /echipa now linking to them.
+  '/echipa': '2026-10-18',
+  '/echipa/olimpiu-ladislau-karancsi': '2026-10-18',
+  '/echipa/paula-derban': '2026-10-18',
+  '/echipa/anda-nicola': '2026-10-18',
 };
 
 function getPageDate(path) {

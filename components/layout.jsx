@@ -13,7 +13,7 @@ import Breadcrumbs from './breadcrumbs';
 import { getSchemaForRoute, getBreadcrumbItems } from '../utils/schema';
 import { getPageDate } from '../utils/pageDates';
 import { useCookieConsent, CONSENT_ACCEPTED } from '../utils/useCookieConsent';
-import { GA_MEASUREMENT_ID, applyAnalyticsConsent } from '../utils/analytics';
+import { GA_MEASUREMENT_ID, applyConsent, trackEvent } from '../utils/analytics';
 
 const DEFAULT_TITLE = "Olidental Clinic Timișoara | Clinică stomatologică premium";
 const DEFAULT_DESCRIPTION = "Olidental Clinic Timișoara oferă servicii stomatologice premium: implantologie, fațete și coroane ceramice, reabilitări orale complexe, cu medici specializați.";
@@ -46,11 +46,23 @@ const Layout = ({ children, title, description, canonical, ogImage, noindex, ogT
     resetConsent();
   }, [resetConsent]);
 
-  // Keep Google Analytics in step with the visitor's choice: withdrawing (or
-  // never giving) consent must stop collection right away and drop old cookies.
+  // Keep Google (Analytics and Ads) in step with the visitor's choice:
+  // withdrawing (or never giving) consent switches the Consent Mode signals to
+  // "denied" right away and drops the cookies already set.
   useEffect(() => {
-    if (consentReady) applyAnalyticsConsent(analyticsAllowed);
+    if (consentReady) applyConsent(analyticsAllowed);
   }, [consentReady, analyticsAllowed]);
+
+  // Every phone link on the site counts as a call conversion (imported into
+  // Google Ads from GA4), wherever it sits: header bar, footer, CTAs, articles.
+  useEffect(() => {
+    const onClick = (event) => {
+      const phoneLink = event.target instanceof Element ? event.target.closest('a[href^="tel:"]') : null;
+      if (phoneLink) trackEvent('click_to_call', { link_url: phoneLink.getAttribute('href') });
+    };
+    document.addEventListener('click', onClick);
+    return () => document.removeEventListener('click', onClick);
+  }, []);
 
   const pageTitle = title || DEFAULT_TITLE;
   const pageDescription = description || DEFAULT_DESCRIPTION;
@@ -113,7 +125,8 @@ const Layout = ({ children, title, description, canonical, ogImage, noindex, ogT
       <Footer onOpenCookieSettings={openCookieSettings} />
       <CallBar />
       {consentReady && !consentChoice && <CookieConsentBanner onChoose={chooseConsent} autoFocus={bannerReopened} />}
-      {analyticsAllowed && <GoogleAnalytics gaId={GA_MEASUREMENT_ID} />}
+      {/* Always loaded: Consent Mode (pages/_document.js) decides what it may store and send. */}
+      <GoogleAnalytics gaId={GA_MEASUREMENT_ID} />
     </>
   );
 };
