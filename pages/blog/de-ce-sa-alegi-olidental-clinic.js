@@ -111,7 +111,7 @@ const DeCeSaAlegiOlidentalClinic = () => (
       <strong>
         <Link href="/echipa/olimpiu-ladislau-karancsi">Dr. Olimpiu Karancsi (Dr. Oli)</Link>
       </strong>
-      , medic primar protetician și cadru didactic universitar.
+      , medic specialist protetician și cadru didactic universitar.
     </p>
     <p>
       Această dublă calitate garantează că fiecare pacient beneficiază de un act medical bazat pe

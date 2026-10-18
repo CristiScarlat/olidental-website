@@ -27,7 +27,7 @@ const TeamMemberDetails = ({ data }) => {
                 <h4 className={styles.titleDesktop}><MemberName data={data} hasProfile={hasProfile}/></h4>
                 <div className="my-3" dangerouslySetInnerHTML={{ __html: data.body }}></div>
                 {data?.specializations?.length > 0 && <>
-                <strong>Specializări:</strong>
+                <strong>Titlu profesional:</strong>
                 <ul className="mt-2">
                     {data.specializations.map((specialization, index) => (
                         <li key={specialization+index}>{specialization}</li>
@@ -78,7 +78,7 @@ const Echipa = () => {
 
 Echipa.seo = {
     title: "Echipa noastră | Olidental Clinic Timișoara",
-    description: "Cunoaște echipa Olidental Clinic Timișoara: medici stomatologi și asistente cu specializări în implantologie, estetică dentară și reabilitări orale.",
+    description: "Cunoaște echipa Olidental Clinic Timișoara: medici stomatologi și asistente care lucrează în implantologie, estetică dentară și reabilitări orale.",
     canonical: "https://olidental.ro/echipa",
 };
 

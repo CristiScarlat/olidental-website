@@ -30,7 +30,7 @@ export const blogPosts = [
     excerpt:
       'Din dorința de a schimba percepția asupra vizitei la dentist s-a născut Olidental Clinic. Povestea clinicii, spusă de la oameni: viziunea Dr. Oli, confortul, tehnologia și calitatea.',
     datePublished: '2026-10-05',
-    dateModified: '2026-10-05',
+    dateModified: '2026-10-18',
     section: 'Despre noi',
     // Words inside <article> (story + "Pe scurt" + FAQ + boxes), measured
     // on the built page; drives reading time and BlogPosting.wordCount.
@@ -46,7 +46,7 @@ export const blogPosts = [
     },
     keyTakeaways: [
       'Olidental Clinic este o clinică de stomatologie integrată din Timișoara, fondată în 2015 de Dr. Olimpiu Karancsi, cunoscut de pacienți ca Dr. Oli.',
-      'Dr. Oli este medic primar protetică dentară, medic specialist chirurgie dento-alveolară, are atestat în implantologie orală și este șef de lucrări la UMF „Victor Babeș” Timișoara.',
+      'Dr. Oli este medic specialist în protetică dentară și în chirurgie dento-alveolară și este șef de lucrări la UMF „Victor Babeș” Timișoara.',
       'Clinica tratează estetica zâmbetului, implantologie orală, reabilitări orale complexe și protetică dentară, alături de ortodonție și igienizări periodice.',
       'Pilonii clinicii sunt siguranța și confortul pacientului, tehnicile minim invazive și explicarea pe înțelesul tuturor a fiecărei etape de tratament.',
       `Adresa: Strada Ștefan cel Mare 53, Timișoara. Program: luni–vineri, 09:30–18:30. Telefon: ${PHONE_DISPLAY}.`,
@@ -61,7 +61,7 @@ export const blogPosts = [
       {
         question: 'Cine a fondat Olidental Clinic?',
         answer:
-          'Clinica a fost fondată în 2015 de Dr. Olimpiu Ladislau Karancsi (Dr. Oli), medic primar protetică dentară și șef de lucrări la UMF „Victor Babeș” Timișoara.',
+          'Clinica a fost fondată în 2015 de Dr. Olimpiu Ladislau Karancsi (Dr. Oli), medic specialist protetică dentară și șef de lucrări la UMF „Victor Babeș” Timișoara.',
         link: { href: '/echipa', label: 'Cunoaște echipa medicală' },
       },
       {
@@ -92,7 +92,7 @@ export const blogPosts = [
     excerpt:
       'Opt motive pentru care tot mai mulți pacienți își încredințează zâmbetul echipei Olidental Clinic: expertiza Dr. Oli, tratamente fără frică, Smile Design, imagistică 3D pe loc și un plan de tratament clar.',
     datePublished: '2026-10-05',
-    dateModified: '2026-10-05',
+    dateModified: '2026-10-18',
     section: 'Despre noi',
     // Words inside <article> minus the side column and "Citește și",
     // measured on the built page.
@@ -107,7 +107,7 @@ export const blogPosts = [
       og: '/images/blog/de-ce-sa-alegi-olidental-clinic/og-1200x630.jpg',
     },
     keyTakeaways: [
-      'Olidental Clinic este o clinică stomatologică din Timișoara, fondată și coordonată de Dr. Olimpiu Karancsi (Dr. Oli), medic primar protetician și cadru didactic universitar.',
+      'Olidental Clinic este o clinică stomatologică din Timișoara, fondată și coordonată de Dr. Olimpiu Karancsi (Dr. Oli), medic specialist protetician și cadru didactic universitar.',
       'Clinica are propriul centru de imagistică digitală: radiografii locale și panoramice (OPG) și tomografie computerizată 3D (CBCT), realizate pe loc.',
       'Prin Smile Design și simulări intraorale 3D, pacientul își poate previzualiza și „proba” noul zâmbet înainte de începerea procedurilor.',
       'Reabilitările orale complexe sunt tratate interdisciplinar de chirurg, proteticieni și ortodont, în colaborare cu un laborator de tehnică dentară.',

@@ -45,7 +45,7 @@ export const TrainingSection = ({ member, profile }) => {
       <h2 id="pregatire">Pregătire profesională</h2>
       {specializations.length > 0 && (
         <>
-          <h3>Specializări</h3>
+          <h3>Titlu profesional</h3>
           <ul className={styles.checklist}>
             {specializations.map((item) => (
               <li key={item}>{item}</li>

@@ -71,8 +71,8 @@ const FOUNDER_HREF = teamMemberPath({ title: FOUNDER_NAME });
 
 // Plain-text facts about the clinic, so search engines and AI answers can
 // quote them from the page itself (the footer, the hero badge and the icon
-// contact block are dropped as boilerplate). Facts only, no claims, and no
-// professional grade (medic primar/specialist) until the clinic confirms them.
+// contact block are dropped as boilerplate). Facts only, no claims; grades
+// live on /echipa, taken from the CMSR register.
 const AboutClinic = () => (
   <section className={styles.about} aria-labelledby="despre-clinica">
     <h2 id="despre-clinica" className="text-center mb-3">Despre clinică</h2>

@@ -6,9 +6,8 @@ export const teamCards = [
                                          Rezolvarea cazurilor dificile este punctul lui forte, susținând că “Nu există probleme, ci doar soluții!”.</p>`,
 
     specializations: [
-      'Medic primar protetică dentară',
-      'Medic specialist chirurgie dento-alveolară ',
-      'Atestat în implantologie orală',
+      'Medic specialist protetică dentară',
+      'Medic specialist chirurgie dento-alveolară',
       'Șef de lucrări UMF “Victor Babeș” Timișoara, restaurări protetice pe implanturi'
     ],
     services: [
@@ -28,7 +27,7 @@ export const teamCards = [
     Timp în care și-a dezvoltat abilitatea de a-și contopi viziunea creativă cu dorințele și nevoile clinice ale pacientului, astfel încât rezultatele să fie de excepție.
     Profunda atenție la detalii și simțul umorului ale doamnei doctor îi determină pe pacienți să se simtă parte din familia Olidental Clinic.
     Este o fire optimistă și păstrează un echilibru între seriozitate și bună dispoziție.</p>`,
-    specializations: ['Medic primar protetică dentară', 'Atestat implantologie orală'],
+    specializations: ['Medic specialist protetică dentară', 'Competență în implantologie'],
     services: ['Protetică dentară', 'Implantologie orală', 'Estetica dentară', 'Stomatologie generală'],
     img: '/images/team/dr.-Paula-Derban-medic-new.jpg',
     thumbnail: '/images/team/thumbnail_dr.-Paula-Derban-medic-new.jpg'
@@ -38,7 +37,7 @@ export const teamCards = [
     body: `<p style="margin-bottom: 3rem;'"><span  style='margin-left: 2rem;'></span>Dr. Ana, este absolventă a Facultății de Medicină Dentară din Timișoara.
     Cu o experiență de peste 5 ani în domeniu, și-a descoperit pasiunea pentru endodonție, așa că a ales să termine această specializare.
     Fiind o fire meticuloasă, continuă să învețe, astfel încât participă la numeroase cursuri și workshop-uri cu scopul de a-și perfecționa profesionalismul de care dă dovadă.</p>`,
-    specializations: ['Medic specialist endodont', 'Endodonție'],
+    specializations: ['Medic dentist'],
     services: ['Tratamente endodontice'],
     img: '/images/team/Tunaru-Ana-new.jpg',
     thumbnail: '/images/team/thumbnail_Tunaru-Ana-new.jpg'
@@ -50,7 +49,7 @@ export const teamCards = [
     Dr. Patri, cum îi spunem noi, este o persoană perseverentă, devotată și serioasă.
     Locul de muncă, adică Olidental Clinic, îi este ca o a doua casă, este o persoană perfecționistă, pentru care calitatea actului medical este esențială.
     Este mereu dornică să învețe mai mult, participarea la diverse cursuri și workshop-uri este nelipsită.</p> `,
-    specializations: ['Medic specialist stomatologie generală'],
+    specializations: ['Medic dentist'],
     services: ['Tratamente stomatologice/terapie'],
     img: 'images/team/Dr_Patricia_Strainu.JPG',
     thumbnail: '/images/team/thumbnail_Dr_Patricia_Strainu.JPG'
@@ -60,7 +59,7 @@ export const teamCards = [
     body: `<p style="margin-bottom: 3rem;'"><span  style='margin-left: 2rem;'></span>Dna. Dr. Diana este un medic îndrăgit de către toți pacienții, de la mic la mare.
     Are o experiență de 12 ani în domeniul stomatologic. Este medic specialist ortodont, se ocupă în mod exclusiv de tratamentele ortodontice și aduce “ordine și disciplină”
     în zâmbetul tuturor. O fire comunicativă, atentă la nevoile fiecărui pacient, obișnuiește să vă îndrume spre alegerea celei mai potrivite variante de tratament.</p>`,
-    specializations: ['Medic primar ortodont'],
+    specializations: ['Medic specialist ortodonție și ortopedie dento-facială'],
     services: ['Tratamente ortodontice'],
     img: '/images/team/Diana-Barsan-new.jpg',
     thumbnail: '/images/team/thumbnail_Diana-Barsan-new.jpg'
@@ -71,7 +70,7 @@ export const teamCards = [
     Se ocupă în mod exclusiv de stomatologia pediatrică de 9 ani. Pasiunea pentru această ramură a fost susținută de numeroase cursuri de specializare și 
     simpozioane la care a participat. Faptul că este la rândul ei mamă, a ajutat-o să creeze legături frumoase și de încredere cu micii pacienți și cu părinții lor.
     Empatia, abordarea caldă și înțelegerea mecanismelor psihologice, îi determină pe copiii care îi trec pragul să o îndrăgească și să revină fără frică în cabinet.</p> `,
-    specializations: ['Medic dentist pedodonție (stomatologie pediatrică)'],
+    specializations: ['Medic dentist'],
     services: ['Tratamente pedodontice'],
     img: '/images/team/dr.-Anda-Nicola-medic-new.jpg',
     thumbnail: '/images/team/thumbnail_dr.-Anda-Nicola-medic-new.jpg'
