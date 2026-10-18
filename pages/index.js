@@ -5,7 +5,8 @@ import { carouselPicsHome, smilesGallery } from '../utils/uiConstants';
 import Link  from "next/link";
 import GoogleReviews from "../components/reviewsCarousel";
 import { buildCarouselAltTextGetter } from '../utils/carouselAlt';
-import { GOOGLE_MAPS_URL, GOOGLE_RATING, personSlug } from '../utils/schema';
+import { GOOGLE_MAPS_URL, GOOGLE_RATING } from '../utils/schema';
+import { teamMemberPath } from '../utils/team';
 import { CITY, FOUNDING_YEAR, OPENING_HOURS, PHONE_DISPLAY, PHONE_HREF, STREET_ADDRESS } from '../utils/clinicContact';
 import { formatCount } from '../utils/formatCount';
 import styles from '../styles/home.module.css';
@@ -64,9 +65,9 @@ const BENEFITS = [
   },
 ];
 
-// The founder's block on /echipa carries this anchor (see pages/echipa.js).
+// The founder's own page (/echipa/<slug>), or his block on /echipa if he has none.
 const FOUNDER_NAME = 'Dr. Olimpiu Ladislau Karancsi';
-const FOUNDER_HREF = `/echipa#${personSlug({ title: FOUNDER_NAME })}`;
+const FOUNDER_HREF = teamMemberPath({ title: FOUNDER_NAME });
 
 // Plain-text facts about the clinic, so search engines and AI answers can
 // quote them from the page itself (the footer, the hero badge and the icon
