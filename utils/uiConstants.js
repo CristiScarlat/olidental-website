@@ -1219,7 +1219,7 @@ export const beforeAfter = [
     title: 'Refacerea unor tratamente eșuate',
     resultCategory: 'implantologie',
     description:
-      '<p><strong>Provocarea:</strong> Pacienta venea cu un aspect dentar compromis, urmare a unor tratamente eșuate anterior: implanturi inserate greșit și tratamente ortodontice și restaurative incorecte, realizate în altă parte.</p>' +
+      '<p><strong>Provocarea:</strong> Pacienta venea cu un aspect dentar compromis, urmare a unor tratamente eșuate anterior: implanturi inserate greșit și tratamente ortodontice și restaurative incorecte.</p>' +
       '<p><strong>Tratamentul:</strong> Am obținut îmbunătățirea aspectului dinților de la maxilarul superior prin intervenții chirurgicale, tratamente parodontale și protetice. După îmbunătățirea aspectului gingival, dinții au fost restaurați cu fațete și coroane integral ceramice.</p>' +
       '<p><strong>Rezultatul:</strong> Am reușit să corectăm aspectul zâmbetului.</p>',
     difficultyLevel: 9,
