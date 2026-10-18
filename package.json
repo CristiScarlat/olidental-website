@@ -8,6 +8,7 @@
     "postbuild": "next-sitemap",
     "export": "next build",
     "start": "next start",
+    "indexnow": "node scripts/indexnow.js",
     "lint": "next lint"
   },
   "dependencies": {

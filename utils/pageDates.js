@@ -3,6 +3,8 @@
 // `dateModified` (utils/schema.js) read from here, so update the entry by hand
 // whenever a page's copy changes. Don't bump it for layout or metadata-only
 // edits: search engines trust lastmod less when it moves without real changes.
+// Once the change is live, `npm run indexnow -- --since <that date>` pings
+// Bing and the other IndexNow engines (scripts/indexnow.js).
 // Blog posts keep their dates in utils/blogPosts.js; mirror them here.
 //
 // Plain CommonJS on purpose: next-sitemap loads its config with require().
