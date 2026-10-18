@@ -4,6 +4,9 @@ import { TfiHandPointLeft } from 'react-icons/tfi';
 import IconLink from '../components/iconLink';
 import TreatmentAttribution from '../components/treatmentAttribution';
 import MedicalDisclaimer from '../components/medicalDisclaimer';
+import BackLink from '../components/backLink';
+import TreatmentLead from '../components/treatmentLead';
+import treatmentStyles from '../components/styles/treatmentPage.module.css';
 
 
 const Implantologie = () => {
@@ -12,15 +15,15 @@ const Implantologie = () => {
     return (
         <div className="services-container m-auto">
             <div className="p-4 bg-gray">
-                <div className="m-auto" style={{ maxWidth: '50rem' }}>
-                    <IconLink label="Înapoi la servicii" href="/servicii">
-                        <TfiHandPointLeft size='2rem' color='#6cab44' style={{cursor: "pointer"}}/>
-                    </IconLink>
+                <div className={`m-auto ${treatmentStyles.content}`} style={{ maxWidth: '50rem' }}>
+                    <BackLink label="Înapoi la servicii" href="/servicii"/>
                     <hr/>
                     <div className="text-center">
                         {/* Decorative service icon: intentionally alt="" since it's redundant with the h1 title below */}
                         <img src={services[serviceId]?.logo || ''} alt="" style={{ width: "120px" }} />
                         <h1>{services[serviceId]?.title || ''}</h1>
+                        <TreatmentLead>Implantologie orală la Olidental Clinic, clinică stomatologică din Timișoara: inserare de implanturi dentare, adiții de os și restaurări protetice pe implanturi.</TreatmentLead>
+                        <h2>Tratamente de implantologie orală</h2>
                     </div>
                     <div className="services-one">
                         <div className="container">
@@ -38,6 +41,7 @@ const Implantologie = () => {
                             </div>
                         </div>
                     </div>
+                    <h2>Ce este implantologia orală?</h2>
                     <div className="services-container-description" dangerouslySetInnerHTML={{ __html: services[serviceId]?.description || '' }}></div>
                     <TreatmentAttribution />
                     <MedicalDisclaimer />
