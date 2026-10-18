@@ -2,6 +2,7 @@ import { useState, useRef } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Spinner from 'react-bootstrap/Spinner';
+import { PHONE_DISPLAY, PHONE_HREF } from '../utils/clinicContact';
 import ReCAPTCHA from "react-google-recaptcha";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -87,7 +88,7 @@ const Programare = () => {
       <h1 className="text-center pt-3">Programare online la Olidental Clinic Timișoara</h1>
       <p className="text-center" style={{ maxWidth: '50rem', margin: '0 auto' }}>
         Completează formularul de mai jos și te contactăm pentru confirmare, sau sună-ne direct la{' '}
-        <a href="tel:+40733023030">+40 733.023.030</a>, Luni – Vineri, 09:30 – 18:30.
+        <a href={PHONE_HREF}>{PHONE_DISPLAY}</a>, Luni – Vineri, 09:30 – 18:30.
       </p>
       <ToastContainer newestOnTop theme="colored" position={"bottom-right"}/>
       <Form ref={formRef} action="/programare" method="post" className="m-auto p-3 bg-gray rounded" style={{maxWidth: "50rem"}} id="form-programare" onSubmit={handleSubmit}>
