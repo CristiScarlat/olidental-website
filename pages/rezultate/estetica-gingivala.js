@@ -24,7 +24,7 @@ const RezultateEsteticaGingivala = () => {
                     <div className="text-center">
                         <h1>Rezultate estetică gingivală: cazuri reale, înainte și după</h1>
                     </div>
-                    <p>Zâmbetul nu depinde doar de forma și culoarea dinților, ci și de aspectul gingiei din jurul lor. Un zâmbet gingival pronunțat, o asimetrie a conturului gingival sau o degradare a țesuturilor de susținere pot afecta estetica generală, chiar dacă dinții în sine sunt sănătoși. La Olidental Clinic Timișoara, corectăm aceste situații prin chirurgie gingivală și osoasă, adesea combinată cu restaurări integral ceramice pentru un rezultat complet. Mai jos găsești cazuri reale în care am reechilibrat raportul dintre dinți și gingie, obținând zâmbete mai simetrice, mai sănătoase și mai armonioase.</p>
+                    <p>Zâmbetul nu depinde doar de forma și culoarea dinților, ci și de aspectul gingiei din jurul lor. Un zâmbet gingival pronunțat, o asimetrie a conturului gingival sau o degradare a țesuturilor de susținere pot afecta estetica generală, chiar dacă dinții în sine sunt sănătoși. La Olidental Clinic Timișoara, corectăm aceste situații prin chirurgie gingivală și osoasă, adesea combinată cu restaurări integral ceramice. Mai jos găsești cazuri reale în care am reechilibrat raportul dintre dinți și gingie, obținând zâmbete mai simetrice, mai sănătoase și mai armonioase.</p>
 
                     {cases.map((obj, index) => (
                         <div key={obj.title + index} className={styles.descriptionColumnRezultateCard}>

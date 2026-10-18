@@ -1199,7 +1199,7 @@ export const beforeAfter = [
     resultCategory: 'estetica-gingivala',
     description:
       '<p><strong>Provocarea:</strong> Dinții superiori necesitau tratament, iar aspectul gingiei din jurul lor afecta estetica generală a zâmbetului.</p>' +
-      '<p><strong>Tratamentul:</strong> Dinții au fost tratați, iar pentru corectarea conturului gingival am recurs la chirurgie gingivo-osoasă, redând sănătatea parodonțiului. După stabilizarea țesuturilor, dinții au fost acoperiți cu fațete și coroane integral ceramice.</p>' +
+      '<p><strong>Tratamentul:</strong> Dinții au fost tratați, iar pentru corectarea aspectului, s-a recurs la chirurgie gingivo-osoasă, pentru a reda sănătatea parodonțiului și a corecta conturul țesutului gingival din jurul dinților. După stabilizarea țesuturilor, dinții au fost acoperiți cu fațete și coroane integral ceramice.</p>' +
       '<p><strong>Rezultatul:</strong> Restaurările cu aspect natural au dus la îmbunătățirea zâmbetului pacientei.</p>',
     difficultyLevel: 7,
     category: 9,
@@ -1220,7 +1220,7 @@ export const beforeAfter = [
     resultCategory: 'implantologie',
     description:
       '<p><strong>Provocarea:</strong> Pacienta venea cu un aspect dentar compromis, urmare a unor tratamente eșuate anterior: implanturi inserate greșit și tratamente ortodontice și restaurative incorecte, realizate în altă parte.</p>' +
-      '<p><strong>Tratamentul:</strong> Am corectat situația la maxilarul superior prin intervenții chirurgicale, tratamente parodontale și protetice. După îmbunătățirea aspectului gingival, dinții au fost restaurați cu fațete și coroane integral ceramice.</p>' +
+      '<p><strong>Tratamentul:</strong> Am obținut îmbunătățirea aspectului dinților de la maxilarul superior prin intervenții chirurgicale, tratamente parodontale și protetice. După îmbunătățirea aspectului gingival, dinții au fost restaurați cu fațete și coroane integral ceramice.</p>' +
       '<p><strong>Rezultatul:</strong> Am reușit să corectăm aspectul zâmbetului.</p>',
     difficultyLevel: 9,
     category: 5,

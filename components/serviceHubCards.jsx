@@ -3,13 +3,15 @@ import styles from './styles/serviceHubCards.module.css';
 
 // Cards for the /servicii hub: each service with its summary and treatment
 // links inside the card. The text is rendered directly (not through an effect
-// like CustomCard's `body`) so it is present in the static HTML.
+// like CustomCard's `body`) so it is present in the static HTML. Cards are
+// <section>, not <article>: text extractors (trafilatura, used by AI search)
+// take the first <article> as the page's main content and drop the H1.
 const ServiceHubCards = ({ services, summaries }) => (
   <div className="services-one pt-3 pb-3 mt-3 mb-3">
     <div className="container">
       <div className={styles.grid}>
         {services.map((service) => (
-          <article key={service.id} className={styles.card}>
+          <section key={service.id} className={styles.card}>
             <div className={styles.iconWrap}>
               <img src={service.logo} alt="" />
             </div>
@@ -24,7 +26,7 @@ const ServiceHubCards = ({ services, summaries }) => (
                 </li>
               ))}
             </ul>
-          </article>
+          </section>
         ))}
       </div>
     </div>
