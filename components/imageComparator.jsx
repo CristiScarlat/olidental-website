@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
-import Spinner from './spinner';
+import { Spinner as BsSpinner } from 'react-bootstrap';
 import { MdArrowBackIosNew, MdOutlineArrowForwardIos } from 'react-icons/md';
 import { PiHandSwipeLeftBold, PiHandSwipeRightBold } from 'react-icons/pi';
 import { MdOutlineSwipe } from "react-icons/md";
@@ -137,7 +137,11 @@ const ImageComparator = ({ images, maxWidth = 400, height = 225, showCursor=true
           backgroundColor: '#6cab44'
         }}
       >
-        <Spinner variant="light" />
+        {/* Bare react-bootstrap spinner, without the visually-hidden
+            "Loading..." text, which extractors read as page content. The box
+            is never shown (imgLoaded is always true); it only keeps the
+            layout as it was. */}
+        <BsSpinner animation="border" variant="light" aria-hidden="true" />
       </div>
     </div>
   );

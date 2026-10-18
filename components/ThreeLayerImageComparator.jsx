@@ -1,5 +1,4 @@
 import { useState, useRef, useEffect } from 'react';
-import Spinner from './spinner';
 import { BsHandIndexThumb } from 'react-icons/bs';
 import styles from './styles/styles.module.css';
 

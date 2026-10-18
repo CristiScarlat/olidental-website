@@ -414,7 +414,7 @@ export const services = [
            pot fi executate din aceleași materiale ca și fațetele dentare, dar acoperă circular suprafața dinților.
            Pe lângă îmbunătățirea estetică, acestea sporesc funcționalitatea mecanică a dinților. </p>
         <h2>Cui se adresează acest tratament</h2>
-        <p>Acest tip de tratament este potrivit pacienților care își doresc un zâmbet mai armonios fără intervenții ample asupra dinților naturali, precum și celor care au restaurări vechi, degradate sau decolorate. Procesul începe cu o evaluare atentă a stării dentare și stabilirea planului de tratament, urmată de pregătirea minimă a dinților și confecționarea fațetelor sau coroanelor. După aplicare, recomandăm controale periodice și o igienă orală riguroasă pentru menținerea rezultatului pe termen lung; durata exactă a tratamentului diferă de la caz la caz și este stabilită de medic în cadrul consultației.</p>`,
+        <p>Acest tip de tratament este potrivit pacienților care își doresc un zâmbet mai armonios, precum și celor care au restaurări vechi, degradate sau decolorate. Procesul începe cu o evaluare atentă a stării dentare și stabilirea planului de tratament, urmată de pregătirea minimă a dinților și confecționarea fațetelor sau coroanelor. După aplicare, recomandăm controale periodice și o igienă orală riguroasă pentru menținerea rezultatului pe termen lung; durata exactă a tratamentului diferă de la caz la caz și este stabilită de medic în cadrul consultației.</p>`,
         images: [
           'thumbnail_10.JPG',
           'thumbnail_11.JPG',
@@ -698,7 +698,7 @@ export const services = [
           'concomitent sau anterior inserării implanturilor. La Olidental Clinic folosim sisteme de implant consacrate, ' +
           'alese în funcție de fiecare caz în parte. După inserarea implantului, are loc procesul de osteointegrare, cu o durată diferită în funcție de particularitățile fiecărui caz. ' +
           '<h2>Cui se adresează acest tratament</h2> ' +
-          'Implantologia dentară este recomandată pacienților care au pierdut unul sau mai mulți dinți și doresc o soluție fixă, stabilă pe termen lung. ' +
+          'Implantologia dentară este recomandată pacienților care au pierdut unul sau mai mulți dinți și doresc o soluție fixă. ' +
           'Evaluarea inițială, care include investigațiile radiografice menționate mai sus, stabilește dacă este necesară o adiție de os înainte de inserarea implantului. ' +
           'Perioada de vindecare și osteointegrare variază de la caz la caz, în funcție de calitatea osoasă și de starea generală de sănătate a pacientului, ' +
           'iar planul exact de tratament este stabilit împreună cu medicul în cadrul consultației. ',
@@ -995,8 +995,8 @@ export const services = [
           'și poate implica purtarea unor aparate ortodontice, intervenții de chirurgie parodontală, ' +
           'tratamente endodontice, chirurgie implantară și la final restaurări protetice ' +
           'care să îmbine funcționalitatea cu estetica dentară. ' +
-          '<h2>Cui se adresează acest tratament</h2> ' +
-          'Fiecare caz multidisciplinar este planificat individual, în urma unei evaluări complete a stării orale, iar etapele de tratament sunt coordonate pentru a asigura un rezultat coerent, atât funcțional, cât și estetic. ' +
+          '<h2>Cum este planificat un tratament multidisciplinar?</h2> ' +
+          'Fiecare caz multidisciplinar este planificat individual, în urma unei evaluări complete a stării orale, iar etapele de tratament sunt coordonate, urmărind atât aspectul funcțional, cât și cel estetic. ' +
           'Succesul pe termen lung depinde de respectarea planului stabilit de medic și de controalele periodice ulterioare finalizării tratamentului.',
         cazuri: [
           {
@@ -1199,7 +1199,7 @@ export const beforeAfter = [
     resultCategory: 'estetica-gingivala',
     description:
       '<p><strong>Provocarea:</strong> Dinții superiori necesitau tratament, iar aspectul gingiei din jurul lor afecta estetica generală a zâmbetului.</p>' +
-      '<p><strong>Tratamentul:</strong> Dinții au fost tratați, iar pentru corectarea conturului gingival am recurs la chirurgie gingivo-osoasă, redând sănătatea parodonțiului. După stabilizarea țesuturilor, dinții au fost acoperiți cu fațete și coroane integral ceramice.</p>' +
+      '<p><strong>Tratamentul:</strong> Dinții au fost tratați, iar pentru corectarea aspectului, s-a recurs la chirurgie gingivo-osoasă, pentru a reda sănătatea parodonțiului și a corecta conturul țesutului gingival din jurul dinților. După stabilizarea țesuturilor, dinții au fost acoperiți cu fațete și coroane integral ceramice.</p>' +
       '<p><strong>Rezultatul:</strong> Restaurările cu aspect natural au dus la îmbunătățirea zâmbetului pacientei.</p>',
     difficultyLevel: 7,
     category: 9,
@@ -1219,8 +1219,8 @@ export const beforeAfter = [
     title: 'Refacerea unor tratamente eșuate',
     resultCategory: 'implantologie',
     description:
-      '<p><strong>Provocarea:</strong> Pacienta venea cu un aspect dentar compromis, urmare a unor tratamente eșuate anterior: implanturi inserate greșit și tratamente ortodontice și restaurative incorecte, realizate în altă parte.</p>' +
-      '<p><strong>Tratamentul:</strong> Am corectat situația la maxilarul superior prin intervenții chirurgicale, tratamente parodontale și protetice. După îmbunătățirea aspectului gingival, dinții au fost restaurați cu fațete și coroane integral ceramice.</p>' +
+      '<p><strong>Provocarea:</strong> Pacienta venea cu un aspect dentar compromis, urmare a unor tratamente eșuate anterior: implanturi inserate greșit și tratamente ortodontice și restaurative incorecte.</p>' +
+      '<p><strong>Tratamentul:</strong> Am obținut îmbunătățirea aspectului dinților de la maxilarul superior prin intervenții chirurgicale, tratamente parodontale și protetice. După îmbunătățirea aspectului gingival, dinții au fost restaurați cu fațete și coroane integral ceramice.</p>' +
       '<p><strong>Rezultatul:</strong> Am reușit să corectăm aspectul zâmbetului.</p>',
     difficultyLevel: 9,
     category: 5,
@@ -1294,7 +1294,7 @@ export const beforeAfter = [
     resultCategory: 'fatete-coroane-ceramice',
     description:
       '<p><strong>Provocarea:</strong> Pacienta dorea în primul rând îmbunătățirea esteticii dentare, cu atenție și la funcționalitatea dinților.</p>' +
-      '<p><strong>Tratamentul:</strong> Dinții au primit restaurări minim invazive de tipul fațetelor dentare, o abordare care păstrează cât mai mult din structura dentară naturală.</p>' +
+      '<p><strong>Tratamentul:</strong> Dinții au primit restaurări minim invazive de tipul fațetelor dentare.</p>' +
       '<p><strong>Rezultatul:</strong> S-a obținut un zâmbet natural, mai estetic și mai luminos, în conformitate cu pretențiile estetice ale pacientei.</p>',
     difficultyLevel: 5,
     category: 3,

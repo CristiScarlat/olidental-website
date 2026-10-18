@@ -5,7 +5,9 @@ import { carouselPicsHome, smilesGallery } from '../utils/uiConstants';
 import Link  from "next/link";
 import GoogleReviews from "../components/reviewsCarousel";
 import { buildCarouselAltTextGetter } from '../utils/carouselAlt';
-import { GOOGLE_MAPS_URL, GOOGLE_RATING } from '../utils/schema';
+import { GOOGLE_MAPS_URL, GOOGLE_RATING, personSlug } from '../utils/schema';
+import { CITY, FOUNDING_YEAR, OPENING_HOURS, PHONE_DISPLAY, PHONE_HREF, STREET_ADDRESS } from '../utils/clinicContact';
+import { formatCount } from '../utils/formatCount';
 import styles from '../styles/home.module.css';
 import { MdMedicalServices, MdSchool, MdGroups, MdHealthAndSafety } from 'react-icons/md';
 
@@ -43,24 +45,49 @@ const BENEFITS = [
   {
     Icon: MdMedicalServices,
     title: 'Tratamente pe măsura fiecărui caz',
-    text: 'De la un dinte fațetat, până la reabilitări complexe cu implanturi și chirurgie parodontală. Planul pornește mereu de la starea reală a pacientului, nu de la un pachet standard.',
+    text: 'De la un dinte fațetat, până la reabilitări complexe cu implanturi și chirurgie parodontală. Planul pornește mereu de la starea reală a pacientului.',
   },
   {
     Icon: MdSchool,
     title: 'Echipă cu experiență academică',
-    text: 'Coordonată de Dr. Olimpiu Ladislau Karancsi, medic primar protetică dentară și șef de lucrări la UMF „Victor Babeș” Timișoara.',
+    text: 'Coordonată de Dr. Olimpiu Ladislau Karancsi, șef de lucrări la UMF „Victor Babeș” Timișoara.',
   },
   {
     Icon: MdGroups,
-    title: 'Specializări complete, sub un acoperiș',
-    text: 'Implantologie, chirurgie dento-alveolară, endodonție, parodontologie, ortodonție și stomatologie pediatrică.',
+    title: 'Tratamente sub același acoperiș',
+    text: 'Oferim următoarele servicii: implantologie, chirurgie dento-alveolară, endodonție, parodontologie, ortodonție și stomatologie pediatrică.',
   },
   {
     Icon: MdHealthAndSafety,
-    title: 'Corectăm și tratamente eșuate',
-    text: 'O parte din pacienții noștri vin după intervenții începute greșit în alte cabinete. Pornim mereu de la corectarea completă a situației.',
+    title: 'Refacerea unor tratamente anterioare',
+    text: 'O parte din pacienții noștri vin pentru refacerea unor tratamente anterioare. Pornim mereu de la evaluarea completă a situației.',
   },
 ];
+
+// The founder's block on /echipa carries this anchor (see pages/echipa.js).
+const FOUNDER_NAME = 'Dr. Olimpiu Ladislau Karancsi';
+const FOUNDER_HREF = `/echipa#${personSlug({ title: FOUNDER_NAME })}`;
+
+// Plain-text facts about the clinic, so search engines and AI answers can
+// quote them from the page itself (the footer, the hero badge and the icon
+// contact block are dropped as boilerplate). Facts only, no claims, and no
+// professional grade (medic primar/specialist) until the clinic confirms them.
+const AboutClinic = () => (
+  <section className={styles.about} aria-labelledby="despre-clinica">
+    <h2 id="despre-clinica" className="text-center mb-3">Despre clinică</h2>
+    <p>
+      Olidental Clinic {CITY} este o clinică stomatologică fondată în {FOUNDING_YEAR} și
+      coordonată de <Link href={FOUNDER_HREF}>{FOUNDER_NAME}</Link>, șef de lucrări la UMF
+      „Victor Babeș” {CITY}. Clinica se află pe {STREET_ADDRESS},{' '}
+      {CITY}, și oferă servicii de estetică a zâmbetului, implantologie orală și reabilitări orale
+      complexe. Programul este de luni până vineri, între {OPENING_HOURS.opens} și{' '}
+      {OPENING_HOURS.closes}. Programările se fac telefonic, la{' '}
+      <a href={PHONE_HREF}>{PHONE_DISPLAY}</a>, sau prin <Link href="/programare">programare online</Link>.
+      Clinica are nota {GOOGLE_RATING.value} din{' '}
+      {formatCount(GOOGLE_RATING.count, 'recenzie', 'recenzii')} Google.
+    </p>
+  </section>
+);
 
 const Home = () => {
 
@@ -105,7 +132,7 @@ const Home = () => {
           <div className={styles.heroContent}>
             <h1>Olidental Clinic Timișoara</h1>
             <p className={styles.heroSubtitle}>
-              Servicii stomatologice premium, de la un singur dinte fațetat până la reabilitări
+              Servicii stomatologice, de la un singur dinte fațetat până la reabilitări
               orale complexe.
             </p>
             <div className={styles.heroActions}>
@@ -125,7 +152,7 @@ const Home = () => {
             <span className={styles.benefitIconWrap}>
               <Icon className={styles.benefitIcon} aria-hidden="true" />
             </span>
-            <h3>{title}</h3>
+            <h2>{title}</h2>
             <p>{text}</p>
           </div>
         ))}
@@ -157,14 +184,15 @@ const Home = () => {
 
       <div id='services'><Services /></div>
       {/*<div id='team'><Specialists /></div>*/}
+      <AboutClinic />
       <div id='contact'><Location className="pt-3 pb-3 bg-gray"/></div>
     </>
   );
 };
 
 Home.seo = {
-  title: "Olidental Clinic Timișoara | Clinică stomatologică premium",
-  description: "Olidental Clinic Timișoara oferă servicii stomatologice premium: implantologie, fațete și coroane ceramice, reabilitări orale complexe, cu medici specializați.",
+  title: "Olidental Clinic Timișoara | Implant, fațete, reabilitări",
+  description: "Olidental Clinic Timișoara: implantologie, fațete și coroane ceramice, reabilitări orale complexe și stomatologie generală, realizate de medici cu experiență.",
   canonical: "https://olidental.ro",
 };
 

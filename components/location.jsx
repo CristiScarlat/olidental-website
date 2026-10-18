@@ -2,6 +2,7 @@ import { useState } from 'react';
 import styles from './styles/styles.module.css';
 import { MdLocationOn, MdOutlineMail, MdPhone, MdAccessTime } from "react-icons/md";
 import { GOOGLE_MAPS_URL } from '../utils/schema';
+import { EMAIL, OPENING_HOURS, PHONE_DISPLAY, PHONE_HREF } from '../utils/clinicContact';
 
 const MAP_EMBED_URL = 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2783.9932384952626!2d21.2523657!3d45.7512815!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4745679c71dd9307%3A0xa38a47dc4d8638f8!2sOlidental%20Clinic!5e0!3m2!1sen!2sro!4v1666078254839!5m2!1sen!2sro';
 const MAP_HEIGHT = 450;
@@ -57,7 +58,7 @@ const Location = ({className=""}) => {
           </div>
         </div>
         <a
-          href="mailto:clinica@olidental.ro"
+          href={`mailto:${EMAIL}`}
           className={`${styles['custom-icon-contact']} ${styles['custom-icon-contact-link']}`}
           style={{ color: '#807f89' }}
         >
@@ -65,25 +66,25 @@ const Location = ({className=""}) => {
             <MdOutlineMail style={{fill: '#4caf50'}}/>
           </div>
           <span style={{ height: 'auto', whiteSpace: 'nowrap' }}>
-            clinica@olidental.ro
+            {EMAIL}
           </span>
         </a>
         <a
-          href="tel:+40733023030"
+          href={PHONE_HREF}
           className={`${styles['custom-icon-contact']} ${styles['custom-icon-contact-link']}`}
           style={{ color: '#807f89' }}
         >
           <div style={{ width: '100px' }}>
             <MdPhone style={{fill: '#4caf50'}}/>
           </div>
-          <span style={{ height: 'auto', whiteSpace: 'nowrap' }}>+40 733.023.030</span>
+          <span style={{ height: 'auto', whiteSpace: 'nowrap' }}>{PHONE_DISPLAY}</span>
         </a>
         <div className={styles['custom-icon-contact']}>
           <div style={{ width: '100px' }}>
             <MdAccessTime style={{fill: '#4caf50'}}/>
           </div>
           <div style={{ color: '#807f89' }}>
-            Luni – Vineri: 09:30 – 18:30<br/>
+            Luni – Vineri: {OPENING_HOURS.opens} – {OPENING_HOURS.closes}<br/>
             Sâmbătă, Duminică: închis
           </div>
         </div>

@@ -1,8 +1,6 @@
 import Link from 'next/link';
 import styles from '../../styles/blog.module.css';
-
-const PHONE_HREF = 'tel:+40733023030';
-const PHONE_LABEL = '0733 023 030';
+import { PHONE_DISPLAY, PHONE_HREF } from '../../utils/clinicContact';
 
 // Side column of an article. On wide screens it sits to the right of the
 // text and stays visible while scrolling (table of contents + booking); on
@@ -28,7 +26,7 @@ const ArticleSidebar = ({ toc }) => (
         Programează-te online
       </Link>
       <a href={PHONE_HREF} className={styles.sidebarPhone}>
-        sau sună la {PHONE_LABEL}
+        sau sună la {PHONE_DISPLAY}
       </a>
     </div>
   </aside>

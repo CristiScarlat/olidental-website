@@ -22,9 +22,9 @@ const SERVICES_CAROUSEL_IMAGE_HEIGHT = 675;
 // uiConstants.js, so this stays in sync if a service is ever reordered).
 const CATEGORY_SUMMARIES = {
   '/estetica-zambetului':
-    'Fațete, coroane integral ceramice și restaurări protetice estetice, alese în funcție de starea inițială a dinților și de obiectivele fiecărui pacient. Tratamentele sunt precedate de o evaluare digitală a zâmbetului, astfel încât rezultatul final să poată fi anticipat încă din faza de planificare.',
+    'Fațete, coroane integral ceramice și restaurări protetice estetice, alese în funcție de starea inițială a dinților și de obiectivele fiecărui pacient. Tratamentele sunt precedate de o evaluare digitală a zâmbetului, astfel încât rezultatul urmărit să poată fi discutat încă din faza de planificare.',
   '/implantologie':
-    'Soluția recomandată pentru înlocuirea dinților lipsă: o rădăcină artificială inserată în os, urmată de restaurarea protetică a dintelui. Tratamentul are două etape distincte, chirurgicală și protetică, iar durata dintre ele variază în funcție de particularitățile fiecărui caz.',
+    'O opțiune de tratament pentru înlocuirea dinților lipsă: o rădăcină artificială inserată în os, urmată de restaurarea protetică a dintelui. Tratamentul are două etape distincte, chirurgicală și protetică, iar durata dintre ele variază în funcție de particularitățile fiecărui caz.',
   '/reabilitari-orale-complexe':
     'Pentru cazurile care implică mai multe structuri ale aparatului dentar deodată: implantologie, protetică și, atunci când este necesar, tratament parodontal sau ortodontic, coordonate într-un singur plan de tratament individualizat.',
 };

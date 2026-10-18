@@ -24,11 +24,11 @@ const RezultateReabilitareCompleta = () => {
                     <div className="text-center">
                         <h1>Rezultate reabilitare orală completă: cazuri reale, înainte și după</h1>
                     </div>
-                    <p>Reabilitarea orală completă este cea mai complexă formă de tratament stomatologic, adresată situațiilor în care mai mulți dinți sau întreaga dantură necesită intervenție, de la boală parodontală avansată la dinți lipsă pe ambele arcade sau uzură severă. La Olidental Clinic Timișoara, aceste cazuri combină, de regulă, chirurgie osoasă și parodontală, implanturi dentare, tratamente endodontice și restaurări protetice, într-un plan de tratament etapizat. Mai jos găsești cazuri reale, unele desfășurate pe parcursul mai multor luni sau ani, în care am refăcut complet funcția masticatorie și estetica zâmbetului.</p>
+                    <p>Reabilitarea orală completă este o formă complexă de tratament stomatologic, adresată situațiilor în care mai mulți dinți sau întreaga dantură necesită intervenție, de la boală parodontală avansată la dinți lipsă pe ambele arcade sau uzură severă. La Olidental Clinic Timișoara, aceste cazuri combină, de regulă, chirurgie osoasă și parodontală, implanturi dentare, tratamente endodontice și restaurări protetice, într-un plan de tratament etapizat. Mai jos găsești cazuri reale, unele desfășurate pe parcursul mai multor luni sau ani, în care am urmărit refacerea funcției masticatorii și a esteticii zâmbetului.</p>
 
                     {cases.map((obj, index) => (
                         <div key={obj.title + index} className={styles.descriptionColumnRezultateCard}>
-                            <h3>{index + 1}. {obj.title}</h3>
+                            <h2>{index + 1}. {obj.title}</h2>
                             <div style={{ marginBottom: '0.5rem' }}>Dificultate</div>
                             <div className="level-gradient-bar" style={{ background: `linear-gradient(90deg, #6cab44 ${obj.difficultyLevel * 10}%, #778187 ${obj.difficultyLevel * 10}%)` }} />
                             <div dangerouslySetInnerHTML={{ __html: obj.description }} />

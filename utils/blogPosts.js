@@ -7,6 +7,8 @@
 // Adding an article: add an entry below, create pages/blog/<slug>.js, and
 // (if it has new photos) add a job in scripts/optimize-blog-images.js.
 
+import { PHONE_DISPLAY } from './clinicContact';
+
 export const BLOG_PATH = '/blog';
 export const BLOG_TITLE = 'Blog Olidental Clinic';
 export const BLOG_AUTHOR_LABEL = 'Echipa Olidental Clinic';
@@ -47,7 +49,7 @@ export const blogPosts = [
       'Dr. Oli este medic primar protetică dentară, medic specialist chirurgie dento-alveolară, are atestat în implantologie orală și este șef de lucrări la UMF „Victor Babeș” Timișoara.',
       'Clinica tratează estetica zâmbetului, implantologie orală, reabilitări orale complexe și protetică dentară, alături de ortodonție și igienizări periodice.',
       'Pilonii clinicii sunt siguranța și confortul pacientului, tehnicile minim invazive și explicarea pe înțelesul tuturor a fiecărei etape de tratament.',
-      'Adresa: Strada Ștefan cel Mare 53, Timișoara. Program: luni–vineri, 09:30–18:30. Telefon: 0733 023 030.',
+      `Adresa: Strada Ștefan cel Mare 53, Timișoara. Program: luni–vineri, 09:30–18:30. Telefon: ${PHONE_DISPLAY}.`,
     ],
     faq: [
       {
@@ -75,7 +77,7 @@ export const blogPosts = [
       {
         question: 'Cum pot face o programare la Olidental Clinic?',
         answer:
-          'Poți face o programare online, prin formularul de pe site, sau telefonic, la numărul 0733 023 030.',
+          `Poți face o programare online, prin formularul de pe site, sau telefonic, la numărul ${PHONE_DISPLAY}.`,
         link: { href: '/programare', label: 'Programează-te online' },
       },
     ],
@@ -110,7 +112,7 @@ export const blogPosts = [
       'Prin Smile Design și simulări intraorale 3D, pacientul își poate previzualiza și „proba” noul zâmbet înainte de începerea procedurilor.',
       'Reabilitările orale complexe sunt tratate interdisciplinar de chirurg, proteticieni și ortodont, în colaborare cu un laborator de tehnică dentară.',
       'Fiecare pacient primește de la început un plan de tratament cu etapele, durata estimată și costurile, iar plata se poate eșalona prin parteneri de creditare.',
-      'Adresa: Strada Ștefan cel Mare 53, Timișoara. Program: luni–vineri, 09:30–18:30. Telefon: 0733 023 030.',
+      `Adresa: Strada Ștefan cel Mare 53, Timișoara. Program: luni–vineri, 09:30–18:30. Telefon: ${PHONE_DISPLAY}.`,
     ],
     faq: [
       {
@@ -143,7 +145,7 @@ export const blogPosts = [
       {
         question: 'Cum pot face o programare la Olidental Clinic?',
         answer:
-          'Poți face o programare online, prin formularul de pe site, sau telefonic, la numărul 0733 023 030.',
+          `Poți face o programare online, prin formularul de pe site, sau telefonic, la numărul ${PHONE_DISPLAY}.`,
         link: { href: '/programare', label: 'Programează-te online' },
       },
     ],

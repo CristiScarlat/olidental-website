@@ -212,19 +212,6 @@
   -o-user-select: none;
 }
 
-.spinnerGlobalWrapper {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.769);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999!important;
-}
-
 .listNavCarouselWrapper {
   position: relative;
   box-shadow: 1px 1px 3px 0px #00000047;
@@ -246,6 +233,18 @@
   background-color: #6cab44;
   color: #eeeded;
   width: 3rem;
+  /* 44px touch target (was 34px tall); the width stays 3rem. */
+  min-height: 44px;
+}
+
+/* Gallery chrome drawn from data-* attributes, so it isn't DOM text that
+   extractors read as page content (components/caseNavControls.jsx). */
+.caseCounter::before {
+  content: attr(data-count);
+}
+
+.touchHint::before {
+  content: attr(data-hint);
 }
 
 .imageComparatorContainerPreview {

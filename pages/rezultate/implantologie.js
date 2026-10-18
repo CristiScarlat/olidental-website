@@ -24,11 +24,11 @@ const RezultateImplantologie = () => {
                     <div className="text-center">
                         <h1>Rezultate implantologie dentară: cazuri reale, înainte și după</h1>
                     </div>
-                    <p>Implanturile dentare sunt soluția potrivită atunci când unul sau mai mulți dinți lipsesc, fiind afectați de boală parodontală, tratamente eșuate sau uzură severă. La Olidental Clinic Timișoara, folosim implanturile dentare atât pentru înlocuirea dinților lipsă, cât și ca parte a unor planuri de tratament mai complexe, combinate cu tratamente parodontale sau restaurări protetice. Mai jos găsești cazuri reale de pacienți la care implantologia a redat funcția masticatorie și un aspect natural al zâmbetului, inclusiv situații în care am corectat tratamente cu implanturi realizate incorect în altă parte.</p>
+                    <p>Implanturile dentare sunt o opțiune de tratament atunci când unul sau mai mulți dinți lipsesc, fiind afectați de boală parodontală, tratamente eșuate sau uzură severă, dacă pacientul este un candidat pentru inserarea de implanturi. La Olidental Clinic Timișoara, folosim implanturile dentare atât pentru înlocuirea dinților lipsă, cât și ca parte a unor planuri de tratament mai complexe, combinate cu tratamente parodontale sau restaurări protetice. Mai jos găsești cazuri reale de pacienți tratați prin implantologie, în care am urmărit redarea funcției masticatorii și a unui aspect natural al zâmbetului, inclusiv situații care au necesitat refacerea unor tratamente anterioare cu implanturi.</p>
 
                     {cases.map((obj, index) => (
                         <div key={obj.title + index} className={styles.descriptionColumnRezultateCard}>
-                            <h3>{index + 1}. {obj.title}</h3>
+                            <h2>{index + 1}. {obj.title}</h2>
                             <div style={{ marginBottom: '0.5rem' }}>Dificultate</div>
                             <div className="level-gradient-bar" style={{ background: `linear-gradient(90deg, #6cab44 ${obj.difficultyLevel * 10}%, #778187 ${obj.difficultyLevel * 10}%)` }} />
                             <div dangerouslySetInnerHTML={{ __html: obj.description }} />
@@ -54,7 +54,7 @@ const RezultateImplantologie = () => {
 
 RezultateImplantologie.seo = {
     title: "Rezultate implantologie dentară | Olidental Clinic Timișoara",
-    description: "Cazuri reale de implantologie dentară la Olidental Clinic Timișoara, cu fotografii înainte și după, inclusiv corectarea unor tratamente eșuate.",
+    description: "Cazuri reale de implantologie dentară la Olidental Clinic Timișoara, cu fotografii înainte și după, inclusiv refacerea unor tratamente anterioare.",
     canonical: "https://olidental.ro/rezultate/implantologie",
 };
 

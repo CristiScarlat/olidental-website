@@ -1,8 +1,6 @@
 import Link from 'next/link';
 import styles from '../../styles/blog.module.css';
-
-const PHONE_HREF = 'tel:+40733023030';
-const PHONE_LABEL = '0733 023 030';
+import { PHONE_DISPLAY, PHONE_HREF } from '../../utils/clinicContact';
 
 // Closing call to action shown under every article.
 const ArticleCta = () => (
@@ -16,7 +14,7 @@ const ArticleCta = () => (
         Programează-te online
       </Link>
       <a href={PHONE_HREF} className={styles.ctaSecondary}>
-        Sună: {PHONE_LABEL}
+        Sună: {PHONE_DISPLAY}
       </a>
     </div>
   </aside>

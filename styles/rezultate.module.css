@@ -28,6 +28,22 @@
     line-height: 24px;
 }
 
+/* Case titles are H2s, directly under the page H1. Same look as when they
+   were H3s: Bootstrap's h3 size and the .services-container h3 weight and
+   margin, overriding the global h2 rule (42px, #222). */
+.descriptionColumnRezultateCard h2 {
+    font-size: calc(1.3rem + 0.6vw);
+    font-weight: 600;
+    margin: 1rem 0;
+    color: inherit;
+}
+
+@media (min-width: 1200px) {
+    .descriptionColumnRezultateCard h2 {
+        font-size: 1.75rem;
+    }
+}
+
 .resultsNavigationHeader {
     padding: 1rem 0;
     margin-bottom: 1rem;
