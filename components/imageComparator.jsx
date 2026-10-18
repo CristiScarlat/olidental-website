@@ -137,10 +137,10 @@ const ImageComparator = ({ images, maxWidth = 400, height = 225, showCursor=true
           backgroundColor: '#6cab44'
         }}
       >
-        {/* Bare spinner (same classes and size as components/spinner.jsx)
-            without its visually-hidden "Loading..." text, which extractors
-            read as page content. The box is never shown (imgLoaded is
-            always true); it only keeps the layout as it was. */}
+        {/* Bare react-bootstrap spinner, without the visually-hidden
+            "Loading..." text, which extractors read as page content. The box
+            is never shown (imgLoaded is always true); it only keeps the
+            layout as it was. */}
         <BsSpinner animation="border" variant="light" aria-hidden="true" />
       </div>
     </div>

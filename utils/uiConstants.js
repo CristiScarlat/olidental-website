@@ -995,7 +995,7 @@ export const services = [
           'și poate implica purtarea unor aparate ortodontice, intervenții de chirurgie parodontală, ' +
           'tratamente endodontice, chirurgie implantară și la final restaurări protetice ' +
           'care să îmbine funcționalitatea cu estetica dentară. ' +
-          '<h2>Cui se adresează acest tratament</h2> ' +
+          '<h2>Cum este planificat un tratament multidisciplinar?</h2> ' +
           'Fiecare caz multidisciplinar este planificat individual, în urma unei evaluări complete a stării orale, iar etapele de tratament sunt coordonate, urmărind atât aspectul funcțional, cât și cel estetic. ' +
           'Succesul pe termen lung depinde de respectarea planului stabilit de medic și de controalele periodice ulterioare finalizării tratamentului.',
         cazuri: [

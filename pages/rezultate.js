@@ -14,18 +14,17 @@ import {
   getCategoryPath,
 } from '../utils/resultCases';
 import { formatCount } from '../utils/formatCount';
+import { PHONE_DISPLAY, PHONE_HREF } from '../utils/clinicContact';
 
 // The case shown large at the top, with the drag slider. Change the title to
 // feature another case from utils/uiConstants.js (beforeAfter).
 const FEATURED_CASE_TITLE = 'Reabilitare orală complexă a tuturor dinților';
 const PHOTO_SIZE = { width: 862, height: 485 };
-const PHONE_HREF = 'tel:+40733023030';
-const PHONE_LABEL = '0733 023 030';
 
 const STEPS = [
   { title: 'Consultație și fotografii', text: 'Evaluăm situația și fotografiem punctul de plecare.' },
   { title: 'Plan de tratament', text: 'Îți explicăm opțiunile, etapele și ce presupune fiecare.' },
-  { title: 'Tratament etapizat', text: 'Lucrăm pas cu pas, cu tehnici minim invazive.' },
+  { title: 'Tratament etapizat', text: 'Lucrăm pas cu pas, cu tehnici minim invazive acolo unde situația permite.' },
   { title: 'Control și întreținere', text: 'Verificăm rezultatul și îți arătăm cum să-l păstrezi.' },
 ];
 
@@ -191,7 +190,7 @@ const Results = () => {
       <section className={styles.section}>
         <div className={styles.cta}>
           <div className={styles.ctaText}>
-            <h2 className={styles.ctaTitle}>Vrei un rezultat asemănător?</h2>
+            <h2 className={styles.ctaTitle}>Vrei să discutăm despre situația ta?</h2>
             <p>
               Primul pas este o consultație. Îți evaluăm situația și îți explicăm opțiunile, pe
               înțelesul tău.
@@ -199,7 +198,7 @@ const Results = () => {
           </div>
           <div className={styles.ctaActions}>
             <Link href="/programare" className={styles.ctaPrimary}>Programează o evaluare</Link>
-            <a href={PHONE_HREF} className={styles.ctaSecondary}>{PHONE_LABEL}</a>
+            <a href={PHONE_HREF} className={styles.ctaSecondary}>{PHONE_DISPLAY}</a>
           </div>
         </div>
         <ResultsDisclaimer />

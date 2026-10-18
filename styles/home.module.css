@@ -152,6 +152,32 @@
   letter-spacing: 1px;
 }
 
+/* Phones: a 3:2 frame is shorter than the hero text (about 223px vs 287px at
+   375px wide), and overflow:hidden cut off the H1. Here the text sits in the
+   normal flow at the bottom of the frame, so the frame grows to fit it: the
+   3:2 box is kept as a minimum height and the top padding leaves a strip of
+   the photo visible above the H1. The gradient turns dark from that strip on,
+   so the white text keeps its contrast. The frame's height comes from the
+   server-rendered text, so nothing shifts when the carousel loads. */
+@media (max-width: 600px) {
+  .heroFrame {
+    aspect-ratio: auto;
+    min-height: calc((100vw - 2.5rem) * 2 / 3);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .heroContent {
+    position: relative;
+    padding-top: 7rem;
+  }
+
+  .heroGradient {
+    background: linear-gradient(180deg, rgba(15, 20, 17, 0.05) 0, rgba(15, 20, 17, 0.2) 3.5rem, rgba(15, 20, 17, 0.68) 7rem, rgba(15, 20, 17, 0.85) 100%);
+  }
+}
+
 .benefits {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -200,7 +226,10 @@
   font-size: 1.35rem;
 }
 
-.benefitCard h3 {
+/* Card titles are H2 (the hero H1 is the only heading above them). These
+   values override the global h2 rule (42px, #222), so the cards look as
+   they did when the titles were H3. */
+.benefitCard h2 {
   margin: 0 0 0.45rem;
   font-size: 1.08rem;
   font-weight: 700;

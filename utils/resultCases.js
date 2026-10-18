@@ -28,7 +28,7 @@ export const RESULT_CATEGORIES = [
     label: 'Implantologie',
     problem: 'Dinți lipsă sau implanturi eșuate',
     chip: 'Îmi lipsesc dinți',
-    teaser: 'Înlocuirea dinților lipsă și corectarea unor tratamente eșuate cu implanturi dentare.',
+    teaser: 'Înlocuirea dinților lipsă și refacerea unor tratamente anterioare cu implanturi dentare.',
   },
   {
     slug: 'reabilitare-orala-completa',

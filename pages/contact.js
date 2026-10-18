@@ -31,7 +31,7 @@ const Contact = () => {
 
 Contact.seo = {
     title: "Contact | Olidental Clinic Timișoara",
-    description: "Adresa, telefonul și emailul clinicii stomatologice Olidental din Timișoara: Strada Ștefan cel Mare 53, +40 733.023.030, clinica@olidental.ro.",
+    description: `Adresa, telefonul și emailul clinicii stomatologice Olidental din Timișoara: Strada Ștefan cel Mare 53, ${PHONE_DISPLAY}, ${EMAIL}.`,
     canonical: "https://olidental.ro/contact",
 };
 

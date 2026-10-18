@@ -24,11 +24,11 @@ const RezultateFatetesiCoroane = () => {
                     <div className="text-center">
                         <h1>Rezultate fațete și coroane ceramice: cazuri reale, înainte și după</h1>
                     </div>
-                    <p>Fațetele și coroanele integral ceramice sunt una dintre cele mai folosite soluții pentru corectarea aspectului dinților afectați de uzură, pigmentări sau restaurări vechi. La Olidental Clinic Timișoara, aceste restaurări sunt alese pentru aspectul lor natural, care se integrează armonios cu restul danturii. Mai jos găsești câteva cazuri reale, tratate în clinica noastră, în care fațetele și coroanele integral ceramice au adus un zâmbet mai luminos, mai simetric și mai sănătos. Fiecare caz este diferit, iar rezultatul depinde de starea inițială a dinților și de obiectivele fiecărui pacient.</p>
+                    <p>Fațetele și coroanele integral ceramice sunt folosite pentru corectarea aspectului dinților afectați de uzură, pigmentări sau restaurări vechi. La Olidental Clinic Timișoara, aceste restaurări sunt alese pentru aspectul lor natural, care se integrează armonios cu restul danturii. Mai jos găsești câteva cazuri reale, tratate în clinica noastră, în care au fost folosite fațete și coroane integral ceramice. Fiecare caz este diferit, iar rezultatul depinde de starea inițială a dinților și de obiectivele fiecărui pacient.</p>
 
                     {cases.map((obj, index) => (
                         <div key={obj.title + index} className={styles.descriptionColumnRezultateCard}>
-                            <h3>{index + 1}. {obj.title}</h3>
+                            <h2>{index + 1}. {obj.title}</h2>
                             <div style={{ marginBottom: '0.5rem' }}>Dificultate</div>
                             <div className="level-gradient-bar" style={{ background: `linear-gradient(90deg, #6cab44 ${obj.difficultyLevel * 10}%, #778187 ${obj.difficultyLevel * 10}%)` }} />
                             <div dangerouslySetInnerHTML={{ __html: obj.description }} />

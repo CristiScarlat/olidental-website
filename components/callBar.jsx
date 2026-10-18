@@ -1,5 +1,6 @@
 import { MdPhone } from "react-icons/md";
 import styles from './styles/styles.module.css';
+import { PHONE_DISPLAY, PHONE_HREF } from '../utils/clinicContact';
 
 /**
  * Sticky "Sună acum" bar, visible only on mobile (see .callBar media query in
@@ -10,9 +11,9 @@ import styles from './styles/styles.module.css';
  */
 const CallBar = () => {
   return (
-    <a href="tel:+40733023030" className={styles.callBar}>
+    <a href={PHONE_HREF} className={styles.callBar}>
       <MdPhone size="1.25rem" />
-      <span>Sună acum: 0733.023.030</span>
+      <span>Sună acum: {PHONE_DISPLAY}</span>
     </a>
   );
 };

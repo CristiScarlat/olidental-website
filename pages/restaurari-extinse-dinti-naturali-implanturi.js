@@ -14,9 +14,7 @@ import BackLink from '../components/backLink';
 import TreatmentLead from '../components/treatmentLead';
 import CaseNavControls from '../components/caseNavControls';
 import { toWebp } from '../utils/images';
-
-// Below this width the case previews get scroll arrows.
-const NARROW_WIDTH = 450;
+import { useIsNarrowWidth } from '../utils/useIsNarrowWidth';
 
 const RestaurariExtinse = () => {
   const [indexCaz, setIndexCaz] = useState(0);
@@ -25,26 +23,15 @@ const RestaurariExtinse = () => {
   const serviceId = 2;
   const procedureIndex = 0;
 
-  //const windowWidth = useRef();
   const imageComparatorPreviewRef = useRef();
-
-  // useEffect(() => {
-  //   windowWidth.current = window?.innerWidth;
-  // }, []);
 
   useEffect(() => {
     setImgNo(0)
   }, [indexCaz])
 
-  // Measured after mount: reading window during render made the server HTML
-  // and the first client render differ below 450px (React errors #418/#423).
-  const [isNarrowWidth, setIsNarrowWidth] = useState(false);
-  useEffect(() => {
-    const updateWidth = () => setIsNarrowWidth(window.innerWidth < NARROW_WIDTH);
-    updateWidth();
-    window.addEventListener('resize', updateWidth);
-    return () => window.removeEventListener('resize', updateWidth);
-  }, []);
+  // Measured after mount, so server and client render the same markup
+  // (see utils/useIsNarrowWidth.js).
+  const isNarrowWidth = useIsNarrowWidth();
 
   const cazuri = services[serviceId]?.procedures[procedureIndex]?.cazuri;
 
@@ -139,7 +126,7 @@ const RestaurariExtinse = () => {
             />
           </div>
           <div className='p-2'>
-            <h2>Cum decurge tratamentul?</h2>
+            <h2>Cum lucrăm în cazurile complexe?</h2>
             <div
               className='services-container-description'
               dangerouslySetInnerHTML={{ __html: services[serviceId]?.procedures[procedureIndex]?.description || '' }}

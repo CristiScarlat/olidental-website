@@ -45,7 +45,7 @@ const BENEFITS = [
   {
     Icon: MdMedicalServices,
     title: 'Tratamente pe măsura fiecărui caz',
-    text: 'De la un dinte fațetat, până la reabilitări complexe cu implanturi și chirurgie parodontală. Planul pornește mereu de la starea reală a pacientului, nu de la un pachet standard.',
+    text: 'De la un dinte fațetat, până la reabilitări complexe cu implanturi și chirurgie parodontală. Planul pornește mereu de la starea reală a pacientului.',
   },
   {
     Icon: MdSchool,
@@ -54,12 +54,12 @@ const BENEFITS = [
   },
   {
     Icon: MdGroups,
-    title: 'Specializări complete, sub un acoperiș',
-    text: 'Implantologie, chirurgie dento-alveolară, endodonție, parodontologie, ortodonție și stomatologie pediatrică.',
+    title: 'Tratamente sub același acoperiș',
+    text: 'Oferim următoarele servicii: implantologie, chirurgie dento-alveolară, endodonție, parodontologie, ortodonție și stomatologie pediatrică.',
   },
   {
     Icon: MdHealthAndSafety,
-    title: 'Corectăm și tratamente eșuate',
+    title: 'Refacerea unor tratamente anterioare',
     text: 'O parte din pacienții noștri vin pentru refacerea unor tratamente anterioare. Pornim mereu de la evaluarea completă a situației.',
   },
 ];
@@ -152,7 +152,7 @@ const Home = () => {
             <span className={styles.benefitIconWrap}>
               <Icon className={styles.benefitIcon} aria-hidden="true" />
             </span>
-            <h3>{title}</h3>
+            <h2>{title}</h2>
             <p>{text}</p>
           </div>
         ))}

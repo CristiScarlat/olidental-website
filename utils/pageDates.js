@@ -16,8 +16,9 @@ const PAGE_DATES = {
   // Same as `dateModified` of each post in utils/blogPosts.js.
   '/blog/de-ce-sa-alegi-olidental-clinic': '2026-10-05',
   '/blog/povestea-olidental-clinic': '2026-10-05',
-  // Case texts restored to the clinic's own wording.
-  '/rezultate': '2026-10-09',
+  // Case texts restored to the clinic's own wording (2026-10-09), then the
+  // closing CTA heading and one step reworded (2026-10-18).
+  '/rezultate': '2026-10-18',
   // Category intros softened, case sentences restored (AI-search stage 1).
   '/rezultate/fatete-coroane-ceramice': '2026-10-18',
   '/rezultate/estetica-gingivala': '2026-10-18',

@@ -14,6 +14,7 @@ import BackLink from '../components/backLink';
 import TreatmentLead from '../components/treatmentLead';
 import CaseNavControls from '../components/caseNavControls';
 import { toWebp } from '../utils/images';
+import { useIsNarrowWidth } from '../utils/useIsNarrowWidth';
 
 const InserareImplantAditiiOs = () => {
   const [indexCaz, setIndexCaz] = useState(0);
@@ -22,16 +23,15 @@ const InserareImplantAditiiOs = () => {
   const serviceId = 1;
   const procedureIndex = 0;
 
-  const windowWidth = useRef();
   const imageComparatorPreviewRef = useRef();
-
-  useEffect(() => {
-    windowWidth.current = window?.innerWidth;
-  }, []);
 
   useEffect(() => {
     setImgNo(0)
   }, [indexCaz])
+
+  // Measured after mount, so server and client render the same markup
+  // (see utils/useIsNarrowWidth.js).
+  const isNarrowWidth = useIsNarrowWidth();
 
   const cazuri = services[serviceId]?.procedures[procedureIndex]?.cazuri;
 
@@ -64,11 +64,8 @@ const InserareImplantAditiiOs = () => {
     imageComparatorPreviewRef.current.scrollLeft += 335;
   }
   const renderScrollIndicator = () => {
-    if(typeof window === "undefined")return null;
-    const isNarrowWidth = window.innerWidth < 450;
     if(isNarrowWidth)return <ScrollIntoViewIndicator onClickLeft={handleScrollPreviewLeft} onClickRight={handleScrollPreviewRight} />;
     return null;
-
   }
 
   return (

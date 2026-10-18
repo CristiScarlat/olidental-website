@@ -74,7 +74,10 @@ const ArticleLayout = ({ post, sections, children }) => {
           <RelatedPosts currentSlug={post.slug} />
           {wasUpdated && (
             <p className={styles.updated}>
-              Actualizat la <time dateTime={post.dateModified}>{formatDateRo(post.dateModified)}</time>
+              {/* Label inside <time>: trafilatura drops <time> with its text, and
+                  a bare "Actualizat la" would be left dangling (same as
+                  components/treatmentAttribution.jsx). */}
+              <time dateTime={post.dateModified}>{`Actualizat la ${formatDateRo(post.dateModified)}`}</time>
             </p>
           )}
         </div>
