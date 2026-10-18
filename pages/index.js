@@ -70,14 +70,15 @@ const FOUNDER_HREF = `/echipa#${personSlug({ title: FOUNDER_NAME })}`;
 
 // Plain-text facts about the clinic, so search engines and AI answers can
 // quote them from the page itself (the footer, the hero badge and the icon
-// contact block are dropped as boilerplate). Facts only, no claims.
+// contact block are dropped as boilerplate). Facts only, no claims, and no
+// professional grade (medic primar/specialist) until the clinic confirms them.
 const AboutClinic = () => (
   <section className={styles.about} aria-labelledby="despre-clinica">
     <h2 id="despre-clinica" className="text-center mb-3">Despre clinică</h2>
     <p>
       Olidental Clinic {CITY} este o clinică stomatologică fondată în {FOUNDING_YEAR} și
-      coordonată de <Link href={FOUNDER_HREF}>{FOUNDER_NAME}</Link>, medic primar protetică
-      dentară și șef de lucrări la UMF „Victor Babeș” {CITY}. Clinica se află pe {STREET_ADDRESS},{' '}
+      coordonată de <Link href={FOUNDER_HREF}>{FOUNDER_NAME}</Link>, șef de lucrări la UMF
+      „Victor Babeș” {CITY}. Clinica se află pe {STREET_ADDRESS},{' '}
       {CITY}, și oferă servicii de estetică a zâmbetului, implantologie orală și reabilitări orale
       complexe. Programul este de luni până vineri, între {OPENING_HOURS.opens} și{' '}
       {OPENING_HOURS.closes}. Programările se fac telefonic, la{' '}
