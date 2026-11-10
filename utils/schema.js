@@ -62,7 +62,6 @@ const PERSON_EXTRAS = {
     affiliation: { '@type': 'CollegeOrUniversity', name: 'UMF „Victor Babeș” Timișoara' },
   },
   'Dr. Ana Strava': { alumniOf: DENTAL_FACULTY_TIMISOARA },
-  'Dr. Patricia Străinu': { alumniOf: DENTAL_FACULTY_TIMISOARA },
   'Dr. Anda Nicola': { alumniOf: DENTAL_FACULTY_TIMISOARA },
 };
 
@@ -265,7 +264,7 @@ function personReference(member) {
 
 /**
  * `employee` is listed only where the Person nodes it points to are emitted
- * (/echipa); everywhere else it would be 9 references to nothing.
+ * (/echipa); everywhere else it would be a list of references to nothing.
  */
 export function buildDentistSchema({ includeEmployees = false } = {}) {
   const founder = getFounder();

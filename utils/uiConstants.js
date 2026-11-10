@@ -42,18 +42,18 @@ export const teamCards = [
     img: '/images/team/Tunaru-Ana-new.jpg',
     thumbnail: '/images/team/thumbnail_Tunaru-Ana-new.jpg'
   },
-  {
-    title: 'Dr. Patricia Străinu',
-    body: `<p style="margin-bottom: 3rem;'"><span  style='margin-left: 2rem;'></span>Dr. Patricia are o experiență de peste 10 ani în domeniul stomatologiei generale.
-    A absolvit Facultatea de Medicină Dentară din Timișoara, cu specializarea Stomatologie Generală.
-    Dr. Patri, cum îi spunem noi, este o persoană perseverentă, devotată și serioasă.
-    Locul de muncă, adică Olidental Clinic, îi este ca o a doua casă, este o persoană perfecționistă, pentru care calitatea actului medical este esențială.
-    Este mereu dornică să învețe mai mult, participarea la diverse cursuri și workshop-uri este nelipsită.</p> `,
-    specializations: ['Medic dentist'],
-    services: ['Tratamente stomatologice/terapie'],
-    img: 'images/team/Dr_Patricia_Strainu.JPG',
-    thumbnail: '/images/team/thumbnail_Dr_Patricia_Strainu.JPG'
-  },
+  // {
+  //   title: 'Dr. Patricia Străinu',
+  //   body: `<p style="margin-bottom: 3rem;'"><span  style='margin-left: 2rem;'></span>Dr. Patricia are o experiență de peste 10 ani în domeniul stomatologiei generale.
+  //   A absolvit Facultatea de Medicină Dentară din Timișoara, cu specializarea Stomatologie Generală.
+  //   Dr. Patri, cum îi spunem noi, este o persoană perseverentă, devotată și serioasă.
+  //   Locul de muncă, adică Olidental Clinic, îi este ca o a doua casă, este o persoană perfecționistă, pentru care calitatea actului medical este esențială.
+  //   Este mereu dornică să învețe mai mult, participarea la diverse cursuri și workshop-uri este nelipsită.</p> `,
+  //   specializations: ['Medic dentist'],
+  //   services: ['Tratamente stomatologice/terapie'],
+  //   img: 'images/team/Dr_Patricia_Strainu.JPG',
+  //   thumbnail: '/images/team/thumbnail_Dr_Patricia_Strainu.JPG'
+  // },
   {
     title: 'Dr. Diana Rada Bârsan',
     body: `<p style="margin-bottom: 3rem;'"><span  style='margin-left: 2rem;'></span>Dna. Dr. Diana este un medic îndrăgit de către toți pacienții, de la mic la mare.
