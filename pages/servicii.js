@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import CustomCarousel from '../components/carousel';
 import ServiceHubCards from '../components/serviceHubCards';
 import { carouselPicsServices, services } from '../utils/uiConstants';
@@ -59,6 +60,9 @@ const ServicesPage = () => {
         </div>
       </div>
       <ServiceHubCards services={services} summaries={CATEGORY_SUMMARIES} />
+      <p className='text-center pb-4 px-3'>
+        <Link href='/preturi'>Vezi lista de prețuri</Link>
+      </p>
     </>
   );
 };

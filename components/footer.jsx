@@ -28,6 +28,7 @@ const CLINIC_LINKS = [
   { label: 'Rezultate', href: '/rezultate' },
   { label: 'Zâmbete', href: '/zambete' },
   { label: 'Echipa', href: '/echipa' },
+  { label: 'Prețuri', href: '/preturi' },
   { label: 'Blog', href: '/blog' },
   { label: 'Contact', href: '/contact' },
 ];
