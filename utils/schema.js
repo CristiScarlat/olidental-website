@@ -43,6 +43,7 @@ const SIMPLE_PAGE_LABELS = {
   [RESULTS_HUB_PATH]: RESULTS_LABEL,
   [TEAM_PAGE_PATH]: 'Echipa',
   [CONTACT_PAGE_PATH]: 'Contact',
+  '/preturi': 'Prețuri',
   '/zambete': 'Zâmbete',
   '/programare': 'Programare',
   '/politica-confidentialitate': 'Politica de confidențialitate',

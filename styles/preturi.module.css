@@ -1,0 +1,518 @@
+/* Styles for the /preturi page shell (hero, search, category cards,
+   steps, FAQ, call to action). The accordions and price tables are in
+   preturiList.module.css; both rely on the tokens defined on .page. */
+
+/* Same visual language as styles/rezultateHub.module.css, and scoped the same
+   way: the global template CSS (styles/medical-guide.css) forces 42px h2 and
+   20px/300 paragraphs, Bootstrap adds list padding and puts <caption> under
+   tables, so every element here sets its own size, weight and spacing. */
+
+.page {
+    --ink: #1f2a24;
+    --text: #33403a;
+    --muted: #5c6359; /* 6.2:1 on white, 5.3:1 on #eeeded */
+    --green: #6cab44;
+    --green-dark: #3f7a22; /* 5.2:1 on white */
+    --green-deep: #33661b; /* 5.9:1 on #eeeded */
+    --green-tint: #eaf3e3;
+    --border: #e3e1da;
+    --leader: #c9c5ba;
+    --paper: #ffffff;
+    --heading-font: var(--font-fraunces, Georgia), Georgia, serif;
+    --body-font: var(--font-exo2, 'Exo 2'), sans-serif;
+    --content-width: 76rem;
+    --gutter: 1rem;
+    --card-radius: 18px;
+    --card-shadow: 0 1px 3px rgba(31, 42, 36, 0.08);
+    padding-bottom: 3rem;
+    color: var(--text);
+}
+
+/* Hidden elements stay hidden even where a class sets `display` (search results). */
+.page [hidden] { display: none !important; }
+
+/* Shared resets, before the per-element rules that refine them. */
+.heroTitle,
+.sectionTitle,
+.cardTitle,
+.ctaTitle,
+.faqQuestion {
+    margin: 0;
+    font-family: var(--heading-font);
+    font-weight: 600;
+    color: var(--ink);
+}
+
+.heroText,
+.updated,
+.sectionMeta,
+.searchStatus,
+.cardCount,
+.stepText,
+.ctaBody,
+.faqAnswer {
+    margin: 0;
+    font-weight: 400;
+    line-height: 1.55;
+}
+
+/* One centred column for every block except the full-width steps band. */
+.shell {
+    max-width: var(--content-width);
+    margin-inline: auto;
+    padding-inline: var(--gutter);
+}
+
+.srOnly {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.page :where(a, summary, button, input):focus-visible { outline: 3px solid var(--green-dark); outline-offset: 3px; }
+
+/* ---------- Hero ---------- */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 2.5rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+.eyebrow {
+    padding: 0.25rem 0.85rem;
+    border-radius: 999px;
+    background: var(--green-tint);
+    color: var(--green-dark);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.heroTitle {
+    font-size: clamp(2.1rem, 5vw, 3.5rem);
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+}
+
+.heroText {
+    max-width: 40rem;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: var(--muted);
+}
+
+.updated { font-size: 0.9rem; color: var(--muted); }
+
+/* ---------- Search ---------- */
+
+.search {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    width: 100%;
+    max-width: 34rem;
+    margin-top: 0.5rem;
+    text-align: left;
+}
+
+.searchLabel { font-size: 0.9rem; font-weight: 600; color: var(--ink); }
+
+.searchField { position: relative; display: flex; align-items: center; }
+
+.searchIcon {
+    position: absolute;
+    left: 1.1rem;
+    color: var(--muted);
+    pointer-events: none;
+}
+
+.searchInput {
+    width: 100%;
+    min-height: 52px;
+    padding: 0 3rem 0 2.9rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--paper);
+    color: var(--ink);
+    font: inherit;
+    font-size: 1.05rem;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.searchInput::placeholder { color: var(--muted); opacity: 1; }
+
+.searchInput:focus { border-color: var(--green); }
+
+.searchInput::-webkit-search-cancel-button { display: none; }
+
+.searchClear {
+    position: absolute;
+    right: 0.4rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border: 0;
+    border-radius: 50%;
+    background: transparent;
+    color: var(--muted);
+    cursor: pointer;
+}
+
+.searchClear:hover { background: var(--green-tint); color: var(--green-dark); }
+
+.searchStatus { min-height: 1.4em; font-size: 0.9rem; color: var(--muted); }
+
+/* ---------- Quick navigation ---------- */
+
+.quickNav { width: 100%; margin-top: 0.25rem; }
+
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.chip {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 1.1rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--paper);
+    color: var(--ink);
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.2;
+    text-decoration: none;
+    transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.chip:hover { border-color: var(--green); color: var(--green-dark); }
+
+/* ---------- Shared section heading ---------- */
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-bottom: 3.5rem;
+}
+
+.sectionHead {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.25rem 1rem;
+}
+
+.sectionTitle { font-size: clamp(1.6rem, 3vw, 2.1rem); line-height: 1.2; }
+
+.sectionMeta { font-size: 0.95rem; color: var(--muted); }
+
+/* ---------- Category overview ---------- */
+
+.cards {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+    padding: 1.25rem;
+    border: 1px solid transparent;
+    border-radius: var(--card-radius);
+    background: var(--paper);
+    box-shadow: var(--card-shadow);
+    transition: border-color 0.2s ease;
+}
+
+.card:hover { border-color: var(--green); }
+
+.cardHead { display: flex; align-items: center; gap: 0.85rem; }
+
+.iconTile {
+    display: inline-flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: var(--green-tint);
+    color: var(--green-dark);
+    font-size: 1.15rem;
+}
+
+.cardTitle {
+    font-size: 1.2rem;
+    line-height: 1.25;
+    text-wrap: balance;
+}
+
+.cardCount { font-size: 0.9rem; color: var(--muted); }
+
+/* The prices the clinic itself put forward for this category: name, lei, euro. */
+.cardPrices {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.cardPrice {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas:
+        'name lei'
+        'name eur';
+    align-items: baseline;
+    column-gap: 1rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--border);
+}
+
+.cardPriceName { grid-area: name; font-size: 0.95rem; line-height: 1.4; color: var(--ink); }
+
+.cardPriceLei {
+    grid-area: lei;
+    font-family: var(--heading-font);
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--ink);
+    text-align: right;
+    font-variant-numeric: lining-nums tabular-nums;
+}
+
+.cardPriceEur { grid-area: eur; font-size: 0.85rem; color: var(--muted); text-align: right; }
+
+.cardLink {
+    margin-top: auto;
+    padding-top: 0.35rem;
+    color: var(--green-dark);
+    font-size: 0.98rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Outranks Bootstrap's a:hover colour. */
+.cardLink:hover { color: var(--green-deep); }
+
+/* The link covers the whole card, so the card is one tap target. */
+.cardLink::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: var(--card-radius);
+}
+
+.cardLink:focus-visible { outline: none; }
+
+.cardLink:focus-visible::after { outline: 3px solid var(--green-dark); outline-offset: 3px; }
+
+@media (min-width: 600px) {
+    .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+    .cardWide { grid-column: span 2; }
+}
+
+@media (min-width: 1000px) {
+    .cards { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
+
+    .cardWideDesktop { grid-column: span 2; }
+}
+
+/* ---------- How the cost is set (full-width white band) ---------- */
+
+.stepsBand {
+    margin-bottom: 3.5rem;
+    padding-block: 3rem;
+    background: var(--paper);
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.75rem;
+    margin: 1.75rem 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+@media (min-width: 760px) {
+    .steps { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; }
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding-top: 1.1rem;
+    border-top: 3px solid var(--green);
+}
+
+.stepNumber {
+    font-family: var(--heading-font);
+    font-size: 1.9rem;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--green-dark);
+}
+
+.stepTitle {
+    margin: 0;
+    font-family: var(--body-font);
+    font-size: 1.15rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--ink);
+}
+
+.stepText { font-size: 1rem; color: var(--muted); }
+
+/* ---------- FAQ (plain visible text) ---------- */
+
+.faq {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.25rem;
+}
+
+@media (min-width: 800px) {
+    .faq { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
+}
+
+.faqItem {
+    padding: 1.25rem 1.4rem;
+    border-radius: var(--card-radius);
+    background: var(--paper);
+    box-shadow: var(--card-shadow);
+}
+
+.faqQuestion { margin-bottom: 0.5rem; font-size: 1.2rem; line-height: 1.3; }
+
+.faqAnswer { font-size: 1rem; line-height: 1.6; color: var(--text); }
+
+/* ---------- Closing call to action ---------- */
+
+.cta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem 2rem;
+    padding: clamp(1.75rem, 4vw, 2.75rem) clamp(1.4rem, 4vw, 3.5rem);
+    border-radius: 20px;
+    background: var(--ink);
+}
+
+.ctaText {
+    display: flex;
+    flex: 1 1 22rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    min-width: 0;
+}
+
+.ctaTitle {
+    font-size: clamp(1.6rem, 3vw, 2.1rem);
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+.ctaBody { font-size: 1.05rem; color: #d9e2dc; }
+
+.ctaActions {
+    display: flex;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.75rem;
+}
+
+.ctaPrimary,
+.ctaSecondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+    padding: 0 1.6rem;
+    border-radius: 999px;
+    color: #ffffff;
+    font-size: 1.05rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.ctaPrimary { background: var(--green-dark); }
+
+.ctaSecondary { border: 1px solid rgba(255, 255, 255, 0.55); }
+
+.ctaPrimary:hover { background: var(--green-deep); color: #ffffff; }
+
+.ctaSecondary:hover { background: rgba(255, 255, 255, 0.1); color: #ffffff; }
+
+.ctaPrimary:focus-visible, .ctaSecondary:focus-visible { outline-color: #ffffff; }
+
+@media (max-width: 600px) {
+    .ctaActions { flex-direction: column; width: 100%; }
+
+    .ctaPrimary, .ctaSecondary { width: 100%; }
+}
+
+.section:last-child { margin-bottom: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+    .chip, .card { transition: none; }
+}
+
+/* ---------- Print: just the list ---------- */
+
+@media print {
+    .search,
+    .quickNav,
+    .cardsSection,
+    .cta { display: none; }
+
+    .page { padding-bottom: 0; }
+
+    .hero { padding-block: 0 1rem; }
+
+    .stepsBand { margin-bottom: 1rem; padding-block: 1rem; }
+}
