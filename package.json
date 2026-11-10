@@ -9,6 +9,7 @@
     "export": "next build",
     "start": "next start",
     "indexnow": "node scripts/indexnow.js",
+    "test": "NODE_NO_WARNINGS=1 node --test \"tests/**/*.test.mjs\"",
     "lint": "next lint"
   },
   "dependencies": {
