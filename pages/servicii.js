@@ -61,7 +61,7 @@ const ServicesPage = () => {
       </div>
       <ServiceHubCards services={services} summaries={CATEGORY_SUMMARIES} />
       <p className='text-center pb-4 px-3'>
-        <Link href='/preturi'>Vezi lista de prețuri</Link>
+        <Link href='/tarife'>Vezi lista de tarife</Link>
       </p>
     </>
   );

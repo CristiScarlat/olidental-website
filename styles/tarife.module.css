@@ -1,6 +1,6 @@
-/* Styles for the /preturi page shell (hero, search, category cards,
+/* Styles for the /tarife page shell (hero, search, category cards,
    steps, FAQ, call to action). The accordions and price tables are in
-   preturiList.module.css; both rely on the tokens defined on .page. */
+   tarifeList.module.css; both rely on the tokens defined on .page. */
 
 /* Same visual language as styles/rezultateHub.module.css, and scoped the same
    way: the global template CSS (styles/medical-guide.css) forces 42px h2 and

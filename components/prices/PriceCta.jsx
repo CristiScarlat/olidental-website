@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from '../../styles/preturi.module.css';
+import styles from '../../styles/tarife.module.css';
 import { PHONE_DISPLAY, PHONE_HREF } from '../../utils/clinicContact';
 import { CTA_BODY, CTA_TITLE } from '../../utils/tarife/pageText';
 

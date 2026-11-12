@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import styles from '../../styles/preturiList.module.css';
+import styles from '../../styles/tarifeList.module.css';
 import { PHONE_DISPLAY, PHONE_HREF } from '../../utils/clinicContact';
 import { PRICE_CATEGORIES } from '../../utils/tarife';
 import CategoryAccordion from './CategoryAccordion';
@@ -19,10 +19,10 @@ const PriceListSection = ({ filter }) => {
   }, [filter]);
 
   return (
-    <section className={`${styles.shell} ${styles.listSection}`} aria-labelledby="lista-preturi">
+    <section className={`${styles.shell} ${styles.listSection}`} aria-labelledby="lista-tarife">
       <div className={styles.listHead}>
-        <h2 id="lista-preturi" className={styles.listTitle}>
-          Lista de prețuri
+        <h2 id="lista-tarife" className={styles.listTitle}>
+          Lista de tarife
         </h2>
         <div className={styles.listControls}>
           <button type="button" className={styles.linkButton} onClick={() => setAllDetails(listRef.current, true)}>

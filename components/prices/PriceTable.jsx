@@ -1,4 +1,4 @@
-import styles from '../../styles/preturiList.module.css';
+import styles from '../../styles/tarifeList.module.css';
 import { EuroCell, LeiCell } from './PriceCells';
 
 // Explicit roles keep the table semantics when phones restyle the rows as a list.

@@ -1,4 +1,4 @@
-// Number and price formatting for the /preturi list. The clinic writes thousands
+// Number and price formatting for the /tarife list. The clinic writes thousands
 // with a dot ("1.060", "18.550"), so this does it by hand instead of Intl,
 // whose grouping rules for ro-RO differ between engines.
 

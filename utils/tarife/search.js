@@ -1,4 +1,4 @@
-// Search for the /preturi list. Visitors type with or without Romanian
+// Search for the /tarife list. Visitors type with or without Romanian
 // diacritics (and ş/ţ with a cedilla are common on old keyboards), so both the
 // service names and the query are reduced to plain lowercase letters.
 

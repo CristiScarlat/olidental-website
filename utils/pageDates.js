@@ -44,7 +44,7 @@ const PAGE_DATES = {
   '/echipa/paula-derban': '2026-10-18',
   '/echipa/anda-nicola': '2026-10-18',
   // Price list from the clinic's document ("tarife olidental.docx").
-  '/preturi': '2026-11-10',
+  '/tarife': '2026-11-12',
 };
 
 function getPageDate(path) {

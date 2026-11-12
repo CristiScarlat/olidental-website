@@ -1,4 +1,4 @@
-// The clinic price list as data: one source for the /preturi page, its
+// The clinic price list as data: one source for the /tarife page, its
 // JSON-LD and the FAQ answers. The numbers and wording live in
 // ./categorii/*.js (generated from the clinic's own document); this file only
 // adds ids and search keys and freezes everything.

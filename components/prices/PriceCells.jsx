@@ -1,4 +1,4 @@
-import styles from '../../styles/preturiList.module.css';
+import styles from '../../styles/tarifeList.module.css';
 import { formatNumber } from '../../utils/tarife/format';
 
 export const Unit = ({ unit }) => (unit ? <span className={styles.unit}> / {unit}</span> : null);

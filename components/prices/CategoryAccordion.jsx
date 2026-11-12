@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { FaChevronDown } from 'react-icons/fa6';
-import styles from '../../styles/preturiList.module.css';
+import styles from '../../styles/tarifeList.module.css';
 import { formatCount } from '../../utils/formatCount';
 import { countRows } from '../../utils/tarife';
 import { visibleBlockFlags } from '../../utils/tarife/search';
@@ -10,7 +10,7 @@ import PriceTable from './PriceTable';
 
 const Block = ({ block, category, visibleIds }) => {
   if (block.type === 'table') {
-    const caption = block.title ? `${category.name}: ${block.title}` : `Prețuri pentru ${category.name}`;
+    const caption = block.title ? `${category.name}: ${block.title}` : `Tarife pentru ${category.name}`;
     return <PriceTable block={block} caption={caption} visibleIds={visibleIds} />;
   }
   if (block.type === 'featured') {

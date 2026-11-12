@@ -1,4 +1,4 @@
-// Visible FAQ of the /preturi page. Every number comes from the price data and
+// Visible FAQ of the /tarife page. Every number comes from the price data and
 // every claim from the clinic document, so an answer cannot drift from the list.
 // Plain text only: no FAQPage structured data (it is not used for this kind of page).
 import { findRowByName } from './index.js';
@@ -20,9 +20,9 @@ export function buildFaq() {
         answer: `Consultația costă ${bothCurrencies(consultation)}. Lista are și un rând care cuprinde consultația, radiografia panoramică, CBCT total și planul de tratament: ${bothCurrencies(consultationWithImaging)}.`,
       },
       {
-        question: 'Ce include prețul unui implant dentar?',
+        question: 'Ce include tariful unui implant dentar?',
         answer:
-          'Tariful implantului acoperă implantul și inserarea lui. Componentele protetice și coroana se tarifează separat, iar tariful variază în funcție de sistemul implantar ales. Prețurile componentelor și ale coroanelor sunt în secțiunea Protetică pe implanturi.',
+          'Tariful implantului acoperă implantul și inserarea lui. Componentele protetice și coroana se tarifează separat, iar tariful variază în funcție de sistemul implantar ales. Tarifele componentelor și ale coroanelor sunt în secțiunea Protetică pe implanturi.',
       },
       {
         question: 'Cât costă dinții ficși pe implanturi, pentru o arcadă?',

@@ -1,4 +1,4 @@
-import styles from '../../styles/preturi.module.css';
+import styles from '../../styles/tarife.module.css';
 import { CATEGORY_ICONS } from './categoryIcons';
 
 /** Decorative icon of a price category, in a rounded green tile. */

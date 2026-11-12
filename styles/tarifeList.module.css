@@ -1,5 +1,5 @@
-/* Accordions, price tables and featured offers of the /preturi page.
-   The tokens (--ink, --muted, --green…) come from .page in preturi.module.css.
+/* Accordions, price tables and featured offers of the /tarife page.
+   The tokens (--ink, --muted, --green…) come from .page in tarife.module.css.
    Same rule as there: the global template CSS forces sizes and weights, so every
    element sets its own. */
 

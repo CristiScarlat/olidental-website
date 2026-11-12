@@ -48,6 +48,8 @@ const nextConfig = {
       return [
         ...LEGACY_PROCEDURE_REDIRECTS.map(([source, destination]) => ({ source, destination, permanent: true })),
         { source: '/procedure/:path*', destination: '/servicii', permanent: true },
+        // The price list first went live as /preturi (2026-11-10) and is now /tarife.
+        { source: '/preturi', destination: '/tarife', permanent: true },
       ];
     },
     async headers() {

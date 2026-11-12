@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from '../../styles/preturiList.module.css';
+import styles from '../../styles/tarifeList.module.css';
 import { formatNumber } from '../../utils/tarife/format';
 import { Unit } from './PriceCells';
 

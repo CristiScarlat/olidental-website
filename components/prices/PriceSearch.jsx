@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { FaMagnifyingGlass, FaXmark } from 'react-icons/fa6';
-import styles from '../../styles/preturi.module.css';
+import styles from '../../styles/tarife.module.css';
 import { formatCount } from '../../utils/formatCount';
 import { SEARCH_LABEL, SEARCH_PLACEHOLDER } from '../../utils/tarife/pageText';
 

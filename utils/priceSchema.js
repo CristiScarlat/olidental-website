@@ -1,4 +1,4 @@
-// JSON-LD for the /preturi page: an OfferCatalog with one sub-catalog per
+// JSON-LD for the /tarife page: an OfferCatalog with one sub-catalog per
 // category and one Offer per row of the clinic price list (utils/tarife).
 //
 // Prices are in lei only (RON): an Offer carries one currency, and the euro
@@ -9,7 +9,7 @@
 import { PRICE_CATEGORIES, rowsOf } from './tarife/index.js';
 import { PAGE_HEADING } from './tarife/pageText.js';
 
-export const PRICE_CATALOG_PATH = '/preturi';
+export const PRICE_CATALOG_PATH = '/tarife';
 
 const CURRENCY = 'RON';
 

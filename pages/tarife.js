@@ -1,6 +1,6 @@
 // The clinic price list ("tarife olidental.docx", 2026-11-10): data in utils/tarife, JSON-LD in utils/priceSchema.
 import { useCallback, useMemo, useRef, useState } from 'react';
-import styles from '../styles/preturi.module.css';
+import styles from '../styles/tarife.module.css';
 import FrauncesFont from '../components/FrauncesFont';
 import CategoryCards from '../components/prices/CategoryCards';
 import OpenHashSectionScript from '../components/prices/OpenHashSectionScript';
@@ -15,9 +15,9 @@ import { buildPriceCatalogSchema } from '../utils/priceSchema';
 import { ALL_PRICE_ROWS } from '../utils/tarife';
 import { filterRows } from '../utils/tarife/search';
 
-const PAGE_PATH = '/preturi';
+const PAGE_PATH = '/tarife';
 
-const Preturi = () => {
+const Tarife = () => {
   const pageRef = useRef(null);
   const [query, setQuery] = useState('');
   const clearSearch = useCallback(() => setQuery(''), []);
@@ -40,14 +40,14 @@ const Preturi = () => {
   );
 };
 
-Preturi.seo = {
-  title: 'Prețuri stomatologie Timișoara: lista completă | Olidental',
+Tarife.seo = {
+  title: 'Tarife stomatologie Timișoara: lista completă | Olidental',
   description:
-    'Lista de prețuri Olidental Clinic Timișoara, în lei și euro: consultație, implant dentar, coroane, ortodonție, stomatologie pentru copii și altele.',
-  canonical: 'https://olidental.ro/preturi',
+    'Lista de tarife Olidental Clinic Timișoara, în lei și euro: consultație, implant dentar, coroane, ortodonție, stomatologie pentru copii și altele.',
+  canonical: 'https://olidental.ro/tarife',
   // The price catalog comes from the page itself (not utils/schema.js), so the price data
   // stays out of the bundle every other page loads.
   schema: [buildPriceCatalogSchema()],
 };
 
-export default Preturi;
+export default Tarife;

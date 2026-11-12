@@ -1,4 +1,4 @@
-import styles from '../../styles/preturi.module.css';
+import styles from '../../styles/tarife.module.css';
 import { formatCount } from '../../utils/formatCount';
 import { PRICE_CATEGORIES, countRows } from '../../utils/tarife';
 import { formatPriceValue } from '../../utils/tarife/format';
@@ -40,7 +40,7 @@ const OverviewCard = ({ category }) => {
         </ul>
       )}
       <a href={`#${category.id}`} className={styles.cardLink}>
-        Vezi prețurile<span className={styles.srOnly}> pentru {category.name}</span> <span aria-hidden="true">→</span>
+        Vezi tarifele<span className={styles.srOnly}> pentru {category.name}</span> <span aria-hidden="true">→</span>
       </a>
     </li>
   );

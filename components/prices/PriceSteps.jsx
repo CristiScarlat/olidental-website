@@ -1,4 +1,4 @@
-import styles from '../../styles/preturi.module.css';
+import styles from '../../styles/tarife.module.css';
 import { PRICE_STEPS, STEPS_HEADING } from '../../utils/tarife/pageText';
 
 /** How the cost of a treatment is set, in the clinic's own sentences. */

@@ -32,8 +32,8 @@ const Header = () => {
                     </Link>
                   </li>
                   <li className="nav-item ms-auto li-link">
-                    <Link href="/preturi" legacyBehavior>
-                      <a className={`${styles['header-custom-link']}  text-uppercase ${router.pathname === '/preturi' ? 'active' : ''}`}>Prețuri</a>
+                    <Link href="/tarife" legacyBehavior>
+                      <a className={`${styles['header-custom-link']}  text-uppercase ${router.pathname === '/tarife' ? 'active' : ''}`}>Tarife</a>
                     </Link>
                   </li>
                   <li className="nav-item ms-auto li-link">

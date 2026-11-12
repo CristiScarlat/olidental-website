@@ -1,15 +1,15 @@
-// Text of the /preturi page that is not a price row.
+// Text of the /tarife page that is not a price row.
 //
 // VERBATIM_TEXTS are sentences of the clinic's own document, used word for
 // word (checked against the document when the data was imported). Everything
 // in AUTHORED_COPY is written for the page and must follow the CMSR
 // advertising guide: no "de la", no "gratuit", no offers or guarantees.
 
-export const PAGE_HEADING = 'Lista de prețuri Olidental Clinic Timișoara';
+export const PAGE_HEADING = 'Lista de tarife Olidental Clinic Timișoara';
 
 const BUDGET_SENTENCE = 'Tarifele afișate vă ajută să estimați bugetul tratamentului.';
 
-export const PAGE_LEAD = `Lista de prețuri a Olidental Clinic din Timișoara, pe categorii de tratament, în lei și în euro. ${BUDGET_SENTENCE}`;
+export const PAGE_LEAD = `Lista de tarife a Olidental Clinic din Timișoara, pe categorii de tratament, în lei și în euro. ${BUDGET_SENTENCE}`;
 
 export const SEARCH_LABEL = 'Caută un serviciu';
 export const SEARCH_PLACEHOLDER = 'De exemplu: canal, CBCT, aparat dentar';
@@ -33,7 +33,7 @@ export const PRICE_STEPS = Object.freeze(
   ].map((step) => Object.freeze(step)),
 );
 
-export const FAQ_HEADING = 'Întrebări frecvente despre prețuri';
+export const FAQ_HEADING = 'Întrebări frecvente despre tarife';
 
 export const CTA_TITLE = 'Vrei să afli costul pentru situația ta?';
 export const CTA_BODY = 'După consultație primești un plan personalizat, cu etapele, serviciile incluse și costurile aferente.';
