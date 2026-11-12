@@ -43,7 +43,7 @@ const Tarife = () => {
 Tarife.seo = {
   title: 'Tarife stomatologie Timișoara: lista completă | Olidental',
   description:
-    'Lista de tarife Olidental Clinic Timișoara, în lei și euro: consultație, implant dentar, coroane, ortodonție, stomatologie pentru copii și altele.',
+    'Tarife și prețuri Olidental Clinic Timișoara, în lei și euro: consultație, implant dentar, coroane, ortodonție, stomatologie pentru copii și altele.',
   canonical: 'https://olidental.ro/tarife',
   // The price catalog comes from the page itself (not utils/schema.js), so the price data
   // stays out of the bundle every other page loads.
