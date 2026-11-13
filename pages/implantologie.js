@@ -7,6 +7,7 @@ import MedicalDisclaimer from '../components/medicalDisclaimer';
 import BackLink from '../components/backLink';
 import TreatmentLead from '../components/treatmentLead';
 import treatmentStyles from '../components/styles/treatmentPage.module.css';
+import TarifeLink from '../components/tarifeLink';
 
 
 const Implantologie = () => {
@@ -50,6 +51,7 @@ const Implantologie = () => {
                             <TfiHandPointLeft size='1.5rem' color='#6cab44' style={{ cursor: "pointer", transform: 'scaleX(-1)' }}/>
                         </IconLink>
                     </div>
+                    <TarifeLink />
                 </div>
             </div>
             {/*<div className="d-flex custom-scroll m-auto" style={{ overflowX: 'auto', maxWidth: '60rem' }}>*/}

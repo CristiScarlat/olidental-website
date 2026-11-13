@@ -15,6 +15,7 @@ import TreatmentLead from '../components/treatmentLead';
 import CaseNavControls from '../components/caseNavControls';
 import { toWebp } from '../utils/images';
 import { useIsNarrowWidth } from '../utils/useIsNarrowWidth';
+import TarifeLink from '../components/tarifeLink';
 
 const RestaurariProtetice = () => {
   const [indexCaz, setIndexCaz] = useState(0);
@@ -137,6 +138,7 @@ const RestaurariProtetice = () => {
                 <TfiHandPointLeft size='1.5rem' color='#6cab44' style={{ cursor: 'pointer', transform: 'scaleX(-1)' }}/>
               </IconLink>
             </div>
+            <TarifeLink />
           </div>
         </div>
       </div>
