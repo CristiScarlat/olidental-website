@@ -18,24 +18,21 @@ export const teamCards = [
       'Protetică dentară și implantologică',
       'Chirurgie orală'
     ],
-    img: '/images/team/Dr.-Olimpiu-L.-Karancsi-new.jpg',
-    thumbnail: '/images/team/thumbnail_Dr.-Olimpiu-L.-Karancsi-new.jpg'
+    img: '/images/team/thumbnail_Dr.-Olimpiu-L.-Karancsi-2026.jpg',
+    thumbnail: '/images/team/thumbnail_Dr.-Olimpiu-L.-Karancsi-2026.jpg'
   },
   {
     title: 'Dr. Paula Derban',
-    body: `<p style="margin-bottom: 3rem;'"><span  style='margin-left: 2rem;'></span>Dr. Paula are o experiență în domeniul stomatologic de 17 ani.
-    Timp în care și-a dezvoltat abilitatea de a-și contopi viziunea creativă cu dorințele și nevoile clinice ale pacientului, astfel încât rezultatele să fie de excepție.
-    Profunda atenție la detalii și simțul umorului ale doamnei doctor îi determină pe pacienți să se simtă parte din familia Olidental Clinic.
-    Este o fire optimistă și păstrează un echilibru între seriozitate și bună dispoziție.</p>`,
+    body: `<p style="margin-bottom: 3rem;'"><span  style='margin-left: 2rem;'></span>În cei 20 de ani de experiență de practică stomatologică, Dr. Paula și-a dezvoltat abilitatea de a-și contopi viziunea creativă cu dorințele și nevoile clinice ale pacientului, astfel încât rezultatele să fie excepționale. Profunda atenție la detalii, melanjul dintre seriozitatea și simțul umorului, precum și standardele ridicate ale muncii sunt îndeosebi apreciate de către pacienții care au ales să facă parte din familia Olidental.</p>`,
     specializations: ['Medic specialist protetică dentară', 'Competență în implantologie'],
     services: ['Protetică dentară', 'Implantologie orală', 'Estetica dentară', 'Stomatologie generală'],
-    img: '/images/team/dr.-Paula-Derban-medic-new.jpg',
-    thumbnail: '/images/team/thumbnail_dr.-Paula-Derban-medic-new.jpg'
+    img: '/images/team/thumbnail_dr.-Paula-Derban-2026.jpg',
+    thumbnail: '/images/team/thumbnail_dr.-Paula-Derban-2026.jpg'
   },
   {
     title: 'Dr. Ana Strava',
     body: `<p style="margin-bottom: 3rem;'"><span  style='margin-left: 2rem;'></span>Dr. Ana, este absolventă a Facultății de Medicină Dentară din Timișoara.
-    Cu o experiență de peste 5 ani în domeniu, și-a descoperit pasiunea pentru endodonție, așa că a ales să termine această specializare.
+    Cu o experiență de peste 8 ani în domeniu, și-a descoperit pasiunea pentru endodonție, așa că a ales să termine această specializare.
     Fiind o fire meticuloasă, continuă să învețe, astfel încât participă la numeroase cursuri și workshop-uri cu scopul de a-și perfecționa profesionalismul de care dă dovadă.</p>`,
     specializations: ['Medic dentist'],
     services: ['Tratamente endodontice'],
@@ -56,9 +53,7 @@ export const teamCards = [
   // },
   {
     title: 'Dr. Diana Rada Bârsan',
-    body: `<p style="margin-bottom: 3rem;'"><span  style='margin-left: 2rem;'></span>Dna. Dr. Diana este un medic îndrăgit de către toți pacienții, de la mic la mare.
-    Are o experiență de 12 ani în domeniul stomatologic. Este medic specialist ortodont, se ocupă în mod exclusiv de tratamentele ortodontice și aduce “ordine și disciplină”
-    în zâmbetul tuturor. O fire comunicativă, atentă la nevoile fiecărui pacient, obișnuiește să vă îndrume spre alegerea celei mai potrivite variante de tratament.</p>`,
+    body: `<p style="margin-bottom: 3rem;'"><span  style='margin-left: 2rem;'></span>Dr. Diana este un medic îndrăgit de toți pacienții, de la mic la mare. Cu o experiență de 17 ani în domeniul stomatologic, cu specializarea Ortodonție, aduce “ordine și disciplină” în zâmbetele tuturor. Fire comunicativă, atentă la nevoile fiecărui pacient, reușește cu ușurință să îi îndrume spre alegerea celui mai potrivit tratament.</p>`,
     specializations: ['Medic specialist ortodonție și ortopedie dento-facială'],
     services: ['Tratamente ortodontice'],
     img: '/images/team/Diana-Barsan-new.jpg',
@@ -66,14 +61,11 @@ export const teamCards = [
   },
   {
     title: 'Dr. Anda Nicola',
-    body: `<p style="margin-bottom: 3rem;'"><span  style='margin-left: 2rem;'></span>Dr. Anda, este medic dentist cu experiență de peste 20 ani.
-    Se ocupă în mod exclusiv de stomatologia pediatrică de 9 ani. Pasiunea pentru această ramură a fost susținută de numeroase cursuri de specializare și 
-    simpozioane la care a participat. Faptul că este la rândul ei mamă, a ajutat-o să creeze legături frumoase și de încredere cu micii pacienți și cu părinții lor.
-    Empatia, abordarea caldă și înțelegerea mecanismelor psihologice, îi determină pe copiii care îi trec pragul să o îndrăgească și să revină fără frică în cabinet.</p> `,
+    body: `<p style="margin-bottom: 3rem;'"><span  style='margin-left: 2rem;'></span>Medic dentist cu experiență de peste 23 de ani, se ocupă în mod exclusiv de stomatologia pediatrică de 12 ani. Pasiunea pentru această ramură a fost susținută de numeroase cursuri de specializare și simpozioane dedicate la care a participat. Faptul că este, la rândul său, mamă a ajutat să creeze legături frumoase și de încredere cu micii pacienți și cu părinții lor. Empatia, abordarea caldă și înțelegerea mecanismelor psihologice îi determină pe copiii care îi trec pragul să o îndrăgească și să revină fără frică în cabinet.</p>`,
     specializations: ['Medic dentist'],
     services: ['Tratamente pedodontice'],
-    img: '/images/team/dr.-Anda-Nicola-medic-new.jpg',
-    thumbnail: '/images/team/thumbnail_dr.-Anda-Nicola-medic-new.jpg'
+    img: '/images/team/thumbnail_dr.-Anda-Nicola-2026.jpg',
+    thumbnail: '/images/team/thumbnail_dr.-Anda-Nicola-2026.jpg'
   },
   // {
   //   title: 'Dr. Alina-Florentina Mariș',
@@ -88,31 +80,31 @@ export const teamCards = [
   {
     title: 'As. Adela Dăogaru',
     body: `<p style="margin-bottom: 3rem;'"><span  style='margin-left: 2rem;'></span>Adela este asistent medical și este o persoană serioasă, conștiincioasă, perseverentă, ambițioasă și foarte dedicată meseriei.
-    Cu o experiență de peste 7 ani în domeniul stomatologiei, a reușit performanțe impresionante, muncind, învățând și dedicându-și timpul perfecționării profesionale.
+    Cu o experiență de peste 10 ani în domeniul stomatologiei, a reușit performanțe impresionante, muncind, învățând și dedicându-și timpul perfecționării profesionale.
     Având numeroase responsabilități, reușește să gestioneze lucrurile chiar și în situații dificile.
     Pacienții și echipa o apreciază pentru calitățile sale atât profesionale cât și umane.</p>`,
     specializations: ['Asistent Medical Generalist / Stomatologie'],
     services: [],
-    img: '/images/team/Adela-Daogaru-asistenta-new.jpg',
-    thumbnail: '/images/team/thumbnail_Adela-Daogaru-asistenta-new.jpg'
+    img: '/images/team/thumbnail_Adela-Daogaru-2026.jpg',
+    thumbnail: '/images/team/thumbnail_Adela-Daogaru-2026.jpg'
   },
   {
     title: 'As. Andreea Chifa',
-    body: `<p style="margin-bottom: 3rem;'"><span  style='margin-left: 2rem;'></span>Andreea, este asistent medical generalist cu o experiență de peste 5 ani în domeniul stomatologic.
+    body: `<p style="margin-bottom: 3rem;'"><span  style='margin-left: 2rem;'></span>Andreea, este asistent medical generalist cu o experiență de peste 8 ani în domeniul stomatologic.
     În toți acești ani, Andreea și-a dezvoltat abilitățile de a empatiza atât cu pacienții adulți, cât și cu cei mici.
     Blândețea și receptivitatea față de nevoile pacienților sunt calitățile pentru care este îndrăgită de către toți pacienții.</p>`,
     specializations: ['Asistent medical generalist / stomatologie'],
     services: [],
-    img: '/images/team/Chifa-Andreea-new.jpg',
-    thumbnail: '/images/team/thumbnail_Chifa-Andreea-new.jpg'
+    img: '/images/team/thumbnail_Chifa-Andreea-2026.jpg',
+    thumbnail: '/images/team/thumbnail_Chifa-Andreea-2026.jpg'
   },
   {
     title: 'As. Bircioaga Bianca',
-    body: `<p style="margin-bottom: 3rem;"><span  style='margin-left: 2rem;'></span>Bianca este asistentă medicală generalistă, cu o experiență de 12 ani în stomatologia dentară, fiind o persoană responsabilă și dedicată meseriei. </p>`,
+    body: `<p style="margin-bottom: 3rem;"><span  style='margin-left: 2rem;'></span>Bianca este asistentă medicală generalistă, cu o experiență de 15 ani în stomatologia dentară, fiind o persoană responsabilă și dedicată meseriei. </p>`,
     specializations: ['Asistent medical generalist / stomatologie'],
     services: [],
-    img: '/images/team/Bircioaga_Bianca.JPG',
-    thumbnail: '/images/team/thumbnail_Bircioaga_Bianca.JPG'
+    img: '/images/team/thumbnail_Bircioaga-Bianca-2026.jpg',
+    thumbnail: '/images/team/thumbnail_Bircioaga-Bianca-2026.jpg'
   },
   // {
   //   title: 'Spîrlea Adriana - Front Desk Manager',

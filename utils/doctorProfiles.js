@@ -102,10 +102,10 @@ export const DOCTOR_PROFILES = {
     seo: {
       title: 'Dr. Paula Derban, protetică dentară Timișoara | Olidental',
       description:
-        'Dr. Paula Derban, medic la Olidental Clinic Timișoara: protetică dentară, implantologie orală și estetică dentară, cu 17 ani de experiență în stomatologie.',
+        'Dr. Paula Derban, medic la Olidental Clinic Timișoara: protetică dentară, implantologie orală și estetică dentară, cu 20 de ani de experiență în stomatologie.',
     },
     highlights: [
-      { value: '17 ani', label: 'de experiență în stomatologie' },
+      { value: '20 de ani', label: 'de experiență în stomatologie' },
       { value: 'Coautor', label: 'manual de implantologie orală' },
       { value: '2021', label: 'articol în revista Materials' },
     ],
@@ -135,10 +135,10 @@ export const DOCTOR_PROFILES = {
     seo: {
       title: 'Dr. Anda Nicola, stomatolog copii Timișoara | Olidental',
       description:
-        'Dr. Anda Nicola se ocupă exclusiv de stomatologia copiilor la Olidental Clinic Timișoara. Medic dentist cu peste 20 de ani de experiență.',
+        'Dr. Anda Nicola se ocupă exclusiv de stomatologia copiilor la Olidental Clinic Timișoara. Medic dentist cu peste 23 de ani de experiență.',
     },
     highlights: [
-      { value: '20+ ani', label: 'de experiență ca medic dentist' },
+      { value: '23+ ani', label: 'de experiență ca medic dentist' },
       { value: 'Exclusiv', label: 'stomatologie pentru copii' },
       { value: 'UMF Timișoara', label: 'absolventă, Medicină Dentară' },
     ],

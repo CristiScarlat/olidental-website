@@ -16,7 +16,7 @@ const TeamMemberDetails = ({ data }) => {
         <div className="team-member-container row mb-3 m-auto bg-gray" style={{ maxWidth: 1500, color: 'black' }}>
             <h4 className={styles.titleMobile}><MemberName data={data} hasProfile={hasProfile}/></h4>
             <div className="col-md-3">
-              { data.thumbnail ? <img src={toWebp(data.thumbnail)} alt={data.title} width={320} height={480} loading='lazy' style={{objectFit: 'contain'}}/>
+              { data.thumbnail ? <img src={toWebp(data.thumbnail)} alt={`${data.title}, Olidental Clinic Timișoara`} width={320} height={480} loading='lazy' style={{objectFit: 'contain'}}/>
                 :
                 <div style={{border: "1px solid #eeeded", borderRadius: 5, height: "100%", backgroundColor: "#eeeded", margin: "0 0.5rem"}}>
 
