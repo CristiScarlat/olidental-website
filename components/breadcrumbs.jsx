@@ -43,7 +43,7 @@ const Breadcrumbs = ({ items }) => {
           padding: 0;
           list-style: none;
           font-size: 0.85rem;
-          color: #807f89;
+          color: #5f5e68;
         }
 
         .site-breadcrumbs li {
@@ -58,7 +58,7 @@ const Breadcrumbs = ({ items }) => {
         }
 
         .site-breadcrumbs :global(a) {
-          color: #807f89;
+          color: #5f5e68;
           text-decoration: none;
         }
 

@@ -9,7 +9,7 @@
     --text: #33403a;
     --muted: #5c6359;
     --green: #6cab44;
-    --green-dark: #3f7a22; /* 5.2:1 on white (WCAG AA) */
+    --green-dark: #37701f; /* 6.0:1 on white, 5.1:1 on the grey page (WCAG AA) */
     --green-tint: #eaf3e3;
     --border: #e3e1da;
     --paper: #ffffff;

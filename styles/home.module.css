@@ -110,7 +110,7 @@
 
 .heroCta {
   display: inline-block;
-  background: #6cab44;
+  background: #2d8044;
   color: #ffffff;
   font-weight: 700;
   font-size: 1rem;
@@ -123,7 +123,7 @@
 
 .heroCta:hover,
 .heroCta:focus-visible {
-  background: #5c9438;
+  background: #24693a;
   transform: translateY(-1px);
 }
 

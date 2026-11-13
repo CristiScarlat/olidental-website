@@ -37,7 +37,7 @@ const ClickToLoadMap = () => {
         Afișează harta
       </button>
       <small>Harta este oferită de Google, care poate seta cookie-uri la afișare.</small>
-      <a href={GOOGLE_MAPS_URL} target="_blank" rel="noopener noreferrer">Deschide în Google Maps</a>
+      <a href={GOOGLE_MAPS_URL} target="_blank" rel="noopener noreferrer" style={{ color: '#0a58ca' }}>Deschide în Google Maps</a>
     </div>
   );
 };
@@ -50,7 +50,7 @@ const Location = ({className=""}) => {
           <div style={{ width: '100px' }}>
             <MdLocationOn style={{fill: '#4caf50'}}/>
           </div>
-          <div style={{ color: '#807f89' }}>
+          <div style={{ color: '#4d4c55' }}>
             Strada Ștefan cel Mare 53 Parter<br/>
             (intrare de pe Gh. Asachi)
             <br />
@@ -60,7 +60,7 @@ const Location = ({className=""}) => {
         <a
           href={`mailto:${EMAIL}`}
           className={`${styles['custom-icon-contact']} ${styles['custom-icon-contact-link']}`}
-          style={{ color: '#807f89' }}
+          style={{ color: '#4d4c55' }}
         >
           <div style={{ width: '100px' }}>
             <MdOutlineMail style={{fill: '#4caf50'}}/>
@@ -72,7 +72,7 @@ const Location = ({className=""}) => {
         <a
           href={PHONE_HREF}
           className={`${styles['custom-icon-contact']} ${styles['custom-icon-contact-link']}`}
-          style={{ color: '#807f89' }}
+          style={{ color: '#4d4c55' }}
         >
           <div style={{ width: '100px' }}>
             <MdPhone style={{fill: '#4caf50'}}/>
@@ -83,7 +83,7 @@ const Location = ({className=""}) => {
           <div style={{ width: '100px' }}>
             <MdAccessTime style={{fill: '#4caf50'}}/>
           </div>
-          <div style={{ color: '#807f89' }}>
+          <div style={{ color: '#4d4c55' }}>
             Luni – Vineri: {OPENING_HOURS.opens} – {OPENING_HOURS.closes}<br/>
             Sâmbătă, Duminică: închis
           </div>

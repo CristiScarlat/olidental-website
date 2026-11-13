@@ -2,7 +2,10 @@ import Link from "next/link";
 import Location from "../components/location";
 import { EMAIL, PHONE_DISPLAY, PHONE_HREF } from "../utils/clinicContact";
 
-const INTRO_STYLE = { maxWidth: '40rem', color: '#807f89' };
+const INTRO_STYLE = { maxWidth: '40rem', color: '#4d4c55' };
+// Darker blue than the browser default (4.5:1 on the grey page) and underlined,
+// so the links stand out from the surrounding text without relying on colour.
+const LINK_STYLE = { color: '#0a58ca', textDecoration: 'underline' };
 
 const Contact = () => {
     return (
@@ -11,7 +14,7 @@ const Contact = () => {
             <p className="text-center m-auto px-3 pb-2" style={INTRO_STYLE}>
                 Cabinetul nostru se află pe Strada Ștefan cel Mare 53, la parter, cu intrare dinspre strada Gh. Asachi.
                 Ne poți contacta telefonic, prin email sau direct printr-o{' '}
-                <Link href="/programare">programare online</Link>. Suntem disponibili de luni până vineri, între 09:30 și 18:30.
+                <Link href="/programare" style={LINK_STYLE}>programare online</Link>. Suntem disponibili de luni până vineri, între 09:30 și 18:30.
             </p>
             {/* Phone and email as text in the main content too: text extractors
                 (search engines, AI answers) drop the icon contact block below.
@@ -20,9 +23,9 @@ const Contact = () => {
                 the "·": trafilatura drops aria-hidden text and would then glue
                 the phone number to "Email:". */}
             <p className="text-center m-auto px-3 pb-4" style={INTRO_STYLE}>
-                <span className="text-nowrap d-block d-md-inline">Telefon: <a href={PHONE_HREF}>{PHONE_DISPLAY}</a></span>
+                <span className="text-nowrap d-block d-md-inline">Telefon: <a href={PHONE_HREF} style={LINK_STYLE}>{PHONE_DISPLAY}</a></span>
                 <span className="d-none d-md-inline">{' · '}</span>
-                <span className="text-nowrap d-block d-md-inline">Email: <a href={`mailto:${EMAIL}`}>{EMAIL}</a></span>
+                <span className="text-nowrap d-block d-md-inline">Email: <a href={`mailto:${EMAIL}`} style={LINK_STYLE}>{EMAIL}</a></span>
             </p>
             <Location />
         </div>

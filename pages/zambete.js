@@ -10,10 +10,10 @@ const SlideGallery = () => {
   return (
     <div className={styles.smilesGalleryWrapper}>
       <h1 className='text-center pt-3'>Galerie zâmbete Olidental Clinic Timișoara</h1>
-      <p className='text-center m-auto pb-2' style={{ maxWidth: '40rem', color: '#807f89' }}>
+      <p className='text-center m-auto pb-2' style={{ maxWidth: '40rem', color: '#4d4c55' }}>
         O selecție de zâmbete transformate în urma tratamentelor realizate la Olidental Clinic
         Timișoara. Pentru detalii despre fiecare tip de tratament și cazuri documentate pas cu
-        pas, vezi pagina de <Link href="/rezultate">rezultate</Link>.
+        pas, vezi pagina de <Link href="/rezultate" style={{ color: '#0a58ca', textDecoration: 'underline' }}>rezultate</Link>.
       </p>
       <CustomCarousel>
         {smilesGallery.images.map((pic, index) => (
