@@ -58,6 +58,13 @@ const JOBS = [
     widths: [1200, 800],
     og: false,
   },
+  {
+    source: 'carouselHome/thumbnail_2.jpg',
+    outDir: 'blog/calendarul-zambetului-de-mireasa',
+    name: 'cabinet-zambet',
+    widths: [1600, 1200, 800],
+    og: true,
+  },
 ];
 
 async function assertFileExists(filePath) {

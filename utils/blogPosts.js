@@ -7,7 +7,7 @@
 // Adding an article: add an entry below, create pages/blog/<slug>.js, and
 // (if it has new photos) add a job in scripts/optimize-blog-images.js.
 
-import { PHONE_DISPLAY } from './clinicContact';
+import { PHONE_DISPLAY } from './clinicContact.js';
 
 export const BLOG_PATH = '/blog';
 export const BLOG_TITLE = 'Blog Olidental Clinic';
@@ -141,6 +141,84 @@ export const blogPosts = [
         question: 'Se poate plăti tratamentul stomatologic în rate?',
         answer:
           'Da. Olidental Clinic îți recomandă parteneri de încredere care oferă opțiuni de creditare pentru eșalonarea plăților, ca să poți face tratamentele necesare fără presiune financiară.',
+      },
+      {
+        question: 'Cum pot face o programare la Olidental Clinic?',
+        answer:
+          `Poți face o programare online, prin formularul de pe site, sau telefonic, la numărul ${PHONE_DISPLAY}.`,
+        link: { href: '/programare', label: 'Programează-te online' },
+      },
+    ],
+  },
+  {
+    slug: 'calendarul-zambetului-de-mireasa',
+    title:
+      'Calendarul zâmbetului de mireasă: Ce tratamente faci cu 1 an, cu 6 luni, cu 3 luni, respectiv 1 lună înainte de nuntă',
+    shortTitle: 'Calendarul zâmbetului de mireasă',
+    seoTitle: 'Calendarul zâmbetului de mireasă | Olidental Clinic',
+    description:
+      'Calendarul zâmbetului de mireasă pe etape: ce tratamente stomatologice faci cu 1 an, 6 luni, 3 luni și 1 lună înainte de nuntă, la Olidental Clinic Timișoara.',
+    excerpt:
+      'Ce tratamente stomatologice faci cu 1 an, cu 6 luni, cu 3 luni și cu 1 lună înainte de nuntă, ca zâmbetul să fie pregătit la timp pentru ziua cea mare.',
+    datePublished: '2026-11-13',
+    dateModified: '2026-11-13',
+    section: 'Estetica zâmbetului',
+    // Words inside <article> minus the side column and "Citește și",
+    // measured on the built page.
+    wordCount: 1178,
+    heroImage: {
+      src: '/images/blog/calendarul-zambetului-de-mireasa/cabinet-zambet-1200.webp',
+      srcSet:
+        '/images/blog/calendarul-zambetului-de-mireasa/cabinet-zambet-800.webp 800w, /images/blog/calendarul-zambetului-de-mireasa/cabinet-zambet-1200.webp 1200w, /images/blog/calendarul-zambetului-de-mireasa/cabinet-zambet-1600.webp 1600w',
+      width: 1200,
+      height: 801,
+      alt: 'Cabinet Olidental Clinic din Timișoara, cu fotografia unui zâmbet afișată pe monitoarele de pe perete',
+      og: '/images/blog/calendarul-zambetului-de-mireasa/og-1200x630.jpg',
+    },
+    // Every line below restates the article text; nothing is added.
+    keyTakeaways: [
+      'Calendarul zâmbetului de mireasă are patru etape, în funcție de timpul rămas până la nuntă: 1 an, 6 luni, 3 luni și 1 lună.',
+      'Cu 1 an înainte: consultația inițială și igienizarea completă, tratamente ortodontice, implanturi dentare sau reabilitări protetice și rezolvarea afecțiunilor existente.',
+      'Cu 6 luni înainte: fațete dentare din ceramică, coroane dentare pe dinții vizibili și evaluarea tratamentului ortodontic.',
+      'Cu 3 luni înainte: obturații estetice, conturarea gingivală și ajustări de ocluzie.',
+      'Cu 1 lună înainte: profilaxie profesională, albire dentară profesională cu 2-3 săptămâni înainte de nuntă și indicații pentru întreținerea de acasă.',
+      'Cel mai important pas este prima consultație, chiar dacă mai ai doar o lună sau câteva săptămâni.',
+      `Adresa: Strada Ștefan cel Mare 53, Timișoara. Program: luni–vineri, 09:30–18:30. Telefon: ${PHONE_DISPLAY}.`,
+    ],
+    faq: [
+      {
+        question: 'Când ar trebui să încep tratamentele stomatologice înainte de nuntă?',
+        answer:
+          'Dacă îți dorești o îmbunătățire a zâmbetului sau chiar o transformare a danturii, trebuie să te ocupi din timp. Calendarul Olidental Clinic are patru etape: cu 1 an, cu 6 luni, cu 3 luni și cu 1 lună înainte de nuntă, în funcție de timpul pe care îl ai la dispoziție până la marele eveniment.',
+      },
+      {
+        question: 'Ce tratamente se pot face cu 1 an înainte de nuntă?',
+        answer:
+          'Consultația inițială și igienizarea completă, tratamente ortodontice (aparate dentare clasice sau alignere transparente), implanturi dentare sau reabilitări protetice și rezolvarea afecțiunilor existente: carii, probleme endodontice (de canal) și tratamente parodontale de bază.',
+        link: { href: '/servicii', label: 'Vezi toate serviciile' },
+      },
+      {
+        question: 'Când se fac fațetele dentare din ceramică?',
+        answer:
+          'Calendarul le plasează cu 6 luni înainte de nuntă. Procesul necesită câteva etape de analiză estetică (Digital Smile Design), amprentare și probă.',
+        link: { href: '/fatete-coroane-ceramice', label: 'Află mai multe despre fațete și coroane ceramice' },
+      },
+      {
+        question: 'Când se face albirea dentară profesională înainte de nuntă?',
+        answer:
+          'Cu 2-3 săptămâni înainte de nuntă, pentru ca eventuala sensibilitate temporară să dispară complet. În ultima lună se evită procedurile invazive, pentru a elimina orice risc de disconfort sau sensibilitate.',
+      },
+      {
+        question: 'Mai pot face ceva dacă am doar o lună sau câteva săptămâni până la nuntă?',
+        answer:
+          'Cel mai important pas este prima consultație. Chiar dacă mai ai doar o lună sau câteva săptămâni, există întotdeauna opțiuni rapide și sigure de profilaxie și albire.',
+        link: { href: '/programare', label: 'Programează-te online' },
+      },
+      {
+        question: 'Unde găsesc tarifele pentru aceste tratamente?',
+        answer:
+          'Tarifele și prețurile serviciilor Olidental Clinic, în euro, sunt publicate pe o pagină dedicată. După consultație și investigațiile necesare, primești un plan personalizat, cu etapele, serviciile incluse și costurile aferente, înainte de începerea tratamentului.',
+        link: { href: '/tarife', label: 'Vezi tarifele și prețurile' },
       },
       {
         question: 'Cum pot face o programare la Olidental Clinic?',
