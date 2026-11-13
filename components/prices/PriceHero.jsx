@@ -1,13 +1,12 @@
 import styles from '../../styles/tarife.module.css';
 import { formatDateRo } from '../../utils/formatDate';
-import { PRICE_CATEGORIES } from '../../utils/tarife';
-import { PAGE_HEADING, PAGE_LEAD } from '../../utils/tarife/pageText';
-import PriceSearch from './PriceSearch';
+import { PRICE_GROUPS } from '../../utils/tarife';
+import { NAV_LABEL, PAGE_HEADING, PAGE_LEAD } from '../../utils/tarife/pageText';
 
 const QuickNav = () => (
-  <nav className={styles.quickNav} aria-label="Categorii de tarife">
+  <nav className={styles.quickNav} aria-label={NAV_LABEL}>
     <ul className={styles.chips}>
-      {PRICE_CATEGORIES.map(({ id, shortName }) => (
+      {PRICE_GROUPS.map(({ id, shortName }) => (
         <li key={id}>
           <a href={`#${id}`} className={styles.chip}>
             {shortName}
@@ -19,7 +18,7 @@ const QuickNav = () => (
 );
 
 /** `updated` is the page's real last-change date (YYYY-MM-DD, utils/pageDates.js). */
-const PriceHero = ({ updated, query, onQueryChange, filter }) => (
+const PriceHero = ({ updated }) => (
   <header className={`${styles.shell} ${styles.hero}`}>
     <span className={styles.eyebrow}>Tarife</span>
     <h1 className={styles.heroTitle}>{PAGE_HEADING}</h1>
@@ -27,7 +26,6 @@ const PriceHero = ({ updated, query, onQueryChange, filter }) => (
     <p className={styles.updated}>
       Ultima actualizare: <time dateTime={updated}>{formatDateRo(updated)}</time>.
     </p>
-    <PriceSearch query={query} onQueryChange={onQueryChange} filter={filter} />
     <QuickNav />
   </header>
 );

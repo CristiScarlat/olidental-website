@@ -1,30 +1,37 @@
 // JSON-LD for the /tarife page: an OfferCatalog with one sub-catalog per
-// category and one Offer per row of the clinic price list (utils/tarife).
+// group and one Offer per row of the clinic price list (utils/tarife).
 //
-// Prices are in lei only (RON): an Offer carries one currency, and the euro
-// column is shown to visitors as information. No FAQPage and no Product: the
-// FAQ stays visible text, and a dental service is not a product.
+// Prices are in euro (EUR), as the clinic document gives them. No FAQPage and
+// no Product: the FAQ stays visible text, and a dental service is not a product.
 //
 // Imports use explicit `.js` so tests can load this file with plain Node.
-import { PRICE_CATEGORIES, rowsOf } from './tarife/index.js';
+import { PRICE_GROUPS } from './tarife/index.js';
 import { PAGE_HEADING } from './tarife/pageText.js';
 
 export const PRICE_CATALOG_PATH = '/tarife';
 
-const CURRENCY = 'RON';
+const CURRENCY = 'EUR';
+
+/** "de la 550" is a minimum, "65–110" has both ends, anything else is one fixed price. */
+function priceNumbers(row) {
+  if (row.max !== undefined) {
+    return { minPrice: row.min, maxPrice: row.max };
+  }
+  return row.from ? { minPrice: row.min } : { price: row.min };
+}
 
 /**
- * A row priced "De la …" is a minimum, a row priced per arch or implant names
- * its unit; both go into a priceSpecification. A plain row is a simple Offer.
+ * A plain row is a simple Offer. A row that is a minimum, a range or priced per
+ * arch, tooth or implant goes into a priceSpecification (with its unit if any).
  */
 function buildPriceFields(row) {
-  if (!row.prefix && !row.unit) {
-    return { price: row.lei, priceCurrency: CURRENCY };
+  if (!row.from && row.max === undefined && !row.unit) {
+    return { price: row.min, priceCurrency: CURRENCY };
   }
   return {
     priceSpecification: {
-      '@type': 'UnitPriceSpecification',
-      ...(row.prefix ? { minPrice: row.lei } : { price: row.lei }),
+      '@type': row.unit ? 'UnitPriceSpecification' : 'PriceSpecification',
+      ...priceNumbers(row),
       priceCurrency: CURRENCY,
       ...(row.unit ? { unitText: row.unit } : {}),
     },
@@ -49,12 +56,12 @@ export function buildPriceCatalogSchema({ siteUrl = 'https://olidental.ro', dent
     '@id': `${pageUrl}#catalog`,
     name: PAGE_HEADING,
     url: pageUrl,
-    itemListElement: PRICE_CATEGORIES.map((category) => ({
+    itemListElement: PRICE_GROUPS.map((group) => ({
       '@type': 'OfferCatalog',
-      '@id': `${pageUrl}#${category.id}`,
-      name: category.name,
-      url: `${pageUrl}#${category.id}`,
-      itemListElement: rowsOf(category).map((row) => buildOffer(row, dentistId)),
+      '@id': `${pageUrl}#${group.id}`,
+      name: group.name,
+      url: `${pageUrl}#${group.id}`,
+      itemListElement: group.rows.map((row) => buildOffer(row, dentistId)),
     })),
   };
 }

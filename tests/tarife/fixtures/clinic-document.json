@@ -1,0 +1,225 @@
+{
+  "source": "tarife olidental med 2.docx, received 2026-11-13",
+  "title": "Tarife Olidental Clinic",
+  "subtitle": "Tratamente adaptate nevoilor dumneavoastră, cu un plan personalizat și costuri comunicate înainte de începerea tratamentului.",
+  "groups": [
+    {
+      "name": "Implantologie și dinți ficși",
+      "rows": [
+        [
+          "Implant dentar cu inserare",
+          "de la 550 €/implant"
+        ],
+        [
+          "Dinți ficși pe 4 implanturi",
+          "3.500 €/arcadă"
+        ],
+        [
+          "Dinți ficși pe 6 implanturi",
+          "4.800 €/arcadă"
+        ]
+      ],
+      "note": "Pachetele pe 4 și 6 implanturi includ: implanturile, componentele protetice, adiția osoasă, A-PRF și lucrarea fixă de lungă durată din compozit Blender, pe structură metalică."
+    },
+    {
+      "name": "Consultații și diagnostic",
+      "intro": "Evaluare, investigații și planificarea tratamentului.",
+      "rows": [
+        [
+          "Consultație",
+          "40 €"
+        ],
+        [
+          "Consultație, radiografie panoramică, CBCT total și plan de tratament",
+          "130 €"
+        ],
+        [
+          "Radiografie panoramică",
+          "de la 20 €"
+        ],
+        [
+          "Tomografie dentară CBCT",
+          "de la 50 €"
+        ]
+      ]
+    },
+    {
+      "name": "Igienizare și estetică dentară",
+      "intro": "Îngrijirea dinților și îmbunătățirea aspectului zâmbetului.",
+      "rows": [
+        [
+          "Igienizare completă: detartraj, Air Flow și periaj",
+          "80 €"
+        ],
+        [
+          "Albire profesională, două arcade",
+          "150 €/ședință"
+        ],
+        [
+          "Fațetă directă din compozit",
+          "200 €/dinte"
+        ]
+      ]
+    },
+    {
+      "name": "Tratamentul cariilor și endodonție",
+      "intro": "Restaurarea dinților afectați de carii și tratamente de canal.",
+      "rows": [
+        [
+          "Obturație estetică",
+          "65–110 €/dinte"
+        ],
+        [
+          "Tratament de canal cu reconstrucție",
+          "160–260 €/dinte"
+        ],
+        [
+          "Retratament de canal cu reconstrucție",
+          "180–280 €/dinte"
+        ]
+      ]
+    },
+    {
+      "name": "Coroane, fațete și lucrări pe implanturi",
+      "intro": "Restaurări adaptate cerințelor funcționale și estetice.",
+      "rows": [
+        [
+          "Coroană metalo-ceramică pe dinte natural",
+          "250 €/dinte"
+        ],
+        [
+          "Coroană din zirconiu pe dinte natural",
+          "320–330 €/dinte"
+        ],
+        [
+          "Restaurare integral ceramică, inclusiv onlay",
+          "400 €/dinte"
+        ],
+        [
+          "Coroană înșurubată din zirconiu pe implant",
+          "340–350 €/dinte"
+        ],
+        [
+          "Lucrare fixă pe implanturi, pe structură metalică",
+          "3.880 €/arcadă"
+        ],
+        [
+          "Lucrare fixă pe implanturi, pe structură din titan",
+          "4.400 €/arcadă"
+        ]
+      ],
+      "note": "Lucrările fixe pe arcadă includ 12–14 dinți din zirconiu sau compozit premium și gingie protetică; tarifele acestora se referă exclusiv la lucrarea protetică."
+    },
+    {
+      "name": "Chirurgie orală și parodontologie",
+      "intro": "Intervenții pentru dinți, gingii și țesuturile de susținere.",
+      "rows": [
+        [
+          "Extracție dentară",
+          "de la 50 €/dinte"
+        ],
+        [
+          "Extracție molar de minte",
+          "100–200 €/dinte"
+        ],
+        [
+          "Adiție osoasă",
+          "de la 300 €"
+        ],
+        [
+          "Sinus lift",
+          "de la 300 €"
+        ],
+        [
+          "Evaluare parodontală, ambele arcade",
+          "60 €"
+        ],
+        [
+          "Tratament parodontal prin chiuretaj",
+          "300–500 €/arcadă"
+        ]
+      ],
+      "note": "Tariful intervențiilor depinde de procedura indicată. Materialele incluse sunt precizate în planul de tratament."
+    },
+    {
+      "name": "Proteze dentare și gutiere",
+      "intro": "Soluții pentru înlocuirea dinților lipsă și protejarea danturii.",
+      "rows": [
+        [
+          "Proteză totală",
+          "550–650 €"
+        ],
+        [
+          "Proteză scheletată",
+          "1.200 €"
+        ],
+        [
+          "Supraproteză pe stâlpi Locator",
+          "2.500 €"
+        ],
+        [
+          "Gutieră pentru bruxism",
+          "70 €"
+        ]
+      ]
+    },
+    {
+      "name": "Ortodonție",
+      "intro": "Tratamente pentru alinierea dinților și corectarea mușcăturii.",
+      "rows": [
+        [
+          "Consultație ortodontică",
+          "40 €"
+        ],
+        [
+          "Aparat mobil",
+          "280 €/arcadă"
+        ],
+        [
+          "Aparat fix metalic",
+          "700 €/arcadă"
+        ],
+        [
+          "Aparat fix din safir",
+          "1.000 €/arcadă"
+        ],
+        [
+          "Control periodic aparat fix",
+          "30–50 €"
+        ]
+      ],
+      "note": "Controalele periodice, îndepărtarea aparatului și contenția se tarifează separat."
+    },
+    {
+      "name": "Stomatologie pentru copii",
+      "intro": "Prevenție și tratamente pentru dinții temporari și permanenți.",
+      "rows": [
+        [
+          "Consultație pentru copii",
+          "40 €"
+        ],
+        [
+          "Pachet de profilaxie sau igienizare",
+          "60–70 €"
+        ],
+        [
+          "Sigilare dentară",
+          "40–50 €/dinte"
+        ],
+        [
+          "Obturație din compozit",
+          "60–80 €/dinte"
+        ],
+        [
+          "Extracție dinte temporar",
+          "40–50 €/dinte"
+        ]
+      ]
+    }
+  ],
+  "closing": {
+    "heading": "Planul dumneavoastră de tratament",
+    "text": "Tarifele afișate vă ajută să estimați bugetul tratamentului. Prețurile „de la” reprezintă tariful de pornire al serviciului indicat. După consultație și investigațiile necesare, veți primi un plan personalizat, cu etapele, serviciile incluse și costurile aferente, înainte de începerea tratamentului.",
+    "ctaLabel": "Programează o consultație"
+  }
+}

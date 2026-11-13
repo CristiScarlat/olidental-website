@@ -1,36 +1,34 @@
 // Visible FAQ of the /tarife page. Every number comes from the price data and
 // every claim from the clinic document, so an answer cannot drift from the list.
 // Plain text only: no FAQPage structured data (it is not used for this kind of page).
-import { findRowByName } from './index.js';
-import { formatEur, formatLei } from './format.js';
-import { PRICE_STEPS } from './pageText.js';
-
-const bothCurrencies = (row) => `${formatLei(row.lei)} (${formatEur(row.eur)})`;
+import { findGroup, findRowByName } from './index.js';
+import { FROM_PRICE_EXPLANATION, PLAN_SENTENCE } from './pageText.js';
 
 export function buildFaq() {
   const consultation = findRowByName('Consultație');
   const consultationWithImaging = findRowByName('Consultație, radiografie panoramică, CBCT total și plan de tratament');
+  const implant = findRowByName('Implant dentar cu inserare');
   const fourImplants = findRowByName('Dinți ficși pe 4 implanturi');
   const sixImplants = findRowByName('Dinți ficși pe 6 implanturi');
+  const implantNote = findGroup('implantologie').note;
 
   return Object.freeze(
     [
       {
         question: 'Cât costă o consultație la Olidental Clinic din Timișoara?',
-        answer: `Consultația costă ${bothCurrencies(consultation)}. Lista are și un rând care cuprinde consultația, radiografia panoramică, CBCT total și planul de tratament: ${bothCurrencies(consultationWithImaging)}.`,
+        answer: `Consultația costă ${consultation.priceText}. Tarifele includ și o poziție care cuprinde consultația, radiografia panoramică, CBCT total și planul de tratament: ${consultationWithImaging.priceText}.`,
       },
       {
-        question: 'Ce include tariful unui implant dentar?',
-        answer:
-          'Tariful implantului acoperă implantul și inserarea lui. Componentele protetice și coroana se tarifează separat, iar tariful variază în funcție de sistemul implantar ales. Tarifele componentelor și ale coroanelor sunt în secțiunea Protetică pe implanturi.',
+        question: 'Cât costă un implant dentar?',
+        answer: `Implantul dentar cu inserare are tariful ${implant.priceText}. ${FROM_PRICE_EXPLANATION}`,
       },
       {
         question: 'Cât costă dinții ficși pe implanturi, pentru o arcadă?',
-        answer: `Pe 4 implanturi, ${bothCurrencies(fourImplants)} pe arcadă. ${fourImplants.includes} Pe 6 implanturi, ${bothCurrencies(sixImplants)} pe arcadă, cu aceeași lucrare fixă, cele 6 implanturi, componentele protetice, adiția osoasă și A-PRF.`,
+        answer: `Dinții ficși pe 4 implanturi costă ${fourImplants.priceText}, iar pe 6 implanturi ${sixImplants.priceText}. ${implantNote}`,
       },
       {
         question: 'Primesc un plan cu costurile înainte să încep tratamentul?',
-        answer: `Da. ${PRICE_STEPS[1].text} ${PRICE_STEPS[2].text}`,
+        answer: `Da. ${PLAN_SENTENCE}`,
       },
     ].map((item) => Object.freeze(item)),
   );

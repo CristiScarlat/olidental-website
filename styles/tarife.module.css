@@ -1,6 +1,5 @@
-/* Styles for the /tarife page shell (hero, search, category cards,
-   steps, FAQ, call to action). The accordions and price tables are in
-   tarifeList.module.css; both rely on the tokens defined on .page. */
+/* Styles for the /tarife page: hero, one card per price group (name, intro,
+   price table, note, links), FAQ and the closing call to action. */
 
 /* Same visual language as styles/rezultateHub.module.css, and scoped the same
    way: the global template CSS (styles/medical-guide.css) forces 42px h2 and
@@ -28,13 +27,9 @@
     color: var(--text);
 }
 
-/* Hidden elements stay hidden even where a class sets `display` (search results). */
-.page [hidden] { display: none !important; }
-
 /* Shared resets, before the per-element rules that refine them. */
 .heroTitle,
-.sectionTitle,
-.cardTitle,
+.groupTitle,
 .ctaTitle,
 .faqQuestion {
     margin: 0;
@@ -45,10 +40,7 @@
 
 .heroText,
 .updated,
-.sectionMeta,
-.searchStatus,
-.cardCount,
-.stepText,
+.groupText,
 .ctaBody,
 .faqAnswer {
     margin: 0;
@@ -56,7 +48,7 @@
     line-height: 1.55;
 }
 
-/* One centred column for every block except the full-width steps band. */
+/* One centred column for every block. */
 .shell {
     max-width: var(--content-width);
     margin-inline: auto;
@@ -75,7 +67,7 @@
     border: 0;
 }
 
-.page :where(a, summary, button, input):focus-visible { outline: 3px solid var(--green-dark); outline-offset: 3px; }
+.page :where(a, summary, button):focus-visible { outline: 3px solid var(--green-dark); outline-offset: 3px; }
 
 /* ---------- Hero ---------- */
 
@@ -85,7 +77,7 @@
     align-items: center;
     gap: 1rem;
     padding-top: 2.5rem;
-    padding-bottom: 3rem;
+    padding-bottom: 2.5rem;
     text-align: center;
 }
 
@@ -116,68 +108,6 @@
 }
 
 .updated { font-size: 0.9rem; color: var(--muted); }
-
-/* ---------- Search ---------- */
-
-.search {
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
-    width: 100%;
-    max-width: 34rem;
-    margin-top: 0.5rem;
-    text-align: left;
-}
-
-.searchLabel { font-size: 0.9rem; font-weight: 600; color: var(--ink); }
-
-.searchField { position: relative; display: flex; align-items: center; }
-
-.searchIcon {
-    position: absolute;
-    left: 1.1rem;
-    color: var(--muted);
-    pointer-events: none;
-}
-
-.searchInput {
-    width: 100%;
-    min-height: 52px;
-    padding: 0 3rem 0 2.9rem;
-    border: 1px solid var(--border);
-    border-radius: 999px;
-    background: var(--paper);
-    color: var(--ink);
-    font: inherit;
-    font-size: 1.05rem;
-    -webkit-appearance: none;
-    appearance: none;
-}
-
-.searchInput::placeholder { color: var(--muted); opacity: 1; }
-
-.searchInput:focus { border-color: var(--green); }
-
-.searchInput::-webkit-search-cancel-button { display: none; }
-
-.searchClear {
-    position: absolute;
-    right: 0.4rem;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    border: 0;
-    border-radius: 50%;
-    background: transparent;
-    color: var(--muted);
-    cursor: pointer;
-}
-
-.searchClear:hover { background: var(--green-tint); color: var(--green-dark); }
-
-.searchStatus { min-height: 1.4em; font-size: 0.9rem; color: var(--muted); }
 
 /* ---------- Quick navigation ---------- */
 
@@ -211,55 +141,35 @@
 
 .chip:hover { border-color: var(--green); color: var(--green-dark); }
 
-/* ---------- Shared section heading ---------- */
+/* ---------- Price groups: one card each, the first one full width ---------- */
 
-.section {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-    margin-bottom: 3.5rem;
-}
-
-.sectionHead {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 0.25rem 1rem;
-}
-
-.sectionTitle { font-size: clamp(1.6rem, 3vw, 2.1rem); line-height: 1.2; }
-
-.sectionMeta { font-size: 0.95rem; color: var(--muted); }
-
-/* ---------- Category overview ---------- */
-
-.cards {
+.groups {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
     gap: 1rem;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    margin-bottom: 3.5rem;
 }
 
-.card {
-    position: relative;
+@media (min-width: 960px) {
+    .groups { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+
+    .groupWide { grid-column: 1 / -1; }
+}
+
+/* The header is not sticky, so a small offset is enough for the anchor links. */
+.group {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 0.6rem;
-    padding: 1.25rem;
-    border: 1px solid transparent;
+    gap: 0.9rem;
+    min-width: 0;
+    padding: 1.25rem 1.25rem 1.4rem;
     border-radius: var(--card-radius);
     background: var(--paper);
     box-shadow: var(--card-shadow);
-    transition: border-color 0.2s ease;
+    scroll-margin-top: 1.25rem;
 }
 
-.card:hover { border-color: var(--green); }
-
-.cardHead { display: flex; align-items: center; gap: 0.85rem; }
+.groupHead { display: flex; align-items: center; gap: 0.85rem; }
 
 .iconTile {
     display: inline-flex;
@@ -274,136 +184,165 @@
     font-size: 1.15rem;
 }
 
-.cardTitle {
-    font-size: 1.2rem;
+.groupTitle {
+    font-size: clamp(1.2rem, 2.2vw, 1.45rem);
     line-height: 1.25;
     text-wrap: balance;
 }
 
-.cardCount { font-size: 0.9rem; color: var(--muted); }
+.groupText {
+    max-width: 44rem;
+    font-size: 0.98rem;
+    color: var(--muted);
+}
 
-/* The prices the clinic itself put forward for this category: name, lei, euro. */
-.cardPrices {
+.groupLinks {
     display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    width: 100%;
-    margin: 0;
+    flex-wrap: wrap;
+    gap: 0.35rem 1.5rem;
+    margin: auto 0 0;
     padding: 0;
     list-style: none;
 }
 
-.cardPrice {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
-    grid-template-areas:
-        'name lei'
-        'name eur';
-    align-items: baseline;
-    column-gap: 1rem;
-    padding-top: 0.5rem;
-    border-top: 1px solid var(--border);
-}
-
-.cardPriceName { grid-area: name; font-size: 0.95rem; line-height: 1.4; color: var(--ink); }
-
-.cardPriceLei {
-    grid-area: lei;
-    font-family: var(--heading-font);
-    font-size: 1.1rem;
-    font-weight: 600;
-    line-height: 1.3;
-    color: var(--ink);
-    text-align: right;
-    font-variant-numeric: lining-nums tabular-nums;
-}
-
-.cardPriceEur { grid-area: eur; font-size: 0.85rem; color: var(--muted); text-align: right; }
-
-.cardLink {
-    margin-top: auto;
-    padding-top: 0.35rem;
+.groupLink {
     color: var(--green-dark);
     font-size: 0.98rem;
     font-weight: 600;
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
 }
 
-/* Outranks Bootstrap's a:hover colour. */
-.cardLink:hover { color: var(--green-deep); }
+.groupLink:hover { color: var(--green-deep); }
 
-/* The link covers the whole card, so the card is one tap target. */
-.cardLink::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    border-radius: var(--card-radius);
+/* ---------- Price table: service, price ---------- */
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    caption-side: top;
 }
 
-.cardLink:focus-visible { outline: none; }
-
-.cardLink:focus-visible::after { outline: 3px solid var(--green-dark); outline-offset: 3px; }
-
-@media (min-width: 600px) {
-    .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-
-    .cardWide { grid-column: span 2; }
+.tableHead th {
+    padding: 0 0 0.5rem;
+    border-bottom: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-align: left;
 }
 
-@media (min-width: 1000px) {
-    .cards { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
-
-    .cardWideDesktop { grid-column: span 2; }
+.tableHead .priceHeader {
+    padding-left: 1.25rem;
+    text-align: right;
+    white-space: nowrap;
 }
 
-/* ---------- How the cost is set (full-width white band) ---------- */
+.serviceCell,
+.priceCell { padding: 0.8rem 0 0; vertical-align: baseline; }
 
-.stepsBand {
-    margin-bottom: 3.5rem;
-    padding-block: 3rem;
-    background: var(--paper);
+.serviceCell {
+    color: var(--ink);
+    font-weight: 400;
+    text-align: left;
 }
 
-.steps {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr);
-    gap: 1.75rem;
-    margin: 1.75rem 0 0;
-    padding: 0;
-    list-style: none;
+/* Name, then a dotted leader running to the price, as on a printed price list. */
+.serviceLine {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
 }
 
-@media (min-width: 760px) {
-    .steps { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; }
+.serviceName { font-size: 1.05rem; line-height: 1.5; }
+
+.leader {
+    flex: 1 1 auto;
+    min-width: 1.5rem;
+    border-bottom: 2px dotted var(--leader);
+    transform: translateY(-0.3em);
 }
 
-.step {
+.priceCell {
+    width: 1%;
+    padding-left: 0.6rem;
+    font-size: 1.15rem;
+    line-height: 1.5;
+    text-align: right;
+    white-space: nowrap;
+}
+
+/* The figure in Fraunces; "de la", "€" and the unit smaller and muted. */
+.price {
+    font-family: var(--heading-font);
+    font-weight: 600;
+    color: var(--ink);
+    font-variant-numeric: lining-nums tabular-nums;
+}
+
+.priceAffix,
+.unit {
+    color: var(--muted);
+    font-family: var(--body-font);
+    font-weight: 400;
+}
+
+.priceAffix { font-size: max(0.85rem, 0.7em); }
+
+.unit { font-size: 0.85rem; }
+
+/* Phones: each row becomes a list item (name, then the price under it). */
+@media (max-width: 600px) {
+    .table, .table tbody, .row, .serviceCell, .priceCell { display: block; }
+
+    .tableHead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+    }
+
+    .row { padding: 0.8rem 0; border-bottom: 1px solid var(--border); }
+
+    .row:first-child { padding-top: 0; }
+
+    .row:last-child { padding-bottom: 0; border-bottom: 0; }
+
+    .serviceCell { width: auto; padding: 0; text-align: left; }
+
+    .priceCell {
+        width: auto;
+        margin-top: 0.3rem;
+        padding: 0;
+        text-align: left;
+        white-space: normal;
+    }
+
+    .leader { display: none; }
+}
+
+/* ---------- Shared section ---------- */
+
+.section {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-    padding-top: 1.1rem;
-    border-top: 3px solid var(--green);
+    gap: 1.25rem;
+    margin-bottom: 3.5rem;
 }
 
-.stepNumber {
-    font-family: var(--heading-font);
-    font-size: 1.9rem;
-    font-weight: 600;
-    line-height: 1;
-    color: var(--green-dark);
-}
+.section:last-child { margin-bottom: 0; }
 
-.stepTitle {
+.sectionTitle {
     margin: 0;
-    font-family: var(--body-font);
-    font-size: 1.15rem;
+    font-family: var(--heading-font);
+    font-size: clamp(1.6rem, 3vw, 2.1rem);
     font-weight: 600;
-    line-height: 1.3;
+    line-height: 1.2;
     color: var(--ink);
 }
-
-.stepText { font-size: 1rem; color: var(--muted); }
 
 /* ---------- FAQ (plain visible text) ---------- */
 
@@ -428,7 +367,7 @@
 
 .faqAnswer { font-size: 1rem; line-height: 1.6; color: var(--text); }
 
-/* ---------- Closing call to action ---------- */
+/* ---------- Closing block: the treatment plan and the call to action ---------- */
 
 .cta {
     display: flex;
@@ -456,7 +395,7 @@
     color: #ffffff;
 }
 
-.ctaBody { font-size: 1.05rem; color: #d9e2dc; }
+.ctaBody { max-width: 46rem; font-size: 1.05rem; color: #d9e2dc; }
 
 .ctaActions {
     display: flex;
@@ -496,23 +435,22 @@
     .ctaPrimary, .ctaSecondary { width: 100%; }
 }
 
-.section:last-child { margin-bottom: 0; }
-
 @media (prefers-reduced-motion: reduce) {
-    .chip, .card { transition: none; }
+    .chip { transition: none; }
 }
 
 /* ---------- Print: just the list ---------- */
 
 @media print {
-    .search,
     .quickNav,
-    .cardsSection,
+    .groupLinks,
     .cta { display: none; }
 
     .page { padding-bottom: 0; }
 
     .hero { padding-block: 0 1rem; }
 
-    .stepsBand { margin-bottom: 1rem; padding-block: 1rem; }
+    .group { box-shadow: none; border: 1px solid #999; }
+
+    .group, .row { break-inside: avoid; }
 }

@@ -1,22 +1,23 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { buildPriceCatalogSchema, PRICE_CATALOG_PATH } from '../../utils/priceSchema.js';
-import { PRICE_CATEGORIES, ALL_PRICE_ROWS } from '../../utils/tarife/index.js';
+import { PRICE_GROUPS, ALL_PRICE_ROWS } from '../../utils/tarife/index.js';
 
 const SITE = 'https://olidental.ro';
 const DENTIST = `${SITE}/#dentist`;
 const catalog = buildPriceCatalogSchema({ siteUrl: SITE, dentistId: DENTIST });
-const offers = catalog.itemListElement.flatMap((category) => category.itemListElement);
+const offers = catalog.itemListElement.flatMap((group) => group.itemListElement);
+const offerOf = (name) => offers.find((candidate) => candidate.name === name);
 
-test('the catalog is one OfferCatalog with a sub-catalog per category', () => {
+test('the catalog is one OfferCatalog with a sub-catalog per group', () => {
   assert.equal(catalog['@context'], 'https://schema.org');
   assert.equal(catalog['@type'], 'OfferCatalog');
   assert.equal(catalog['@id'], `${SITE}${PRICE_CATALOG_PATH}#catalog`);
-  assert.equal(catalog.itemListElement.length, PRICE_CATEGORIES.length);
-  for (const [index, category] of catalog.itemListElement.entries()) {
-    assert.equal(category['@type'], 'OfferCatalog');
-    assert.equal(category.name, PRICE_CATEGORIES[index].name);
-    assert.equal(category.url, `${SITE}${PRICE_CATALOG_PATH}#${PRICE_CATEGORIES[index].id}`);
+  assert.equal(catalog.itemListElement.length, PRICE_GROUPS.length);
+  for (const [index, group] of catalog.itemListElement.entries()) {
+    assert.equal(group['@type'], 'OfferCatalog');
+    assert.equal(group.name, PRICE_GROUPS[index].name);
+    assert.equal(group.url, `${SITE}${PRICE_CATALOG_PATH}#${PRICE_GROUPS[index].id}`);
   }
 });
 
@@ -28,51 +29,70 @@ test('there is exactly one Offer per row of the price list', () => {
   );
 });
 
-test('every Offer is in lei and carries the number from the data', () => {
+test('every Offer is in euro, sold by the dentist, and carries the number from the data', () => {
   offers.forEach((offer, index) => {
     const row = ALL_PRICE_ROWS[index];
     assert.equal(offer['@type'], 'Offer');
     assert.deepEqual(offer.itemOffered, { '@type': 'Service', name: row.name });
     assert.deepEqual(offer.seller, { '@id': DENTIST });
     const spec = offer.priceSpecification;
-    const currency = spec ? spec.priceCurrency : offer.priceCurrency;
-    assert.equal(currency, 'RON', row.id);
+    assert.equal(spec ? spec.priceCurrency : offer.priceCurrency, 'EUR', row.id);
     const amount = spec ? (spec.price ?? spec.minPrice) : offer.price;
-    assert.equal(amount, row.lei, row.id);
-  });
-});
-
-test('a "De la" row is a minimum price, not a fixed one', () => {
-  const offer = offers.find((candidate) => candidate.name === 'Implant dentar cu inserare');
-  assert.equal(offer.price, undefined);
-  assert.deepEqual(offer.priceSpecification, {
-    '@type': 'UnitPriceSpecification',
-    minPrice: 3180,
-    priceCurrency: 'RON',
-    unitText: 'implant',
-  });
-});
-
-test('a row priced per arch or implant names its unit', () => {
-  const offer = offers.find((candidate) => candidate.name === 'Dinți ficși pe 4 implanturi');
-  assert.deepEqual(offer.priceSpecification, {
-    '@type': 'UnitPriceSpecification',
-    price: 18550,
-    priceCurrency: 'RON',
-    unitText: 'arcadă',
+    assert.equal(amount, row.min, row.id);
   });
 });
 
 test('a plain row is a simple Offer with price and currency', () => {
-  const offer = offers.find((candidate) => candidate.name === 'Consultație');
-  assert.equal(offer.price, 210);
-  assert.equal(offer.priceCurrency, 'RON');
+  const offer = offerOf('Consultație');
+  assert.equal(offer.price, 40);
+  assert.equal(offer.priceCurrency, 'EUR');
   assert.equal(offer.priceSpecification, undefined);
 });
 
-test('no Product, no FAQPage and no euro in the structured data', () => {
+test('a "de la" row is a minimum price with its unit, not a fixed one', () => {
+  const offer = offerOf('Implant dentar cu inserare');
+  assert.equal(offer.price, undefined);
+  assert.deepEqual(offer.priceSpecification, {
+    '@type': 'UnitPriceSpecification',
+    minPrice: 550,
+    priceCurrency: 'EUR',
+    unitText: 'implant',
+  });
+  assert.deepEqual(offerOf('Radiografie panoramică').priceSpecification, {
+    '@type': 'PriceSpecification',
+    minPrice: 20,
+    priceCurrency: 'EUR',
+  });
+});
+
+test('a row priced per arch names its unit', () => {
+  assert.deepEqual(offerOf('Dinți ficși pe 4 implanturi').priceSpecification, {
+    '@type': 'UnitPriceSpecification',
+    price: 3500,
+    priceCurrency: 'EUR',
+    unitText: 'arcadă',
+  });
+});
+
+test('a range has a lowest and a highest price', () => {
+  assert.deepEqual(offerOf('Obturație estetică').priceSpecification, {
+    '@type': 'UnitPriceSpecification',
+    minPrice: 65,
+    maxPrice: 110,
+    priceCurrency: 'EUR',
+    unitText: 'dinte',
+  });
+  assert.deepEqual(offerOf('Proteză totală').priceSpecification, {
+    '@type': 'PriceSpecification',
+    minPrice: 550,
+    maxPrice: 650,
+    priceCurrency: 'EUR',
+  });
+});
+
+test('no Product, no FAQPage and no lei in the structured data', () => {
   const json = JSON.stringify(catalog);
-  assert.doesNotMatch(json, /"Product"|"FAQPage"|"EUR"/);
+  assert.doesNotMatch(json, /"Product"|"FAQPage"|"RON"/);
 });
 
 test('the catalog survives JSON serialization unchanged', () => {

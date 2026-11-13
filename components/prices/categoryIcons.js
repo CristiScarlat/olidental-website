@@ -1,31 +1,23 @@
 import {
-  FaBullseye,
   FaChild,
   FaGripLines,
-  FaHeartPulse,
   FaLayerGroup,
-  FaPuzzlePiece,
   FaScissors,
   FaShieldHalved,
   FaStethoscope,
   FaTeeth,
-  FaTeethOpen,
   FaTooth,
   FaWandMagicSparkles
 } from 'react-icons/fa6';
 
-// One decorative icon per price category, by category id (utils/tarife).
+// One decorative icon per price group, by group id (utils/tarife/grupuri.js).
 export const CATEGORY_ICONS = Object.freeze({
-  consultatii: FaStethoscope,
-  'igienizare-albire': FaWandMagicSparkles,
-  'carii-restaurari': FaShieldHalved,
-  endodontie: FaBullseye,
-  parodontologie: FaHeartPulse,
-  'chirurgie-orala': FaScissors,
   implantologie: FaTooth,
-  'protetica-dinti-naturali': FaTeethOpen,
-  'protetica-implanturi': FaPuzzlePiece,
-  'arcade-fixe-implanturi': FaTeeth,
+  consultatii: FaStethoscope,
+  'igienizare-estetica': FaWandMagicSparkles,
+  'carii-endodontie': FaShieldHalved,
+  'coroane-fatete': FaTeeth,
+  'chirurgie-parodontologie': FaScissors,
   'proteze-gutiere': FaLayerGroup,
   ortodontie: FaGripLines,
   'stomatologie-copii': FaChild

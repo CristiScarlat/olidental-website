@@ -1,7 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { buildFaq } from '../../utils/tarife/faq.js';
-import { AUTHORED_COPY, PRICE_STEPS, VERBATIM_TEXTS } from '../../utils/tarife/pageText.js';
+import { ALL_PRICE_ROWS, findGroup } from '../../utils/tarife/index.js';
+import { CLOSING } from '../../utils/tarife/grupuri.js';
+import { AUTHORED_COPY, FROM_PRICE_EXPLANATION, PLAN_SENTENCE } from '../../utils/tarife/pageText.js';
 
 const faq = buildFaq();
 
@@ -15,41 +17,40 @@ test('the FAQ has four visible questions, each with an answer', () => {
 
 test('the consultation answer uses the prices of the list', () => {
   const answer = faq[0].answer;
-  assert.match(answer, /210 lei \(40 €\)/);
-  assert.match(answer, /690 lei \(130 €\)/);
+  assert.match(answer, /costă 40 €/);
+  assert.match(answer, /130 €/);
 });
 
-test('the implant answer repeats the clinic notes and names no price', () => {
+test('the implant answer gives the price as the clinic writes it, and what "de la" means', () => {
   const answer = faq[1].answer;
-  assert.match(answer, /acoperă implantul și inserarea lui/);
-  assert.match(answer, /se tarifează separat/);
-  assert.doesNotMatch(answer, /\d/);
+  assert.match(answer, /de la 550 €\/implant/);
+  assert.ok(answer.includes(FROM_PRICE_EXPLANATION));
 });
 
-test('the fixed-teeth answer has both arch prices and what they include', () => {
+test('the fixed-teeth answer has both arch prices and repeats the clinic note', () => {
   const answer = faq[2].answer;
-  assert.match(answer, /18\.550 lei \(3\.500 €\)/);
-  assert.match(answer, /25\.440 lei \(4\.800 €\)/);
+  assert.match(answer, /3\.500 €\/arcadă/);
+  assert.match(answer, /4\.800 €\/arcadă/);
+  assert.ok(answer.includes(findGroup('implantologie').note));
   assert.match(answer, /compozit Blender/);
 });
 
-test('the plan answer repeats the two sentences of the clinic document', () => {
-  const answer = faq[3].answer;
-  assert.ok(answer.includes(PRICE_STEPS[1].text));
-  assert.ok(answer.includes(PRICE_STEPS[2].text));
+test('the plan answer repeats the sentence of the clinic document', () => {
+  assert.ok(faq[3].answer.includes(PLAN_SENTENCE));
+});
+
+test('the sentences taken from the clinic closing text are really in it', () => {
+  assert.ok(CLOSING.text.includes(FROM_PRICE_EXPLANATION));
+  assert.ok(CLOSING.text.includes(PLAN_SENTENCE));
 });
 
 test('copy written for the page avoids the wording the CMSR guide bans', () => {
   const banned = /gratuit|garan[țt]|ofert[ăa]|promo[țt]|reducer|discount|cel mai|accesibil|avantaj|\bde la\b/i;
-  const authored = [...AUTHORED_COPY, ...faq.flatMap((item) => [item.question, item.answer.replaceAll('Include', '')])];
+  // Prices and sentences of the clinic itself are not our copy, so they are taken out first.
+  const clinicWords = [...ALL_PRICE_ROWS.map((row) => row.priceText), FROM_PRICE_EXPLANATION, PLAN_SENTENCE, findGroup('implantologie').note];
+  const withoutClinicWords = (text) => clinicWords.reduce((rest, words) => rest.replaceAll(words, ''), text);
+  const authored = [...AUTHORED_COPY, ...faq.flatMap((item) => [item.question, withoutClinicWords(item.answer)])];
   for (const text of authored) {
     assert.doesNotMatch(text, banned, text);
-  }
-});
-
-test('the texts taken from the clinic document are listed for the verbatim check', () => {
-  assert.ok(VERBATIM_TEXTS.length >= 4);
-  for (const text of VERBATIM_TEXTS) {
-    assert.ok(text.length > 20);
   }
 });

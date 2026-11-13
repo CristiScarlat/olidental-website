@@ -43,8 +43,8 @@ const PAGE_DATES = {
   '/echipa/olimpiu-ladislau-karancsi': '2026-10-18',
   '/echipa/paula-derban': '2026-10-18',
   '/echipa/anda-nicola': '2026-10-18',
-  // Price list from the clinic's document ("tarife olidental.docx").
-  '/tarife': '2026-11-12',
+  // Price list from the clinic's document ("tarife olidental med 2.docx").
+  '/tarife': '2026-11-13',
 };
 
 function getPageDate(path) {
