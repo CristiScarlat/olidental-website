@@ -8,7 +8,7 @@ import styles from './styles/footer.module.css';
 // Phone and email come from utils/clinicContact.js, the same source as the
 // /contact page (components/location.jsx). Address and hours are still kept
 // here; they match the Dentist schema (utils/schema.js).
-const ADDRESS_LINES = ['Strada Ștefan cel Mare 53, Parter', '(intrare de pe Gh. Asachi)', 'Timișoara 307200'];
+const ADDRESS_LINES = ['Strada Ștefan cel Mare 53, Parter', '(intrare de pe Gh. Asachi)', 'Timișoara 300116'];
 // Plain Maps link (no embed), so the footer sets no third-party cookies.
 const MAPS_URL = 'https://www.google.com/maps/search/?api=1&query=Olidental%20Clinic%2C%20Strada%20%C8%98tefan%20cel%20Mare%2053%2C%20Timi%C8%99oara';
 const HOURS_LINES = ['Luni – Vineri: 09:30 – 18:30', 'Sâmbătă, Duminică: închis'];

@@ -35,7 +35,7 @@ const EsteticaZambetului = () => {
                         {/* Decorative service icon: intentionally alt="" since it's redundant with the h1 title below */}
                         <img src={services[serviceId]?.logo || ''} alt="" style={{ width: "120px" }} />
                         <h1>{services[serviceId]?.title || ''}</h1>
-                        <TreatmentLead>Estetica zâmbetului la Olidental Clinic din Timișoara cuprinde fațete și coroane dentare integral ceramice, dar și restaurări protetice estetice.</TreatmentLead>
+                        <TreatmentLead>Estetică dentară la Olidental Clinic din Timișoara: estetica zâmbetului cuprinde fațete și coroane dentare integral ceramice, dar și restaurări protetice estetice.</TreatmentLead>
                         <h2>Tratamente de estetică a zâmbetului</h2>
                     </div>
                     <div className="services-one">
@@ -89,8 +89,8 @@ const EsteticaZambetului = () => {
 }
 
 EsteticaZambetului.seo = {
-    title: "Estetica zâmbetului | Olidental Clinic Timișoara",
-    description: "Estetica zâmbetului la Olidental Clinic Timișoara: fațete și coroane dentare integral ceramice și restaurări protetice estetice, pentru un zâmbet natural.",
+    title: "Estetică dentară și zâmbet Timișoara | Olidental",
+    description: "Estetică dentară la Olidental Clinic Timișoara: fațete și coroane dentare integral ceramice și restaurări protetice estetice, pentru un zâmbet natural.",
     canonical: "https://olidental.ro/estetica-zambetului",
 };
 

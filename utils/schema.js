@@ -289,7 +289,7 @@ export function buildDentistSchema({ includeEmployees = false } = {}) {
       streetAddress: 'Strada Ștefan cel Mare 53, Parter (intrare de pe Gh. Asachi)',
       addressLocality: 'Timișoara',
       addressRegion: 'Timiș',
-      postalCode: '307200',
+      postalCode: '300116',
       addressCountry: 'RO',
     },
     geo: {

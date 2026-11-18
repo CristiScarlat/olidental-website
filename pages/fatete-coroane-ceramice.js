@@ -80,7 +80,7 @@ const FateteCoroaneCeramice = () => {
             <img src={services[serviceId]?.procedures[procedureIndex]?.logo || ''} alt=''
                  style={{ width: '75px', userSelect: 'none' }} />
             <h1>{services[serviceId]?.procedures[procedureIndex]?.title || ''}</h1>
-            <TreatmentLead>Fațete și coroane dentare integral ceramice la Olidental Clinic, clinică stomatologică din Timișoara, pe Strada Ștefan cel Mare 53.</TreatmentLead>
+            <TreatmentLead>Fațete dentare și coroane dentare integral ceramice la Olidental Clinic, clinică stomatologică din Timișoara, pe Strada Ștefan cel Mare 53.</TreatmentLead>
           </div>
           <div className='pt-3 mb-2 d-flex flex-column'>
             {(cazuri?.length && cazuri[indexCaz].images.length > 1) && <div className={`${styles.imageComparatorContainerPreview}`}>
@@ -147,8 +147,8 @@ const FateteCoroaneCeramice = () => {
 };
 
 FateteCoroaneCeramice.seo = {
-  title: "Fațete și coroane ceramice în Timișoara | Olidental Clinic",
-  description: "Fațete și coroane dentare integral ceramice la Olidental Clinic Timișoara: intervenții minim invazive pentru forma, culoarea și strălucirea zâmbetului.",
+  title: "Fațete dentare și coroane ceramice Timișoara | Olidental",
+  description: "Fațete dentare și coroane dentare integral ceramice la Olidental Clinic Timișoara: intervenții minim invazive pentru forma, culoarea și strălucirea zâmbetului.",
   canonical: "https://olidental.ro/fatete-coroane-ceramice",
 };
 

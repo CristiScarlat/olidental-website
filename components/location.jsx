@@ -54,7 +54,7 @@ const Location = ({className=""}) => {
             Strada Ștefan cel Mare 53 Parter<br/>
             (intrare de pe Gh. Asachi)
             <br />
-            Timișoara 307200
+            Timișoara 300116
           </div>
         </div>
         <a

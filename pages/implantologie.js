@@ -23,7 +23,7 @@ const Implantologie = () => {
                         {/* Decorative service icon: intentionally alt="" since it's redundant with the h1 title below */}
                         <img src={services[serviceId]?.logo || ''} alt="" style={{ width: "120px" }} />
                         <h1>{services[serviceId]?.title || ''}</h1>
-                        <TreatmentLead>Implantologie orală la Olidental Clinic, clinică stomatologică din Timișoara: inserare de implanturi dentare, adiții de os și restaurări protetice pe implanturi.</TreatmentLead>
+                        <TreatmentLead>Implant dentar și implantologie orală la Olidental Clinic, clinică stomatologică din Timișoara: inserare de implanturi dentare, adiții de os și restaurări protetice pe implanturi.</TreatmentLead>
                         <h2>Tratamente de implantologie orală</h2>
                     </div>
                     <div className="services-one">
@@ -63,8 +63,8 @@ const Implantologie = () => {
 }
 
 Implantologie.seo = {
-    title: "Implantologie orală | Olidental Clinic Timișoara",
-    description: "Implantologie orală la Olidental Clinic Timișoara: implanturi dentare, adiții de os și restaurări protetice pe implanturi pentru înlocuirea dinților lipsă.",
+    title: "Implant dentar și implantologie orală Timișoara | Olidental",
+    description: "Implant dentar și implantologie orală la Olidental Clinic Timișoara: inserare de implanturi, adiții de os și restaurări protetice pe implanturi.",
     canonical: "https://olidental.ro/implantologie",
 };
 

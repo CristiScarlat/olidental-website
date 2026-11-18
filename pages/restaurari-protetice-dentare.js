@@ -80,7 +80,7 @@ const ImplantologieRestaurariProtetice = () => {
             <img src={services[serviceId]?.procedures[procedureIndex]?.logo || ''} alt=''
                  style={{ width: '75px', userSelect: 'none' }} />
             <h1>{services[serviceId]?.procedures[procedureIndex]?.title || ''}</h1>
-            <TreatmentLead>Restaurări protetice pe implanturi la Olidental Clinic din Timișoara: etapa protetică a tratamentului de implantologie, cu lucrări fixe, demontabile sau mobilizabile.</TreatmentLead>
+            <TreatmentLead>Dinți pe implanturi la Olidental Clinic din Timișoara: restaurări protetice, etapa protetică a tratamentului de implantologie, cu lucrări fixe, demontabile sau mobilizabile.</TreatmentLead>
           </div>
           <div className='pt-3 mb-2 d-flex flex-column'>
             {(cazuri?.length && cazuri[indexCaz].images.length > 1) && <div className={`${styles.imageComparatorContainerPreview}`}>
@@ -147,8 +147,8 @@ const ImplantologieRestaurariProtetice = () => {
 };
 
 ImplantologieRestaurariProtetice.seo = {
-  title: "Restaurări protetice pe implanturi | Olidental Timișoara",
-  description: "Restaurări protetice pe implanturi la Olidental Clinic Timișoara: coroane unidentare, punți sau restaurări de arcadă fixe ori mobilizabile.",
+  title: "Dinți pe implanturi: restaurări protetice | Olidental",
+  description: "Dinți pe implanturi la Olidental Clinic Timișoara: restaurări protetice cu coroane unidentare, punți sau restaurări de arcadă fixe ori mobilizabile.",
   canonical: "https://olidental.ro/restaurari-protetice-dentare",
 };
 
