@@ -30,6 +30,7 @@ const JOBS = [
   { source: 'dr. Paula Derban.jpg', out: 'thumbnail_dr.-Paula-Derban-2026' },
   { source: 'dr. Anda Nicola.jpg', out: 'thumbnail_dr.-Anda-Nicola-2026' },
   { source: 'as. Adela Dăogaru.jpg', out: 'thumbnail_Adela-Daogaru-2026' },
+  { source: 'as. Andra Lasc.jpg', out: 'thumbnail_Lasc-Andra-2026' },
   { source: 'as. Andreea Chifa.jpg', out: 'thumbnail_Chifa-Andreea-2026' },
   { source: 'as. Bianca Bircioaga.jpg', out: 'thumbnail_Bircioaga-Bianca-2026' },
 ];

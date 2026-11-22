@@ -89,8 +89,18 @@ export const teamCards = [
     thumbnail: '/images/team/thumbnail_Adela-Daogaru-2026.jpg'
   },
   {
+    title: 'As. Andra Lasc',
+    body: `<p style="margin-bottom: 3rem;"><span  style='margin-left: 2rem;'></span>Cu o experiență solidă în domeniul stomatologic, Andra își desfășoară activitatea de asistentă medicală cu pasiune, dedicare și atenție la fiecare detaliu.
+    Pe parcursul carierei sale, a asistat cu succes la o gamă variată de proceduri, de la tratamente de rutină și profilaxie, până la intervenții complexe de chirurgie, implantologie și endodonție.
+    Este o persoană calmă, adaptabilă și orientată spre lucrul în echipă, mereu pregătită să contribuie la oferirea unei experiențe medicale de cea mai înaltă calitate.</p>`,
+    specializations: ['Asistent medical'],
+    services: [],
+    img: '/images/team/thumbnail_Lasc-Andra-2026.jpg',
+    thumbnail: '/images/team/thumbnail_Lasc-Andra-2026.jpg'
+  },
+  {
     title: 'As. Andreea Chifa',
-    body: `<p style="margin-bottom: 3rem;'"><span  style='margin-left: 2rem;'></span>Andreea, este asistent medical generalist cu o experiență de peste 8 ani în domeniul stomatologic.
+    body: `<p style="margin-bottom: 3rem;'"><span  style='margin-left: 2rem;'></span>Andreea este asistent medical generalist cu o experiență de peste 8 ani în domeniul stomatologic.
     În toți acești ani, Andreea și-a dezvoltat abilitățile de a empatiza atât cu pacienții adulți, cât și cu cei mici.
     Blândețea și receptivitatea față de nevoile pacienților sunt calitățile pentru care este îndrăgită de către toți pacienții.</p>`,
     specializations: ['Asistent medical generalist / stomatologie'],

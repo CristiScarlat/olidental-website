@@ -57,6 +57,21 @@ test('the three assistants got the three extra years the clinic asked for', () =
   assert.match(team, /Bianca[\s\S]*?experiență de 15 ani/);
 });
 
+test('Andra Lasc is on the team with the clinic\'s text, her 2026 photo and no unconfirmed grade', () => {
+  const team = activeTeamSource();
+  assert.match(team, /title: 'As\. Andra Lasc'/);
+  assert.match(team, /Cu o experiență solidă în domeniul stomatologic, Andra își desfășoară activitatea de asistentă medicală/);
+  assert.match(team, /thumbnail: '\/images\/team\/thumbnail_Lasc-Andra-2026\.jpg'/);
+  const block = team.slice(team.indexOf("title: 'As. Andra Lasc'")).split(/\n\s*title:/)[0];
+  assert.ok(!/generalist/i.test(block), 'the clinic did not state "generalist" for Andra');
+});
+
+test('the bio of Andreea has no comma between her name and the verb', () => {
+  const team = activeTeamSource();
+  assert.match(team, /Andreea este asistent medical generalist cu o experiență de peste 8 ani/);
+  assert.ok(!/Andreea, este/.test(team), 'the stray comma after "Andreea" is back');
+});
+
 test('professional titles stay the ones confirmed in the CMSR register (no "primar" without a certificate)', () => {
   const team = activeTeamSource();
   assert.ok(!/primar/i.test(team), 'a "primar" grade was added to the team data');
