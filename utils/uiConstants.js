@@ -31,7 +31,7 @@ export const teamCards = [
   },
   {
     title: 'Dr. Ana Strava',
-    body: `<p style="margin-bottom: 3rem;'"><span  style='margin-left: 2rem;'></span>Dr. Ana, este absolventă a Facultății de Medicină Dentară din Timișoara.
+    body: `<p style="margin-bottom: 3rem;'"><span  style='margin-left: 2rem;'></span>Dr. Ana este absolventă a Facultății de Medicină Dentară din Timișoara.
     Cu o experiență de peste 8 ani în domeniu, și-a descoperit pasiunea pentru endodonție, așa că a ales să termine această specializare.
     Fiind o fire meticuloasă, continuă să învețe, astfel încât participă la numeroase cursuri și workshop-uri cu scopul de a-și perfecționa profesionalismul de care dă dovadă.</p>`,
     specializations: ['Medic dentist'],

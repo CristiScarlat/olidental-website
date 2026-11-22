@@ -66,10 +66,13 @@ test('Andra Lasc is on the team with the clinic\'s text, her 2026 photo and no u
   assert.ok(!/generalist/i.test(block), 'the clinic did not state "generalist" for Andra');
 });
 
-test('the bio of Andreea has no comma between her name and the verb', () => {
+test('the bios of Andreea and Dr. Ana have no comma between the name and the verb', () => {
   const team = activeTeamSource();
   assert.match(team, /Andreea este asistent medical generalist cu o experiență de peste 8 ani/);
-  assert.ok(!/Andreea, este/.test(team), 'the stray comma after "Andreea" is back');
+  assert.match(team, /Dr\. Ana este absolventă a Facultății de Medicină Dentară din Timișoara/);
+  for (const name of ['Andreea', 'Dr. Ana']) {
+    assert.ok(!team.includes(`${name}, este`), `the stray comma after "${name}" is back`);
+  }
 });
 
 test('professional titles stay the ones confirmed in the CMSR register (no "primar" without a certificate)', () => {
