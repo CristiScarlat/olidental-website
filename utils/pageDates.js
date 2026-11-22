@@ -40,7 +40,7 @@ const PAGE_DATES = {
   '/restaurari-extinse-dinti-naturali-implanturi': '2026-10-18',
   '/tratamente-multidisciplinare': '2026-10-18',
   // Doctors' own pages (utils/doctorProfiles.js), and /echipa now linking to them.
-  '/echipa': '2026-11-13',
+  '/echipa': '2026-11-22',
   '/echipa/olimpiu-ladislau-karancsi': '2026-10-18',
   '/echipa/paula-derban': '2026-11-13',
   '/echipa/anda-nicola': '2026-11-13',
